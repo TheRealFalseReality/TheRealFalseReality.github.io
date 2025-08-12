@@ -15,14 +15,12 @@ permissions:
   pages: write
   id-token: write
 
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+# Allow only one concurrent deployment
 concurrency:
   group: 'pages'
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
-  # Single deploy job since we're just deploying
   deploy:
     environment:
       name: github-pages
@@ -42,8 +40,13 @@ jobs:
         run: npm ci
 
       - name: Build
-        # Use the build script from your package.json
         run: npm run build
+
+      # Add this step to create a 404.html file
+      - name: Add .nojekyll file and copy index.html to 404.html
+        run: |
+          touch ./build/client/.nojekyll
+          cp ./build/client/index.html ./build/client/404.html
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
@@ -51,7 +54,6 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # This should match the output directory of your build script
           path: './build/client'
 
       - name: Deploy to GitHub Pages
