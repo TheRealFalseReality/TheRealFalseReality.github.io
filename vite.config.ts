@@ -3,7 +3,7 @@ import tailwindcss from "@tailwindcss/vite";
 import { defineConfig } from "vite";
 import tsconfigPaths from "vite-tsconfig-paths";
 
-export default defineConfig({
-  base: '/aquapi_ai/',
+export default defineConfig(({ command }) => ({
+  base: command === 'build' ? '/aquapi_ai/' : '/',
   plugins: [tailwindcss(), reactRouter(), tsconfigPaths()],
-});
+}));
