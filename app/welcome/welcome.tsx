@@ -89,7 +89,7 @@ const UpArrowIcon = () => (
 
 
 // --- CONSTANTS ---
-const DATA_URL = 'https://raw.githubusercontent.com/TheRealFalseReality/aquapi/refs/heads/main/assets/data/fishcompat.json';
+const DATA_URL = 'https://raw.githubusercontent.com/TheRealFalseReality/aquapi_ai/refs/heads/master/app/data/fishcompat.json';
 
 // --- HELPER FUNCTIONS ---
 const createId = (name: string): string => name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
