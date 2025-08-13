@@ -3,7 +3,7 @@
     {
       "name": "Angelfish",
       "latinName": "Cichlidae, Pterophyllum",
-      "imageURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/20110527_Sea_Life_Blankenberge_%286%29.jpg/1280px-20110527_Sea_Life_Blankenberge_%286%29.jpg",
+      "imageURL": "https://pethelpful.com/.image/w_3840,q_auto:good,c_limit/MTc0OTY4OTI5MzQwMzAyNzg4/how-to-keep-angelfish-tropical-tank-set-up.jpg",
       "compatible": [
         "Angelfish",
         "Cory Cats",
@@ -44,7 +44,7 @@
     {
       "name": "Barbs",
       "latinName": "Cyprinidae, Barbus",
-      "imageURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Barbus_Puntius_ticto.JPG/250px-Barbus_Puntius_ticto.JPG",
+      "imageURL": "https://cdn.shopify.com/s/files/1/0311/3149/files/tiger_barb_in_planted_aquarium.jpg?v=1629404268",
       "compatible": [
         "Barbs",
         "Cory Cats",
@@ -85,10 +85,10 @@
     {
       "name": "Bettas (Female)",
       "latinName": "Osphronemidae, Betta splendens",
-      "imageURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/HM_Orange_M_Sarawut.jpg/250px-HM_Orange_M_Sarawut.jpg",
+      "imageURL": "https://thailandbettafish.com/cdn/shop/collections/Rare_Koi_Betta_Fish_1.png?v=1690009934",
       "compatible": [
-        "Bettas (Male)",
         "Bettas (Female)",
+        "Bettas (Male)",
         "Cory Cats",
         "Danios / Minnows",
         "Freshwater Plants",
@@ -126,7 +126,7 @@
     {
       "name": "Bettas (Male)",
       "latinName": "Osphronemidae, Betta splendens",
-      "imageURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/HM_Orange_M_Sarawut.jpg/250px-HM_Orange_M_Sarawut.jpg",
+      "imageURL": "https://m.media-amazon.com/images/I/71uEGoSsfiL._UF1000,1000_QL80_.jpg",
       "compatible": [
         "Bettas (Female)",
         "Cory Cats",
@@ -167,7 +167,7 @@
     {
       "name": "Cory Cats",
       "latinName": "Callichthyidae, Corydoras",
-      "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_valg19valg19valg.jpg?raw=true",
+      "imageURL": "https://cdn.shopify.com/s/files/1/0311/3149/files/corydoras_sterbai.jpg?v=1605035087",
       "compatible": [
         "Angelfish",
         "Barbs",
@@ -193,22 +193,22 @@
       ],
       "notCompatible": [
         "Brackish Fish",
-        "Pond Fish"
+        "Malawian Cichlids",
+        "Misc. African Cichlids",
+        "Tanganyikan Cichlids"
       ],
       "withCaution": [
         "Freshwater Invertebrates",
         "Freshwater Sharks",
         "Larger Catfish",
-        "Malawian Cichlids",
-        "Misc. African Cichlids",
         "New World Cichlids",
-        "Tanganyikan Cichlids"
+        "Pond Fish"
       ]
     },
     {
       "name": "Danios / Minnows",
       "latinName": "Cyprinidae, Danio",
-      "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_valg19valg19valg.jpg?raw=true",
+      "imageURL": "https://aquaticarts.com/cdn/shop/products/Gold-White-Cloud-Mountain-Minnow-NEW-Small-7.jpg?v=1637805331&width=1080",
       "compatible": [
         "Angelfish",
         "Barbs",
@@ -232,17 +232,17 @@
         "Tetras"
       ],
       "notCompatible": [
-        "Fancy Goldfish",
         "Malawian Cichlids",
         "Misc. African Cichlids",
-        "Pond Fish",
+        "New World Cichlids",
         "Tanganyikan Cichlids"
       ],
       "withCaution": [
         "Brackish Fish",
+        "Fancy Goldfish",
         "Freshwater Invertebrates",
         "Larger Catfish",
-        "New World Cichlids"
+        "Pond Fish"
       ]
     },
     {
@@ -302,7 +302,6 @@
         "Bettas (Female)",
         "Bettas (Male)",
         "Brackish Fish",
-        "Danios / Minnows",
         "Discus",
         "Freshwater Sharks",
         "Gouramis",
@@ -322,6 +321,7 @@
         "Tetras"
       ],
       "withCaution": [
+        "Danios / Minnows",
         "Freshwater Invertebrates",
         "Freshwater Plants",
         "Loaches"
@@ -704,6 +704,7 @@
         "Bettas (Female)",
         "Bettas (Male)",
         "Brackish Fish",
+        "Cory Cats",
         "Danios / Minnows",
         "Discus",
         "Fancy Goldfish",
@@ -721,7 +722,6 @@
       ],
       "withCaution": [
         "Barbs",
-        "Cory Cats",
         "Freshwater Invertebrates",
         "Freshwater Plants",
         "Freshwater Sharks",
@@ -746,6 +746,7 @@
         "Bettas (Female)",
         "Bettas (Male)",
         "Brackish Fish",
+        "Cory Cats",
         "Danios / Minnows",
         "Discus",
         "Fancy Goldfish",
@@ -763,7 +764,6 @@
       ],
       "withCaution": [
         "Barbs",
-        "Cory Cats",
         "Freshwater Invertebrates",
         "Freshwater Plants",
         "Freshwater Sharks",
@@ -825,6 +825,7 @@
       "notCompatible": [
         "Bettas (Female)",
         "Bettas (Male)",
+        "Danios / Minnows",
         "Fancy Goldfish",
         "Guppies",
         "Pond Fish"
@@ -834,7 +835,6 @@
         "Barbs",
         "Brackish Fish",
         "Cory Cats",
-        "Danios / Minnows",
         "Discus",
         "Freshwater Invertebrates",
         "Freshwater Plants",
@@ -950,8 +950,6 @@
         "Bettas (Female)",
         "Bettas (Male)",
         "Brackish Fish",
-        "Cory Cats",
-        "Danios / Minnows",
         "Discus",
         "Freshwater Sharks",
         "Gouramis",
@@ -973,6 +971,8 @@
         "Tetras"
       ],
       "withCaution": [
+        "Cory Cats",
+        "Danios / Minnows",
         "Freshwater Invertebrates",
         "Freshwater Plants"
       ]
@@ -1112,6 +1112,7 @@
         "Bettas (Female)",
         "Bettas (Male)",
         "Brackish Fish",
+        "Cory Cats",
         "Danios / Minnows",
         "Discus",
         "Fancy Goldfish",
@@ -1129,7 +1130,6 @@
       ],
       "withCaution": [
         "Barbs",
-        "Cory Cats",
         "Freshwater Invertebrates",
         "Freshwater Plants",
         "Freshwater Sharks",
