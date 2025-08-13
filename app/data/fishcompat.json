@@ -16,10 +16,9 @@
         "Loaches",
         "Mollies",
         "Platies",
-        "Plecos",
+        "Plecos (Suckerfish)",
         "Rainbowfish",
         "Rasboras",
-        "Suckermouth Catfish",
         "Swordtails",
         "Tetras"
       ],
@@ -54,10 +53,9 @@
         "Gouramis",
         "Loaches",
         "Mollies",
-        "Plecos",
+        "Plecos (Suckerfish)",
         "Rainbowfish",
         "Rasboras",
-        "Suckermouth Catfish",
         "Tetras"
       ],
       "notCompatible": [
@@ -95,9 +93,8 @@
         "Loaches",
         "Mollies",
         "Platies",
-        "Plecos",
+        "Plecos (Suckerfish)",
         "Rasboras",
-        "Suckermouth Catfish",
         "Swordtails",
         "Tetras"
       ],
@@ -143,10 +140,9 @@
         "Loaches",
         "Mollies",
         "Platies",
-        "Plecos",
+        "Plecos (Suckerfish)",
         "Rainbowfish",
         "Rasboras",
-        "Suckermouth Catfish",
         "Swordtails",
         "Tetras"
       ],
@@ -183,10 +179,9 @@
         "Loaches",
         "Mollies",
         "Platies",
-        "Plecos",
+        "Plecos (Suckerfish)",
         "Rainbowfish",
         "Rasboras",
-        "Suckermouth Catfish",
         "Swordtails",
         "Tetras"
       ],
@@ -221,7 +216,6 @@
         "Platies",
         "Rainbowfish",
         "Rasboras",
-        "Suckermouth Catfish",
         "Swordtails",
         "Tetras"
       ],
@@ -242,7 +236,7 @@
         "Gouramis",
         "Larger Catfish",
         "New World Cichlids",
-        "Plecos"
+        "Plecos (Suckerfish)"
       ]
     },
     {
@@ -252,9 +246,8 @@
       "compatible": [
         "Cory Cats",
         "Fancy Goldfish",
-        "Plecos",
-        "Pond Fish",
-        "Suckermouth Catfish"
+        "Plecos (Suckerfish)",
+        "Pond Fish"
       ],
       "notCompatible": [
         "Angelfish",
@@ -316,11 +309,10 @@
         "Mollies",
         "New World Cichlids",
         "Platies",
-        "Plecos",
+        "Plecos (Suckerfish)",
         "Pond Fish",
         "Rainbowfish",
         "Rasboras",
-        "Suckermouth Catfish",
         "Swordtails",
         "Tanganyikan Cichlids",
         "Tetras"
@@ -360,9 +352,8 @@
         "Malawian Cichlids",
         "Misc. African Cichlids",
         "New World Cichlids",
-        "Plecos",
+        "Plecos (Suckerfish)",
         "Pond Fish",
-        "Suckermouth Catfish",
         "Tanganyikan Cichlids"
       ]
     },
@@ -377,7 +368,7 @@
         "Gouramis",
         "Loaches",
         "Mollies",
-        "Plecos",
+        "Plecos (Suckerfish)",
         "Rainbowfish"
       ],
       "notCompatible": [
@@ -401,7 +392,6 @@
         "New World Cichlids",
         "Platies",
         "Rasboras",
-        "Suckermouth Catfish",
         "Swordtails",
         "Tanganyikan Cichlids",
         "Tetras"
@@ -425,10 +415,9 @@
         "Loaches",
         "Mollies",
         "Platies",
-        "Plecos",
+        "Plecos (Suckerfish)",
         "Rainbowfish",
         "Rasboras",
-        "Suckermouth Catfish",
         "Swordtails"
       ],
       "notCompatible": [
@@ -465,10 +454,9 @@
         "Killifish",
         "Mollies",
         "Platies",
-        "Plecos",
+        "Plecos (Suckerfish)",
         "Rainbowfish",
         "Rasboras",
-        "Suckermouth Catfish",
         "Swordtails",
         "Tetras"
       ],
@@ -507,9 +495,8 @@
         "Loaches",
         "Mollies",
         "Platies",
-        "Plecos",
+        "Plecos (Suckerfish)",
         "Rasboras",
-        "Suckermouth Catfish",
         "Swordtails",
         "Tetras"
       ],
@@ -546,10 +533,9 @@
         "Killifish",
         "Mollies",
         "Platies",
-        "Plecos",
+        "Plecos (Suckerfish)",
         "Rainbowfish",
         "Rasboras",
-        "Suckermouth Catfish",
         "Swordtails",
         "Tetras"
       ],
@@ -603,10 +589,9 @@
         "Mollies",
         "New World Cichlids",
         "Platies",
-        "Plecos",
+        "Plecos (Suckerfish)",
         "Rainbowfish",
         "Rasboras",
-        "Suckermouth Catfish",
         "Swordtails",
         "Tanganyikan Cichlids"
       ]
@@ -626,10 +611,9 @@
         "Freshwater Sharks",
         "Gouramis",
         "Hatchets",
-        "Plecos",
+        "Plecos (Suckerfish)",
         "Rainbowfish",
         "Rasboras",
-        "Suckermouth Catfish",
         "Tetras"
       ],
       "notCompatible": [
@@ -687,8 +671,7 @@
         "Loaches",
         "Misc. African Cichlids",
         "New World Cichlids",
-        "Plecos",
-        "Suckermouth Catfish",
+        "Plecos (Suckerfish)",
         "Tanganyikan Cichlids"
       ]
     },
@@ -698,7 +681,7 @@
       "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_valg19valg19valg.jpg?raw=true",
       "compatible": [
         "Misc. African Cichlids",
-        "Plecos"
+        "Plecos (Suckerfish)"
       ],
       "notCompatible": [
         "Angelfish",
@@ -729,7 +712,6 @@
         "Loaches",
         "Malawian Cichlids",
         "New World Cichlids",
-        "Suckermouth Catfish",
         "Tanganyikan Cichlids"
       ]
     },
@@ -754,7 +736,6 @@
         "Mollies",
         "Rainbowfish",
         "Rasboras",
-        "Suckermouth Catfish",
         "Tetras"
       ],
       "notCompatible": [
@@ -770,7 +751,7 @@
         "Loaches",
         "New World Cichlids",
         "Platies",
-        "Plecos",
+        "Plecos (Suckerfish)",
         "Swordtails"
       ]
     },
@@ -779,7 +760,7 @@
       "latinName": "Various",
       "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_valg19valg19valg.jpg?raw=true",
       "compatible": [
-        "Plecos"
+        "Plecos (Suckerfish)"
       ],
       "notCompatible": [
         "Bettas (Male)",
@@ -808,7 +789,6 @@
         "Platies",
         "Rainbowfish",
         "Rasboras",
-        "Suckermouth Catfish",
         "Swordtails",
         "Tanganyikan Cichlids",
         "Tetras"
@@ -830,10 +810,9 @@
         "Hatchets",
         "Killifish",
         "Platies",
-        "Plecos",
+        "Plecos (Suckerfish)",
         "Rainbowfish",
         "Rasboras",
-        "Suckermouth Catfish",
         "Swordtails",
         "Tetras"
       ],
@@ -856,7 +835,7 @@
       ]
     },
     {
-      "name": "Plecos",
+      "name": "Plecos (Suckerfish)",
       "latinName": "Loricariidae, Hypostomus, Pterygoplichthys",
       "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_valg19valg19valg.jpg?raw=true",
       "compatible": [
@@ -866,6 +845,7 @@
         "Cory Cats",
         "Danios / Minnows",
         "Fancy Goldfish",
+        "Freshwater Plants",
         "Freshwater Sharks",
         "Gouramis",
         "Guppies",
@@ -878,7 +858,6 @@
         "Platies",
         "Rainbowfish",
         "Rasboras",
-        "Suckermouth Catfish",
         "Swordtails",
         "Tanganyikan Cichlids",
         "Tetras"
@@ -890,7 +869,7 @@
         "Freshwater Invertebrates",
         "Larger Catfish",
         "Mollies",
-        "Plecos",
+        "Plecos (Suckerfish)",
         "Pond Fish"
       ]
     },
@@ -922,10 +901,9 @@
         "Mollies",
         "New World Cichlids",
         "Platies",
-        "Plecos",
+        "Plecos (Suckerfish)",
         "Rainbowfish",
         "Rasboras",
-        "Suckermouth Catfish",
         "Swordtails",
         "Tanganyikan Cichlids",
         "Tetras"
@@ -953,10 +931,9 @@
         "Loaches",
         "Mollies",
         "Platies",
-        "Plecos",
+        "Plecos (Suckerfish)",
         "Rainbowfish",
         "Rasboras",
-        "Suckermouth Catfish",
         "Swordtails",
         "Tetras"
       ],
@@ -995,10 +972,9 @@
         "Loaches",
         "Mollies",
         "Platies",
-        "Plecos",
+        "Plecos (Suckerfish)",
         "Rainbowfish",
         "Rasboras",
-        "Suckermouth Catfish",
         "Swordtails",
         "Tetras"
       ],
@@ -1018,47 +994,6 @@
       ]
     },
     {
-      "name": "Suckermouth Catfish",
-      "latinName": "Gyrinocheilidae, Gyrinocheilus",
-      "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_valg19valg19valg.jpg?raw=true",
-      "compatible": [
-        "Barbs",
-        "Bettas (Male)",
-        "Cory Cats",
-        "Danios / Minnows",
-        "Fancy Goldfish",
-        "Gouramis",
-        "Hatchets",
-        "Killifish",
-        "Loaches",
-        "Mollies",
-        "Plecos",
-        "Rainbowfish",
-        "Rasboras",
-        "Suckermouth Catfish",
-        "Tetras"
-      ],
-      "notCompatible": [
-        "Pond Fish"
-      ],
-      "withCaution": [
-        "Angelfish",
-        "Brackish Fish",
-        "Discus",
-        "Freshwater Invertebrates",
-        "Freshwater Plants",
-        "Freshwater Sharks",
-        "Guppies",
-        "Larger Catfish",
-        "Malawian Cichlids",
-        "Misc. African Cichlids",
-        "New World Cichlids",
-        "Platies",
-        "Swordtails",
-        "Tanganyikan Cichlids"
-      ]
-    },
-    {
       "name": "Swordtails",
       "latinName": "Poeciliidae, Xiphophorus",
       "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_valg19valg19valg.jpg?raw=true",
@@ -1075,7 +1010,7 @@
         "Hatchets",
         "Killifish",
         "Platies",
-        "Plecos",
+        "Plecos (Suckerfish)",
         "Rainbowfish",
         "Rasboras",
         "Swordtails",
@@ -1095,8 +1030,7 @@
         "Larger Catfish",
         "Loaches",
         "Mollies",
-        "New World Cichlids",
-        "Suckermouth Catfish"
+        "New World Cichlids"
       ]
     },
     {
@@ -1104,7 +1038,7 @@
       "latinName": "Various",
       "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_valg19valg19valg.jpg?raw=true",
       "compatible": [
-        "Plecos"
+        "Plecos (Suckerfish)"
       ],
       "notCompatible": [
         "Angelfish",
@@ -1135,7 +1069,6 @@
         "Loaches",
         "Malawian Cichlids",
         "Misc. African Cichlids",
-        "Suckermouth Catfish",
         "Tanganyikan Cichlids"
       ]
     },
@@ -1157,10 +1090,9 @@
         "Loaches",
         "Mollies",
         "Platies",
-        "Plecos",
+        "Plecos (Suckerfish)",
         "Rainbowfish",
         "Rasboras",
-        "Suckermouth Catfish",
         "Swordtails",
         "Tetras"
       ],
