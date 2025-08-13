@@ -5,5 +5,5 @@ export default {
   // Server-side render by default, to enable SPA mode set this to `false`
   ssr: false,
   // Add the basename for GitHub Pages deployment
-  basename: "/",
+  basename: process.env.NODE_ENV === "production" ? "/aquapi_ai/" : "/",
 } satisfies Config;
