@@ -1,5 +1,5 @@
 // import type { Route } from "./+types/home";
-import App from "../welcome/welcome";
+import App from "../welcome";
 
 export function meta({}: any) { // Changed Route.MetaArgs to any to avoid potential type issues
   return [
