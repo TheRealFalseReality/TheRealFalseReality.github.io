@@ -41,6 +41,8 @@ jobs:
 
       - name: Build
         run: npm run build
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
 
       # Add this step to create a 404.html file
       - name: Add .nojekyll file and copy index.html to 404.html
