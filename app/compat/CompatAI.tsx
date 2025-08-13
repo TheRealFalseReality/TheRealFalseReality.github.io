@@ -1,5 +1,3 @@
-'use client'
-
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import fishData from '../data/fishcompat.json';
@@ -10,10 +8,6 @@ export function meta() {
     { name: "description", content: "Get an AI-powered compatibility report for your aquarium fish." },
   ];
 }
-
-// Image URLs for different categories
-const freshwaterImage = "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_valg19valg19valg.jpg?raw=true";
-const saltwaterImage = "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_w0boutw0boutw0bo.jpg?raw=true";
 
 // Main App component
 export default function App() {
@@ -37,11 +31,6 @@ export default function App() {
       setLoadingData(false);
     }
   }, []);
-
-  // Function to get a popular image URL or a placeholder
-  const getImageUrl = () => {
-    return selectedCategory === 'freshwater' ? freshwaterImage : saltwaterImage;
-  };
 
   // --- START: Compatibility Calculation Logic ---
 
@@ -296,7 +285,7 @@ export default function App() {
                 <span className="text-white">AI Compatibility Helper</span>
             </nav>
         </div>
-        <div className="p-4 sm:p-8 pb-28">
+        <div className="p-4 sm:p-8 pb-48">
             <header className="text-center mb-6">
                 <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#D8f3ff] drop-shadow-md">Aquarium Compatibility Helper</h1>
                 <p className="mt-2 text-lg sm:text-xl text-[#D8f3ff]">Select fish to get a compatibility report.</p>
@@ -312,7 +301,7 @@ export default function App() {
                     : "bg-[#2c3e50] text-[#a7c0d1] hover:bg-[#497eb0] hover:text-white"
                 } ${loadingReport ? 'cursor-not-allowed opacity-50' : ''}`}
                 >
-                Freshwater 🐟
+                Freshwater 🐠
                 </button>
                 <button
                 onClick={() => { setSelectedCategory("marine"); handleClearSelection(); }}
@@ -323,7 +312,7 @@ export default function App() {
                     : "bg-[#2c3e50] text-[#a7c0d1] hover:bg-[#497eb0] hover:text-white"
                 } ${loadingReport ? 'cursor-not-allowed opacity-50' : ''}`}
                 >
-                Saltwater 🐠
+                Saltwater 🐡
                 </button>
             </div>
 
@@ -333,7 +322,7 @@ export default function App() {
                     <button
                     onClick={() => setShowReport(true)}
                     disabled={loadingReport}
-                    className={`flex items-center justify-center px-6 py-3 bg-[#497eb0] bg-opacity-80 hover:bg-opacity-100 text-[#D8f3ff] font-bold text-lg rounded-full shadow-lg hover:bg-[#75344E] transition-colors duration-300 transform hover:scale-105 ${loadingReport ? 'cursor-not-allowed opacity-50' : ''}`}
+                    className={`flex items-center justify-center px-6 py-3 bg-[#75344E]/60 backdrop-blur-sm hover:bg-[#75344E] text-[#D8f3ff] font-bold text-lg rounded-full shadow-lg transition-colors duration-300 transform hover:scale-105 ${loadingReport ? 'cursor-not-allowed opacity-50' : ''}`}
                     >
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -362,7 +351,7 @@ export default function App() {
                     } ${loadingReport ? 'cursor-not-allowed opacity-60' : 'cursor-pointer'}`}
                     >
                     <img
-                        src={getImageUrl()}
+                        src={fish.imageURL}
                         alt={fish.name}
                         className="w-full h-20 sm:h-24 md:h-32 object-cover rounded-t-xl"
                         onError={(e: any) => {
@@ -378,160 +367,190 @@ export default function App() {
                 ))}
                 </div>
             </main>
+        </div>
 
-            {selectedFish.length > 0 && (
-                <div className="fixed inset-x-0 bottom-0 p-4 flex flex-col sm:flex-row justify-center items-center gap-4 z-50">
-                <button
-                    onClick={getCompatibilityReport}
-                    disabled={loadingReport}
-                    className="w-full sm:w-auto px-6 py-3 bg-[#E19F20] bg-opacity-80 hover:bg-opacity-100 text-[#0f1623] font-bold text-lg rounded-full shadow-lg hover:bg-[#D8f3ff] transition-colors duration-300 disabled:bg-gray-500 disabled:cursor-not-allowed transform hover:scale-105 flex items-center justify-center"
-                >
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V7a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                    </svg>
-                    {loadingReport ? "Generating..." : `Get Report`}
-                </button>
-                <button
-                    onClick={handleClearSelection}
-                    disabled={loadingReport}
-                    className="w-full sm:w-auto px-6 py-3 bg-[#75344E] bg-opacity-80 hover:bg-opacity-100 text-[#D8f3ff] font-bold text-lg rounded-full shadow-lg hover:bg-[#81B2E8] transition-colors duration-300 disabled:bg-gray-500 disabled:cursor-not-allowed transform hover:scale-105 flex items-center justify-center"
-                >
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
-                    </svg>
-                    Clear Selection
-                </button>
-                </div>
-            )}
-
-            {showReport && (
-                <div className="fixed inset-0 z-50 flex items-center justify-center bg-[#0f1623] bg-opacity-75 p-4 animate-fade-in">
-                <div className="relative w-full max-w-7xl max-h-[95vh] bg-[#497eb0] rounded-3xl shadow-2xl flex flex-col">
-                    <div className="relative flex-shrink-0 px-6 py-4 text-center z-10 border-b border-[#D8f3ff]">
-                    <h3 className="text-3xl md:text-4xl font-extrabold text-[#E19F20]">
-                        Compatibility Report
-                    </h3>
-                    <p className="mt-2 text-lg md:text-xl text-[#D8f3ff] italic">
-                        {selectedFish.map(f => f.name).join(', ')}
-                    </p>
-                    <button
-                        onClick={() => setShowReport(false)}
-                        className="absolute top-2 right-2 sm:top-4 sm:right-4 text-[#D8f3ff] hover:text-[#E19F20] transition-colors duration-200 p-2"
-                    >
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                        </svg>
-                    </button>
+        {/* Floating Action Bar */}
+        {selectedFish.length > 0 && (
+            <div className="fixed inset-x-0 bottom-0 z-50 p-4">
+                <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-center sm:justify-between items-center gap-4">
+                    {/* Action Buttons */}
+                    <div className="flex items-center justify-center gap-4 w-full sm:w-auto order-2 sm:order-1">
+                        <button
+                            onClick={getCompatibilityReport}
+                            disabled={loadingReport}
+                            className="w-full sm:w-auto px-6 py-3 bg-[#E19F20]/60 backdrop-blur-sm text-[#0f1623] font-bold text-lg rounded-full shadow-lg hover:bg-[#E19F20] transition-colors duration-300 disabled:bg-gray-500 disabled:cursor-not-allowed transform hover:scale-105 flex items-center justify-center"
+                        >
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V7a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                            </svg>
+                            {loadingReport ? "Generating..." : `Get Report`}
+                        </button>
+                        <button
+                            onClick={handleClearSelection}
+                            disabled={loadingReport}
+                            className="w-full sm:w-auto px-6 py-3 bg-[#75344E]/60 backdrop-blur-sm text-[#D8f3ff] font-bold text-lg rounded-full shadow-lg hover:bg-[#75344E] transition-colors duration-300 disabled:bg-gray-500 disabled:cursor-not-allowed transform hover:scale-105 flex items-center justify-center"
+                        >
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                            </svg>
+                            Clear
+                        </button>
                     </div>
 
-                    <div className="overflow-y-auto p-6 sm:p-8">
-                    {error && (
-                        <div className="text-center p-4 mb-4 bg-[#75344E] text-[#D8f3ff] rounded-lg shadow-inner">
-                        <p className="font-bold">Error:</p>
-                        <p>{error}</p>
+                    {/* Selected Fish Tray */}
+                    <div className="flex items-center gap-2 p-2 bg-black/40 backdrop-blur-md rounded-full shadow-lg order-1 sm:order-2 flex-wrap justify-center">
+                        {selectedFish.map((fish, index) => (
+                            <img
+                                key={index}
+                                src={fish.imageURL}
+                                alt={fish.name}
+                                title={fish.name}
+                                className="w-12 h-12 rounded-full object-cover border-2 border-[#81B2E8] transition-all duration-300 ease-in-out transform hover:scale-110"
+                                onError={(e: any) => {
+                                    e.target.onerror = null;
+                                    e.target.src = "https://placehold.co/64x64/4B5563/F9FAFB?text=No+Image";
+                                }}
+                            />
+                        ))}
+                    </div>
+                </div>
+            </div>
+        )}
+
+        {showReport && (
+            <div className="fixed inset-0 z-50 flex items-center justify-center bg-[#0f1623] bg-opacity-75 p-4 animate-fade-in">
+            <div className="relative w-full max-w-7xl max-h-[95vh] bg-[#497eb0] rounded-3xl shadow-2xl flex flex-col">
+                <div className="relative flex-shrink-0 px-6 py-4 text-center z-10 border-b border-[#D8f3ff]">
+                <h3 className="text-3xl md:text-4xl font-extrabold text-[#E19F20]">
+                    Compatibility Report
+                </h3>
+                <p className="mt-2 text-lg md:text-xl text-[#D8f3ff] italic">
+                    {selectedFish.map(f => f.name).join(', ')}
+                </p>
+                <button
+                    onClick={() => setShowReport(false)}
+                    className="absolute top-2 right-2 sm:top-4 sm:right-4 text-[#D8f3ff] hover:text-[#E19F20] transition-colors duration-200 p-2"
+                >
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+                </div>
+
+                <div className="overflow-y-auto p-6 sm:p-8">
+                {error && (
+                    <div className="text-center p-4 mb-4 bg-[#75344E] text-[#D8f3ff] rounded-lg shadow-inner">
+                    <p className="font-bold">Error:</p>
+                    <p>{error}</p>
+                    </div>
+                )}
+
+                {loadingReport && (
+                    <div className="text-center p-8">
+                    <div className="animate-spin inline-block w-12 h-12 border-4 border-[#E19F20] border-t-transparent rounded-full"></div>
+                    <p className="mt-4 text-lg text-[#E19F20]">Fetching report, please wait...</p>
+                    </div>
+                )}
+
+                {report && (
+                    <>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                        <div className="bg-[#0f1623] p-6 rounded-2xl text-center">
+                        <h4 className="text-2xl font-bold text-[#E19F20] mb-2">Group Harmony</h4>
+                        <p className="text-5xl md:text-6xl font-bold text-[#81B2E8] mb-4">{(report.groupHarmonyScore * 100).toFixed(1)}%</p>
+                        <p className="text-sm text-[#D8f3ff] mt-2">{report.groupHarmonyScoreExplanation}</p>
                         </div>
-                    )}
-
-                    {loadingReport && (
-                        <div className="text-center p-8">
-                        <div className="animate-spin inline-block w-12 h-12 border-4 border-[#E19F20] border-t-transparent rounded-full"></div>
-                        <p className="mt-4 text-lg text-[#E19F20]">Fetching report, please wait...</p>
+                        <div className="bg-[#0f1623] p-6 rounded-2xl text-center">
+                        <h4 className="text-2xl font-bold text-[#E19F20] mb-2">Conflict Risk</h4>
+                        <p className="text-5xl md:text-6xl font-bold text-[#75344E] mb-4">{(report.conflictRiskScore * 100).toFixed(1)}%</p>
+                        <p className="text-sm text-[#D8f3ff] mt-2">{report.conflictRiskScoreExplanation}</p>
                         </div>
-                    )}
-
-                    {report && (
-                        <>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                            <div className="bg-[#0f1623] p-6 rounded-2xl text-center">
-                            <h4 className="text-2xl font-bold text-[#E19F20] mb-2">Group Harmony</h4>
-                            <p className="text-5xl md:text-6xl font-bold text-[#81B2E8] mb-4">{(report.groupHarmonyScore * 100).toFixed(1)}%</p>
-                            <p className="text-sm text-[#D8f3ff] mt-2">{report.groupHarmonyScoreExplanation}</p>
-                            </div>
-                            <div className="bg-[#0f1623] p-6 rounded-2xl text-center">
-                            <h4 className="text-2xl font-bold text-[#E19F20] mb-2">Conflict Risk</h4>
-                            <p className="text-5xl md:text-6xl font-bold text-[#75344E] mb-4">{(report.conflictRiskScore * 100).toFixed(1)}%</p>
-                            <p className="text-sm text-[#D8f3ff] mt-2">{report.conflictRiskScoreExplanation}</p>
-                            </div>
+                    </div>
+                    
+                    <div className="space-y-6">
+                        <div className="border-t-2 border-[#D8f3ff] pt-6">
+                        <h4 className="text-2xl font-bold text-[#E19F20] mb-2">Detailed Summary</h4>
+                        <p className="text-lg leading-relaxed text-[#D8f3ff]">{report.detailedSummary}</p>
                         </div>
-                        
-                        <div className="space-y-6">
-                            <div className="border-t-2 border-[#D8f3ff] pt-6">
-                            <h4 className="text-2xl font-bold text-[#E19F20] mb-2">Detailed Summary</h4>
-                            <p className="text-lg leading-relaxed text-[#D8f3ff]">{report.detailedSummary}</p>
-                            </div>
 
-                            {report.tankSize && (
-                            <div className="border-t-2 border-[#D8f3ff] pt-6">
-                                <h4 className="text-2xl font-bold text-[#E19F20] mb-2">Recommended Tank Size</h4>
-                                <p className="text-lg leading-relaxed text-[#D8f3ff]">{report.tankSize}</p>
-                            </div>
-                            )}
+                        {report.tankSize && (
+                        <div className="border-t-2 border-[#D8f3ff] pt-6">
+                            <h4 className="text-2xl font-bold text-[#E19F20] mb-2">Recommended Tank Size</h4>
+                            <p className="text-lg leading-relaxed text-[#D8f3ff]">{report.tankSize}</p>
+                        </div>
+                        )}
 
-                            {report.decorations && (
-                            <div className="border-t-2 border-[#D8f3ff] pt-6">
-                                <h4 className="text-2xl font-bold text-[#E19F20] mb-2">Decorations and Setup</h4>
-                                <p className="text-lg leading-relaxed text-[#D8f3ff]">{report.decorations}</p>
-                            </div>
-                            )}
+                        {report.decorations && (
+                        <div className="border-t-2 border-[#D8f3ff] pt-6">
+                            <h4 className="text-2xl font-bold text-[#E19F20] mb-2">Decorations and Setup</h4>
+                            <p className="text-lg leading-relaxed text-[#D8f3ff]">{report.decorations}</p>
+                        </div>
+                        )}
 
-                            {report.careGuide && (
-                            <div className="border-t-2 border-[#D8f3ff] pt-6">
-                                <h4 className="text-2xl font-bold text-[#E19F20] mb-2">Care Guide</h4>
-                                <p className="text-lg leading-relaxed text-[#D8f3ff]">{report.careGuide}</p>
-                            </div>
-                            )}
+                        {report.careGuide && (
+                        <div className="border-t-2 border-[#D8f3ff] pt-6">
+                            <h4 className="text-2xl font-bold text-[#E19F20] mb-2">Care Guide</h4>
+                            <p className="text-lg leading-relaxed text-[#D8f3ff]">{report.careGuide}</p>
+                        </div>
+                        )}
 
-                            {report.compatibleFish && report.compatibleFish.length > 0 && (
-                            <div className="border-t-2 border-[#D8f3ff] pt-6">
-                                <h4 className="text-2xl font-bold text-[#E19F20] mb-4">Compatible Tank Mates</h4>
-                                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-                                {report.compatibleFish.map((fish: any, index: number) => (
+                        {report.compatibleFish && report.compatibleFish.length > 0 && (
+                        <div className="border-t-2 border-[#D8f3ff] pt-6">
+                            <h4 className="text-2xl font-bold text-[#E19F20] mb-4">Compatible Tank Mates</h4>
+                            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+                            {report.compatibleFish.map((fish: any, index: number) => {
+                                const compatibleFishData = localFishData[selectedCategory].find((f: any) => f.name === fish.name);
+                                return (
                                     <div key={index} className="flex flex-col items-center p-3 bg-[#0f1623] rounded-lg shadow-md transition-transform duration-200 hover:scale-105">
                                     <img
-                                        src={getImageUrl()}
+                                        src={compatibleFishData ? compatibleFishData.imageURL : "https://placehold.co/64x64/4B5563/F9FAFB?text=No+Image"}
                                         alt={fish.name}
                                         className="w-16 h-16 rounded-full border-2 border-[#D8f3ff] object-cover"
                                         onError={(e: any) => { e.target.onerror = null; e.target.src = "https://placehold.co/64x64/4B5563/F9FAFB?text=No+Image"; }}
                                     />
                                     <span className="mt-2 text-sm font-medium text-center text-[#D8f3ff]">{fish.name}</span>
                                     </div>
-                                ))}
-                                </div>
+                                );
+                            })}
                             </div>
-                            )}
-
-                            {report.math && report.math.pairs.length > 0 && (
-                            <div className="border-t-2 border-[#D8f3ff] pt-6">
-                                <h4 className="text-2xl font-bold text-[#E19F20] mb-4">Calculation Breakdown</h4>
-                                <div className="bg-[#0f1623] p-4 sm:p-6 rounded-2xl space-y-4">
-                                <div>
-                                    <h5 className="font-semibold text-lg text-[#81B2E8]">Pairwise Compatibility:</h5>
-                                    <ul className="list-disc list-inside text-[#D8f3ff]">
-                                    {report.math.pairs.map((p: any, i: number) => (
-                                        <li key={i}>{p.fishA} & {p.fishB}: <span className="font-mono">{(p.prob * 100)}%</span></li>
-                                    ))}
-                                    </ul>
-                                </div>
-                                <div>
-                                    <h5 className="font-semibold text-lg text-[#81B2E8]">Group Harmony Score:</h5>
-                                    <p className="text-[#D8f3ff] font-mono text-sm break-words">{report.math.harmonyEquation}</p>
-                                </div>
-                                <div>
-                                    <h5 className="font-semibold text-lg text-[#81B2E8]">Conflict Risk Score:</h5>
-                                    <p className="text-[#D8f3ff] font-mono text-sm break-words">{report.math.conflictEquation}</p>
-                                </div>
-                                </div>
-                            </div>
-                            )}
                         </div>
-                        </>
-                    )}
-                    </div>
-                </div>
-                </div>
-            )}
+                        )}
 
-        </div>
+                        {report.math && report.math.pairs.length > 0 && (
+                        <div className="border-t-2 border-[#D8f3ff] pt-6">
+                            <h4 className="text-2xl font-bold text-[#E19F20] mb-4">Calculation Breakdown</h4>
+                            <div className="bg-[#0f1623] p-4 sm:p-6 rounded-2xl space-y-4">
+                            <div>
+                                <h5 className="font-semibold text-lg text-[#81B2E8]">Pairwise Compatibility:</h5>
+                                <ul className="list-disc list-inside text-[#D8f3ff]">
+                                {report.math.pairs.map((p: any, i: number) => (
+                                    <li key={i}>{p.fishA} & {p.fishB}: <span className="font-mono">{(p.prob * 100)}%</span></li>
+                                ))}
+                                </ul>
+                            </div>
+                            <div>
+                                <h5 className="font-semibold text-lg text-[#81B2E8]">Group Harmony Score:</h5>
+                                <p className="text-[#D8f3ff] font-mono text-sm break-words">{report.math.harmonyEquation}</p>
+                            </div>
+                            <div>
+                                <h5 className="font-semibold text-lg text-[#81B2E8]">Conflict Risk Score:</h5>
+                                <p className="text-[#D8f3ff] font-mono text-sm break-words">{report.math.conflictEquation}</p>
+                            </div>
+                            </div>
+                        </div>
+                        )}
+                    </div>
+                    </>
+                )}
+                </div>
+            </div>
+            </div>
+        )}
+        <footer className="text-center p-8 text-gray-500 text-sm">
+            <p className="max-w-3xl mx-auto">
+                This AI-powered tool helps you check the compatibility of freshwater and marine aquarium inhabitants. Select the fish you're interested in, and click "Get Report" to receive a detailed analysis, including recommended tank size, decorations, care guides, and potential conflict risks.
+            </p>
+        </footer>
     </div>
   );
 }
