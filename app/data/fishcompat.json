@@ -33,7 +33,7 @@
       ],
       "withCaution": [
         "Barbs",
-        "Bettas",
+        "Bettas (Male)",
         "Discus",
         "Freshwater Invertebrates",
         "Freshwater Sharks",
@@ -61,7 +61,7 @@
         "Tetras"
       ],
       "notCompatible": [
-        "Bettas",
+        "Bettas (Male)",
         "Fancy Goldfish",
         "Pond Fish"
       ],
@@ -83,12 +83,13 @@
       ]
     },
     {
-      "name": "Bettas",
+      "name": "Bettas (Male)",
       "latinName": "Osphronemidae, Betta splendens",
       "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_valg19valg19valg.jpg?raw=true",
       "compatible": [
         "Cory Cats",
         "Danios / Minnows",
+        "Freshwater Plants",
         "Guppies",
         "Hatchets",
         "Loaches",
@@ -98,29 +99,28 @@
         "Rasboras",
         "Suckermouth Catfish",
         "Swordtails",
-        "Tetras",
-        "Freshwater Plants"
+        "Tetras"
       ],
       "notCompatible": [
+        "Barbs",
+        "Brackish Fish",
+        "Fancy Goldfish",
         "Malawian Cichlids",
-        "Tanganyikan Cichlids",
         "Misc. African Cichlids",
         "New World Cichlids",
-        "Barbs",
-        "Fancy Goldfish",
-        "Brackish Fish",
-        "Pond Fish"
+        "Pond Fish",
+        "Tanganyikan Cichlids"
       ],
       "withCaution": [
         "Angelfish",
-        "Bettas",
+        "Bettas (Male)",
         "Discus",
+        "Freshwater Invertebrates",
+        "Freshwater Sharks",
         "Gouramis",
         "Killifish",
         "Larger Catfish",
-        "Rainbowfish",
-        "Freshwater Sharks",
-        "Freshwater Invertebrates"
+        "Rainbowfish"
       ]
     },
     {
@@ -130,11 +130,12 @@
       "compatible": [
         "Angelfish",
         "Barbs",
-        "Bettas",
+        "Bettas (Male)",
         "Cory Cats",
         "Danios / Minnows",
         "Discus",
         "Fancy Goldfish",
+        "Freshwater Plants",
         "Gouramis",
         "Guppies",
         "Hatchets",
@@ -147,21 +148,20 @@
         "Rasboras",
         "Suckermouth Catfish",
         "Swordtails",
-        "Tetras",
-        "Freshwater Plants"
+        "Tetras"
       ],
       "notCompatible": [
         "Brackish Fish",
         "Pond Fish"
       ],
       "withCaution": [
+        "Freshwater Invertebrates",
+        "Freshwater Sharks",
+        "Larger Catfish",
         "Malawian Cichlids",
-        "Tanganyikan Cichlids",
         "Misc. African Cichlids",
         "New World Cichlids",
-        "Larger Catfish",
-        "Freshwater Sharks",
-        "Freshwater Invertebrates"
+        "Tanganyikan Cichlids"
       ]
     },
     {
@@ -171,9 +171,11 @@
       "compatible": [
         "Angelfish",
         "Barbs",
-        "Bettas",
+        "Bettas (Male)",
         "Cory Cats",
         "Discus",
+        "Freshwater Plants",
+        "Freshwater Sharks",
         "Gouramis",
         "Guppies",
         "Hatchets",
@@ -184,24 +186,22 @@
         "Plecos",
         "Rainbowfish",
         "Rasboras",
-        "Freshwater Sharks",
         "Suckermouth Catfish",
         "Swordtails",
-        "Tetras",
-        "Freshwater Plants"
+        "Tetras"
       ],
       "notCompatible": [
-        "Malawian Cichlids",
-        "Tanganyikan Cichlids",
-        "Misc. African Cichlids",
         "Fancy Goldfish",
-        "Pond Fish"
+        "Malawian Cichlids",
+        "Misc. African Cichlids",
+        "Pond Fish",
+        "Tanganyikan Cichlids"
       ],
       "withCaution": [
-        "New World Cichlids",
-        "Larger Catfish",
+        "Brackish Fish",
         "Freshwater Invertebrates",
-        "Brackish Fish"
+        "Larger Catfish",
+        "New World Cichlids"
       ]
     },
     {
@@ -212,6 +212,7 @@
         "Cory Cats",
         "Danios / Minnows",
         "Discus",
+        "Freshwater Plants",
         "Guppies",
         "Hatchets",
         "Killifish",
@@ -222,27 +223,26 @@
         "Rasboras",
         "Suckermouth Catfish",
         "Swordtails",
-        "Tetras",
-        "Freshwater Plants"
+        "Tetras"
       ],
       "notCompatible": [
-        "Malawian Cichlids",
-        "Tanganyikan Cichlids",
-        "Misc. African Cichlids",
-        "Fancy Goldfish",
         "Brackish Fish",
-        "Pond Fish"
+        "Fancy Goldfish",
+        "Malawian Cichlids",
+        "Misc. African Cichlids",
+        "Pond Fish",
+        "Tanganyikan Cichlids"
       ],
       "withCaution": [
-        "New World Cichlids",
         "Angelfish",
         "Barbs",
-        "Bettas",
+        "Bettas (Male)",
+        "Freshwater Invertebrates",
+        "Freshwater Sharks",
         "Gouramis",
         "Larger Catfish",
-        "Plecos",
-        "Freshwater Sharks",
-        "Freshwater Invertebrates"
+        "New World Cichlids",
+        "Plecos"
       ]
     },
     {
@@ -253,37 +253,37 @@
         "Cory Cats",
         "Fancy Goldfish",
         "Plecos",
-        "Suckermouth Catfish",
-        "Pond Fish"
+        "Pond Fish",
+        "Suckermouth Catfish"
       ],
       "notCompatible": [
-        "Malawian Cichlids",
-        "Tanganyikan Cichlids",
-        "Misc. African Cichlids",
-        "New World Cichlids",
         "Angelfish",
         "Barbs",
-        "Bettas",
+        "Bettas (Male)",
+        "Brackish Fish",
         "Danios / Minnows",
         "Discus",
+        "Freshwater Sharks",
         "Gouramis",
         "Guppies",
         "Hatchets",
         "Killifish",
         "Larger Catfish",
+        "Malawian Cichlids",
+        "Misc. African Cichlids",
         "Mollies",
+        "New World Cichlids",
         "Platies",
         "Rainbowfish",
         "Rasboras",
-        "Freshwater Sharks",
         "Swordtails",
-        "Tetras",
-        "Brackish Fish"
+        "Tanganyikan Cichlids",
+        "Tetras"
       ],
       "withCaution": [
-        "Loaches",
         "Freshwater Invertebrates",
-        "Freshwater Plants"
+        "Freshwater Plants",
+        "Loaches"
       ]
     },
     {
@@ -295,35 +295,35 @@
       ],
       "notCompatible": [],
       "withCaution": [
-        "Malawian Cichlids",
-        "Tanganyikan Cichlids",
-        "Misc. African Cichlids",
-        "New World Cichlids",
         "Angelfish",
         "Barbs",
-        "Bettas",
+        "Bettas (Male)",
+        "Brackish Fish",
         "Cory Cats",
         "Danios / Minnows",
         "Discus",
         "Fancy Goldfish",
+        "Freshwater Invertebrates",
+        "Freshwater Sharks",
         "Gouramis",
         "Guppies",
         "Hatchets",
         "Killifish",
         "Larger Catfish",
         "Loaches",
+        "Malawian Cichlids",
+        "Misc. African Cichlids",
         "Mollies",
+        "New World Cichlids",
         "Platies",
         "Plecos",
+        "Pond Fish",
         "Rainbowfish",
         "Rasboras",
-        "Freshwater Sharks",
         "Suckermouth Catfish",
         "Swordtails",
-        "Tetras",
-        "Freshwater Invertebrates",
-        "Brackish Fish",
-        "Pond Fish"
+        "Tanganyikan Cichlids",
+        "Tetras"
       ]
     },
     {
@@ -333,10 +333,13 @@
       "compatible": [
         "Angelfish",
         "Barbs",
-        "Bettas",
+        "Bettas (Male)",
         "Cory Cats",
         "Danios / Minnows",
         "Discus",
+        "Freshwater Invertebrates",
+        "Freshwater Plants",
+        "Freshwater Sharks",
         "Gouramis",
         "Guppies",
         "Hatchets",
@@ -346,24 +349,21 @@
         "Platies",
         "Rainbowfish",
         "Rasboras",
-        "Freshwater Sharks",
         "Swordtails",
-        "Tetras",
-        "Freshwater Invertebrates",
-        "Freshwater Plants"
+        "Tetras"
       ],
       "notCompatible": [],
       "withCaution": [
-        "Malawian Cichlids",
-        "Tanganyikan Cichlids",
-        "Misc. African Cichlids",
-        "New World Cichlids",
+        "Brackish Fish",
         "Fancy Goldfish",
         "Larger Catfish",
+        "Malawian Cichlids",
+        "Misc. African Cichlids",
+        "New World Cichlids",
         "Plecos",
+        "Pond Fish",
         "Suckermouth Catfish",
-        "Brackish Fish",
-        "Pond Fish"
+        "Tanganyikan Cichlids"
       ]
     },
     {
@@ -373,38 +373,38 @@
       "compatible": [
         "Barbs",
         "Danios / Minnows",
+        "Freshwater Plants",
         "Gouramis",
         "Loaches",
         "Mollies",
         "Plecos",
-        "Rainbowfish",
-        "Freshwater Plants"
+        "Rainbowfish"
       ],
       "notCompatible": [
         "Fancy Goldfish",
         "Pond Fish"
       ],
       "withCaution": [
-        "Malawian Cichlids",
-        "Tanganyikan Cichlids",
-        "Misc. African Cichlids",
-        "New World Cichlids",
         "Angelfish",
-        "Bettas",
+        "Bettas (Male)",
+        "Brackish Fish",
         "Cory Cats",
         "Discus",
+        "Freshwater Invertebrates",
+        "Freshwater Sharks",
         "Guppies",
         "Hatchets",
         "Killifish",
         "Larger Catfish",
+        "Malawian Cichlids",
+        "Misc. African Cichlids",
+        "New World Cichlids",
         "Platies",
         "Rasboras",
-        "Freshwater Sharks",
         "Suckermouth Catfish",
         "Swordtails",
-        "Tetras",
-        "Freshwater Invertebrates",
-        "Brackish Fish"
+        "Tanganyikan Cichlids",
+        "Tetras"
       ]
     },
     {
@@ -416,6 +416,8 @@
         "Barbs",
         "Cory Cats",
         "Danios / Minnows",
+        "Freshwater Plants",
+        "Freshwater Sharks",
         "Gouramis",
         "Guppies",
         "Hatchets",
@@ -426,26 +428,24 @@
         "Plecos",
         "Rainbowfish",
         "Rasboras",
-        "Freshwater Sharks",
         "Suckermouth Catfish",
-        "Swordtails",
-        "Freshwater Plants"
+        "Swordtails"
       ],
       "notCompatible": [
-        "Malawian Cichlids",
-        "Tanganyikan Cichlids",
-        "Misc. African Cichlids",
-        "Fancy Goldfish",
         "Brackish Fish",
-        "Pond Fish"
+        "Fancy Goldfish",
+        "Malawian Cichlids",
+        "Misc. African Cichlids",
+        "Pond Fish",
+        "Tanganyikan Cichlids"
       ],
       "withCaution": [
-        "New World Cichlids",
-        "Bettas",
+        "Bettas (Male)",
         "Discus",
+        "Freshwater Invertebrates",
         "Larger Catfish",
-        "Tetras",
-        "Freshwater Invertebrates"
+        "New World Cichlids",
+        "Tetras"
       ]
     },
     {
@@ -454,10 +454,11 @@
       "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_valg19valg19valg.jpg?raw=true",
       "compatible": [
         "Angelfish",
-        "Bettas",
+        "Bettas (Male)",
         "Cory Cats",
         "Danios / Minnows",
         "Discus",
+        "Freshwater Plants",
         "Gouramis",
         "Guppies",
         "Hatchets",
@@ -469,24 +470,23 @@
         "Rasboras",
         "Suckermouth Catfish",
         "Swordtails",
-        "Tetras",
-        "Freshwater Plants"
+        "Tetras"
       ],
       "notCompatible": [
+        "Brackish Fish",
+        "Fancy Goldfish",
         "Malawian Cichlids",
-        "Tanganyikan Cichlids",
         "Misc. African Cichlids",
         "New World Cichlids",
-        "Fancy Goldfish",
-        "Brackish Fish",
-        "Pond Fish"
+        "Pond Fish",
+        "Tanganyikan Cichlids"
       ],
       "withCaution": [
         "Barbs",
-        "Larger Catfish",
-        "Loaches",
+        "Freshwater Invertebrates",
         "Freshwater Sharks",
-        "Freshwater Invertebrates"
+        "Larger Catfish",
+        "Loaches"
       ]
     },
     {
@@ -495,10 +495,11 @@
       "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_valg19valg19valg.jpg?raw=true",
       "compatible": [
         "Angelfish",
-        "Bettas",
+        "Bettas (Male)",
         "Cory Cats",
         "Danios / Minnows",
         "Discus",
+        "Freshwater Plants",
         "Gouramis",
         "Guppies",
         "Hatchets",
@@ -510,24 +511,23 @@
         "Rasboras",
         "Suckermouth Catfish",
         "Swordtails",
-        "Tetras",
-        "Freshwater Plants"
+        "Tetras"
       ],
       "notCompatible": [
-        "Malawian Cichlids",
-        "Tanganyikan Cichlids",
-        "Misc. African Cichlids",
-        "Fancy Goldfish",
         "Brackish Fish",
-        "Pond Fish"
+        "Fancy Goldfish",
+        "Malawian Cichlids",
+        "Misc. African Cichlids",
+        "Pond Fish",
+        "Tanganyikan Cichlids"
       ],
       "withCaution": [
-        "New World Cichlids",
         "Barbs",
-        "Larger Catfish",
-        "Rainbowfish",
+        "Freshwater Invertebrates",
         "Freshwater Sharks",
-        "Freshwater Invertebrates"
+        "Larger Catfish",
+        "New World Cichlids",
+        "Rainbowfish"
       ]
     },
     {
@@ -539,6 +539,7 @@
         "Cory Cats",
         "Danios / Minnows",
         "Discus",
+        "Freshwater Plants",
         "Gouramis",
         "Guppies",
         "Hatchets",
@@ -550,25 +551,24 @@
         "Rasboras",
         "Suckermouth Catfish",
         "Swordtails",
-        "Tetras",
-        "Freshwater Plants"
+        "Tetras"
       ],
       "notCompatible": [
-        "Malawian Cichlids",
-        "Tanganyikan Cichlids",
-        "Misc. African Cichlids",
-        "Fancy Goldfish",
         "Brackish Fish",
-        "Pond Fish"
+        "Fancy Goldfish",
+        "Malawian Cichlids",
+        "Misc. African Cichlids",
+        "Pond Fish",
+        "Tanganyikan Cichlids"
       ],
       "withCaution": [
-        "New World Cichlids",
         "Barbs",
-        "Bettas",
+        "Bettas (Male)",
+        "Freshwater Invertebrates",
+        "Freshwater Sharks",
         "Larger Catfish",
         "Loaches",
-        "Freshwater Sharks",
-        "Freshwater Invertebrates"
+        "New World Cichlids"
       ]
     },
     {
@@ -578,37 +578,37 @@
       "compatible": [],
       "notCompatible": [
         "Fancy Goldfish",
-        "Tetras",
-        "Pond Fish"
+        "Pond Fish",
+        "Tetras"
       ],
       "withCaution": [
-        "Malawian Cichlids",
-        "Tanganyikan Cichlids",
-        "Misc. African Cichlids",
-        "New World Cichlids",
         "Angelfish",
         "Barbs",
-        "Bettas",
+        "Bettas (Male)",
+        "Brackish Fish",
         "Cory Cats",
         "Danios / Minnows",
         "Discus",
+        "Freshwater Invertebrates",
+        "Freshwater Plants",
+        "Freshwater Sharks",
         "Gouramis",
         "Guppies",
         "Hatchets",
         "Killifish",
         "Larger Catfish",
         "Loaches",
+        "Malawian Cichlids",
+        "Misc. African Cichlids",
         "Mollies",
+        "New World Cichlids",
         "Platies",
         "Plecos",
         "Rainbowfish",
         "Rasboras",
-        "Freshwater Sharks",
         "Suckermouth Catfish",
         "Swordtails",
-        "Freshwater Invertebrates",
-        "Brackish Fish",
-        "Freshwater Plants"
+        "Tanganyikan Cichlids"
       ]
     },
     {
@@ -618,37 +618,37 @@
       "compatible": [
         "Angelfish",
         "Barbs",
-        "Bettas",
+        "Bettas (Male)",
         "Cory Cats",
         "Danios / Minnows",
         "Discus",
+        "Freshwater Plants",
+        "Freshwater Sharks",
         "Gouramis",
         "Hatchets",
         "Plecos",
         "Rainbowfish",
         "Rasboras",
-        "Freshwater Sharks",
         "Suckermouth Catfish",
-        "Tetras",
-        "Freshwater Plants"
+        "Tetras"
       ],
       "notCompatible": [
         "Pond Fish"
       ],
       "withCaution": [
-        "Malawian Cichlids",
-        "Tanganyikan Cichlids",
-        "Misc. African Cichlids",
-        "New World Cichlids",
+        "Brackish Fish",
         "Fancy Goldfish",
+        "Freshwater Invertebrates",
         "Guppies",
         "Killifish",
         "Larger Catfish",
+        "Malawian Cichlids",
+        "Misc. African Cichlids",
         "Mollies",
+        "New World Cichlids",
         "Platies",
         "Swordtails",
-        "Freshwater Invertebrates",
-        "Brackish Fish"
+        "Tanganyikan Cichlids"
       ]
     },
     {
@@ -660,7 +660,8 @@
       ],
       "notCompatible": [
         "Angelfish",
-        "Bettas",
+        "Bettas (Male)",
+        "Brackish Fish",
         "Danios / Minnows",
         "Discus",
         "Fancy Goldfish",
@@ -670,26 +671,25 @@
         "Killifish",
         "Mollies",
         "Platies",
+        "Pond Fish",
         "Rainbowfish",
         "Rasboras",
         "Swordtails",
-        "Tetras",
-        "Brackish Fish",
-        "Pond Fish"
+        "Tetras"
       ],
       "withCaution": [
-        "Tanganyikan Cichlids",
-        "Misc. African Cichlids",
-        "New World Cichlids",
         "Barbs",
         "Cory Cats",
+        "Freshwater Invertebrates",
+        "Freshwater Plants",
+        "Freshwater Sharks",
         "Larger Catfish",
         "Loaches",
+        "Misc. African Cichlids",
+        "New World Cichlids",
         "Plecos",
-        "Freshwater Sharks",
         "Suckermouth Catfish",
-        "Freshwater Invertebrates",
-        "Freshwater Plants"
+        "Tanganyikan Cichlids"
       ]
     },
     {
@@ -702,7 +702,8 @@
       ],
       "notCompatible": [
         "Angelfish",
-        "Bettas",
+        "Bettas (Male)",
+        "Brackish Fish",
         "Danios / Minnows",
         "Discus",
         "Fancy Goldfish",
@@ -712,25 +713,24 @@
         "Killifish",
         "Mollies",
         "Platies",
+        "Pond Fish",
         "Rainbowfish",
         "Rasboras",
         "Swordtails",
-        "Tetras",
-        "Brackish Fish",
-        "Pond Fish"
+        "Tetras"
       ],
       "withCaution": [
-        "Malawian Cichlids",
-        "Tanganyikan Cichlids",
-        "New World Cichlids",
         "Barbs",
         "Cory Cats",
+        "Freshwater Invertebrates",
+        "Freshwater Plants",
+        "Freshwater Sharks",
         "Larger Catfish",
         "Loaches",
-        "Freshwater Sharks",
+        "Malawian Cichlids",
+        "New World Cichlids",
         "Suckermouth Catfish",
-        "Freshwater Invertebrates",
-        "Freshwater Plants"
+        "Tanganyikan Cichlids"
       ]
     },
     {
@@ -740,10 +740,13 @@
       "compatible": [
         "Angelfish",
         "Barbs",
-        "Bettas",
+        "Bettas (Male)",
+        "Brackish Fish",
         "Cory Cats",
         "Danios / Minnows",
         "Discus",
+        "Freshwater Plants",
+        "Freshwater Sharks",
         "Gouramis",
         "Guppies",
         "Hatchets",
@@ -751,27 +754,24 @@
         "Mollies",
         "Rainbowfish",
         "Rasboras",
-        "Freshwater Sharks",
         "Suckermouth Catfish",
-        "Tetras",
-        "Brackish Fish",
-        "Freshwater Plants"
+        "Tetras"
       ],
       "notCompatible": [
-        "Malawian Cichlids",
-        "Tanganyikan Cichlids",
-        "Misc. African Cichlids",
         "Fancy Goldfish",
-        "Pond Fish"
+        "Malawian Cichlids",
+        "Misc. African Cichlids",
+        "Pond Fish",
+        "Tanganyikan Cichlids"
       ],
       "withCaution": [
-        "New World Cichlids",
+        "Freshwater Invertebrates",
         "Larger Catfish",
         "Loaches",
+        "New World Cichlids",
         "Platies",
         "Plecos",
-        "Swordtails",
-        "Freshwater Invertebrates"
+        "Swordtails"
       ]
     },
     {
@@ -782,36 +782,36 @@
         "Plecos"
       ],
       "notCompatible": [
-        "Bettas",
+        "Bettas (Male)",
         "Fancy Goldfish",
         "Guppies",
         "Pond Fish"
       ],
       "withCaution": [
-        "Malawian Cichlids",
-        "Tanganyikan Cichlids",
-        "Misc. African Cichlids",
-        "New World Cichlids",
         "Angelfish",
         "Barbs",
+        "Brackish Fish",
         "Cory Cats",
         "Danios / Minnows",
         "Discus",
+        "Freshwater Invertebrates",
+        "Freshwater Plants",
+        "Freshwater Sharks",
         "Hatchets",
         "Killifish",
         "Larger Catfish",
         "Loaches",
+        "Malawian Cichlids",
+        "Misc. African Cichlids",
         "Mollies",
+        "New World Cichlids",
         "Platies",
         "Rainbowfish",
         "Rasboras",
-        "Freshwater Sharks",
         "Suckermouth Catfish",
         "Swordtails",
-        "Tetras",
-        "Freshwater Invertebrates",
-        "Brackish Fish",
-        "Freshwater Plants"
+        "Tanganyikan Cichlids",
+        "Tetras"
       ]
     },
     {
@@ -820,10 +820,11 @@
       "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_valg19valg19valg.jpg?raw=true",
       "compatible": [
         "Angelfish",
-        "Bettas",
+        "Bettas (Male)",
         "Cory Cats",
         "Danios / Minnows",
         "Discus",
+        "Freshwater Plants",
         "Gouramis",
         "Guppies",
         "Hatchets",
@@ -834,25 +835,24 @@
         "Rasboras",
         "Suckermouth Catfish",
         "Swordtails",
-        "Tetras",
-        "Freshwater Plants"
+        "Tetras"
       ],
       "notCompatible": [
-        "Malawian Cichlids",
-        "Tanganyikan Cichlids",
-        "Misc. African Cichlids",
-        "Fancy Goldfish",
         "Brackish Fish",
-        "Pond Fish"
+        "Fancy Goldfish",
+        "Malawian Cichlids",
+        "Misc. African Cichlids",
+        "Pond Fish",
+        "Tanganyikan Cichlids"
       ],
       "withCaution": [
-        "New World Cichlids",
         "Barbs",
+        "Freshwater Invertebrates",
+        "Freshwater Sharks",
         "Larger Catfish",
         "Loaches",
         "Mollies",
-        "Freshwater Sharks",
-        "Freshwater Invertebrates"
+        "New World Cichlids"
       ]
     },
     {
@@ -860,38 +860,38 @@
       "latinName": "Loricariidae, Hypostomus, Pterygoplichthys",
       "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_valg19valg19valg.jpg?raw=true",
       "compatible": [
-        "Malawian Cichlids",
-        "Tanganyikan Cichlids",
-        "Misc. African Cichlids",
-        "New World Cichlids",
         "Angelfish",
         "Barbs",
-        "Bettas",
+        "Bettas (Male)",
         "Cory Cats",
         "Danios / Minnows",
         "Fancy Goldfish",
+        "Freshwater Sharks",
         "Gouramis",
         "Guppies",
         "Hatchets",
         "Killifish",
         "Loaches",
+        "Malawian Cichlids",
+        "Misc. African Cichlids",
+        "New World Cichlids",
         "Platies",
         "Rainbowfish",
         "Rasboras",
-        "Freshwater Sharks",
         "Suckermouth Catfish",
         "Swordtails",
+        "Tanganyikan Cichlids",
         "Tetras"
       ],
       "notCompatible": [],
       "withCaution": [
+        "Brackish Fish",
         "Discus",
+        "Freshwater Invertebrates",
         "Larger Catfish",
         "Mollies",
         "Plecos",
-        "Pond Fish",
-        "Freshwater Invertebrates",
-        "Brackish Fish"
+        "Pond Fish"
       ]
     },
     {
@@ -903,32 +903,32 @@
         "Pond Fish"
       ],
       "notCompatible": [
-        "Malawian Cichlids",
-        "Tanganyikan Cichlids",
-        "Misc. African Cichlids",
-        "New World Cichlids",
         "Angelfish",
         "Barbs",
-        "Bettas",
+        "Bettas (Male)",
+        "Brackish Fish",
         "Cory Cats",
         "Danios / Minnows",
         "Discus",
+        "Freshwater Sharks",
         "Gouramis",
         "Guppies",
         "Hatchets",
         "Killifish",
         "Larger Catfish",
         "Loaches",
+        "Malawian Cichlids",
+        "Misc. African Cichlids",
         "Mollies",
+        "New World Cichlids",
         "Platies",
         "Plecos",
         "Rainbowfish",
         "Rasboras",
-        "Freshwater Sharks",
         "Suckermouth Catfish",
         "Swordtails",
-        "Tetras",
-        "Brackish Fish"
+        "Tanganyikan Cichlids",
+        "Tetras"
       ],
       "withCaution": [
         "Freshwater Invertebrates",
@@ -945,6 +945,8 @@
         "Cory Cats",
         "Danios / Minnows",
         "Discus",
+        "Freshwater Plants",
+        "Freshwater Sharks",
         "Gouramis",
         "Guppies",
         "Killifish",
@@ -954,26 +956,24 @@
         "Plecos",
         "Rainbowfish",
         "Rasboras",
-        "Freshwater Sharks",
         "Suckermouth Catfish",
         "Swordtails",
-        "Tetras",
-        "Freshwater Plants"
+        "Tetras"
       ],
       "notCompatible": [
-        "Malawian Cichlids",
-        "Tanganyikan Cichlids",
-        "Misc. African Cichlids",
         "Fancy Goldfish",
-        "Pond Fish"
+        "Malawian Cichlids",
+        "Misc. African Cichlids",
+        "Pond Fish",
+        "Tanganyikan Cichlids"
       ],
       "withCaution": [
-        "New World Cichlids",
-        "Bettas",
+        "Bettas (Male)",
+        "Brackish Fish",
+        "Freshwater Invertebrates",
         "Hatchets",
         "Larger Catfish",
-        "Freshwater Invertebrates",
-        "Brackish Fish"
+        "New World Cichlids"
       ]
     },
     {
@@ -983,10 +983,11 @@
       "compatible": [
         "Angelfish",
         "Barbs",
-        "Bettas",
+        "Bettas (Male)",
         "Cory Cats",
         "Danios / Minnows",
         "Discus",
+        "Freshwater Plants",
         "Gouramis",
         "Guppies",
         "Hatchets",
@@ -999,22 +1000,21 @@
         "Rasboras",
         "Suckermouth Catfish",
         "Swordtails",
-        "Tetras",
-        "Freshwater Plants"
+        "Tetras"
       ],
       "notCompatible": [
-        "Malawian Cichlids",
-        "Tanganyikan Cichlids",
-        "Misc. African Cichlids",
-        "Fancy Goldfish",
         "Brackish Fish",
-        "Pond Fish"
+        "Fancy Goldfish",
+        "Malawian Cichlids",
+        "Misc. African Cichlids",
+        "Pond Fish",
+        "Tanganyikan Cichlids"
       ],
       "withCaution": [
-        "New World Cichlids",
-        "Larger Catfish",
+        "Freshwater Invertebrates",
         "Freshwater Sharks",
-        "Freshwater Invertebrates"
+        "Larger Catfish",
+        "New World Cichlids"
       ]
     },
     {
@@ -1023,7 +1023,7 @@
       "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_valg19valg19valg.jpg?raw=true",
       "compatible": [
         "Barbs",
-        "Bettas",
+        "Bettas (Male)",
         "Cory Cats",
         "Danios / Minnows",
         "Fancy Goldfish",
@@ -1042,20 +1042,20 @@
         "Pond Fish"
       ],
       "withCaution": [
-        "Malawian Cichlids",
-        "Tanganyikan Cichlids",
-        "Misc. African Cichlids",
-        "New World Cichlids",
         "Angelfish",
+        "Brackish Fish",
         "Discus",
+        "Freshwater Invertebrates",
+        "Freshwater Plants",
+        "Freshwater Sharks",
         "Guppies",
         "Larger Catfish",
+        "Malawian Cichlids",
+        "Misc. African Cichlids",
+        "New World Cichlids",
         "Platies",
-        "Freshwater Sharks",
         "Swordtails",
-        "Freshwater Invertebrates",
-        "Brackish Fish",
-        "Freshwater Plants"
+        "Tanganyikan Cichlids"
       ]
     },
     {
@@ -1064,10 +1064,12 @@
       "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_valg19valg19valg.jpg?raw=true",
       "compatible": [
         "Angelfish",
-        "Bettas",
+        "Bettas (Male)",
         "Cory Cats",
         "Danios / Minnows",
         "Discus",
+        "Freshwater Plants",
+        "Freshwater Sharks",
         "Gouramis",
         "Guppies",
         "Hatchets",
@@ -1076,27 +1078,25 @@
         "Plecos",
         "Rainbowfish",
         "Rasboras",
-        "Freshwater Sharks",
         "Swordtails",
-        "Tetras",
-        "Freshwater Plants"
+        "Tetras"
       ],
       "notCompatible": [
-        "Malawian Cichlids",
-        "Tanganyikan Cichlids",
-        "Misc. African Cichlids",
-        "Fancy Goldfish",
         "Brackish Fish",
-        "Pond Fish"
+        "Fancy Goldfish",
+        "Malawian Cichlids",
+        "Misc. African Cichlids",
+        "Pond Fish",
+        "Tanganyikan Cichlids"
       ],
       "withCaution": [
-        "New World Cichlids",
         "Barbs",
+        "Freshwater Invertebrates",
         "Larger Catfish",
         "Loaches",
         "Mollies",
-        "Suckermouth Catfish",
-        "Freshwater Invertebrates"
+        "New World Cichlids",
+        "Suckermouth Catfish"
       ]
     },
     {
@@ -1108,7 +1108,8 @@
       ],
       "notCompatible": [
         "Angelfish",
-        "Bettas",
+        "Bettas (Male)",
+        "Brackish Fish",
         "Danios / Minnows",
         "Discus",
         "Fancy Goldfish",
@@ -1118,25 +1119,24 @@
         "Killifish",
         "Mollies",
         "Platies",
+        "Pond Fish",
         "Rainbowfish",
         "Rasboras",
         "Swordtails",
-        "Tetras",
-        "Brackish Fish",
-        "Pond Fish"
+        "Tetras"
       ],
       "withCaution": [
-        "Malawian Cichlids",
-        "Tanganyikan Cichlids",
-        "Misc. African Cichlids",
         "Barbs",
         "Cory Cats",
+        "Freshwater Invertebrates",
+        "Freshwater Plants",
+        "Freshwater Sharks",
         "Larger Catfish",
         "Loaches",
-        "Freshwater Sharks",
+        "Malawian Cichlids",
+        "Misc. African Cichlids",
         "Suckermouth Catfish",
-        "Freshwater Invertebrates",
-        "Freshwater Plants"
+        "Tanganyikan Cichlids"
       ]
     },
     {
@@ -1146,10 +1146,11 @@
       "compatible": [
         "Angelfish",
         "Barbs",
-        "Bettas",
+        "Bettas (Male)",
         "Cory Cats",
         "Danios / Minnows",
         "Discus",
+        "Freshwater Plants",
         "Guppies",
         "Hatchets",
         "Killifish",
@@ -1161,23 +1162,22 @@
         "Rasboras",
         "Suckermouth Catfish",
         "Swordtails",
-        "Tetras",
-        "Freshwater Plants"
+        "Tetras"
       ],
       "notCompatible": [
-        "Malawian Cichlids",
-        "Tanganyikan Cichlids",
-        "Misc. African Cichlids",
+        "Brackish Fish",
         "Fancy Goldfish",
         "Larger Catfish",
-        "Brackish Fish",
-        "Pond Fish"
+        "Malawian Cichlids",
+        "Misc. African Cichlids",
+        "Pond Fish",
+        "Tanganyikan Cichlids"
       ],
       "withCaution": [
-        "New World Cichlids",
-        "Gouramis",
+        "Freshwater Invertebrates",
         "Freshwater Sharks",
-        "Freshwater Invertebrates"
+        "Gouramis",
+        "New World Cichlids"
       ]
     }
   ],

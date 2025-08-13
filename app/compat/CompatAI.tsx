@@ -119,6 +119,7 @@ export default function App() {
         You are an aquarium expert. A user has selected a group of fish. Your task is to generate a tailored care guide and compatibility summary. Do not mention the scores in your summary, just provide the requested information.
 
         Selected Fish: ${currentSelectedFish.map(f => f.name).join(', ')}
+        Fish Type: ${selectedCategory}
         Group Harmony Score: ${(groupHarmony * 100).toFixed(1)}%
         Conflict Risk Score: ${(conflictRisk * 100).toFixed(1)}%
 
