@@ -3,7 +3,7 @@ import Logo from './logo-light.svg';
 
 export default function Welcome() {
   return (
-    <div className="min-h-screen bg-gray-900 text-white flex flex-col items-center justify-center p-4">
+    <div className="relative min-h-screen bg-gray-900 text-white flex flex-col items-center justify-center p-4">
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
         body { font-family: 'Inter', sans-serif; }
@@ -29,20 +29,23 @@ export default function Welcome() {
         <p className="text-lg text-gray-400 mb-8">
           Your intelligent assistant for aquatic compatibility.
         </p>
-        <div className="space-x-4">
-          <Link
-            to="/compat"
-            className="inline-block bg-blue-600 text-white font-semibold px-8 py-3 rounded-full shadow-lg hover:bg-blue-700 transition transform hover:scale-105"
-          >
-            Launch Compatibility Guide
-          </Link>
-          <Link
+        <Link
             to="/compat-ai"
             className="inline-block bg-green-600 text-white font-semibold px-8 py-3 rounded-full shadow-lg hover:bg-green-700 transition transform hover:scale-105"
-          >
+        >
             Launch AI Helper
-          </Link>
-        </div>
+        </Link>
+      </div>
+
+      <Link
+        to="/compat"
+        className="absolute bottom-4 left-4 bg-gray-700 text-white font-semibold px-4 py-2 text-sm rounded-full shadow-lg hover:bg-gray-600 transition transform hover:scale-105"
+      >
+        Admin: Compatibility Guide
+      </Link>
+
+      <div className="absolute bottom-4 right-4 text-xs text-gray-500">
+        Version 25.8.11
       </div>
     </div>
   );

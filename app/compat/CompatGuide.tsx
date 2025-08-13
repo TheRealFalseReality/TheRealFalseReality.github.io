@@ -1,6 +1,14 @@
 import React, { useState, useEffect, useRef, useMemo } from 'react';
+import { Link } from 'react-router-dom';
 // Import the local JSON data directly
 import fishData from '../data/fishcompat.json';
+
+export function meta() {
+  return [
+    { title: "Compatibility Guide | AquaPi AI" },
+    { name: "description", content: "An interactive guide to check and edit fish compatibility data." },
+  ];
+}
 
 // --- TYPES ---
 interface Fish {
@@ -672,46 +680,51 @@ export default function App() {
     };
 
     return (
-        <div className="min-h-screen bg-gray-900 text-white font-sans p-6 lg:p-10 pr-12 lg:pr-16">
-            <style>{`@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap'); body { font-family: 'Inter', sans-serif; } .animate-fade-in-down { animation: fadeInDown 0.5s ease-out; } .animate-fade-in { animation: fadeIn 0.3s ease-out; } @keyframes fadeInDown { from { opacity: 0; transform: translateY(-20px); } to { opacity: 1; transform: translateY(0); } } @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }`}</style>
-            
-            <AlphabetScroller letters={availableLetters} onLetterClick={handleLetterClick} onScrollToTop={handleScrollToTop} />
-
-            <div className="container mx-auto">
-                <header className="text-center mb-6">
-                    <h1 className="text-4xl lg:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-green-400 mb-2">Aquarium Compatibility Guide</h1>
-                    <p className="text-lg text-gray-400">Manage your fish compatibility data.</p>
-                </header>
-
-                <div className="bg-gray-800 rounded-3xl p-4 lg:p-6 shadow-2xl mb-8 border border-gray-700">
-                    <div className="flex flex-wrap justify-between items-center gap-4 mb-6">
-                        <div className="flex space-x-2 p-1 bg-gray-900 rounded-full shadow-inner">
-                            <button onClick={() => setActiveTab('freshwater')} className={`px-5 py-2 rounded-full font-semibold transition-all duration-300 ${activeTab === 'freshwater' ? 'bg-blue-600 text-white shadow-lg' : 'bg-transparent text-gray-400 hover:text-white'}`}>Freshwater Fish</button>
-                            <button onClick={() => setActiveTab('saltwater')} className={`px-5 py-2 rounded-full font-semibold transition-all duration-300 ${activeTab === 'saltwater' ? 'bg-blue-600 text-white shadow-lg' : 'bg-transparent text-gray-400 hover:text-white'}`}>Saltwater Fish</button>
-                        </div>
-                        <div className="flex items-center flex-wrap gap-2">
-                            <input type="file" ref={fileInputRef} onChange={handleFileChange} accept=".json" className="hidden" />
-                            <button onClick={() => fileInputRef.current?.click()} className="flex items-center space-x-2 px-4 py-2 bg-indigo-600 text-white font-semibold rounded-full shadow-lg hover:bg-indigo-700 transition transform hover:scale-105"><UploadIcon /><span>Load from File</span></button>
-                            <button onClick={handleViewJson} className="flex items-center space-x-2 px-4 py-2 bg-teal-600 text-white font-semibold rounded-full shadow-lg hover:bg-teal-700 transition transform hover:scale-105"><EyeIcon /><span>View/Export JSON</span></button>
-                            <button onClick={() => setShowResetModal(true)} className="flex items-center space-x-2 px-4 py-2 bg-purple-600 text-white font-semibold rounded-full shadow-lg hover:bg-purple-700 transition transform hover:scale-105"><RefreshIcon /><span>Reset Data</span></button>
-                            <button onClick={() => setShowAddFishModal(true)} className="flex items-center space-x-2 px-6 py-2 bg-green-600 text-white font-semibold rounded-full shadow-lg hover:bg-green-700 transition transform hover:scale-105"><PlusIcon /><span>Add New Fish</span></button>
-                        </div>
-                    </div>
-                    {loading ? <div className="flex justify-center items-center h-64"><div className="animate-spin rounded-full h-12 w-12 border-4 border-blue-500 border-t-transparent"></div></div> : renderFishList(activeTab === 'freshwater' ? freshwaterFish : saltwaterFish)}
-                </div>
+        <div className="min-h-screen bg-gray-900 text-white font-sans">
+            <div className="sticky top-0 z-50 bg-gray-900/80 backdrop-blur-sm shadow-md">
+                <nav className="container mx-auto px-6 lg:px-10 py-3 text-sm text-gray-400">
+                    <Link to="/" className="hover:text-white transition-colors">Home</Link>
+                    <span className="mx-2">&gt;</span>
+                    <span className="text-white">Compatibility Guide</span>
+                </nav>
             </div>
+            
+            <div className="p-6 lg:p-10 pr-12 lg:pr-16">
+                <AlphabetScroller letters={availableLetters} onLetterClick={handleLetterClick} onScrollToTop={handleScrollToTop} />
 
-            <footer className="text-center text-gray-600 text-xs py-4">
-                <p>Version 25.8.1</p>
-            </footer>
+                <div className="container mx-auto">
+                    <header className="text-center mb-6">
+                        <h1 className="text-4xl lg:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-green-400 mb-2">Aquarium Compatibility Guide</h1>
+                        <p className="text-lg text-gray-400">Manage your fish compatibility data.</p>
+                    </header>
 
-            {/* Modals */}
-            {showAddFishModal && <AddFishModal onSave={handleSaveNewFish} onClose={() => setShowAddFishModal(false)} activeTab={activeTab} />}
-            {showCompatibilityModal && currentFish && <CompatibilityFormModal fishData={currentFish} onSave={handleSaveCompatibility} onClose={() => setShowCompatibilityModal(false)} freshwaterFish={freshwaterFish} saltwaterFish={saltwaterFish} activeTab={activeTab} />}
-            {showDeleteModal && fishToDelete && <CustomModal title="Confirm Deletion" message={`Are you sure you want to delete "${fishToDelete.name}"? This action and all its references cannot be undone.`} onClose={() => setShowDeleteModal(false)} onConfirm={confirmDelete} showConfirm={true} />}
-            {showResetModal && <CustomModal title="Confirm Reset" message="Are you sure you want to reset all data? This will discard all your local changes." onClose={() => setShowResetModal(false)} onConfirm={handleResetData} showConfirm={true} />}
-            {modalInfo.show && <CustomModal title={modalInfo.title} message={modalInfo.message} onClose={() => setModalInfo({ ...modalInfo, show: false })} />}
-            {showJsonViewer && <JsonViewerModal jsonString={generatedJson} onClose={() => setShowJsonViewer(false)} onDownload={handleDownloadJson} />}
+                    <div className="bg-gray-800 rounded-3xl p-4 lg:p-6 shadow-2xl mb-8 border border-gray-700">
+                        <div className="flex flex-wrap justify-between items-center gap-4 mb-6">
+                            <div className="flex space-x-2 p-1 bg-gray-900 rounded-full shadow-inner">
+                                <button onClick={() => setActiveTab('freshwater')} className={`px-5 py-2 rounded-full font-semibold transition-all duration-300 ${activeTab === 'freshwater' ? 'bg-blue-600 text-white shadow-lg' : 'bg-transparent text-gray-400 hover:text-white'}`}>Freshwater Fish</button>
+                                <button onClick={() => setActiveTab('saltwater')} className={`px-5 py-2 rounded-full font-semibold transition-all duration-300 ${activeTab === 'saltwater' ? 'bg-blue-600 text-white shadow-lg' : 'bg-transparent text-gray-400 hover:text-white'}`}>Saltwater Fish</button>
+                            </div>
+                            <div className="flex items-center flex-wrap gap-2">
+                                <input type="file" ref={fileInputRef} onChange={handleFileChange} accept=".json" className="hidden" />
+                                <button onClick={() => fileInputRef.current?.click()} className="flex items-center space-x-2 px-4 py-2 bg-indigo-600 text-white font-semibold rounded-full shadow-lg hover:bg-indigo-700 transition transform hover:scale-105"><UploadIcon /><span>Load from File</span></button>
+                                <button onClick={handleViewJson} className="flex items-center space-x-2 px-4 py-2 bg-teal-600 text-white font-semibold rounded-full shadow-lg hover:bg-teal-700 transition transform hover:scale-105"><EyeIcon /><span>View/Export JSON</span></button>
+                                <button onClick={() => setShowResetModal(true)} className="flex items-center space-x-2 px-4 py-2 bg-purple-600 text-white font-semibold rounded-full shadow-lg hover:bg-purple-700 transition transform hover:scale-105"><RefreshIcon /><span>Reset Data</span></button>
+                                <button onClick={() => setShowAddFishModal(true)} className="flex items-center space-x-2 px-6 py-2 bg-green-600 text-white font-semibold rounded-full shadow-lg hover:bg-green-700 transition transform hover:scale-105"><PlusIcon /><span>Add New Fish</span></button>
+                            </div>
+                        </div>
+                        {loading ? <div className="flex justify-center items-center h-64"><div className="animate-spin rounded-full h-12 w-12 border-4 border-blue-500 border-t-transparent"></div></div> : renderFishList(activeTab === 'freshwater' ? freshwaterFish : saltwaterFish)}
+                    </div>
+                </div>
+
+
+                {/* Modals */}
+                {showAddFishModal && <AddFishModal onSave={handleSaveNewFish} onClose={() => setShowAddFishModal(false)} activeTab={activeTab} />}
+                {showCompatibilityModal && currentFish && <CompatibilityFormModal fishData={currentFish} onSave={handleSaveCompatibility} onClose={() => setShowCompatibilityModal(false)} freshwaterFish={freshwaterFish} saltwaterFish={saltwaterFish} activeTab={activeTab} />}
+                {showDeleteModal && fishToDelete && <CustomModal title="Confirm Deletion" message={`Are you sure you want to delete "${fishToDelete.name}"? This action and all its references cannot be undone.`} onClose={() => setShowDeleteModal(false)} onConfirm={confirmDelete} showConfirm={true} />}
+                {showResetModal && <CustomModal title="Confirm Reset" message="Are you sure you want to reset all data? This will discard all your local changes." onClose={() => setShowResetModal(false)} onConfirm={handleResetData} showConfirm={true} />}
+                {modalInfo.show && <CustomModal title={modalInfo.title} message={modalInfo.message} onClose={() => setModalInfo({ ...modalInfo, show: false })} />}
+                {showJsonViewer && <JsonViewerModal jsonString={generatedJson} onClose={() => setShowJsonViewer(false)} onDownload={handleDownloadJson} />}
+            </div>
         </div>
     );
 }
