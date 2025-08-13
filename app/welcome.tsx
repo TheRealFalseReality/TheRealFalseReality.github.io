@@ -22,8 +22,6 @@ const AdminLoginModal = ({ onClose, onLogin }: { onClose: () => void, onLogin: (
         <h2 className="text-2xl font-bold mb-4 text-white">Admin Login</h2>
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5701077439648731"
-               crossorigin="anonymous"></script>
             <label className="block text-gray-400 mb-2" htmlFor="username">Username</label>
             <input
               type="text"
@@ -83,6 +81,7 @@ export default function Welcome() {
         }
       `}</style>
       <div className="text-center animate-fade-in-up">
+        <meta name="google-adsense-account" content="ca-pub-5701077439648731">
         <img src={Logo} alt="AquaPi AI Logo" className="h-24 mx-auto mb-4" />
         <h1 className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-green-400 mb-2">
           Welcome to AquaPi AI
