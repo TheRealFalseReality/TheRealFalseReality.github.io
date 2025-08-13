@@ -302,7 +302,7 @@ export default function App() {
                     : "bg-[#2c3e50] text-[#a7c0d1] hover:bg-[#497eb0] hover:text-white"
                 } ${loadingReport ? 'cursor-not-allowed opacity-50' : ''}`}
                 >
-                Freshwater 🐠
+                Freshwater 🐟
                 </button>
                 <button
                 onClick={() => { setSelectedCategory("marine"); handleClearSelection(); }}
