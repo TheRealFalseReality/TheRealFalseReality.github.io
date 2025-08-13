@@ -162,7 +162,7 @@ export default function App() {
         }
       };
       
-      const apiKey = ""; // IMPORTANT: LEAVE THIS EMPTY. The environment will handle the API key.
+      const apiKey = "AIzaSyC_LqNFttcJ_0jhA-GM9bgWgsPJ2TImSuk"; // IMPORTANT: LEAVE THIS EMPTY. The environment will handle the API key.
       const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
 
       let response;
@@ -285,7 +285,7 @@ export default function App() {
                 <span className="text-white">AI Compatibility Helper</span>
             </nav>
         </div>
-        <div className="p-4 sm:p-8 pb-48">
+        <div className="p-4 sm:p-8 pb-24">
             <header className="text-center mb-6">
                 <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#D8f3ff] drop-shadow-md">Aquarium Compatibility Helper</h1>
                 <p className="mt-2 text-lg sm:text-xl text-[#D8f3ff]">Select fish to get a compatibility report.</p>

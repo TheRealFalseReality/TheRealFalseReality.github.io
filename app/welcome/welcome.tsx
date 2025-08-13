@@ -106,7 +106,7 @@ export default function Welcome() {
       {showAdminLogin && <AdminLoginModal onClose={() => setShowAdminLogin(false)} onLogin={handleAdminLogin} />}
 
       <div className="absolute bottom-4 right-4 text-xs text-gray-500">
-        Version 25.8.12
+        Version 25.8.13
       </div>
     </div>
   );
