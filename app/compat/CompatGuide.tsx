@@ -96,6 +96,12 @@ const UpArrowIcon = () => (
         <path fillRule="evenodd" d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" clipRule="evenodd" />
     </svg>
 );
+const CopyIcon = () => (
+    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+        <path d="M7 9a2 2 0 012-2h6a2 2 0 012 2v6a2 2 0 01-2 2H9a2 2 0 01-2-2V9z" />
+        <path d="M4 3a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H4z" />
+    </svg>
+);
 
 // --- HELPER FUNCTIONS ---
 const createId = (name: string): string => name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
@@ -130,6 +136,7 @@ interface CompatibilityFormModalProps {
   activeTab: string;
   onSave: (originalFish: Fish, updatedFish: Fish) => void;
   onClose: () => void;
+  onCopy: (fish: Fish) => void;
 }
 interface JsonViewerModalProps {
   jsonString: string;
@@ -293,7 +300,7 @@ const AddFishModal = ({ onSave, onClose, activeTab }: AddFishModalProps) => {
     );
 };
 
-const CompatibilityFormModal = ({ fishData, freshwaterFish, saltwaterFish, activeTab, onSave, onClose }: CompatibilityFormModalProps) => {
+const CompatibilityFormModal = ({ fishData, freshwaterFish, saltwaterFish, activeTab, onSave, onClose, onCopy }: CompatibilityFormModalProps) => {
     const allCurrentWaterTypeFishNames = (activeTab === 'freshwater' ? freshwaterFish : saltwaterFish).map(f => f.name);
     const allOtherFish = allCurrentWaterTypeFishNames.filter(name => name !== fishData.name);
     
@@ -362,9 +369,13 @@ const CompatibilityFormModal = ({ fishData, freshwaterFish, saltwaterFish, activ
             <div className="bg-gray-800 text-white rounded-2xl shadow-2xl p-8 max-w-7xl w-full mx-auto overflow-y-auto max-h-[90vh]">
                 <div className="flex justify-between items-center mb-6 border-b border-gray-600 pb-3">
                     <h3 className="text-3xl font-bold text-yellow-300">Edit Data for {fishData.name}</h3>
-                    <button onClick={onClose} className="p-2 rounded-full bg-gray-600 text-white hover:bg-gray-700 transition" title="Close"><CloseIcon /></button>
+                    <div className="flex justify-end space-x-3">
+                        <button type="button" onClick={() => onCopy(fishData)} className="flex items-center space-x-2 px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition transform hover:scale-105 shadow-md"><CopyIcon /><span>Copy</span></button>
+                        <button type="button" onClick={onClose} className="px-6 py-2 bg-gray-600 text-white rounded-lg hover:bg-gray-700 transition transform hover:scale-105 shadow-md">Cancel</button>
+                        <button type="submit" form="compatibility-form" className="px-6 py-2 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition transform hover:scale-105 shadow-md">Save Changes</button>
+                    </div>
                 </div>
-                <form onSubmit={handleSubmit} className="space-y-5">
+                <form id="compatibility-form" onSubmit={handleSubmit} className="space-y-5">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div>
                             <label htmlFor="edit-fish-name" className="block text-sm font-medium text-gray-300 mb-2">Fish Name</label>
@@ -393,10 +404,6 @@ const CompatibilityFormModal = ({ fishData, freshwaterFish, saltwaterFish, activ
                             <ListComponent title="With Caution" list={lists.caution} listName="caution" onClick={handleItemClick} isSelected={(item) => selectedList === 'caution' && selectedItems.includes(item)} headerClass="text-yellow-400 border-yellow-800" />
                             <ListComponent title="Not Compatible" list={lists.notCompatible} listName="notCompatible" onClick={handleItemClick} isSelected={(item) => selectedList === 'notCompatible' && selectedItems.includes(item)} headerClass="text-red-400 border-red-800" />
                         </div>
-                    </div>
-                    <div className="flex justify-end space-x-3 mt-6">
-                        <button type="button" onClick={onClose} className="px-6 py-2 bg-gray-600 text-white rounded-lg hover:bg-gray-700 transition transform hover:scale-105 shadow-md">Cancel</button>
-                        <button type="submit" className="px-6 py-2 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition transform hover:scale-105 shadow-md">Save Changes</button>
                     </div>
                 </form>
             </div>
@@ -474,6 +481,7 @@ export default function App() {
     const [modalInfo, setModalInfo] = useState({ title: '', message: '', show: false });
     const fileInputRef = useRef<HTMLInputElement>(null);
     const letterRefs = useRef<{[key: string]: HTMLDivElement | null}>({});
+    const [isDirty, setIsDirty] = useState(false);
 
     const processFishArray = (fishArray: RawFish[]): Fish[] => fishArray.map(fish => ({ id: createId(fish.name), name: fish.name, latinName: fish.latinName, imageURL: fish.imageURL, compatible: fish.compatible || [], caution: fish.withCaution || [], notCompatible: fish.notCompatible || [] }));
 
@@ -489,6 +497,21 @@ export default function App() {
           setLoading(false);
         }
       }, []);
+
+    useEffect(() => {
+        const handleBeforeUnload = (event: BeforeUnloadEvent) => {
+            if (isDirty) {
+                event.preventDefault();
+                event.returnValue = ''; // Required for Chrome
+            }
+        };
+
+        window.addEventListener('beforeunload', handleBeforeUnload);
+
+        return () => {
+            window.removeEventListener('beforeunload', handleBeforeUnload);
+        };
+    }, [isDirty]);
 
     // --- DATA HANDLING ---
     const handleSaveNewFish = (name: string, latinName: string, imageURL: string, waterType: string) => {
@@ -510,6 +533,7 @@ export default function App() {
             setSaltwaterFish(updateList);
         }
 
+        setIsDirty(true);
         setShowAddFishModal(false);
         setActiveTab(waterType);
         setCurrentFish(newFish);
@@ -540,6 +564,7 @@ export default function App() {
         } else {
             setSaltwaterFish(updateFishList);
         }
+        setIsDirty(true);
         setShowCompatibilityModal(false);
     };
 
@@ -565,6 +590,7 @@ export default function App() {
             setSaltwaterFish(updateFishList);
         }
 
+        setIsDirty(true);
         setShowDeleteModal(false);
         setFishToDelete(null);
     };
@@ -574,6 +600,7 @@ export default function App() {
         try {
             setFreshwaterFish(processFishArray((fishData as any).freshwater || []).sort((a: Fish, b: Fish) => a.name.localeCompare(b.name)));
             setSaltwaterFish(processFishArray((fishData as any).marine || []).sort((a: Fish, b: Fish) => a.name.localeCompare(b.name)));
+            setIsDirty(true);
             setModalInfo({ title: 'Success', message: 'Data has been reset to the original state!', show: true });
         } catch (error: any) {
             setError(`Failed to reset data: ${error.message}`);
@@ -595,6 +622,7 @@ export default function App() {
                 const data = JSON.parse(text);
                 setFreshwaterFish(processFishArray(data.freshwater || []).sort((a, b) => a.name.localeCompare(b.name)));
                 setSaltwaterFish(processFishArray(data.marine || []).sort((a, b) => a.name.localeCompare(b.name)));
+                setIsDirty(true);
                 setModalInfo({ title: 'Success', message: 'Data loaded from file!', show: true });
             } catch (error: any) {
                 setError(`Failed to parse file: ${error.message}`);
@@ -643,6 +671,56 @@ export default function App() {
             top: 0,
             behavior: 'smooth',
         });
+    };
+
+    const handleCopyFish = (fishToCopy: Fish) => {
+        const newName = `${fishToCopy.name} (Duplicate)`;
+        const newFish: Fish = {
+            ...fishToCopy,
+            id: createId(newName),
+            name: newName,
+        };
+
+        const updateList = (list: Fish[]) => {
+            // Add the new fish
+            let newList = [...list, newFish];
+
+            // Update other fish to be compatible with the new fish
+            newList = newList.map(fish => {
+                if (fish.id === newFish.id) return fish; // Don't modify the new fish itself
+
+                const newCompatible = fish.compatible.includes(fishToCopy.name)
+                    ? [...fish.compatible, newName].sort()
+                    : fish.compatible;
+
+                const newCaution = fish.caution.includes(fishToCopy.name)
+                    ? [...fish.caution, newName].sort()
+                    : fish.caution;
+
+                const newNotCompatible = fish.notCompatible.includes(fishToCopy.name)
+                    ? [...fish.notCompatible, newName].sort()
+                    : fish.notCompatible;
+
+                return { ...fish, compatible: newCompatible, caution: newCaution, notCompatible: newNotCompatible };
+            });
+
+            return newList.sort((a, b) => a.name.localeCompare(b.name));
+        };
+
+        if (activeTab === 'freshwater') {
+            setFreshwaterFish(updateList);
+        } else {
+            setSaltwaterFish(updateList);
+        }
+        
+        setIsDirty(true);
+        // Close the current modal and open the new one
+        setShowCompatibilityModal(false);
+        // Use a timeout to ensure the state updates before opening the new modal
+        setTimeout(() => {
+            setCurrentFish(newFish);
+            setShowCompatibilityModal(true);
+        }, 100);
     };
 
     const availableLetters = useMemo(() => {
@@ -707,7 +785,11 @@ export default function App() {
                             <div className="flex items-center flex-wrap gap-2">
                                 <input type="file" ref={fileInputRef} onChange={handleFileChange} accept=".json" className="hidden" />
                                 <button onClick={() => fileInputRef.current?.click()} className="flex items-center space-x-2 px-4 py-2 bg-indigo-600 text-white font-semibold rounded-full shadow-lg hover:bg-indigo-700 transition transform hover:scale-105"><UploadIcon /><span>Load from File</span></button>
-                                <button onClick={handleViewJson} className="flex items-center space-x-2 px-4 py-2 bg-teal-600 text-white font-semibold rounded-full shadow-lg hover:bg-teal-700 transition transform hover:scale-105"><EyeIcon /><span>View/Export JSON</span></button>
+                                <button onClick={handleViewJson} className={`flex items-center space-x-2 px-4 py-2 bg-teal-600 text-white font-semibold rounded-full shadow-lg hover:bg-teal-700 transition transform hover:scale-105 relative ${isDirty ? 'animate-pulse' : ''}`}>
+                                    {isDirty && <span className="absolute -top-1 -right-1 flex h-3 w-3"><span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span><span className="relative inline-flex rounded-full h-3 w-3 bg-red-500"></span></span>}
+                                    <EyeIcon />
+                                    <span>View/Export JSON</span>
+                                </button>
                                 <button onClick={() => setShowResetModal(true)} className="flex items-center space-x-2 px-4 py-2 bg-purple-600 text-white font-semibold rounded-full shadow-lg hover:bg-purple-700 transition transform hover:scale-105"><RefreshIcon /><span>Reset Data</span></button>
                                 <button onClick={() => setShowAddFishModal(true)} className="flex items-center space-x-2 px-6 py-2 bg-green-600 text-white font-semibold rounded-full shadow-lg hover:bg-green-700 transition transform hover:scale-105"><PlusIcon /><span>Add New Fish</span></button>
                             </div>
@@ -719,7 +801,7 @@ export default function App() {
 
                 {/* Modals */}
                 {showAddFishModal && <AddFishModal onSave={handleSaveNewFish} onClose={() => setShowAddFishModal(false)} activeTab={activeTab} />}
-                {showCompatibilityModal && currentFish && <CompatibilityFormModal fishData={currentFish} onSave={handleSaveCompatibility} onClose={() => setShowCompatibilityModal(false)} freshwaterFish={freshwaterFish} saltwaterFish={saltwaterFish} activeTab={activeTab} />}
+                {showCompatibilityModal && currentFish && <CompatibilityFormModal fishData={currentFish} onSave={handleSaveCompatibility} onClose={() => setShowCompatibilityModal(false)} onCopy={handleCopyFish} freshwaterFish={freshwaterFish} saltwaterFish={saltwaterFish} activeTab={activeTab} />}
                 {showDeleteModal && fishToDelete && <CustomModal title="Confirm Deletion" message={`Are you sure you want to delete "${fishToDelete.name}"? This action and all its references cannot be undone.`} onClose={() => setShowDeleteModal(false)} onConfirm={confirmDelete} showConfirm={true} />}
                 {showResetModal && <CustomModal title="Confirm Reset" message="Are you sure you want to reset all data? This will discard all your local changes." onClose={() => setShowResetModal(false)} onConfirm={handleResetData} showConfirm={true} />}
                 {modalInfo.show && <CustomModal title={modalInfo.title} message={modalInfo.message} onClose={() => setModalInfo({ ...modalInfo, show: false })} />}
