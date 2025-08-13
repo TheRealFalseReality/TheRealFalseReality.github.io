@@ -4,7 +4,7 @@ import fishData from '../data/fishcompat.json';
 
 export function meta() {
   return [
-    { title: "AI Compatibility Helper | AquaPi AI" },
+    { title: "AI Compatibility Calculator | AquaPi AI" },
     { name: "description", content: "Get an AI-powered compatibility report for your aquarium fish." },
   ];
 }
@@ -283,12 +283,12 @@ export default function App() {
             <nav className="container mx-auto px-6 lg:px-10 py-3 text-sm text-gray-400">
                 <Link to="/" className="hover:text-white transition-colors">Home</Link>
                 <span className="mx-2">&gt;</span>
-                <span className="text-white">AI Compatibility Helper</span>
+                <span className="text-white">AI Compatibility Calculator</span>
             </nav>
         </div>
         <div className="p-4 sm:p-8 pb-24">
             <header className="text-center mb-6">
-                <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#D8f3ff] drop-shadow-md">Aquarium Compatibility Helper</h1>
+                <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#D8f3ff] drop-shadow-md">AI Compatibility Calculator</h1>
                 <p className="mt-2 text-lg sm:text-xl text-[#D8f3ff]">Select fish to get a compatibility report.</p>
             </header>
 

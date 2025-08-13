@@ -18,6 +18,7 @@ interface Fish {
   imageURL?: string;
   compatible: string[];
   caution: string[];
+  notRecommended: string[];
   notCompatible: string[];
 }
 
@@ -27,11 +28,11 @@ interface RawFish {
   imageURL?: string;
   compatible?: string[];
   withCaution?: string[];
+  notRecommended?: string[];
   notCompatible?: string[];
 }
 
 // --- ICONS ---
-// Note: Icons are kept the same as in the original code.
 const PlusIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
     <path fillRule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clipRule="evenodd" />
@@ -235,9 +236,10 @@ const FishCard = ({ fish, onEdit, onDelete }: FishCardProps) => {
                     <button onClick={() => onDelete(fish.id, fish.name)} className="p-2 rounded-full bg-red-600 text-white hover:bg-red-700 transition duration-300 ease-in-out transform hover:scale-110 shadow-md" title="Delete"><DeleteIcon /></button>
                 </div>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-left flex-grow">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-left flex-grow">
                 <div><h5 className="font-semibold text-green-400 mb-1">Compatible</h5>{renderList(fish.compatible)}</div>
                 <div><h5 className="font-semibold text-yellow-400 mb-1">With Caution</h5>{renderList(fish.caution)}</div>
+                <div><h5 className="font-semibold text-orange-400 mb-1">Not Recommended</h5>{renderList(fish.notRecommended)}</div>
                 <div><h5 className="font-semibold text-red-400 mb-1">Not Compatible</h5>{renderList(fish.notCompatible)}</div>
             </div>
         </div>
@@ -310,9 +312,10 @@ const CompatibilityFormModal = ({ fishData, freshwaterFish, saltwaterFish, activ
     const [lists, setLists] = useState(() => {
         const initialCompatible = new Set(fishData?.compatible || []);
         const initialCaution = new Set(fishData?.caution || []);
+        const initialNotRecommended = new Set(fishData?.notRecommended || []);
         const initialNotCompatible = new Set(fishData?.notCompatible || []);
-        const available = allOtherFish.filter(name => !initialCompatible.has(name) && !initialCaution.has(name) && !initialNotCompatible.has(name)).sort();
-        return { available, compatible: Array.from(initialCompatible).sort(), caution: Array.from(initialCaution).sort(), notCompatible: Array.from(initialNotCompatible).sort() };
+        const available = allOtherFish.filter(name => !initialCompatible.has(name) && !initialCaution.has(name) && !initialNotRecommended.has(name) && !initialNotCompatible.has(name)).sort();
+        return { available, compatible: Array.from(initialCompatible).sort(), caution: Array.from(initialCaution).sort(), notRecommended: Array.from(initialNotRecommended).sort(), notCompatible: Array.from(initialNotCompatible).sort() };
     });
 
     const [selectedItems, setSelectedItems] = useState<string[]>([]);
@@ -333,7 +336,7 @@ const CompatibilityFormModal = ({ fishData, freshwaterFish, saltwaterFish, activ
     };
 
     const handleMove = (fromList: string | null, toList: string) => {
-        if (selectedItems.length === 0 || selectedList !== fromList) return;
+        if (selectedItems.length === 0 || !fromList || fromList === toList) return;
         const newFromList = lists[fromList as keyof typeof lists].filter((item: string) => !selectedItems.includes(item));
         const newToList = [...lists[toList as keyof typeof lists], ...selectedItems].sort();
         setLists(prevLists => ({ ...prevLists, [fromList as string]: newFromList, [toList]: newToList }));
@@ -357,7 +360,8 @@ const CompatibilityFormModal = ({ fishData, freshwaterFish, saltwaterFish, activ
             latinName: latinName.trim(),
             imageURL: imageURL.trim(),
             compatible: lists.compatible, 
-            caution: lists.caution, 
+            caution: lists.caution,
+            notRecommended: lists.notRecommended, 
             notCompatible: lists.notCompatible 
         };
         onSave(fishData, updatedFish);
@@ -365,8 +369,8 @@ const CompatibilityFormModal = ({ fishData, freshwaterFish, saltwaterFish, activ
     };
 
     return (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-sm p-4 animate-fade-in">
-            <div className="bg-gray-800 text-white rounded-2xl shadow-2xl p-8 max-w-7xl w-full mx-auto overflow-y-auto max-h-[90vh]">
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-sm p-6 lg:p-10 animate-fade-in">
+            <div className="bg-gray-800 text-white rounded-2xl shadow-2xl p-8 w-full mx-auto overflow-y-auto max-h-[90vh]">
                 <div className="flex justify-between items-center mb-6 border-b border-gray-600 pb-3">
                     <h3 className="text-3xl font-bold text-yellow-300">Edit Data for {fishData.name}</h3>
                     <div className="flex justify-end space-x-3">
@@ -395,13 +399,15 @@ const CompatibilityFormModal = ({ fishData, freshwaterFish, saltwaterFish, activ
                         <div className="lg:col-span-3"><ListComponent title="Available Fish" list={lists.available} listName="available" onClick={handleItemClick} isSelected={(item) => selectedList === 'available' && selectedItems.includes(item)} headerClass="border-gray-500" /></div>
                         <div className="lg:col-span-1 flex flex-row lg:flex-col items-center justify-center gap-2">
                            <button type="button" onClick={() => handleMove(selectedList, 'available')} className="p-3 bg-gray-600 rounded-full text-white hover:bg-gray-700" title="Move to Available"><LeftArrowIcon /></button>
-                           <button type="button" onClick={() => handleMove('available', 'compatible')} className="p-3 bg-green-600 rounded-full text-white hover:bg-green-700" title="Move to Compatible"><RightArrowIcon /></button>
-                           <button type="button" onClick={() => handleMove('available', 'caution')} className="p-3 bg-yellow-600 rounded-full text-white hover:bg-yellow-700" title="Move to With Caution"><RightArrowIcon /></button>
-                           <button type="button" onClick={() => handleMove('available', 'notCompatible')} className="p-3 bg-red-600 rounded-full text-white hover:bg-red-700" title="Move to Not Compatible"><RightArrowIcon /></button>
+                           <button type="button" onClick={() => handleMove(selectedList, 'compatible')} className="p-3 bg-green-600 rounded-full text-white hover:bg-green-700" title="Move to Compatible"><RightArrowIcon /></button>
+                           <button type="button" onClick={() => handleMove(selectedList, 'caution')} className="p-3 bg-yellow-600 rounded-full text-white hover:bg-yellow-700" title="Move to With Caution"><RightArrowIcon /></button>
+                           <button type="button" onClick={() => handleMove(selectedList, 'notRecommended')} className="p-3 bg-orange-600 rounded-full text-white hover:bg-orange-700" title="Move to Not Recommended"><RightArrowIcon /></button>
+                           <button type="button" onClick={() => handleMove(selectedList, 'notCompatible')} className="p-3 bg-red-600 rounded-full text-white hover:bg-red-700" title="Move to Not Compatible"><RightArrowIcon /></button>
                         </div>
-                        <div className="lg:col-span-8 grid grid-cols-1 sm:grid-cols-3 gap-4">
+                        <div className="lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
                             <ListComponent title="Compatible" list={lists.compatible} listName="compatible" onClick={handleItemClick} isSelected={(item) => selectedList === 'compatible' && selectedItems.includes(item)} headerClass="text-green-400 border-green-800" />
                             <ListComponent title="With Caution" list={lists.caution} listName="caution" onClick={handleItemClick} isSelected={(item) => selectedList === 'caution' && selectedItems.includes(item)} headerClass="text-yellow-400 border-yellow-800" />
+                            <ListComponent title="Not Recommended" list={lists.notRecommended} listName="notRecommended" onClick={handleItemClick} isSelected={(item) => selectedList === 'notRecommended' && selectedItems.includes(item)} headerClass="text-orange-400 border-orange-800" />
                             <ListComponent title="Not Compatible" list={lists.notCompatible} listName="notCompatible" onClick={handleItemClick} isSelected={(item) => selectedList === 'notCompatible' && selectedItems.includes(item)} headerClass="text-red-400 border-red-800" />
                         </div>
                     </div>
@@ -483,7 +489,7 @@ export default function App() {
     const letterRefs = useRef<{[key: string]: HTMLDivElement | null}>({});
     const [isDirty, setIsDirty] = useState(false);
 
-    const processFishArray = (fishArray: RawFish[]): Fish[] => fishArray.map(fish => ({ id: createId(fish.name), name: fish.name, latinName: fish.latinName, imageURL: fish.imageURL, compatible: fish.compatible || [], caution: fish.withCaution || [], notCompatible: fish.notCompatible || [] }));
+    const processFishArray = (fishArray: RawFish[]): Fish[] => fishArray.map(fish => ({ id: createId(fish.name), name: fish.name, latinName: fish.latinName, imageURL: fish.imageURL, compatible: fish.compatible || [], caution: fish.withCaution || [], notRecommended: fish.notRecommended || [], notCompatible: fish.notCompatible || [] }));
 
     useEffect(() => {
         // Load data from the imported JSON file
@@ -521,7 +527,8 @@ export default function App() {
             latinName,
             imageURL,
             compatible: [], 
-            caution: [], 
+            caution: [],
+            notRecommended: [],
             notCompatible: [] 
         };
 
@@ -551,11 +558,23 @@ export default function App() {
             if (fishMap.has(oldName)) {
                 fishMap.delete(oldName);
             }
+            // If name changed, update self-references in compatibility lists
+            if (oldName !== newName) {
+                ['compatible', 'caution', 'notRecommended', 'notCompatible'].forEach(key => {
+                    const list = updatedFishData[key as keyof Fish] as string[];
+                    const index = list.indexOf(oldName);
+                    if (index > -1) {
+                        list[index] = newName;
+                        list.sort();
+                    }
+                });
+            }
             fishMap.set(newName, { ...updatedFishData, name: newName });
     
             const getFishCategory = (fish: Fish, targetName: string): keyof Fish | 'available' => {
                 if (fish.compatible.includes(targetName)) return 'compatible';
                 if (fish.caution.includes(targetName)) return 'caution';
+                if (fish.notRecommended.includes(targetName)) return 'notRecommended';
                 if (fish.notCompatible.includes(targetName)) return 'notCompatible';
                 return 'available';
             };
@@ -566,7 +585,7 @@ export default function App() {
     
                 // Rename references to the edited fish
                 if (oldName !== newName) {
-                    ['compatible', 'caution', 'notCompatible'].forEach(key => {
+                    ['compatible', 'caution', 'notRecommended', 'notCompatible'].forEach(key => {
                         const list = fish[key as keyof Fish] as string[];
                         const index = list.indexOf(oldName);
                         if (index > -1) {
@@ -618,6 +637,7 @@ export default function App() {
                 ...fish,
                 compatible: fish.compatible.filter(name => name !== fishToDelete.name),
                 caution: fish.caution.filter(name => name !== fishToDelete.name),
+                notRecommended: fish.notRecommended.filter(name => name !== fishToDelete.name),
                 notCompatible: fish.notCompatible.filter(name => name !== fishToDelete.name),
             }));
             return list;
@@ -678,6 +698,7 @@ export default function App() {
                 const newFish: any = { ...rest, withCaution: caution };
                 if (!newFish.latinName) delete newFish.latinName;
                 if (!newFish.imageURL) delete newFish.imageURL;
+                if (!newFish.notRecommended || newFish.notRecommended.length === 0) delete newFish.notRecommended;
                 return newFish;
             });
         };
@@ -737,11 +758,15 @@ export default function App() {
                     ? [...fish.caution, newName].sort()
                     : fish.caution;
 
+                const newNotRecommended = fish.notRecommended.includes(fishToCopy.name)
+                    ? [...fish.notRecommended, newName].sort()
+                    : fish.notRecommended;
+
                 const newNotCompatible = fish.notCompatible.includes(fishToCopy.name)
                     ? [...fish.notCompatible, newName].sort()
                     : fish.notCompatible;
 
-                return { ...fish, compatible: newCompatible, caution: newCaution, notCompatible: newNotCompatible };
+                return { ...fish, compatible: newCompatible, caution: newCaution, notRecommended: newNotRecommended, notCompatible: newNotCompatible };
             });
 
             return newList.sort((a, b) => a.name.localeCompare(b.name));
@@ -810,7 +835,7 @@ export default function App() {
             <div className="p-6 lg:p-10 pr-12 lg:pr-16">
                 <AlphabetScroller letters={availableLetters} onLetterClick={handleLetterClick} onScrollToTop={handleScrollToTop} />
 
-                <div className="container mx-auto">
+                <div className="max-w-full px-4">
                     <header className="text-center mb-6">
                         <h1 className="text-4xl lg:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-green-400 mb-2">Aquarium Compatibility Guide</h1>
                         <p className="text-lg text-gray-400">Manage your fish compatibility data.</p>
