@@ -32,6 +32,7 @@
       ],
       "withCaution": [
         "Barbs",
+        "Bettas (Female)",
         "Bettas (Male)",
         "Discus",
         "Freshwater Invertebrates",
@@ -59,6 +60,7 @@
         "Tetras"
       ],
       "notCompatible": [
+        "Bettas (Female)",
         "Bettas (Male)",
         "Fancy Goldfish",
         "Pond Fish"
@@ -81,10 +83,11 @@
       ]
     },
     {
-      "name": "Bettas (Male)",
+      "name": "Bettas (Female)",
       "latinName": "Osphronemidae, Betta splendens",
-      "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_valg19valg19valg.jpg?raw=true",
+      "imageURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/HM_Orange_M_Sarawut.jpg/250px-HM_Orange_M_Sarawut.jpg",
       "compatible": [
+        "Bettas (Male)",
         "Cory Cats",
         "Danios / Minnows",
         "Freshwater Plants",
@@ -110,7 +113,47 @@
       ],
       "withCaution": [
         "Angelfish",
+        "Discus",
+        "Freshwater Invertebrates",
+        "Freshwater Sharks",
+        "Gouramis",
+        "Killifish",
+        "Larger Catfish",
+        "Rainbowfish"
+      ]
+    },
+    {
+      "name": "Bettas (Male)",
+      "latinName": "Osphronemidae, Betta splendens",
+      "imageURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/HM_Orange_M_Sarawut.jpg/250px-HM_Orange_M_Sarawut.jpg",
+      "compatible": [
+        "Bettas (Female)",
+        "Cory Cats",
+        "Danios / Minnows",
+        "Freshwater Plants",
+        "Guppies",
+        "Hatchets",
+        "Loaches",
+        "Mollies",
+        "Platies",
+        "Plecos (Suckerfish)",
+        "Rasboras",
+        "Swordtails",
+        "Tetras"
+      ],
+      "notCompatible": [
+        "Barbs",
         "Bettas (Male)",
+        "Brackish Fish",
+        "Fancy Goldfish",
+        "Malawian Cichlids",
+        "Misc. African Cichlids",
+        "New World Cichlids",
+        "Pond Fish",
+        "Tanganyikan Cichlids"
+      ],
+      "withCaution": [
+        "Angelfish",
         "Discus",
         "Freshwater Invertebrates",
         "Freshwater Sharks",
@@ -127,6 +170,7 @@
       "compatible": [
         "Angelfish",
         "Barbs",
+        "Bettas (Female)",
         "Bettas (Male)",
         "Cory Cats",
         "Danios / Minnows",
@@ -167,6 +211,7 @@
       "compatible": [
         "Angelfish",
         "Barbs",
+        "Bettas (Female)",
         "Bettas (Male)",
         "Cory Cats",
         "Discus",
@@ -230,6 +275,7 @@
       "withCaution": [
         "Angelfish",
         "Barbs",
+        "Bettas (Female)",
         "Bettas (Male)",
         "Freshwater Invertebrates",
         "Freshwater Sharks",
@@ -252,6 +298,7 @@
       "notCompatible": [
         "Angelfish",
         "Barbs",
+        "Bettas (Female)",
         "Bettas (Male)",
         "Brackish Fish",
         "Danios / Minnows",
@@ -290,6 +337,7 @@
       "withCaution": [
         "Angelfish",
         "Barbs",
+        "Bettas (Female)",
         "Bettas (Male)",
         "Brackish Fish",
         "Cory Cats",
@@ -325,6 +373,7 @@
       "compatible": [
         "Angelfish",
         "Barbs",
+        "Bettas (Female)",
         "Bettas (Male)",
         "Cory Cats",
         "Danios / Minnows",
@@ -377,6 +426,7 @@
       ],
       "withCaution": [
         "Angelfish",
+        "Bettas (Female)",
         "Bettas (Male)",
         "Brackish Fish",
         "Cory Cats",
@@ -429,6 +479,7 @@
         "Tanganyikan Cichlids"
       ],
       "withCaution": [
+        "Bettas (Female)",
         "Bettas (Male)",
         "Discus",
         "Freshwater Invertebrates",
@@ -443,6 +494,7 @@
       "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_valg19valg19valg.jpg?raw=true",
       "compatible": [
         "Angelfish",
+        "Bettas (Female)",
         "Bettas (Male)",
         "Cory Cats",
         "Danios / Minnows",
@@ -483,6 +535,7 @@
       "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_valg19valg19valg.jpg?raw=true",
       "compatible": [
         "Angelfish",
+        "Bettas (Female)",
         "Bettas (Male)",
         "Cory Cats",
         "Danios / Minnows",
@@ -549,6 +602,7 @@
       ],
       "withCaution": [
         "Barbs",
+        "Bettas (Female)",
         "Bettas (Male)",
         "Freshwater Invertebrates",
         "Freshwater Sharks",
@@ -570,6 +624,7 @@
       "withCaution": [
         "Angelfish",
         "Barbs",
+        "Bettas (Female)",
         "Bettas (Male)",
         "Brackish Fish",
         "Cory Cats",
@@ -603,6 +658,7 @@
       "compatible": [
         "Angelfish",
         "Barbs",
+        "Bettas (Female)",
         "Bettas (Male)",
         "Cory Cats",
         "Danios / Minnows",
@@ -644,6 +700,7 @@
       ],
       "notCompatible": [
         "Angelfish",
+        "Bettas (Female)",
         "Bettas (Male)",
         "Brackish Fish",
         "Danios / Minnows",
@@ -685,6 +742,7 @@
       ],
       "notCompatible": [
         "Angelfish",
+        "Bettas (Female)",
         "Bettas (Male)",
         "Brackish Fish",
         "Danios / Minnows",
@@ -722,6 +780,7 @@
       "compatible": [
         "Angelfish",
         "Barbs",
+        "Bettas (Female)",
         "Bettas (Male)",
         "Brackish Fish",
         "Cory Cats",
@@ -763,6 +822,7 @@
         "Plecos (Suckerfish)"
       ],
       "notCompatible": [
+        "Bettas (Female)",
         "Bettas (Male)",
         "Fancy Goldfish",
         "Guppies",
@@ -800,6 +860,7 @@
       "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_valg19valg19valg.jpg?raw=true",
       "compatible": [
         "Angelfish",
+        "Bettas (Female)",
         "Bettas (Male)",
         "Cory Cats",
         "Danios / Minnows",
@@ -841,6 +902,7 @@
       "compatible": [
         "Angelfish",
         "Barbs",
+        "Bettas (Female)",
         "Bettas (Male)",
         "Cory Cats",
         "Danios / Minnows",
@@ -884,6 +946,7 @@
       "notCompatible": [
         "Angelfish",
         "Barbs",
+        "Bettas (Female)",
         "Bettas (Male)",
         "Brackish Fish",
         "Cory Cats",
@@ -945,6 +1008,7 @@
         "Tanganyikan Cichlids"
       ],
       "withCaution": [
+        "Bettas (Female)",
         "Bettas (Male)",
         "Brackish Fish",
         "Freshwater Invertebrates",
@@ -960,6 +1024,7 @@
       "compatible": [
         "Angelfish",
         "Barbs",
+        "Bettas (Female)",
         "Bettas (Male)",
         "Cory Cats",
         "Danios / Minnows",
@@ -999,6 +1064,7 @@
       "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_valg19valg19valg.jpg?raw=true",
       "compatible": [
         "Angelfish",
+        "Bettas (Female)",
         "Bettas (Male)",
         "Cory Cats",
         "Danios / Minnows",
@@ -1042,6 +1108,7 @@
       ],
       "notCompatible": [
         "Angelfish",
+        "Bettas (Female)",
         "Bettas (Male)",
         "Brackish Fish",
         "Danios / Minnows",
@@ -1079,6 +1146,7 @@
       "compatible": [
         "Angelfish",
         "Barbs",
+        "Bettas (Female)",
         "Bettas (Male)",
         "Cory Cats",
         "Danios / Minnows",
