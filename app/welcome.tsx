@@ -81,6 +81,7 @@ export default function Welcome() {
         }
       `}</style>
       <div className="text-center animate-fade-in-up">
+        <meta name="google-adsense-account" content="ca-pub-5701077439648731">
         <img src={Logo} alt="AquaPi AI Logo" className="h-24 mx-auto mb-4" />
         <h1 className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-green-400 mb-2">
           Welcome to AquaPi AI
