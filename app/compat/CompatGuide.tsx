@@ -543,22 +543,61 @@ export default function App() {
     const handleSaveCompatibility = (originalFish: Fish, updatedFishData: Fish) => {
         const oldName = originalFish.name;
         const newName = updatedFishData.name;
-        
+    
         const updateFishList = (fishList: Fish[]) => {
-            let list = fishList.filter(f => f.id !== originalFish.id);
-            list.push(updatedFishData);
-
-            if (oldName !== newName) {
-                list = list.map(fish => {
-                    const newCompatible = fish.compatible.map(name => name === oldName ? newName : name).sort();
-                    const newCaution = fish.caution.map(name => name === oldName ? newName : name).sort();
-                    const newNotCompatible = fish.notCompatible.map(name => name === oldName ? newName : name).sort();
-                    return { ...fish, compatible: newCompatible, caution: newCaution, notCompatible: newNotCompatible };
-                });
+            const fishMap = new Map(fishList.map(f => [f.name, { ...f }]));
+    
+            // Update the edited fish in the map
+            if (fishMap.has(oldName)) {
+                fishMap.delete(oldName);
             }
-            return list.sort((a, b) => a.name.localeCompare(b.name));
+            fishMap.set(newName, { ...updatedFishData, name: newName });
+    
+            const getFishCategory = (fish: Fish, targetName: string): keyof Fish | 'available' => {
+                if (fish.compatible.includes(targetName)) return 'compatible';
+                if (fish.caution.includes(targetName)) return 'caution';
+                if (fish.notCompatible.includes(targetName)) return 'notCompatible';
+                return 'available';
+            };
+    
+            // Propagate name changes and reciprocal compatibility
+            for (const [fishName, fish] of fishMap.entries()) {
+                if (fish.id === updatedFishData.id) continue;
+    
+                // Rename references to the edited fish
+                if (oldName !== newName) {
+                    ['compatible', 'caution', 'notCompatible'].forEach(key => {
+                        const list = fish[key as keyof Fish] as string[];
+                        const index = list.indexOf(oldName);
+                        if (index > -1) {
+                            list[index] = newName;
+                            list.sort();
+                        }
+                    });
+                }
+    
+                // Update reciprocal compatibility
+                const originalCategory = getFishCategory(originalFish, fishName);
+                const updatedCategory = getFishCategory(updatedFishData, fishName);
+    
+                if (originalCategory !== updatedCategory) {
+                    // Remove from old category
+                    if (originalCategory !== 'available') {
+                        fish[originalCategory] = (fish[originalCategory] as string[]).filter(name => name !== newName);
+                    }
+                    // Add to new category
+                    if (updatedCategory !== 'available') {
+                        if (!(fish[updatedCategory] as string[]).includes(newName)) {
+                            (fish[updatedCategory] as string[]).push(newName);
+                            (fish[updatedCategory] as string[]).sort();
+                        }
+                    }
+                }
+            }
+    
+            return Array.from(fishMap.values()).sort((a, b) => a.name.localeCompare(b.name));
         };
-
+    
         if (activeTab === 'freshwater') {
             setFreshwaterFish(updateFishList);
         } else {
@@ -644,6 +683,7 @@ export default function App() {
         };
         const jsonData = { freshwater: formatForExport(freshwaterFish), marine: formatForExport(saltwaterFish) };
         setGeneratedJson(JSON.stringify(jsonData, null, 2));
+        setIsDirty(false);
         setShowJsonViewer(true);
     };
 
