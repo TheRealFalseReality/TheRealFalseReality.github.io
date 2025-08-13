@@ -163,7 +163,7 @@ export default function App() {
         }
       };
       
-      const apiKey = "AIzaSyC_LqNFttcJ_0jhA-GM9bgWgsPJ2TImSuk"; // IMPORTANT: LEAVE THIS EMPTY. The environment will handle the API key.
+      const apiKey = process.env.VITE_API_KEY; 
       const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
 
       let response;
