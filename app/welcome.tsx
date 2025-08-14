@@ -9,10 +9,7 @@ const AdminLoginModal = ({ onClose, onLogin }: { onClose: () => void, onLogin: (
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (
-      username === 'TheFalseReality' &&
-      password === 'Masklell10625'
-    ) {
+    if (username === 'TheFalseReality' && password === 'Maskell10625') {
       onLogin();
     } else {
       setError('Invalid username or password');
