@@ -24,6 +24,8 @@ export const links: Route.LinksFunction = () => [
 ];
 
 export function Layout({ children }: { children: React.ReactNode }) {
+  const faviconPath = `${import.meta.env.BASE_URL}favicon.ico`;
+
   return (
     <html lang="en">
       <head>
@@ -31,9 +33,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <Meta />
         <Links />
-        <link rel="icon" href="favicon.ico" />
+        <link rel="icon" href={faviconPath} />
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5701077439648731"
-          crossorigin="anonymous">
+          crossOrigin="anonymous">
         </script>
       </head>
       <body>
