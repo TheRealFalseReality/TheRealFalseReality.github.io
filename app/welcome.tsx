@@ -9,7 +9,10 @@ const AdminLoginModal = ({ onClose, onLogin }: { onClose: () => void, onLogin: (
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (username === 'TheFalseReality' && password === 'Maskell10625') {
+    if (
+      username === import.meta.env.VITE_ADMIN_USERNAME &&
+      password === import.meta.env.VITE_ADMIN_PASSWORD
+    ) {
       onLogin();
     } else {
       setError('Invalid username or password');
@@ -106,7 +109,7 @@ export default function Welcome() {
       {showAdminLogin && <AdminLoginModal onClose={() => setShowAdminLogin(false)} onLogin={handleAdminLogin} />}
 
       <div className="absolute bottom-4 right-4 text-xs text-gray-500">
-        Version 25.8.17
+        Version 25.8.17.1
       </div>
     </div>
   );
