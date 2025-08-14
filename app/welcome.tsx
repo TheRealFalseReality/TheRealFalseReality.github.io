@@ -92,7 +92,7 @@ export default function Welcome() {
             to="/compat-ai"
             className="inline-block bg-green-600 text-white font-semibold px-8 py-3 rounded-full shadow-lg hover:bg-green-700 transition transform hover:scale-105"
         >
-            Launch Compatibility Helper
+            Launch Compatibility Calculator
         </Link>
       </div>
 
@@ -100,13 +100,13 @@ export default function Welcome() {
         onClick={() => setShowAdminLogin(true)}
         className="absolute bottom-4 left-4 bg-gray-700 text-white font-semibold px-4 py-2 text-sm rounded-full shadow-lg hover:bg-gray-600 transition transform hover:scale-105"
       >
-        Admin: Compatibility Guide
+        Admin: Compatibility Maker
       </button>
 
       {showAdminLogin && <AdminLoginModal onClose={() => setShowAdminLogin(false)} onLogin={handleAdminLogin} />}
 
       <div className="absolute bottom-4 right-4 text-xs text-gray-500">
-        Version 25.8.17.5
+        Version 25.8.17.6
       </div>
     </div>
   );

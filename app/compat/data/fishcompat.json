@@ -25,13 +25,13 @@
       ],
       "notCompatible": [
         "Brackish Fish",
-        "Cichlids - Lake Malawian/Victoria (Mbuna, Haplochromis)",
+        "Cichlids - Lake Malawian/Victoria",
         "Cichlids - Lake Tanganyikan"
       ],
       "withCaution": [
         "Barbs",
         "Bettas (Female) ♀",
-        "Cichlids - South American (New World)",
+        "Cichlids - American",
         "Danios / Minnows",
         "Discus",
         "Goldfish",
@@ -65,14 +65,14 @@
         "Pond Fish"
       ],
       "notCompatible": [
-        "Cichlids - Lake Malawian/Victoria (Mbuna, Haplochromis)",
+        "Cichlids - Lake Malawian/Victoria",
         "Cichlids - Lake Tanganyikan"
       ],
       "withCaution": [
         "Angelfish (Male) ♂",
         "Barbs",
         "Bettas (Female) ♀",
-        "Cichlids - South American (New World)",
+        "Cichlids - American",
         "Danios / Minnows",
         "Discus",
         "Freshwater Sharks",
@@ -108,12 +108,12 @@
         "Tetras"
       ],
       "notRecommended": [
-        "Cichlids - South American (New World)",
+        "Cichlids - American",
         "Pond Fish"
       ],
       "notCompatible": [
         "Bettas (Male) ♂",
-        "Cichlids - Lake Malawian/Victoria (Mbuna, Haplochromis)",
+        "Cichlids - Lake Malawian/Victoria",
         "Cichlids - Lake Tanganyikan"
       ],
       "withCaution": [
@@ -151,9 +151,9 @@
       ],
       "notCompatible": [
         "Brackish Fish",
-        "Cichlids - Lake Malawian/Victoria (Mbuna, Haplochromis)",
-        "Cichlids - Lake Tanganyikan",
-        "Cichlids - South American (New World)"
+        "Cichlids - American",
+        "Cichlids - Lake Malawian/Victoria",
+        "Cichlids - Lake Tanganyikan"
       ],
       "withCaution": [
         "Angelfish (Female) ♀",
@@ -193,9 +193,9 @@
       "notCompatible": [
         "Barbs",
         "Brackish Fish",
-        "Cichlids - Lake Malawian/Victoria (Mbuna, Haplochromis)",
+        "Cichlids - American",
+        "Cichlids - Lake Malawian/Victoria",
         "Cichlids - Lake Tanganyikan",
-        "Cichlids - South American (New World)",
         "Pond Fish"
       ],
       "withCaution": [
@@ -211,102 +211,17 @@
       ]
     },
     {
-      "name": "Cichlids - Lake Malawian/Victoria (Mbuna, Haplochromis)",
-      "latinName": "Various",
-      "imageURL": "https://aquariumscience.org/wp-content/uploads/2021/09/240-Malawi-Cichlid-Aquarium.jpg",
-      "compatible": [
-        "Cichlids - Lake Malawian/Victoria (Mbuna, Haplochromis)"
-      ],
-      "notRecommended": [
-        "Cichlids - Lake Tanganyikan",
-        "Cichlids - South American (New World)",
-        "Freshwater Plants"
-      ],
-      "notCompatible": [
-        "Angelfish (Female) ♀",
-        "Angelfish (Male) ♂",
-        "Barbs",
-        "Bettas (Female) ♀",
-        "Bettas (Male) ♂",
-        "Brackish Fish",
-        "Cory Cats",
-        "Danios / Minnows",
-        "Discus",
-        "Freshwater Sharks",
-        "Freshwater Shrimp",
-        "Goldfish",
-        "Gouramis",
-        "Guppies",
-        "Hatchets",
-        "Killifish",
-        "Loaches",
-        "Mollies / Platies / Swordtails",
-        "Pond Fish",
-        "Rainbowfish",
-        "Rasboras",
-        "Tetras"
-      ],
-      "withCaution": [
-        "Cichlids - Lake Malawian/Victoria (Mbuna, Haplochromis)",
-        "Freshwater Snails",
-        "Larger Catfish",
-        "Plecos (Suckerfish)"
-      ]
-    },
-    {
-      "name": "Cichlids - Lake Tanganyikan",
-      "latinName": "Various",
-      "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOqmr3Blt64vaGDbAVpCu2dDTOuT77sZRjfA&s",
-      "compatible": [
-        "Cichlids - Lake Tanganyikan"
-      ],
-      "notRecommended": [
-        "Cichlids - Lake Malawian/Victoria (Mbuna, Haplochromis)",
-        "Cichlids - South American (New World)",
-        "Freshwater Plants"
-      ],
-      "notCompatible": [
-        "Angelfish (Female) ♀",
-        "Angelfish (Male) ♂",
-        "Barbs",
-        "Bettas (Female) ♀",
-        "Bettas (Male) ♂",
-        "Brackish Fish",
-        "Cory Cats",
-        "Danios / Minnows",
-        "Discus",
-        "Freshwater Sharks",
-        "Freshwater Shrimp",
-        "Goldfish",
-        "Gouramis",
-        "Guppies",
-        "Hatchets",
-        "Killifish",
-        "Loaches",
-        "Mollies / Platies / Swordtails",
-        "Pond Fish",
-        "Rainbowfish",
-        "Rasboras",
-        "Tetras"
-      ],
-      "withCaution": [
-        "Freshwater Snails",
-        "Larger Catfish",
-        "Plecos (Suckerfish)"
-      ]
-    },
-    {
-      "name": "Cichlids - South American (New World)",
-      "latinName": "Various",
+      "name": "Cichlids - American",
+      "latinName": "New World - Cichlidae",
       "imageURL": "https://cdn11.bigcommerce.com/s-kkon4imfg5/images/stencil/1280x1280/products/6625/5076/apis5hxpw__42939.1607360200.jpg?c=2",
       "compatible": [
-        "Cichlids - South American (New World)",
+        "Cichlids - American",
         "Larger Catfish",
         "Plecos (Suckerfish)"
       ],
       "notRecommended": [
         "Barbs",
-        "Cichlids - Lake Malawian/Victoria (Mbuna, Haplochromis)",
+        "Cichlids - Lake Malawian/Victoria",
         "Cichlids - Lake Tanganyikan",
         "Cory Cats",
         "Danios / Minnows",
@@ -335,6 +250,91 @@
         "Freshwater Sharks",
         "Freshwater Snails",
         "Goldfish"
+      ]
+    },
+    {
+      "name": "Cichlids - Lake Malawian/Victoria",
+      "latinName": "Mbuna, Haplochromis",
+      "imageURL": "https://aquariumscience.org/wp-content/uploads/2021/09/240-Malawi-Cichlid-Aquarium.jpg",
+      "compatible": [
+        "Cichlids - Lake Malawian/Victoria"
+      ],
+      "notRecommended": [
+        "Cichlids - American",
+        "Cichlids - Lake Tanganyikan",
+        "Freshwater Plants"
+      ],
+      "notCompatible": [
+        "Angelfish (Female) ♀",
+        "Angelfish (Male) ♂",
+        "Barbs",
+        "Bettas (Female) ♀",
+        "Bettas (Male) ♂",
+        "Brackish Fish",
+        "Cory Cats",
+        "Danios / Minnows",
+        "Discus",
+        "Freshwater Sharks",
+        "Freshwater Shrimp",
+        "Goldfish",
+        "Gouramis",
+        "Guppies",
+        "Hatchets",
+        "Killifish",
+        "Loaches",
+        "Mollies / Platies / Swordtails",
+        "Pond Fish",
+        "Rainbowfish",
+        "Rasboras",
+        "Tetras"
+      ],
+      "withCaution": [
+        "Cichlids - Lake Malawian/Victoria",
+        "Freshwater Snails",
+        "Larger Catfish",
+        "Plecos (Suckerfish)"
+      ]
+    },
+    {
+      "name": "Cichlids - Lake Tanganyikan",
+      "latinName": "Cyphotilapia, Xenotilapia",
+      "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOqmr3Blt64vaGDbAVpCu2dDTOuT77sZRjfA&s",
+      "compatible": [
+        "Cichlids - Lake Tanganyikan"
+      ],
+      "notRecommended": [
+        "Cichlids - American",
+        "Cichlids - Lake Malawian/Victoria",
+        "Freshwater Plants"
+      ],
+      "notCompatible": [
+        "Angelfish (Female) ♀",
+        "Angelfish (Male) ♂",
+        "Barbs",
+        "Bettas (Female) ♀",
+        "Bettas (Male) ♂",
+        "Brackish Fish",
+        "Cory Cats",
+        "Danios / Minnows",
+        "Discus",
+        "Freshwater Sharks",
+        "Freshwater Shrimp",
+        "Goldfish",
+        "Gouramis",
+        "Guppies",
+        "Hatchets",
+        "Killifish",
+        "Loaches",
+        "Mollies / Platies / Swordtails",
+        "Pond Fish",
+        "Rainbowfish",
+        "Rasboras",
+        "Tetras"
+      ],
+      "withCaution": [
+        "Freshwater Snails",
+        "Larger Catfish",
+        "Plecos (Suckerfish)"
       ]
     },
     {
@@ -367,12 +367,12 @@
         "Tetras"
       ],
       "notRecommended": [
-        "Cichlids - South American (New World)",
+        "Cichlids - American",
         "Pond Fish"
       ],
       "notCompatible": [
         "Brackish Fish",
-        "Cichlids - Lake Malawian/Victoria (Mbuna, Haplochromis)",
+        "Cichlids - Lake Malawian/Victoria",
         "Cichlids - Lake Tanganyikan"
       ],
       "withCaution": [
@@ -406,11 +406,11 @@
         "Tetras"
       ],
       "notRecommended": [
-        "Cichlids - South American (New World)",
+        "Cichlids - American",
         "Pond Fish"
       ],
       "notCompatible": [
-        "Cichlids - Lake Malawian/Victoria (Mbuna, Haplochromis)",
+        "Cichlids - Lake Malawian/Victoria",
         "Cichlids - Lake Tanganyikan"
       ],
       "withCaution": [
@@ -445,7 +445,7 @@
       ],
       "notCompatible": [
         "Brackish Fish",
-        "Cichlids - Lake Malawian/Victoria (Mbuna, Haplochromis)",
+        "Cichlids - Lake Malawian/Victoria",
         "Cichlids - Lake Tanganyikan",
         "Freshwater Shrimp",
         "Goldfish",
@@ -456,7 +456,7 @@
         "Angelfish (Male) ♂",
         "Barbs",
         "Bettas (Female) ♀",
-        "Cichlids - South American (New World)",
+        "Cichlids - American",
         "Freshwater Sharks",
         "Gouramis",
         "Larger Catfish",
@@ -491,9 +491,9 @@
         "Tetras"
       ],
       "notRecommended": [
-        "Cichlids - Lake Malawian/Victoria (Mbuna, Haplochromis)",
+        "Cichlids - American",
+        "Cichlids - Lake Malawian/Victoria",
         "Cichlids - Lake Tanganyikan",
-        "Cichlids - South American (New World)",
         "Larger Catfish"
       ],
       "notCompatible": [],
@@ -531,7 +531,7 @@
         "Pond Fish"
       ],
       "notCompatible": [
-        "Cichlids - Lake Malawian/Victoria (Mbuna, Haplochromis)",
+        "Cichlids - Lake Malawian/Victoria",
         "Cichlids - Lake Tanganyikan"
       ],
       "withCaution": [
@@ -539,7 +539,7 @@
         "Bettas (Female) ♀",
         "Bettas (Male) ♂",
         "Brackish Fish",
-        "Cichlids - South American (New World)",
+        "Cichlids - American",
         "Discus",
         "Freshwater Sharks",
         "Freshwater Shrimp",
@@ -574,9 +574,9 @@
         "Angelfish (Male) ♂"
       ],
       "notCompatible": [
-        "Cichlids - Lake Malawian/Victoria (Mbuna, Haplochromis)",
+        "Cichlids - American",
+        "Cichlids - Lake Malawian/Victoria",
         "Cichlids - Lake Tanganyikan",
-        "Cichlids - South American (New World)",
         "Discus",
         "Larger Catfish"
       ],
@@ -622,14 +622,14 @@
       "notCompatible": [],
       "withCaution": [
         "Brackish Fish",
-        "Cichlids - Lake Malawian/Victoria (Mbuna, Haplochromis)",
-        "Cichlids - Lake Tanganyikan",
-        "Cichlids - South American (New World)"
+        "Cichlids - American",
+        "Cichlids - Lake Malawian/Victoria",
+        "Cichlids - Lake Tanganyikan"
       ]
     },
     {
       "name": "Goldfish",
-      "latinName": "Cyprinidae, Carassius auratus",
+      "latinName": "Cyprinidae",
       "imageURL": "https://guidesly.com/static/394845ea6476ea6f42f999b343c601ec/5f471/Guidesly_Goldfish_737f6b7de8.jpg",
       "compatible": [
         "Cory Cats",
@@ -653,7 +653,7 @@
       ],
       "notCompatible": [
         "Brackish Fish",
-        "Cichlids - Lake Malawian/Victoria (Mbuna, Haplochromis)",
+        "Cichlids - Lake Malawian/Victoria",
         "Cichlids - Lake Tanganyikan",
         "Discus"
       ],
@@ -661,7 +661,7 @@
         "Angelfish (Female) ♀",
         "Angelfish (Male) ♂",
         "Barbs",
-        "Cichlids - South American (New World)",
+        "Cichlids - American",
         "Danios / Minnows",
         "Freshwater Plants",
         "Freshwater Sharks",
@@ -697,12 +697,12 @@
         "Tetras"
       ],
       "notRecommended": [
-        "Cichlids - South American (New World)",
+        "Cichlids - American",
         "Pond Fish"
       ],
       "notCompatible": [
         "Brackish Fish",
-        "Cichlids - Lake Malawian/Victoria (Mbuna, Haplochromis)",
+        "Cichlids - Lake Malawian/Victoria",
         "Cichlids - Lake Tanganyikan"
       ],
       "withCaution": [
@@ -743,9 +743,9 @@
       ],
       "notCompatible": [
         "Brackish Fish",
-        "Cichlids - Lake Malawian/Victoria (Mbuna, Haplochromis)",
-        "Cichlids - Lake Tanganyikan",
-        "Cichlids - South American (New World)"
+        "Cichlids - American",
+        "Cichlids - Lake Malawian/Victoria",
+        "Cichlids - Lake Tanganyikan"
       ],
       "withCaution": [
         "Angelfish (Female) ♀",
@@ -783,12 +783,12 @@
         "Tetras"
       ],
       "notRecommended": [
-        "Cichlids - South American (New World)",
+        "Cichlids - American",
         "Pond Fish"
       ],
       "notCompatible": [
         "Brackish Fish",
-        "Cichlids - Lake Malawian/Victoria (Mbuna, Haplochromis)",
+        "Cichlids - Lake Malawian/Victoria",
         "Cichlids - Lake Tanganyikan"
       ],
       "withCaution": [
@@ -823,12 +823,12 @@
         "Tetras"
       ],
       "notRecommended": [
-        "Cichlids - South American (New World)",
+        "Cichlids - American",
         "Pond Fish"
       ],
       "notCompatible": [
         "Brackish Fish",
-        "Cichlids - Lake Malawian/Victoria (Mbuna, Haplochromis)",
+        "Cichlids - Lake Malawian/Victoria",
         "Cichlids - Lake Tanganyikan"
       ],
       "withCaution": [
@@ -842,7 +842,7 @@
       "latinName": "Ictaluridae, Pimelodidae",
       "imageURL": "https://cdn.britannica.com/22/141422-050-75094F72/Red-tail-catfish.jpg",
       "compatible": [
-        "Cichlids - South American (New World)",
+        "Cichlids - American",
         "Freshwater Snails",
         "Goldfish",
         "Larger Catfish",
@@ -865,7 +865,7 @@
         "Bettas (Female) ♀",
         "Bettas (Male) ♂",
         "Brackish Fish",
-        "Cichlids - Lake Malawian/Victoria (Mbuna, Haplochromis)",
+        "Cichlids - Lake Malawian/Victoria",
         "Cichlids - Lake Tanganyikan",
         "Cory Cats",
         "Danios / Minnows",
@@ -881,7 +881,7 @@
     },
     {
       "name": "Loaches",
-      "latinName": "Cobitidae, Botiidae, Gyrinocheilidae, Botia, Pangio",
+      "latinName": "Cobitidae, Botiidae, Pangio",
       "imageURL": "https://www.thesprucepets.com/thmb/soLID44NcoIUw_Un3aIvUHuhNyM=/2121x0/filters:no_upscale():strip_icc()/GettyImages-1143074116-dc4533ee798349e5a58048b6d62e0aa4.jpg",
       "compatible": [
         "Angelfish (Female) ♀",
@@ -908,11 +908,11 @@
         "Tetras"
       ],
       "notRecommended": [
-        "Cichlids - South American (New World)",
+        "Cichlids - American",
         "Pond Fish"
       ],
       "notCompatible": [
-        "Cichlids - Lake Malawian/Victoria (Mbuna, Haplochromis)",
+        "Cichlids - Lake Malawian/Victoria",
         "Cichlids - Lake Tanganyikan"
       ],
       "withCaution": [
@@ -949,12 +949,12 @@
         "Tetras"
       ],
       "notRecommended": [
-        "Cichlids - South American (New World)",
+        "Cichlids - American",
         "Larger Catfish",
         "Pond Fish"
       ],
       "notCompatible": [
-        "Cichlids - Lake Malawian/Victoria (Mbuna, Haplochromis)",
+        "Cichlids - Lake Malawian/Victoria",
         "Cichlids - Lake Tanganyikan"
       ],
       "withCaution": [
@@ -973,7 +973,7 @@
         "Barbs",
         "Bettas (Female) ♀",
         "Bettas (Male) ♂",
-        "Cichlids - South American (New World)",
+        "Cichlids - American",
         "Cory Cats",
         "Danios / Minnows",
         "Freshwater Plants",
@@ -996,7 +996,7 @@
       "notCompatible": [],
       "withCaution": [
         "Brackish Fish",
-        "Cichlids - Lake Malawian/Victoria (Mbuna, Haplochromis)",
+        "Cichlids - Lake Malawian/Victoria",
         "Cichlids - Lake Tanganyikan",
         "Discus",
         "Larger Catfish"
@@ -1034,9 +1034,9 @@
       "notCompatible": [
         "Bettas (Male) ♂",
         "Brackish Fish",
-        "Cichlids - Lake Malawian/Victoria (Mbuna, Haplochromis)",
+        "Cichlids - American",
+        "Cichlids - Lake Malawian/Victoria",
         "Cichlids - Lake Tanganyikan",
-        "Cichlids - South American (New World)",
         "Discus"
       ],
       "withCaution": [
@@ -1073,11 +1073,11 @@
         "Tetras"
       ],
       "notRecommended": [
-        "Cichlids - South American (New World)",
+        "Cichlids - American",
         "Pond Fish"
       ],
       "notCompatible": [
-        "Cichlids - Lake Malawian/Victoria (Mbuna, Haplochromis)",
+        "Cichlids - Lake Malawian/Victoria",
         "Cichlids - Lake Tanganyikan"
       ],
       "withCaution": [
@@ -1112,13 +1112,13 @@
         "Tetras"
       ],
       "notRecommended": [
-        "Cichlids - South American (New World)",
+        "Cichlids - American",
         "Larger Catfish",
         "Pond Fish"
       ],
       "notCompatible": [
         "Brackish Fish",
-        "Cichlids - Lake Malawian/Victoria (Mbuna, Haplochromis)",
+        "Cichlids - Lake Malawian/Victoria",
         "Cichlids - Lake Tanganyikan"
       ],
       "withCaution": [
@@ -1155,13 +1155,13 @@
         "Tetras"
       ],
       "notRecommended": [
-        "Cichlids - South American (New World)",
+        "Cichlids - American",
         "Larger Catfish",
         "Pond Fish"
       ],
       "notCompatible": [
         "Brackish Fish",
-        "Cichlids - Lake Malawian/Victoria (Mbuna, Haplochromis)",
+        "Cichlids - Lake Malawian/Victoria",
         "Cichlids - Lake Tanganyikan"
       ],
       "withCaution": [
