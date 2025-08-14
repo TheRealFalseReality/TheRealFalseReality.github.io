@@ -1,13 +1,15 @@
 {
   "freshwater": [
     {
-      "name": "Angelfish",
+      "name": "Angelfish (Female)",
       "latinName": "Cichlidae, Pterophyllum",
-      "imageURL": "https://pethelpful.com/.image/w_3840,q_auto:good,c_limit/MTc0OTY4OTI5MzQwMzAyNzg4/how-to-keep-angelfish-tropical-tank-set-up.jpg",
+      "imageURL": "https://assets.petco.com/petco/image/upload/f_auto,q_auto/freshwater-angelfish-caresheet-hero-image",
       "compatible": [
-        "Angelfish",
+        "Angelfish (Female)",
+        "Angelfish (Male)",
         "Cory Cats",
         "Freshwater Plants",
+        "Freshwater Sharks",
         "Freshwater Snails",
         "Gouramis",
         "Hatchets",
@@ -30,6 +32,49 @@
         "Tanganyikan Cichlids"
       ],
       "withCaution": [
+        "Barbs",
+        "Bettas (Female)",
+        "Danios / Minnows",
+        "Discus",
+        "Goldfish",
+        "Guppies",
+        "Larger Catfish",
+        "Mollies",
+        "New World Cichlids",
+        "Platies",
+        "Tetras"
+      ]
+    },
+    {
+      "name": "Angelfish (Male)",
+      "latinName": "Cichlidae, Pterophyllum",
+      "imageURL": "https://aquaticsunlimited.com/wp-content/uploads/2024/02/ANGELFISH-FW-BLUE-MARBLE-Pterophyllum-scalare.jpg",
+      "compatible": [
+        "Angelfish (Female)",
+        "Cory Cats",
+        "Freshwater Plants",
+        "Freshwater Snails",
+        "Gouramis",
+        "Hatchets",
+        "Killifish",
+        "Loaches",
+        "Plecos (Suckerfish)",
+        "Rainbowfish",
+        "Rasboras",
+        "Swordtails"
+      ],
+      "notRecommended": [
+        "Bettas (Male)",
+        "Freshwater Shrimp",
+        "Pond Fish"
+      ],
+      "notCompatible": [
+        "Malawian Cichlids",
+        "Misc. African Cichlids",
+        "Tanganyikan Cichlids"
+      ],
+      "withCaution": [
+        "Angelfish (Male)",
         "Barbs",
         "Bettas (Female)",
         "Danios / Minnows",
@@ -79,7 +124,8 @@
         "Tanganyikan Cichlids"
       ],
       "withCaution": [
-        "Angelfish",
+        "Angelfish (Female)",
+        "Angelfish (Male)",
         "Bettas (Female)",
         "Brackish Fish",
         "Discus",
@@ -121,7 +167,8 @@
         "Tanganyikan Cichlids"
       ],
       "withCaution": [
-        "Angelfish",
+        "Angelfish (Female)",
+        "Angelfish (Male)",
         "Barbs",
         "Discus",
         "Freshwater Sharks",
@@ -151,7 +198,8 @@
         "Tetras"
       ],
       "notRecommended": [
-        "Angelfish",
+        "Angelfish (Female)",
+        "Angelfish (Male)",
         "Discus",
         "Guppies"
       ],
@@ -181,7 +229,8 @@
       "latinName": "Callichthyidae, Corydoras",
       "imageURL": "https://cdn.shopify.com/s/files/1/0311/3149/files/corydoras_sterbai.jpg?v=1605035087",
       "compatible": [
-        "Angelfish",
+        "Angelfish (Female)",
+        "Angelfish (Male)",
         "Barbs",
         "Bettas (Female)",
         "Bettas (Male)",
@@ -189,6 +238,7 @@
         "Danios / Minnows",
         "Discus",
         "Freshwater Plants",
+        "Freshwater Sharks",
         "Freshwater Shrimp",
         "Freshwater Snails",
         "Goldfish",
@@ -212,7 +262,6 @@
         "Tanganyikan Cichlids"
       ],
       "withCaution": [
-        "Freshwater Sharks",
         "Larger Catfish",
         "New World Cichlids",
         "Pond Fish"
@@ -253,7 +302,8 @@
         "Tanganyikan Cichlids"
       ],
       "withCaution": [
-        "Angelfish",
+        "Angelfish (Female)",
+        "Angelfish (Male)",
         "Brackish Fish",
         "Goldfish",
         "Larger Catfish",
@@ -294,7 +344,8 @@
         "Tanganyikan Cichlids"
       ],
       "withCaution": [
-        "Angelfish",
+        "Angelfish (Female)",
+        "Angelfish (Male)",
         "Barbs",
         "Bettas (Female)",
         "Freshwater Sharks",
@@ -307,9 +358,10 @@
     {
       "name": "Freshwater Plants",
       "latinName": "Various",
-      "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_valg19valg19valg.jpg?raw=true",
+      "imageURL": "https://splashyfishstore.com/cdn/shop/articles/Low_Light_Freshwater_Plants_for_Aquarium.jpg?v=1751212578",
       "compatible": [
-        "Angelfish",
+        "Angelfish (Female)",
+        "Angelfish (Male)",
         "Barbs",
         "Bettas (Female)",
         "Bettas (Male)",
@@ -332,59 +384,63 @@
         "Swordtails",
         "Tetras"
       ],
+      "notRecommended": [
+        "Malawian Cichlids",
+        "Misc. African Cichlids",
+        "New World Cichlids",
+        "Tanganyikan Cichlids"
+      ],
       "notCompatible": [],
       "withCaution": [
         "Brackish Fish",
         "Goldfish",
         "Larger Catfish",
-        "Malawian Cichlids",
-        "Misc. African Cichlids",
-        "New World Cichlids",
         "Plecos (Suckerfish)",
-        "Pond Fish",
-        "Tanganyikan Cichlids"
+        "Pond Fish"
       ]
     },
     {
       "name": "Freshwater Sharks",
       "latinName": "Cyprinidae, Epalzeorhynchos",
-      "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_valg19valg19valg.jpg?raw=true",
+      "imageURL": "https://cdn.shopify.com/s/files/1/0311/3149/files/Red-tailed_black_shark_Epalzeorhynchos_bicolor.jpg?v=1665077847",
       "compatible": [
+        "Angelfish (Female)",
         "Barbs",
+        "Cory Cats",
         "Danios / Minnows",
         "Freshwater Plants",
-        "Gouramis",
-        "Loaches",
-        "Mollies",
-        "Plecos (Suckerfish)",
-        "Rainbowfish"
-      ],
-      "notCompatible": [
-        "Goldfish",
-        "Pond Fish"
-      ],
-      "withCaution": [
-        "Angelfish",
-        "Bettas (Female)",
-        "Bettas (Male)",
-        "Brackish Fish",
-        "Cory Cats",
-        "Discus",
-        "Freshwater Sharks",
-        "Freshwater Shrimp",
         "Freshwater Snails",
+        "Gouramis",
         "Guppies",
         "Hatchets",
         "Killifish",
-        "Larger Catfish",
+        "Loaches",
+        "Mollies",
+        "Platies",
+        "Plecos (Suckerfish)",
+        "Rainbowfish",
+        "Rasboras",
+        "Swordtails",
+        "Tetras"
+      ],
+      "notRecommended": [
         "Malawian Cichlids",
         "Misc. African Cichlids",
         "New World Cichlids",
-        "Platies",
-        "Rasboras",
-        "Swordtails",
-        "Tanganyikan Cichlids",
-        "Tetras"
+        "Pond Fish",
+        "Tanganyikan Cichlids"
+      ],
+      "notCompatible": [],
+      "withCaution": [
+        "Angelfish (Male)",
+        "Bettas (Female)",
+        "Bettas (Male)",
+        "Brackish Fish",
+        "Discus",
+        "Freshwater Sharks",
+        "Freshwater Shrimp",
+        "Goldfish",
+        "Larger Catfish"
       ]
     },
     {
@@ -412,7 +468,8 @@
         "Tetras"
       ],
       "notRecommended": [
-        "Angelfish"
+        "Angelfish (Female)",
+        "Angelfish (Male)"
       ],
       "notCompatible": [
         "Discus",
@@ -435,13 +492,15 @@
       "latinName": "Various",
       "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_valg19valg19valg.jpg?raw=true",
       "compatible": [
-        "Angelfish",
+        "Angelfish (Female)",
+        "Angelfish (Male)",
         "Barbs",
         "Bettas (Female)",
         "Cory Cats",
         "Danios / Minnows",
         "Discus",
         "Freshwater Plants",
+        "Freshwater Sharks",
         "Freshwater Shrimp",
         "Freshwater Snails"
       ],
@@ -449,7 +508,6 @@
       "withCaution": [
         "Bettas (Male)",
         "Brackish Fish",
-        "Freshwater Sharks",
         "Goldfish",
         "Gouramis",
         "Guppies",
@@ -488,7 +546,6 @@
         "Bettas (Male)",
         "Brackish Fish",
         "Discus",
-        "Freshwater Sharks",
         "Gouramis",
         "Guppies",
         "Hatchets",
@@ -506,10 +563,12 @@
         "Tetras"
       ],
       "withCaution": [
-        "Angelfish",
+        "Angelfish (Female)",
+        "Angelfish (Male)",
         "Barbs",
         "Danios / Minnows",
         "Freshwater Plants",
+        "Freshwater Sharks",
         "Freshwater Shrimp",
         "Freshwater Snails",
         "Loaches"
@@ -520,7 +579,8 @@
       "latinName": "Osphronemidae, Trichogaster",
       "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_valg19valg19valg.jpg?raw=true",
       "compatible": [
-        "Angelfish",
+        "Angelfish (Female)",
+        "Angelfish (Male)",
         "Barbs",
         "Cory Cats",
         "Danios / Minnows",
@@ -568,6 +628,7 @@
         "Danios / Minnows",
         "Discus",
         "Freshwater Plants",
+        "Freshwater Sharks",
         "Freshwater Shrimp",
         "Gouramis",
         "Guppies",
@@ -594,8 +655,8 @@
         "Tanganyikan Cichlids"
       ],
       "withCaution": [
-        "Angelfish",
-        "Freshwater Sharks",
+        "Angelfish (Female)",
+        "Angelfish (Male)",
         "Freshwater Snails",
         "Larger Catfish",
         "Loaches"
@@ -606,7 +667,8 @@
       "latinName": "Gasteropelecidae, Carnegiella, Gasteropelecus, Thoracocharax",
       "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_valg19valg19valg.jpg?raw=true",
       "compatible": [
-        "Angelfish",
+        "Angelfish (Female)",
+        "Angelfish (Male)",
         "Barbs",
         "Bettas (Female)",
         "Bettas (Male)",
@@ -614,6 +676,7 @@
         "Danios / Minnows",
         "Discus",
         "Freshwater Plants",
+        "Freshwater Sharks",
         "Freshwater Shrimp",
         "Gouramis",
         "Guppies",
@@ -636,7 +699,6 @@
         "Tanganyikan Cichlids"
       ],
       "withCaution": [
-        "Freshwater Sharks",
         "Freshwater Snails",
         "Larger Catfish",
         "New World Cichlids",
@@ -648,12 +710,14 @@
       "latinName": "Aplocheilidae, Nothobranchius",
       "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_valg19valg19valg.jpg?raw=true",
       "compatible": [
-        "Angelfish",
+        "Angelfish (Female)",
+        "Angelfish (Male)",
         "Barbs",
         "Cory Cats",
         "Danios / Minnows",
         "Discus",
         "Freshwater Plants",
+        "Freshwater Sharks",
         "Freshwater Shrimp",
         "Gouramis",
         "Guppies",
@@ -678,7 +742,6 @@
       "withCaution": [
         "Bettas (Female)",
         "Bettas (Male)",
-        "Freshwater Sharks",
         "Freshwater Snails",
         "Larger Catfish",
         "Loaches",
@@ -698,7 +761,8 @@
         "Tetras"
       ],
       "withCaution": [
-        "Angelfish",
+        "Angelfish (Female)",
+        "Angelfish (Male)",
         "Barbs",
         "Bettas (Female)",
         "Bettas (Male)",
@@ -732,7 +796,8 @@
       "latinName": "Cobitidae, Botiidae, Gyrinocheilidae, Botia, Pangio",
       "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_valg19valg19valg.jpg?raw=true",
       "compatible": [
-        "Angelfish",
+        "Angelfish (Female)",
+        "Angelfish (Male)",
         "Barbs",
         "Bettas (Female)",
         "Bettas (Male)",
@@ -776,8 +841,13 @@
       "compatible": [
         "Malawian Cichlids"
       ],
+      "notRecommended": [
+        "Freshwater Plants",
+        "Freshwater Sharks"
+      ],
       "notCompatible": [
-        "Angelfish",
+        "Angelfish (Female)",
+        "Angelfish (Male)",
         "Barbs",
         "Bettas (Female)",
         "Bettas (Male)",
@@ -800,8 +870,6 @@
         "Tetras"
       ],
       "withCaution": [
-        "Freshwater Plants",
-        "Freshwater Sharks",
         "Freshwater Snails",
         "Larger Catfish",
         "Loaches",
@@ -819,8 +887,13 @@
         "Misc. African Cichlids",
         "Plecos (Suckerfish)"
       ],
+      "notRecommended": [
+        "Freshwater Plants",
+        "Freshwater Sharks"
+      ],
       "notCompatible": [
-        "Angelfish",
+        "Angelfish (Female)",
+        "Angelfish (Male)",
         "Barbs",
         "Bettas (Female)",
         "Bettas (Male)",
@@ -843,8 +916,6 @@
         "Tetras"
       ],
       "withCaution": [
-        "Freshwater Plants",
-        "Freshwater Sharks",
         "Freshwater Snails",
         "Larger Catfish",
         "Loaches",
@@ -884,7 +955,8 @@
         "Tanganyikan Cichlids"
       ],
       "withCaution": [
-        "Angelfish",
+        "Angelfish (Female)",
+        "Angelfish (Male)",
         "Bettas (Male)",
         "Freshwater Snails",
         "Larger Catfish",
@@ -903,6 +975,10 @@
         "New World Cichlids",
         "Plecos (Suckerfish)"
       ],
+      "notRecommended": [
+        "Freshwater Plants",
+        "Freshwater Sharks"
+      ],
       "notCompatible": [
         "Bettas (Female)",
         "Bettas (Male)",
@@ -913,13 +989,12 @@
         "Pond Fish"
       ],
       "withCaution": [
-        "Angelfish",
+        "Angelfish (Female)",
+        "Angelfish (Male)",
         "Barbs",
         "Brackish Fish",
         "Cory Cats",
         "Discus",
-        "Freshwater Plants",
-        "Freshwater Sharks",
         "Freshwater Snails",
         "Hatchets",
         "Killifish",
@@ -948,6 +1023,7 @@
         "Danios / Minnows",
         "Discus",
         "Freshwater Plants",
+        "Freshwater Sharks",
         "Freshwater Shrimp",
         "Gouramis",
         "Guppies",
@@ -969,8 +1045,8 @@
         "Tanganyikan Cichlids"
       ],
       "withCaution": [
-        "Angelfish",
-        "Freshwater Sharks",
+        "Angelfish (Female)",
+        "Angelfish (Male)",
         "Freshwater Snails",
         "Larger Catfish",
         "Loaches",
@@ -983,7 +1059,8 @@
       "latinName": "Loricariidae, Hypostomus, Pterygoplichthys",
       "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_valg19valg19valg.jpg?raw=true",
       "compatible": [
-        "Angelfish",
+        "Angelfish (Female)",
+        "Angelfish (Male)",
         "Barbs",
         "Bettas (Female)",
         "Bettas (Male)",
@@ -1028,15 +1105,16 @@
         "Pond Fish"
       ],
       "notRecommended": [
-        "Angelfish",
+        "Angelfish (Female)",
+        "Angelfish (Male)",
         "Barbs",
-        "Bettas (Female)"
+        "Bettas (Female)",
+        "Freshwater Sharks"
       ],
       "notCompatible": [
         "Bettas (Male)",
         "Brackish Fish",
         "Discus",
-        "Freshwater Sharks",
         "Gouramis",
         "Guppies",
         "Hatchets",
@@ -1068,7 +1146,8 @@
       "latinName": "Melanotaeniidae, Melanotaenia, Glossolepis",
       "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_valg19valg19valg.jpg?raw=true",
       "compatible": [
-        "Angelfish",
+        "Angelfish (Female)",
+        "Angelfish (Male)",
         "Barbs",
         "Cory Cats",
         "Danios / Minnows",
@@ -1110,7 +1189,8 @@
       "latinName": "Cyprinidae, Rasbora",
       "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_valg19valg19valg.jpg?raw=true",
       "compatible": [
-        "Angelfish",
+        "Angelfish (Female)",
+        "Angelfish (Male)",
         "Barbs",
         "Bettas (Female)",
         "Bettas (Male)",
@@ -1118,6 +1198,7 @@
         "Danios / Minnows",
         "Discus",
         "Freshwater Plants",
+        "Freshwater Sharks",
         "Freshwater Shrimp",
         "Gouramis",
         "Guppies",
@@ -1141,7 +1222,6 @@
         "Tanganyikan Cichlids"
       ],
       "withCaution": [
-        "Freshwater Sharks",
         "Freshwater Snails",
         "Larger Catfish",
         "New World Cichlids"
@@ -1152,7 +1232,8 @@
       "latinName": "Poeciliidae, Xiphophorus",
       "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_valg19valg19valg.jpg?raw=true",
       "compatible": [
-        "Angelfish",
+        "Angelfish (Female)",
+        "Angelfish (Male)",
         "Barbs",
         "Bettas (Female)",
         "Bettas (Male)",
@@ -1197,8 +1278,13 @@
         "Plecos (Suckerfish)",
         "Tanganyikan Cichlids"
       ],
+      "notRecommended": [
+        "Freshwater Plants",
+        "Freshwater Sharks"
+      ],
       "notCompatible": [
-        "Angelfish",
+        "Angelfish (Female)",
+        "Angelfish (Male)",
         "Barbs",
         "Bettas (Female)",
         "Bettas (Male)",
@@ -1221,8 +1307,6 @@
         "Tetras"
       ],
       "withCaution": [
-        "Freshwater Plants",
-        "Freshwater Sharks",
         "Freshwater Snails",
         "Larger Catfish",
         "Loaches",
@@ -1242,6 +1326,7 @@
         "Danios / Minnows",
         "Discus",
         "Freshwater Plants",
+        "Freshwater Sharks",
         "Freshwater Shrimp",
         "Guppies",
         "Hatchets",
@@ -1265,8 +1350,8 @@
         "Tanganyikan Cichlids"
       ],
       "withCaution": [
-        "Angelfish",
-        "Freshwater Sharks",
+        "Angelfish (Female)",
+        "Angelfish (Male)",
         "Freshwater Snails",
         "Gouramis",
         "New World Cichlids"
