@@ -1,12 +1,12 @@
 {
   "freshwater": [
     {
-      "name": "Angelfish (Female)",
+      "name": "Angelfish (Female) ♀",
       "latinName": "Cichlidae, Pterophyllum",
       "imageURL": "https://assets.petco.com/petco/image/upload/f_auto,q_auto/freshwater-angelfish-caresheet-hero-image",
       "compatible": [
-        "Angelfish (Female)",
-        "Angelfish (Male)",
+        "Angelfish (Female) ♀",
+        "Angelfish (Male) ♂",
         "Cory Cats",
         "Freshwater Plants",
         "Freshwater Sharks",
@@ -16,41 +16,39 @@
         "Killifish",
         "Loaches",
         "Plecos (Suckerfish)",
-        "Rainbowfish",
-        "Rasboras",
-        "Swordtails"
+        "Rainbowfish"
       ],
       "notRecommended": [
-        "Bettas (Male)",
+        "Bettas (Male) ♂",
         "Freshwater Shrimp",
         "Pond Fish"
       ],
       "notCompatible": [
         "Brackish Fish",
-        "Malawian Cichlids",
-        "Misc. African Cichlids",
-        "Tanganyikan Cichlids"
+        "Cichlids - Lake Malawian/Victoria (Mbuna, Haplochromis)",
+        "Cichlids - Lake Tanganyikan"
       ],
       "withCaution": [
         "Barbs",
-        "Bettas (Female)",
+        "Bettas (Female) ♀",
+        "Cichlids - South American (New World)",
         "Danios / Minnows",
         "Discus",
         "Goldfish",
         "Guppies",
         "Larger Catfish",
-        "Mollies",
-        "New World Cichlids",
-        "Platies",
+        "Mollies / Platies / Swordtails",
+        "Rasboras",
         "Tetras"
       ]
     },
     {
-      "name": "Angelfish (Male)",
+      "name": "Angelfish (Male) ♂",
       "latinName": "Cichlidae, Pterophyllum",
       "imageURL": "https://aquaticsunlimited.com/wp-content/uploads/2024/02/ANGELFISH-FW-BLUE-MARBLE-Pterophyllum-scalare.jpg",
       "compatible": [
-        "Angelfish (Female)",
+        "Angelfish (Female) ♀",
+        "Angelfish (Male) ♂",
         "Cory Cats",
         "Freshwater Plants",
         "Freshwater Snails",
@@ -59,39 +57,36 @@
         "Killifish",
         "Loaches",
         "Plecos (Suckerfish)",
-        "Rainbowfish",
-        "Rasboras",
-        "Swordtails"
+        "Rainbowfish"
       ],
       "notRecommended": [
-        "Bettas (Male)",
+        "Bettas (Male) ♂",
         "Freshwater Shrimp",
         "Pond Fish"
       ],
       "notCompatible": [
-        "Malawian Cichlids",
-        "Misc. African Cichlids",
-        "Tanganyikan Cichlids"
+        "Cichlids - Lake Malawian/Victoria (Mbuna, Haplochromis)",
+        "Cichlids - Lake Tanganyikan"
       ],
       "withCaution": [
-        "Angelfish (Male)",
+        "Angelfish (Male) ♂",
         "Barbs",
-        "Bettas (Female)",
+        "Bettas (Female) ♀",
+        "Cichlids - South American (New World)",
         "Danios / Minnows",
         "Discus",
         "Freshwater Sharks",
         "Goldfish",
         "Guppies",
         "Larger Catfish",
-        "Mollies",
-        "New World Cichlids",
-        "Platies",
+        "Mollies / Platies / Swordtails",
+        "Rasboras",
         "Tetras"
       ]
     },
     {
       "name": "Barbs",
-      "latinName": "Cyprinidae, Barbus",
+      "latinName": "Barbus",
       "imageURL": "https://cdn.shopify.com/s/files/1/0311/3149/files/tiger_barb_in_planted_aquarium.jpg?v=1629404268",
       "compatible": [
         "Barbs",
@@ -106,53 +101,48 @@
         "Hatchets",
         "Killifish",
         "Loaches",
-        "Mollies",
-        "Platies",
+        "Mollies / Platies / Swordtails",
         "Plecos (Suckerfish)",
         "Rainbowfish",
         "Rasboras",
-        "Swordtails",
         "Tetras"
       ],
       "notRecommended": [
+        "Cichlids - South American (New World)",
         "Pond Fish"
       ],
       "notCompatible": [
-        "Bettas (Male)",
-        "Malawian Cichlids",
-        "Misc. African Cichlids",
-        "Tanganyikan Cichlids"
+        "Bettas (Male) ♂",
+        "Cichlids - Lake Malawian/Victoria (Mbuna, Haplochromis)",
+        "Cichlids - Lake Tanganyikan"
       ],
       "withCaution": [
-        "Angelfish (Female)",
-        "Angelfish (Male)",
-        "Bettas (Female)",
+        "Angelfish (Female) ♀",
+        "Angelfish (Male) ♂",
+        "Bettas (Female) ♀",
         "Brackish Fish",
         "Discus",
         "Goldfish",
-        "Larger Catfish",
-        "New World Cichlids"
+        "Larger Catfish"
       ]
     },
     {
-      "name": "Bettas (Female)",
-      "latinName": "Osphronemidae, Betta splendens",
+      "name": "Bettas (Female) ♀",
+      "latinName": "Betta splendens",
       "imageURL": "https://thailandbettafish.com/cdn/shop/collections/Rare_Koi_Betta_Fish_1.png?v=1690009934",
       "compatible": [
-        "Bettas (Female)",
-        "Bettas (Male)",
+        "Bettas (Female) ♀",
+        "Bettas (Male) ♂",
         "Cory Cats",
         "Danios / Minnows",
         "Freshwater Plants",
         "Freshwater Snails",
-        "Guppies",
+        "Gouramis",
         "Hatchets",
         "Loaches",
-        "Mollies",
-        "Platies",
+        "Mollies / Platies / Swordtails",
         "Plecos (Suckerfish)",
-        "Rasboras",
-        "Swordtails",
+        "Rainbowfish",
         "Tetras"
       ],
       "notRecommended": [
@@ -161,67 +151,188 @@
       ],
       "notCompatible": [
         "Brackish Fish",
-        "Malawian Cichlids",
-        "Misc. African Cichlids",
-        "New World Cichlids",
-        "Tanganyikan Cichlids"
+        "Cichlids - Lake Malawian/Victoria (Mbuna, Haplochromis)",
+        "Cichlids - Lake Tanganyikan",
+        "Cichlids - South American (New World)"
       ],
       "withCaution": [
-        "Angelfish (Female)",
-        "Angelfish (Male)",
+        "Angelfish (Female) ♀",
+        "Angelfish (Male) ♂",
         "Barbs",
         "Discus",
         "Freshwater Sharks",
         "Freshwater Shrimp",
-        "Gouramis",
+        "Guppies",
         "Killifish",
         "Larger Catfish",
-        "Rainbowfish"
+        "Rasboras"
       ]
     },
     {
-      "name": "Bettas (Male)",
-      "latinName": "Osphronemidae, Betta splendens",
+      "name": "Bettas (Male) ♂",
+      "latinName": "Betta splendens",
       "imageURL": "https://m.media-amazon.com/images/I/71uEGoSsfiL._UF1000,1000_QL80_.jpg",
       "compatible": [
-        "Bettas (Female)",
-        "Bettas (Male)",
+        "Bettas (Female) ♀",
+        "Bettas (Male) ♂",
         "Cory Cats",
         "Danios / Minnows",
         "Freshwater Plants",
+        "Freshwater Snails",
         "Hatchets",
         "Loaches",
-        "Platies",
-        "Plecos (Suckerfish)",
-        "Rasboras",
-        "Swordtails",
-        "Tetras"
+        "Plecos (Suckerfish)"
       ],
       "notRecommended": [
-        "Angelfish (Female)",
-        "Angelfish (Male)",
+        "Angelfish (Female) ♀",
+        "Angelfish (Male) ♂",
         "Discus",
+        "Goldfish",
         "Guppies"
       ],
       "notCompatible": [
         "Barbs",
         "Brackish Fish",
-        "Goldfish",
-        "Malawian Cichlids",
-        "Misc. African Cichlids",
-        "New World Cichlids",
-        "Pond Fish",
-        "Tanganyikan Cichlids"
+        "Cichlids - Lake Malawian/Victoria (Mbuna, Haplochromis)",
+        "Cichlids - Lake Tanganyikan",
+        "Cichlids - South American (New World)",
+        "Pond Fish"
       ],
       "withCaution": [
         "Freshwater Sharks",
         "Freshwater Shrimp",
-        "Freshwater Snails",
         "Gouramis",
         "Killifish",
         "Larger Catfish",
-        "Mollies",
-        "Rainbowfish"
+        "Mollies / Platies / Swordtails",
+        "Rainbowfish",
+        "Rasboras",
+        "Tetras"
+      ]
+    },
+    {
+      "name": "Cichlids - Lake Malawian/Victoria (Mbuna, Haplochromis)",
+      "latinName": "Melanochromis, Pseudotropheus, Haplochromis, Oreochromis, Paralabidochromis",
+      "imageURL": "https://aquariumscience.org/wp-content/uploads/2021/09/240-Malawi-Cichlid-Aquarium.jpg",
+      "compatible": [],
+      "notRecommended": [
+        "Cichlids - Lake Tanganyikan",
+        "Cichlids - South American (New World)",
+        "Freshwater Plants"
+      ],
+      "notCompatible": [
+        "Angelfish (Female) ♀",
+        "Angelfish (Male) ♂",
+        "Barbs",
+        "Bettas (Female) ♀",
+        "Bettas (Male) ♂",
+        "Brackish Fish",
+        "Cory Cats",
+        "Danios / Minnows",
+        "Discus",
+        "Freshwater Sharks",
+        "Freshwater Shrimp",
+        "Goldfish",
+        "Gouramis",
+        "Guppies",
+        "Hatchets",
+        "Killifish",
+        "Loaches",
+        "Mollies / Platies / Swordtails",
+        "Pond Fish",
+        "Rainbowfish",
+        "Rasboras",
+        "Tetras"
+      ],
+      "withCaution": [
+        "Cichlids - Lake Malawian/Victoria (Mbuna, Haplochromis)",
+        "Freshwater Snails",
+        "Larger Catfish",
+        "Plecos (Suckerfish)"
+      ]
+    },
+    {
+      "name": "Cichlids - Lake Tanganyikan",
+      "latinName": "Asprotilapia, Enantiopus, Haplotaxodon, Microdontochromis",
+      "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOqmr3Blt64vaGDbAVpCu2dDTOuT77sZRjfA&s",
+      "compatible": [
+        "Cichlids - Lake Tanganyikan"
+      ],
+      "notRecommended": [
+        "Cichlids - Lake Malawian/Victoria (Mbuna, Haplochromis)",
+        "Cichlids - South American (New World)",
+        "Freshwater Plants"
+      ],
+      "notCompatible": [
+        "Angelfish (Female) ♀",
+        "Angelfish (Male) ♂",
+        "Barbs",
+        "Bettas (Female) ♀",
+        "Bettas (Male) ♂",
+        "Brackish Fish",
+        "Cory Cats",
+        "Danios / Minnows",
+        "Discus",
+        "Freshwater Sharks",
+        "Freshwater Shrimp",
+        "Goldfish",
+        "Gouramis",
+        "Guppies",
+        "Hatchets",
+        "Killifish",
+        "Loaches",
+        "Mollies / Platies / Swordtails",
+        "Pond Fish",
+        "Rainbowfish",
+        "Rasboras",
+        "Tetras"
+      ],
+      "withCaution": [
+        "Freshwater Snails",
+        "Larger Catfish",
+        "Plecos (Suckerfish)"
+      ]
+    },
+    {
+      "name": "Cichlids - South American (New World)",
+      "latinName": "Astronotini, Cichlini, Heroini, Retroculini",
+      "imageURL": "https://cdn11.bigcommerce.com/s-kkon4imfg5/images/stencil/1280x1280/products/6625/5076/apis5hxpw__42939.1607360200.jpg?c=2",
+      "compatible": [
+        "Cichlids - South American (New World)",
+        "Larger Catfish",
+        "Plecos (Suckerfish)"
+      ],
+      "notRecommended": [
+        "Barbs",
+        "Cichlids - Lake Malawian/Victoria (Mbuna, Haplochromis)",
+        "Cichlids - Lake Tanganyikan",
+        "Cory Cats",
+        "Danios / Minnows",
+        "Freshwater Plants",
+        "Gouramis",
+        "Hatchets",
+        "Killifish",
+        "Loaches",
+        "Mollies / Platies / Swordtails",
+        "Rainbowfish",
+        "Rasboras",
+        "Tetras"
+      ],
+      "notCompatible": [
+        "Bettas (Female) ♀",
+        "Bettas (Male) ♂",
+        "Freshwater Shrimp",
+        "Guppies",
+        "Pond Fish"
+      ],
+      "withCaution": [
+        "Angelfish (Female) ♀",
+        "Angelfish (Male) ♂",
+        "Brackish Fish",
+        "Discus",
+        "Freshwater Sharks",
+        "Freshwater Snails",
+        "Goldfish"
       ]
     },
     {
@@ -229,11 +340,11 @@
       "latinName": "Callichthyidae, Corydoras",
       "imageURL": "https://cdn.shopify.com/s/files/1/0311/3149/files/corydoras_sterbai.jpg?v=1605035087",
       "compatible": [
-        "Angelfish (Female)",
-        "Angelfish (Male)",
+        "Angelfish (Female) ♀",
+        "Angelfish (Male) ♂",
         "Barbs",
-        "Bettas (Female)",
-        "Bettas (Male)",
+        "Bettas (Female) ♀",
+        "Bettas (Male) ♂",
         "Cory Cats",
         "Danios / Minnows",
         "Discus",
@@ -247,34 +358,33 @@
         "Hatchets",
         "Killifish",
         "Loaches",
-        "Mollies",
-        "Platies",
+        "Mollies / Platies / Swordtails",
         "Plecos (Suckerfish)",
         "Rainbowfish",
         "Rasboras",
-        "Swordtails",
         "Tetras"
+      ],
+      "notRecommended": [
+        "Cichlids - South American (New World)",
+        "Pond Fish"
       ],
       "notCompatible": [
         "Brackish Fish",
-        "Malawian Cichlids",
-        "Misc. African Cichlids",
-        "Tanganyikan Cichlids"
+        "Cichlids - Lake Malawian/Victoria (Mbuna, Haplochromis)",
+        "Cichlids - Lake Tanganyikan"
       ],
       "withCaution": [
-        "Larger Catfish",
-        "New World Cichlids",
-        "Pond Fish"
+        "Larger Catfish"
       ]
     },
     {
       "name": "Danios / Minnows",
-      "latinName": "Cyprinidae, Danio",
+      "latinName": "Danio",
       "imageURL": "https://aquaticarts.com/cdn/shop/products/Gold-White-Cloud-Mountain-Minnow-NEW-Small-7.jpg?v=1637805331&width=1080",
       "compatible": [
         "Barbs",
-        "Bettas (Female)",
-        "Bettas (Male)",
+        "Bettas (Female) ♀",
+        "Bettas (Male) ♂",
         "Cory Cats",
         "Danios / Minnows",
         "Discus",
@@ -287,27 +397,26 @@
         "Hatchets",
         "Killifish",
         "Loaches",
-        "Mollies",
-        "Platies",
+        "Mollies / Platies / Swordtails",
         "Plecos (Suckerfish)",
         "Rainbowfish",
         "Rasboras",
-        "Swordtails",
         "Tetras"
       ],
+      "notRecommended": [
+        "Cichlids - South American (New World)",
+        "Pond Fish"
+      ],
       "notCompatible": [
-        "Malawian Cichlids",
-        "Misc. African Cichlids",
-        "New World Cichlids",
-        "Tanganyikan Cichlids"
+        "Cichlids - Lake Malawian/Victoria (Mbuna, Haplochromis)",
+        "Cichlids - Lake Tanganyikan"
       ],
       "withCaution": [
-        "Angelfish (Female)",
-        "Angelfish (Male)",
+        "Angelfish (Female) ♀",
+        "Angelfish (Male) ♂",
         "Brackish Fish",
         "Goldfish",
-        "Larger Catfish",
-        "Pond Fish"
+        "Larger Catfish"
       ]
     },
     {
@@ -320,38 +429,35 @@
         "Discus",
         "Freshwater Plants",
         "Freshwater Snails",
-        "Guppies",
         "Hatchets",
         "Killifish",
         "Loaches",
-        "Mollies",
-        "Platies",
+        "Mollies / Platies / Swordtails",
         "Rainbowfish",
         "Rasboras",
-        "Swordtails",
         "Tetras"
       ],
       "notRecommended": [
-        "Bettas (Male)"
+        "Bettas (Male) ♂",
+        "Guppies"
       ],
       "notCompatible": [
         "Brackish Fish",
+        "Cichlids - Lake Malawian/Victoria (Mbuna, Haplochromis)",
+        "Cichlids - Lake Tanganyikan",
         "Freshwater Shrimp",
         "Goldfish",
-        "Malawian Cichlids",
-        "Misc. African Cichlids",
-        "Pond Fish",
-        "Tanganyikan Cichlids"
+        "Pond Fish"
       ],
       "withCaution": [
-        "Angelfish (Female)",
-        "Angelfish (Male)",
+        "Angelfish (Female) ♀",
+        "Angelfish (Male) ♂",
         "Barbs",
-        "Bettas (Female)",
+        "Bettas (Female) ♀",
+        "Cichlids - South American (New World)",
         "Freshwater Sharks",
         "Gouramis",
         "Larger Catfish",
-        "New World Cichlids",
         "Plecos (Suckerfish)"
       ]
     },
@@ -360,11 +466,11 @@
       "latinName": "Various",
       "imageURL": "https://splashyfishstore.com/cdn/shop/articles/Low_Light_Freshwater_Plants_for_Aquarium.jpg?v=1751212578",
       "compatible": [
-        "Angelfish (Female)",
-        "Angelfish (Male)",
+        "Angelfish (Female) ♀",
+        "Angelfish (Male) ♂",
         "Barbs",
-        "Bettas (Female)",
-        "Bettas (Male)",
+        "Bettas (Female) ♀",
+        "Bettas (Male) ♂",
         "Cory Cats",
         "Danios / Minnows",
         "Discus",
@@ -377,65 +483,61 @@
         "Hatchets",
         "Killifish",
         "Loaches",
-        "Mollies",
-        "Platies",
+        "Mollies / Platies / Swordtails",
         "Rainbowfish",
         "Rasboras",
-        "Swordtails",
         "Tetras"
       ],
       "notRecommended": [
-        "Malawian Cichlids",
-        "Misc. African Cichlids",
-        "New World Cichlids",
-        "Tanganyikan Cichlids"
+        "Cichlids - Lake Malawian/Victoria (Mbuna, Haplochromis)",
+        "Cichlids - Lake Tanganyikan",
+        "Cichlids - South American (New World)",
+        "Larger Catfish"
       ],
       "notCompatible": [],
       "withCaution": [
         "Brackish Fish",
         "Goldfish",
-        "Larger Catfish",
         "Plecos (Suckerfish)",
         "Pond Fish"
       ]
     },
     {
       "name": "Freshwater Sharks",
-      "latinName": "Cyprinidae, Epalzeorhynchos",
+      "latinName": "Epalzeorhynchos",
       "imageURL": "https://cdn.shopify.com/s/files/1/0311/3149/files/Red-tailed_black_shark_Epalzeorhynchos_bicolor.jpg?v=1665077847",
       "compatible": [
-        "Angelfish (Female)",
+        "Angelfish (Female) ♀",
         "Barbs",
         "Cory Cats",
         "Danios / Minnows",
         "Freshwater Plants",
+        "Freshwater Sharks",
         "Freshwater Snails",
         "Gouramis",
         "Guppies",
         "Hatchets",
         "Killifish",
         "Loaches",
-        "Mollies",
-        "Platies",
+        "Mollies / Platies / Swordtails",
         "Plecos (Suckerfish)",
         "Rainbowfish",
         "Rasboras",
-        "Swordtails",
         "Tetras"
       ],
       "notRecommended": [
-        "Malawian Cichlids",
-        "Misc. African Cichlids",
-        "New World Cichlids",
-        "Pond Fish",
-        "Tanganyikan Cichlids"
+        "Pond Fish"
       ],
-      "notCompatible": [],
+      "notCompatible": [
+        "Cichlids - Lake Malawian/Victoria (Mbuna, Haplochromis)",
+        "Cichlids - Lake Tanganyikan"
+      ],
       "withCaution": [
-        "Angelfish (Male)",
-        "Bettas (Female)",
-        "Bettas (Male)",
+        "Angelfish (Male) ♂",
+        "Bettas (Female) ♀",
+        "Bettas (Male) ♂",
         "Brackish Fish",
+        "Cichlids - South American (New World)",
         "Discus",
         "Freshwater Sharks",
         "Freshwater Shrimp",
@@ -459,55 +561,48 @@
         "Hatchets",
         "Killifish",
         "Loaches",
-        "Mollies",
-        "Platies",
+        "Mollies / Platies / Swordtails",
         "Plecos (Suckerfish)",
         "Rainbowfish",
         "Rasboras",
-        "Swordtails",
         "Tetras"
       ],
       "notRecommended": [
-        "Angelfish (Female)",
-        "Angelfish (Male)"
+        "Angelfish (Female) ♀",
+        "Angelfish (Male) ♂"
       ],
       "notCompatible": [
+        "Cichlids - Lake Malawian/Victoria (Mbuna, Haplochromis)",
+        "Cichlids - Lake Tanganyikan",
+        "Cichlids - South American (New World)",
         "Discus",
-        "Malawian Cichlids",
-        "Misc. African Cichlids",
-        "New World Cichlids",
-        "Tanganyikan Cichlids"
+        "Larger Catfish"
       ],
       "withCaution": [
-        "Bettas (Female)",
-        "Bettas (Male)",
+        "Bettas (Female) ♀",
+        "Bettas (Male) ♂",
         "Freshwater Sharks",
         "Goldfish",
-        "Larger Catfish",
         "Pond Fish"
       ]
     },
     {
       "name": "Freshwater Snails",
       "latinName": "Various",
-      "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_valg19valg19valg.jpg?raw=true",
+      "imageURL": "https://m.media-amazon.com/images/I/81+EEpYRHXS.jpg",
       "compatible": [
-        "Angelfish (Female)",
-        "Angelfish (Male)",
+        "Angelfish (Female) ♀",
+        "Angelfish (Male) ♂",
         "Barbs",
-        "Bettas (Female)",
+        "Bettas (Female) ♀",
+        "Bettas (Male) ♂",
         "Cory Cats",
         "Danios / Minnows",
         "Discus",
         "Freshwater Plants",
         "Freshwater Sharks",
         "Freshwater Shrimp",
-        "Freshwater Snails"
-      ],
-      "notCompatible": [],
-      "withCaution": [
-        "Bettas (Male)",
-        "Brackish Fish",
+        "Freshwater Snails",
         "Goldfish",
         "Gouramis",
         "Guppies",
@@ -515,18 +610,19 @@
         "Killifish",
         "Larger Catfish",
         "Loaches",
-        "Malawian Cichlids",
-        "Misc. African Cichlids",
-        "Mollies",
-        "New World Cichlids",
-        "Platies",
+        "Mollies / Platies / Swordtails",
         "Plecos (Suckerfish)",
         "Pond Fish",
         "Rainbowfish",
         "Rasboras",
-        "Swordtails",
-        "Tanganyikan Cichlids",
         "Tetras"
+      ],
+      "notCompatible": [],
+      "withCaution": [
+        "Brackish Fish",
+        "Cichlids - Lake Malawian/Victoria (Mbuna, Haplochromis)",
+        "Cichlids - Lake Tanganyikan",
+        "Cichlids - South American (New World)"
       ]
     },
     {
@@ -535,183 +631,175 @@
       "imageURL": "https://guidesly.com/static/394845ea6476ea6f42f999b343c601ec/5f471/Guidesly_Goldfish_737f6b7de8.jpg",
       "compatible": [
         "Cory Cats",
+        "Freshwater Snails",
         "Goldfish",
-        "Plecos (Suckerfish)",
-        "Pond Fish"
-      ],
-      "notRecommended": [
-        "Bettas (Female)"
-      ],
-      "notCompatible": [
-        "Bettas (Male)",
-        "Brackish Fish",
-        "Discus",
         "Gouramis",
         "Guppies",
         "Hatchets",
         "Killifish",
         "Larger Catfish",
-        "Malawian Cichlids",
-        "Misc. African Cichlids",
-        "Mollies",
-        "New World Cichlids",
-        "Platies",
+        "Mollies / Platies / Swordtails",
+        "Plecos (Suckerfish)",
+        "Pond Fish",
         "Rainbowfish",
         "Rasboras",
-        "Swordtails",
-        "Tanganyikan Cichlids",
         "Tetras"
       ],
+      "notRecommended": [
+        "Bettas (Female) ♀",
+        "Bettas (Male) ♂"
+      ],
+      "notCompatible": [
+        "Brackish Fish",
+        "Cichlids - Lake Malawian/Victoria (Mbuna, Haplochromis)",
+        "Cichlids - Lake Tanganyikan",
+        "Discus"
+      ],
       "withCaution": [
-        "Angelfish (Female)",
-        "Angelfish (Male)",
+        "Angelfish (Female) ♀",
+        "Angelfish (Male) ♂",
         "Barbs",
+        "Cichlids - South American (New World)",
         "Danios / Minnows",
         "Freshwater Plants",
         "Freshwater Sharks",
         "Freshwater Shrimp",
-        "Freshwater Snails",
         "Loaches"
       ]
     },
     {
       "name": "Gouramis",
       "latinName": "Osphronemidae, Trichogaster",
-      "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_valg19valg19valg.jpg?raw=true",
+      "imageURL": "https://aquadiction.world/img/profile/dwarf-gourami.webp",
       "compatible": [
-        "Angelfish (Female)",
-        "Angelfish (Male)",
+        "Angelfish (Female) ♀",
+        "Angelfish (Male) ♂",
         "Barbs",
+        "Bettas (Female) ♀",
         "Cory Cats",
         "Danios / Minnows",
         "Freshwater Plants",
         "Freshwater Sharks",
         "Freshwater Shrimp",
+        "Freshwater Snails",
+        "Goldfish",
         "Gouramis",
         "Guppies",
         "Hatchets",
         "Killifish",
         "Loaches",
-        "Mollies",
-        "Platies",
+        "Mollies / Platies / Swordtails",
         "Plecos (Suckerfish)",
         "Rainbowfish",
         "Rasboras",
-        "Swordtails"
+        "Tetras"
+      ],
+      "notRecommended": [
+        "Cichlids - South American (New World)",
+        "Pond Fish"
       ],
       "notCompatible": [
         "Brackish Fish",
-        "Goldfish",
-        "Malawian Cichlids",
-        "Misc. African Cichlids",
-        "Pond Fish",
-        "Tanganyikan Cichlids"
+        "Cichlids - Lake Malawian/Victoria (Mbuna, Haplochromis)",
+        "Cichlids - Lake Tanganyikan"
       ],
       "withCaution": [
-        "Bettas (Female)",
-        "Bettas (Male)",
+        "Bettas (Male) ♂",
         "Discus",
-        "Freshwater Snails",
-        "Larger Catfish",
-        "New World Cichlids",
-        "Tetras"
+        "Larger Catfish"
       ]
     },
     {
       "name": "Guppies",
       "latinName": "Poeciliidae, Poecilia",
-      "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_valg19valg19valg.jpg?raw=true",
+      "imageURL": "https://aquaticarts.com/cdn/shop/products/Premium-Assorted-Guppy_-Collage-V2-SMALL.jpg?v=1659703899",
       "compatible": [
         "Barbs",
-        "Bettas (Female)",
         "Cory Cats",
         "Danios / Minnows",
-        "Discus",
         "Freshwater Plants",
         "Freshwater Sharks",
         "Freshwater Shrimp",
+        "Freshwater Snails",
+        "Goldfish",
         "Gouramis",
         "Guppies",
         "Hatchets",
         "Killifish",
-        "Mollies",
-        "Platies",
+        "Loaches",
+        "Mollies / Platies / Swordtails",
         "Plecos (Suckerfish)",
         "Rainbowfish",
         "Rasboras",
-        "Swordtails",
         "Tetras"
       ],
       "notRecommended": [
-        "Bettas (Male)"
+        "Bettas (Male) ♂",
+        "Discus",
+        "Larger Catfish",
+        "Pond Fish"
       ],
       "notCompatible": [
         "Brackish Fish",
-        "Goldfish",
-        "Malawian Cichlids",
-        "Misc. African Cichlids",
-        "New World Cichlids",
-        "Pond Fish",
-        "Tanganyikan Cichlids"
+        "Cichlids - Lake Malawian/Victoria (Mbuna, Haplochromis)",
+        "Cichlids - Lake Tanganyikan",
+        "Cichlids - South American (New World)"
       ],
       "withCaution": [
-        "Angelfish (Female)",
-        "Angelfish (Male)",
-        "Freshwater Snails",
-        "Larger Catfish",
-        "Loaches"
+        "Angelfish (Female) ♀",
+        "Angelfish (Male) ♂",
+        "Bettas (Female) ♀"
       ]
     },
     {
       "name": "Hatchets",
       "latinName": "Gasteropelecidae, Carnegiella, Gasteropelecus, Thoracocharax",
-      "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_valg19valg19valg.jpg?raw=true",
+      "imageURL": "https://cdn.shopify.com/s/files/1/0311/3149/files/Thoracocharax_stellatus_-_Spotfin_Hatchetfish.jpg?v=1655225731",
       "compatible": [
-        "Angelfish (Female)",
-        "Angelfish (Male)",
+        "Angelfish (Female) ♀",
+        "Angelfish (Male) ♂",
         "Barbs",
-        "Bettas (Female)",
-        "Bettas (Male)",
+        "Bettas (Female) ♀",
+        "Bettas (Male) ♂",
         "Cory Cats",
         "Danios / Minnows",
         "Discus",
         "Freshwater Plants",
         "Freshwater Sharks",
         "Freshwater Shrimp",
+        "Freshwater Snails",
+        "Goldfish",
         "Gouramis",
         "Guppies",
         "Hatchets",
         "Killifish",
         "Loaches",
-        "Mollies",
-        "Platies",
+        "Mollies / Platies / Swordtails",
         "Plecos (Suckerfish)",
+        "Rainbowfish",
         "Rasboras",
-        "Swordtails",
         "Tetras"
+      ],
+      "notRecommended": [
+        "Cichlids - South American (New World)",
+        "Pond Fish"
       ],
       "notCompatible": [
         "Brackish Fish",
-        "Goldfish",
-        "Malawian Cichlids",
-        "Misc. African Cichlids",
-        "Pond Fish",
-        "Tanganyikan Cichlids"
+        "Cichlids - Lake Malawian/Victoria (Mbuna, Haplochromis)",
+        "Cichlids - Lake Tanganyikan"
       ],
       "withCaution": [
-        "Freshwater Snails",
-        "Larger Catfish",
-        "New World Cichlids",
-        "Rainbowfish"
+        "Larger Catfish"
       ]
     },
     {
       "name": "Killifish",
       "latinName": "Aplocheilidae, Nothobranchius",
-      "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_valg19valg19valg.jpg?raw=true",
+      "imageURL": "https://aqualibs.com/images/news/2024/03/11/2-Killifish.webp",
       "compatible": [
-        "Angelfish (Female)",
-        "Angelfish (Male)",
+        "Angelfish (Female) ♀",
+        "Angelfish (Male) ♂",
         "Barbs",
         "Cory Cats",
         "Danios / Minnows",
@@ -719,218 +807,125 @@
         "Freshwater Plants",
         "Freshwater Sharks",
         "Freshwater Shrimp",
+        "Freshwater Snails",
+        "Goldfish",
         "Gouramis",
         "Guppies",
         "Hatchets",
         "Killifish",
-        "Mollies",
-        "Platies",
+        "Loaches",
+        "Mollies / Platies / Swordtails",
         "Plecos (Suckerfish)",
         "Rainbowfish",
         "Rasboras",
-        "Swordtails",
         "Tetras"
+      ],
+      "notRecommended": [
+        "Cichlids - South American (New World)",
+        "Pond Fish"
       ],
       "notCompatible": [
         "Brackish Fish",
-        "Goldfish",
-        "Malawian Cichlids",
-        "Misc. African Cichlids",
-        "Pond Fish",
-        "Tanganyikan Cichlids"
+        "Cichlids - Lake Malawian/Victoria (Mbuna, Haplochromis)",
+        "Cichlids - Lake Tanganyikan"
       ],
       "withCaution": [
-        "Bettas (Female)",
-        "Bettas (Male)",
-        "Freshwater Snails",
-        "Larger Catfish",
-        "Loaches",
-        "New World Cichlids"
+        "Bettas (Female) ♀",
+        "Bettas (Male) ♂",
+        "Larger Catfish"
       ]
     },
     {
       "name": "Larger Catfish",
-      "latinName": "Pimelodidae",
-      "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_valg19valg19valg.jpg?raw=true",
+      "latinName": "Bagridae, Ictaluridae, Pimelodidae, Siluridae",
+      "imageURL": "https://cdn.britannica.com/22/141422-050-75094F72/Red-tail-catfish.jpg",
       "compatible": [
-        "Larger Catfish"
-      ],
-      "notCompatible": [
+        "Cichlids - South American (New World)",
+        "Freshwater Snails",
         "Goldfish",
-        "Pond Fish",
+        "Larger Catfish",
+        "Pond Fish"
+      ],
+      "notRecommended": [
+        "Freshwater Plants",
+        "Guppies",
+        "Mollies / Platies / Swordtails",
+        "Rasboras",
         "Tetras"
       ],
+      "notCompatible": [
+        "Freshwater Shrimp"
+      ],
       "withCaution": [
-        "Angelfish (Female)",
-        "Angelfish (Male)",
+        "Angelfish (Female) ♀",
+        "Angelfish (Male) ♂",
         "Barbs",
-        "Bettas (Female)",
-        "Bettas (Male)",
+        "Bettas (Female) ♀",
+        "Bettas (Male) ♂",
         "Brackish Fish",
+        "Cichlids - Lake Malawian/Victoria (Mbuna, Haplochromis)",
+        "Cichlids - Lake Tanganyikan",
         "Cory Cats",
         "Danios / Minnows",
         "Discus",
-        "Freshwater Plants",
         "Freshwater Sharks",
-        "Freshwater Shrimp",
-        "Freshwater Snails",
         "Gouramis",
-        "Guppies",
         "Hatchets",
         "Killifish",
         "Loaches",
-        "Malawian Cichlids",
-        "Misc. African Cichlids",
-        "Mollies",
-        "New World Cichlids",
-        "Platies",
         "Plecos (Suckerfish)",
-        "Rainbowfish",
-        "Rasboras",
-        "Swordtails",
-        "Tanganyikan Cichlids"
+        "Rainbowfish"
       ]
     },
     {
       "name": "Loaches",
       "latinName": "Cobitidae, Botiidae, Gyrinocheilidae, Botia, Pangio",
-      "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_valg19valg19valg.jpg?raw=true",
+      "imageURL": "https://www.thesprucepets.com/thmb/soLID44NcoIUw_Un3aIvUHuhNyM=/2121x0/filters:no_upscale():strip_icc()/GettyImages-1143074116-dc4533ee798349e5a58048b6d62e0aa4.jpg",
       "compatible": [
-        "Angelfish (Female)",
-        "Angelfish (Male)",
+        "Angelfish (Female) ♀",
+        "Angelfish (Male) ♂",
         "Barbs",
-        "Bettas (Female)",
-        "Bettas (Male)",
+        "Bettas (Female) ♀",
+        "Bettas (Male) ♂",
         "Cory Cats",
         "Danios / Minnows",
         "Discus",
         "Freshwater Plants",
         "Freshwater Sharks",
         "Freshwater Shrimp",
+        "Freshwater Snails",
         "Gouramis",
+        "Guppies",
         "Hatchets",
+        "Killifish",
         "Loaches",
+        "Mollies / Platies / Swordtails",
         "Plecos (Suckerfish)",
         "Rainbowfish",
         "Rasboras",
         "Tetras"
       ],
-      "notCompatible": [
+      "notRecommended": [
+        "Cichlids - South American (New World)",
         "Pond Fish"
       ],
-      "withCaution": [
-        "Brackish Fish",
-        "Freshwater Snails",
-        "Goldfish",
-        "Guppies",
-        "Killifish",
-        "Larger Catfish",
-        "Malawian Cichlids",
-        "Misc. African Cichlids",
-        "Mollies",
-        "New World Cichlids",
-        "Platies",
-        "Swordtails",
-        "Tanganyikan Cichlids"
-      ]
-    },
-    {
-      "name": "Malawian Cichlids",
-      "latinName": "Various",
-      "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_valg19valg19valg.jpg?raw=true",
-      "compatible": [
-        "Malawian Cichlids"
-      ],
-      "notRecommended": [
-        "Freshwater Plants",
-        "Freshwater Sharks"
-      ],
       "notCompatible": [
-        "Angelfish (Female)",
-        "Angelfish (Male)",
-        "Barbs",
-        "Bettas (Female)",
-        "Bettas (Male)",
-        "Brackish Fish",
-        "Cory Cats",
-        "Danios / Minnows",
-        "Discus",
-        "Freshwater Shrimp",
-        "Goldfish",
-        "Gouramis",
-        "Guppies",
-        "Hatchets",
-        "Killifish",
-        "Mollies",
-        "Platies",
-        "Pond Fish",
-        "Rainbowfish",
-        "Rasboras",
-        "Swordtails",
-        "Tetras"
+        "Cichlids - Lake Malawian/Victoria (Mbuna, Haplochromis)",
+        "Cichlids - Lake Tanganyikan"
       ],
       "withCaution": [
-        "Freshwater Snails",
-        "Larger Catfish",
-        "Loaches",
-        "Misc. African Cichlids",
-        "New World Cichlids",
-        "Plecos (Suckerfish)",
-        "Tanganyikan Cichlids"
+        "Brackish Fish",
+        "Goldfish",
+        "Larger Catfish"
       ]
     },
     {
-      "name": "Misc. African Cichlids",
-      "latinName": "Various",
-      "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_valg19valg19valg.jpg?raw=true",
-      "compatible": [
-        "Misc. African Cichlids",
-        "Plecos (Suckerfish)"
-      ],
-      "notRecommended": [
-        "Freshwater Plants",
-        "Freshwater Sharks"
-      ],
-      "notCompatible": [
-        "Angelfish (Female)",
-        "Angelfish (Male)",
-        "Barbs",
-        "Bettas (Female)",
-        "Bettas (Male)",
-        "Brackish Fish",
-        "Cory Cats",
-        "Danios / Minnows",
-        "Discus",
-        "Freshwater Shrimp",
-        "Goldfish",
-        "Gouramis",
-        "Guppies",
-        "Hatchets",
-        "Killifish",
-        "Mollies",
-        "Platies",
-        "Pond Fish",
-        "Rainbowfish",
-        "Rasboras",
-        "Swordtails",
-        "Tetras"
-      ],
-      "withCaution": [
-        "Freshwater Snails",
-        "Larger Catfish",
-        "Loaches",
-        "Malawian Cichlids",
-        "New World Cichlids",
-        "Tanganyikan Cichlids"
-      ]
-    },
-    {
-      "name": "Mollies",
-      "latinName": "Poeciliidae, Poecilia",
-      "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_valg19valg19valg.jpg?raw=true",
+      "name": "Mollies / Platies / Swordtails",
+      "latinName": "Poeciliidae, Poecilia, Xiphophorus",
+      "imageURL": "https://cdn11.bigcommerce.com/s-nzocnvfw4r/images/stencil/1280x1280/products/383/646/Assorted-Mollies__70436.1731440282.jpg?c=1",
       "compatible": [
         "Barbs",
-        "Bettas (Female)",
+        "Bettas (Female) ♀",
         "Brackish Fish",
         "Cory Cats",
         "Danios / Minnows",
@@ -938,423 +933,240 @@
         "Freshwater Plants",
         "Freshwater Sharks",
         "Freshwater Shrimp",
+        "Freshwater Snails",
+        "Goldfish",
         "Gouramis",
         "Guppies",
         "Hatchets",
         "Killifish",
-        "Mollies",
+        "Loaches",
+        "Mollies / Platies / Swordtails",
+        "Plecos (Suckerfish)",
         "Rainbowfish",
         "Rasboras",
         "Tetras"
       ],
-      "notCompatible": [
-        "Goldfish",
-        "Malawian Cichlids",
-        "Misc. African Cichlids",
-        "Pond Fish",
-        "Tanganyikan Cichlids"
-      ],
-      "withCaution": [
-        "Angelfish (Female)",
-        "Angelfish (Male)",
-        "Bettas (Male)",
-        "Freshwater Snails",
-        "Larger Catfish",
-        "Loaches",
-        "New World Cichlids",
-        "Platies",
-        "Plecos (Suckerfish)",
-        "Swordtails"
-      ]
-    },
-    {
-      "name": "New World Cichlids",
-      "latinName": "Various",
-      "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_valg19valg19valg.jpg?raw=true",
-      "compatible": [
-        "New World Cichlids",
-        "Plecos (Suckerfish)"
-      ],
       "notRecommended": [
-        "Freshwater Plants",
-        "Freshwater Sharks"
-      ],
-      "notCompatible": [
-        "Bettas (Female)",
-        "Bettas (Male)",
-        "Danios / Minnows",
-        "Freshwater Shrimp",
-        "Goldfish",
-        "Guppies",
+        "Cichlids - South American (New World)",
+        "Larger Catfish",
         "Pond Fish"
       ],
-      "withCaution": [
-        "Angelfish (Female)",
-        "Angelfish (Male)",
-        "Barbs",
-        "Brackish Fish",
-        "Cory Cats",
-        "Discus",
-        "Freshwater Snails",
-        "Hatchets",
-        "Killifish",
-        "Larger Catfish",
-        "Loaches",
-        "Malawian Cichlids",
-        "Misc. African Cichlids",
-        "Mollies",
-        "Platies",
-        "Rainbowfish",
-        "Rasboras",
-        "Swordtails",
-        "Tanganyikan Cichlids",
-        "Tetras"
-      ]
-    },
-    {
-      "name": "Platies",
-      "latinName": "Poeciliidae, Xiphophorus",
-      "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_valg19valg19valg.jpg?raw=true",
-      "compatible": [
-        "Barbs",
-        "Bettas (Female)",
-        "Bettas (Male)",
-        "Cory Cats",
-        "Danios / Minnows",
-        "Discus",
-        "Freshwater Plants",
-        "Freshwater Sharks",
-        "Freshwater Shrimp",
-        "Gouramis",
-        "Guppies",
-        "Hatchets",
-        "Killifish",
-        "Platies",
-        "Plecos (Suckerfish)",
-        "Rainbowfish",
-        "Rasboras",
-        "Swordtails",
-        "Tetras"
-      ],
       "notCompatible": [
-        "Brackish Fish",
-        "Goldfish",
-        "Malawian Cichlids",
-        "Misc. African Cichlids",
-        "Pond Fish",
-        "Tanganyikan Cichlids"
+        "Cichlids - Lake Malawian/Victoria (Mbuna, Haplochromis)",
+        "Cichlids - Lake Tanganyikan"
       ],
       "withCaution": [
-        "Angelfish (Female)",
-        "Angelfish (Male)",
-        "Freshwater Snails",
-        "Larger Catfish",
-        "Loaches",
-        "Mollies",
-        "New World Cichlids"
+        "Angelfish (Female) ♀",
+        "Angelfish (Male) ♂",
+        "Bettas (Male) ♂"
       ]
     },
     {
       "name": "Plecos (Suckerfish)",
       "latinName": "Loricariidae, Hypostomus, Pterygoplichthys",
-      "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_valg19valg19valg.jpg?raw=true",
+      "imageURL": "https://diapteron.co.uk/wp-content/uploads/2024/06/The-Common-Pleco-Your-Go-To-Guide-for-Aquarium-Success-1140x641.webp",
       "compatible": [
-        "Angelfish (Female)",
-        "Angelfish (Male)",
+        "Angelfish (Female) ♀",
+        "Angelfish (Male) ♂",
         "Barbs",
-        "Bettas (Female)",
-        "Bettas (Male)",
+        "Bettas (Female) ♀",
+        "Bettas (Male) ♂",
+        "Cichlids - South American (New World)",
         "Cory Cats",
         "Danios / Minnows",
         "Freshwater Plants",
         "Freshwater Sharks",
         "Freshwater Shrimp",
+        "Freshwater Snails",
         "Goldfish",
         "Gouramis",
         "Guppies",
         "Hatchets",
         "Killifish",
         "Loaches",
-        "Malawian Cichlids",
-        "Misc. African Cichlids",
-        "New World Cichlids",
-        "Platies",
+        "Mollies / Platies / Swordtails",
         "Plecos (Suckerfish)",
+        "Pond Fish",
+        "Pond Fish",
         "Rainbowfish",
         "Rasboras",
-        "Swordtails",
-        "Tanganyikan Cichlids",
         "Tetras"
       ],
       "notCompatible": [],
       "withCaution": [
         "Brackish Fish",
+        "Cichlids - Lake Malawian/Victoria (Mbuna, Haplochromis)",
+        "Cichlids - Lake Tanganyikan",
         "Discus",
-        "Freshwater Snails",
-        "Larger Catfish",
-        "Mollies",
-        "Pond Fish"
+        "Larger Catfish"
       ]
     },
     {
       "name": "Pond Fish",
-      "latinName": "Various",
-      "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_valg19valg19valg.jpg?raw=true",
+      "latinName": "Cyprinidae",
+      "imageURL": "https://www.kodamakoifarm.com/wp-content/uploads/2023/04/types-pond-fish-preview.jpg",
       "compatible": [
+        "Freshwater Snails",
         "Goldfish",
+        "Larger Catfish",
+        "Plecos (Suckerfish)",
         "Pond Fish"
       ],
       "notRecommended": [
-        "Angelfish (Female)",
-        "Angelfish (Male)",
+        "Angelfish (Female) ♀",
+        "Angelfish (Male) ♂",
         "Barbs",
-        "Bettas (Female)",
-        "Freshwater Sharks"
-      ],
-      "notCompatible": [
-        "Bettas (Male)",
-        "Brackish Fish",
-        "Discus",
+        "Bettas (Female) ♀",
+        "Cory Cats",
+        "Danios / Minnows",
+        "Freshwater Sharks",
         "Gouramis",
         "Guppies",
         "Hatchets",
         "Killifish",
-        "Larger Catfish",
         "Loaches",
-        "Malawian Cichlids",
-        "Misc. African Cichlids",
-        "Mollies",
-        "New World Cichlids",
-        "Platies",
-        "Plecos (Suckerfish)",
+        "Mollies / Platies / Swordtails",
         "Rainbowfish",
         "Rasboras",
-        "Swordtails",
-        "Tanganyikan Cichlids",
         "Tetras"
       ],
+      "notCompatible": [
+        "Bettas (Male) ♂",
+        "Brackish Fish",
+        "Cichlids - Lake Malawian/Victoria (Mbuna, Haplochromis)",
+        "Cichlids - Lake Tanganyikan",
+        "Cichlids - South American (New World)",
+        "Discus"
+      ],
       "withCaution": [
-        "Cory Cats",
-        "Danios / Minnows",
         "Freshwater Plants",
-        "Freshwater Shrimp",
-        "Freshwater Snails"
+        "Freshwater Shrimp"
       ]
     },
     {
       "name": "Rainbowfish",
       "latinName": "Melanotaeniidae, Melanotaenia, Glossolepis",
-      "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_valg19valg19valg.jpg?raw=true",
+      "imageURL": "https://cvafish.com/cdn/shop/files/coachella-valley-aquatics-rainbow-fish-praecox-rainbowfish-dwarf-rainbow-38783160254620_600x.jpg?v=1718742672",
       "compatible": [
-        "Angelfish (Female)",
-        "Angelfish (Male)",
+        "Angelfish (Female) ♀",
+        "Angelfish (Male) ♂",
         "Barbs",
+        "Bettas (Female) ♀",
         "Cory Cats",
         "Danios / Minnows",
         "Discus",
         "Freshwater Plants",
         "Freshwater Sharks",
         "Freshwater Shrimp",
+        "Freshwater Snails",
+        "Goldfish",
         "Gouramis",
         "Guppies",
+        "Hatchets",
         "Killifish",
         "Loaches",
-        "Mollies",
-        "Platies",
+        "Mollies / Platies / Swordtails",
         "Plecos (Suckerfish)",
         "Rainbowfish",
         "Rasboras",
-        "Swordtails",
         "Tetras"
       ],
+      "notRecommended": [
+        "Cichlids - South American (New World)",
+        "Pond Fish"
+      ],
       "notCompatible": [
-        "Goldfish",
-        "Malawian Cichlids",
-        "Misc. African Cichlids",
-        "Pond Fish",
-        "Tanganyikan Cichlids"
+        "Cichlids - Lake Malawian/Victoria (Mbuna, Haplochromis)",
+        "Cichlids - Lake Tanganyikan"
       ],
       "withCaution": [
-        "Bettas (Female)",
-        "Bettas (Male)",
+        "Bettas (Male) ♂",
         "Brackish Fish",
-        "Freshwater Snails",
-        "Hatchets",
-        "Larger Catfish",
-        "New World Cichlids"
+        "Larger Catfish"
       ]
     },
     {
       "name": "Rasboras",
-      "latinName": "Cyprinidae, Rasbora",
-      "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_valg19valg19valg.jpg?raw=true",
+      "latinName": "Rasbora",
+      "imageURL": "https://intanaquariumfeeds.com/cdn/shop/articles/chilirasbora_600x_660daa23-3a7b-407d-b661-35b506a18723.webp?v=1715753155",
       "compatible": [
-        "Angelfish (Female)",
-        "Angelfish (Male)",
         "Barbs",
-        "Bettas (Female)",
-        "Bettas (Male)",
         "Cory Cats",
         "Danios / Minnows",
         "Discus",
         "Freshwater Plants",
         "Freshwater Sharks",
         "Freshwater Shrimp",
+        "Freshwater Snails",
+        "Goldfish",
         "Gouramis",
         "Guppies",
         "Hatchets",
         "Killifish",
         "Loaches",
-        "Mollies",
-        "Platies",
+        "Mollies / Platies / Swordtails",
         "Plecos (Suckerfish)",
         "Rainbowfish",
         "Rasboras",
-        "Swordtails",
         "Tetras"
-      ],
-      "notCompatible": [
-        "Brackish Fish",
-        "Goldfish",
-        "Malawian Cichlids",
-        "Misc. African Cichlids",
-        "Pond Fish",
-        "Tanganyikan Cichlids"
-      ],
-      "withCaution": [
-        "Freshwater Snails",
-        "Larger Catfish",
-        "New World Cichlids"
-      ]
-    },
-    {
-      "name": "Swordtails",
-      "latinName": "Poeciliidae, Xiphophorus",
-      "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_valg19valg19valg.jpg?raw=true",
-      "compatible": [
-        "Angelfish (Female)",
-        "Angelfish (Male)",
-        "Barbs",
-        "Bettas (Female)",
-        "Bettas (Male)",
-        "Cory Cats",
-        "Danios / Minnows",
-        "Discus",
-        "Freshwater Plants",
-        "Freshwater Sharks",
-        "Freshwater Shrimp",
-        "Gouramis",
-        "Guppies",
-        "Hatchets",
-        "Killifish",
-        "Platies",
-        "Plecos (Suckerfish)",
-        "Rainbowfish",
-        "Rasboras",
-        "Swordtails",
-        "Tetras"
-      ],
-      "notCompatible": [
-        "Brackish Fish",
-        "Goldfish",
-        "Malawian Cichlids",
-        "Misc. African Cichlids",
-        "Pond Fish",
-        "Tanganyikan Cichlids"
-      ],
-      "withCaution": [
-        "Freshwater Snails",
-        "Larger Catfish",
-        "Loaches",
-        "Mollies",
-        "New World Cichlids"
-      ]
-    },
-    {
-      "name": "Tanganyikan Cichlids",
-      "latinName": "Various",
-      "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_valg19valg19valg.jpg?raw=true",
-      "compatible": [
-        "Plecos (Suckerfish)",
-        "Tanganyikan Cichlids"
       ],
       "notRecommended": [
-        "Freshwater Plants",
-        "Freshwater Sharks"
+        "Cichlids - South American (New World)",
+        "Larger Catfish",
+        "Pond Fish"
       ],
       "notCompatible": [
-        "Angelfish (Female)",
-        "Angelfish (Male)",
-        "Barbs",
-        "Bettas (Female)",
-        "Bettas (Male)",
         "Brackish Fish",
-        "Cory Cats",
-        "Danios / Minnows",
-        "Discus",
-        "Freshwater Shrimp",
-        "Goldfish",
-        "Gouramis",
-        "Guppies",
-        "Hatchets",
-        "Killifish",
-        "Mollies",
-        "Platies",
-        "Pond Fish",
-        "Rainbowfish",
-        "Rasboras",
-        "Swordtails",
-        "Tetras"
+        "Cichlids - Lake Malawian/Victoria (Mbuna, Haplochromis)",
+        "Cichlids - Lake Tanganyikan"
       ],
       "withCaution": [
-        "Freshwater Snails",
-        "Larger Catfish",
-        "Loaches",
-        "Malawian Cichlids",
-        "Misc. African Cichlids"
+        "Angelfish (Female) ♀",
+        "Angelfish (Male) ♂",
+        "Bettas (Female) ♀",
+        "Bettas (Male) ♂"
       ]
     },
     {
       "name": "Tetras",
       "latinName": "Characidae, Paracheirodon",
-      "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_valg19valg19valg.jpg?raw=true",
+      "imageURL": "https://cdn11.bigcommerce.com/s-lsus8itpbr/images/stencil/1920x1280/uploaded_images/at-fish-tetras-cardinal-tetra-poseidon-2-8-24.jpg?t=1707415206",
       "compatible": [
         "Barbs",
-        "Bettas (Female)",
-        "Bettas (Male)",
+        "Bettas (Female) ♀",
         "Cory Cats",
         "Danios / Minnows",
         "Discus",
         "Freshwater Plants",
         "Freshwater Sharks",
         "Freshwater Shrimp",
+        "Freshwater Snails",
+        "Goldfish",
+        "Gouramis",
         "Guppies",
         "Hatchets",
         "Killifish",
         "Loaches",
-        "Mollies",
-        "Platies",
+        "Mollies / Platies / Swordtails",
         "Plecos (Suckerfish)",
         "Rainbowfish",
         "Rasboras",
-        "Swordtails",
         "Tetras"
+      ],
+      "notRecommended": [
+        "Cichlids - South American (New World)",
+        "Larger Catfish",
+        "Pond Fish"
       ],
       "notCompatible": [
         "Brackish Fish",
-        "Goldfish",
-        "Larger Catfish",
-        "Malawian Cichlids",
-        "Misc. African Cichlids",
-        "Pond Fish",
-        "Tanganyikan Cichlids"
+        "Cichlids - Lake Malawian/Victoria (Mbuna, Haplochromis)",
+        "Cichlids - Lake Tanganyikan"
       ],
       "withCaution": [
-        "Angelfish (Female)",
-        "Angelfish (Male)",
-        "Freshwater Snails",
-        "Gouramis",
-        "New World Cichlids"
+        "Angelfish (Female) ♀",
+        "Angelfish (Male) ♂",
+        "Bettas (Male) ♂"
       ]
     }
   ],
