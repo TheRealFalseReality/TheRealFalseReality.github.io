@@ -10,8 +10,8 @@ const AdminLoginModal = ({ onClose, onLogin }: { onClose: () => void, onLogin: (
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (
-      username === process.env.VITE_ADMIN_USERNAME &&
-      password === process.env.VITE_ADMIN_PASSWORD
+      username === 'TheFalseReality' &&
+      password === 'Masklell10625'
     ) {
       onLogin();
     } else {
