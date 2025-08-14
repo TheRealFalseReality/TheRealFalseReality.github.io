@@ -212,9 +212,11 @@
     },
     {
       "name": "Cichlids - Lake Malawian/Victoria (Mbuna, Haplochromis)",
-      "latinName": "Melanochromis, Pseudotropheus, Haplochromis, Oreochromis, Paralabidochromis",
+      "latinName": "Various",
       "imageURL": "https://aquariumscience.org/wp-content/uploads/2021/09/240-Malawi-Cichlid-Aquarium.jpg",
-      "compatible": [],
+      "compatible": [
+        "Cichlids - Lake Malawian/Victoria (Mbuna, Haplochromis)"
+      ],
       "notRecommended": [
         "Cichlids - Lake Tanganyikan",
         "Cichlids - South American (New World)",
@@ -253,7 +255,7 @@
     },
     {
       "name": "Cichlids - Lake Tanganyikan",
-      "latinName": "Asprotilapia, Enantiopus, Haplotaxodon, Microdontochromis",
+      "latinName": "Various",
       "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOqmr3Blt64vaGDbAVpCu2dDTOuT77sZRjfA&s",
       "compatible": [
         "Cichlids - Lake Tanganyikan"
@@ -295,7 +297,7 @@
     },
     {
       "name": "Cichlids - South American (New World)",
-      "latinName": "Astronotini, Cichlini, Heroini, Retroculini",
+      "latinName": "Various",
       "imageURL": "https://cdn11.bigcommerce.com/s-kkon4imfg5/images/stencil/1280x1280/products/6625/5076/apis5hxpw__42939.1607360200.jpg?c=2",
       "compatible": [
         "Cichlids - South American (New World)",
@@ -753,7 +755,7 @@
     },
     {
       "name": "Hatchets",
-      "latinName": "Gasteropelecidae, Carnegiella, Gasteropelecus, Thoracocharax",
+      "latinName": "Gasteropelecidae, Gasteropelecus",
       "imageURL": "https://cdn.shopify.com/s/files/1/0311/3149/files/Thoracocharax_stellatus_-_Spotfin_Hatchetfish.jpg?v=1655225731",
       "compatible": [
         "Angelfish (Female) ♀",
@@ -837,7 +839,7 @@
     },
     {
       "name": "Larger Catfish",
-      "latinName": "Bagridae, Ictaluridae, Pimelodidae, Siluridae",
+      "latinName": "Ictaluridae, Pimelodidae",
       "imageURL": "https://cdn.britannica.com/22/141422-050-75094F72/Red-tail-catfish.jpg",
       "compatible": [
         "Cichlids - South American (New World)",
@@ -963,7 +965,7 @@
     },
     {
       "name": "Plecos (Suckerfish)",
-      "latinName": "Loricariidae, Hypostomus, Pterygoplichthys",
+      "latinName": "Loricariidae, Hypostomus",
       "imageURL": "https://diapteron.co.uk/wp-content/uploads/2024/06/The-Common-Pleco-Your-Go-To-Guide-for-Aquarium-Success-1140x641.webp",
       "compatible": [
         "Angelfish (Female) ♀",
@@ -986,7 +988,6 @@
         "Loaches",
         "Mollies / Platies / Swordtails",
         "Plecos (Suckerfish)",
-        "Pond Fish",
         "Pond Fish",
         "Rainbowfish",
         "Rasboras",
@@ -1045,7 +1046,7 @@
     },
     {
       "name": "Rainbowfish",
-      "latinName": "Melanotaeniidae, Melanotaenia, Glossolepis",
+      "latinName": "Melanotaeniidae, Glossolepis",
       "imageURL": "https://cvafish.com/cdn/shop/files/coachella-valley-aquatics-rainbow-fish-praecox-rainbowfish-dwarf-rainbow-38783160254620_600x.jpg?v=1718742672",
       "compatible": [
         "Angelfish (Female) ♀",
