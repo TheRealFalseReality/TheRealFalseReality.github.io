@@ -85,15 +85,13 @@
     },
     {
       "name": "Barbs",
-      "latinName": "Barbus",
+      "latinName": "Cyprinidae",
       "imageURL": "https://cdn.shopify.com/s/files/1/0311/3149/files/tiger_barb_in_planted_aquarium.jpg?v=1629404268",
       "compatible": [
         "Barbs",
         "Cory Cats",
         "Danios / Minnows",
         "Freshwater Sharks",
-        "Gouramis",
-        "Guppies",
         "Hatchets",
         "Killifish",
         "Loaches",
@@ -102,13 +100,14 @@
         "Plecos (Suckerfish)",
         "Rainbowfish",
         "Rasboras",
-        "Shrimp",
         "Snails",
         "Tetras"
       ],
       "notRecommended": [
         "Cichlids - American",
-        "Pond Fish"
+        "Guppies",
+        "Pond Fish",
+        "Shrimp"
       ],
       "notCompatible": [
         "Bettas (Male) ♂",
@@ -121,6 +120,7 @@
         "Bettas (Female) ♀",
         "Discus",
         "Goldfish",
+        "Gouramis",
         "Larger Catfish"
       ]
     },
@@ -129,7 +129,6 @@
       "latinName": "Betta splendens",
       "imageURL": "https://thailandbettafish.com/cdn/shop/collections/Rare_Koi_Betta_Fish_1.png?v=1690009934",
       "compatible": [
-        "Bettas (Female) ♀",
         "Cory Cats",
         "Hatchets",
         "Loaches",
@@ -542,7 +541,6 @@
       "latinName": "Osphronemidae, Trichogaster",
       "imageURL": "https://aquadiction.world/img/profile/dwarf-gourami.webp",
       "compatible": [
-        "Barbs",
         "Cory Cats",
         "Danios / Minnows",
         "Freshwater Sharks",
@@ -574,6 +572,7 @@
       "withCaution": [
         "Angelfish (Female) ♀",
         "Angelfish (Male) ♂",
+        "Barbs",
         "Discus",
         "Larger Catfish"
       ]
@@ -583,7 +582,6 @@
       "latinName": "Poeciliidae, Poecilia",
       "imageURL": "https://aquaticarts.com/cdn/shop/products/Premium-Assorted-Guppy_-Collage-V2-SMALL.jpg?v=1659703899",
       "compatible": [
-        "Barbs",
         "Cory Cats",
         "Danios / Minnows",
         "Freshwater Sharks",
@@ -603,6 +601,7 @@
         "Tetras"
       ],
       "notRecommended": [
+        "Barbs",
         "Bettas (Male) ♂",
         "Discus",
         "Larger Catfish",
@@ -1030,7 +1029,6 @@
       "latinName": "Various",
       "imageURL": "https://www.theshrimpfarm.com/blog/wp-content/uploads/2024/06/Amano-51.jpg",
       "compatible": [
-        "Barbs",
         "Cory Cats",
         "Danios / Minnows",
         "Gouramis",
@@ -1049,7 +1047,8 @@
       ],
       "notRecommended": [
         "Angelfish (Female) ♀",
-        "Angelfish (Male) ♂"
+        "Angelfish (Male) ♂",
+        "Barbs"
       ],
       "notCompatible": [
         "Cichlids - American",
