@@ -8,23 +8,19 @@
         "Angelfish (Female) ♀",
         "Angelfish (Male) ♂",
         "Cory Cats",
-        "Freshwater Plants",
-        "Freshwater Sharks",
-        "Freshwater Snails",
-        "Gouramis",
         "Hatchets",
-        "Killifish",
         "Loaches",
+        "Plants",
         "Plecos (Suckerfish)",
-        "Rainbowfish"
+        "Rainbowfish",
+        "Snails"
       ],
       "notRecommended": [
         "Bettas (Male) ♂",
-        "Freshwater Shrimp",
-        "Pond Fish"
+        "Pond Fish",
+        "Shrimp"
       ],
       "notCompatible": [
-        "Brackish Fish",
         "Cichlids - Lake Malawian/Victoria",
         "Cichlids - Lake Tanganyikan"
       ],
@@ -34,8 +30,11 @@
         "Cichlids - American",
         "Danios / Minnows",
         "Discus",
+        "Freshwater Sharks",
         "Goldfish",
+        "Gouramis",
         "Guppies",
+        "Killifish",
         "Larger Catfish",
         "Mollies / Platies / Swordtails",
         "Rasboras",
@@ -50,19 +49,17 @@
         "Angelfish (Female) ♀",
         "Angelfish (Male) ♂",
         "Cory Cats",
-        "Freshwater Plants",
-        "Freshwater Snails",
-        "Gouramis",
         "Hatchets",
-        "Killifish",
         "Loaches",
+        "Plants",
         "Plecos (Suckerfish)",
-        "Rainbowfish"
+        "Rainbowfish",
+        "Snails"
       ],
       "notRecommended": [
         "Bettas (Male) ♂",
-        "Freshwater Shrimp",
-        "Pond Fish"
+        "Pond Fish",
+        "Shrimp"
       ],
       "notCompatible": [
         "Cichlids - Lake Malawian/Victoria",
@@ -77,7 +74,9 @@
         "Discus",
         "Freshwater Sharks",
         "Goldfish",
+        "Gouramis",
         "Guppies",
+        "Killifish",
         "Larger Catfish",
         "Mollies / Platies / Swordtails",
         "Rasboras",
@@ -92,19 +91,19 @@
         "Barbs",
         "Cory Cats",
         "Danios / Minnows",
-        "Freshwater Plants",
         "Freshwater Sharks",
-        "Freshwater Shrimp",
-        "Freshwater Snails",
         "Gouramis",
         "Guppies",
         "Hatchets",
         "Killifish",
         "Loaches",
         "Mollies / Platies / Swordtails",
+        "Plants",
         "Plecos (Suckerfish)",
         "Rainbowfish",
         "Rasboras",
+        "Shrimp",
+        "Snails",
         "Tetras"
       ],
       "notRecommended": [
@@ -120,7 +119,6 @@
         "Angelfish (Female) ♀",
         "Angelfish (Male) ♂",
         "Bettas (Female) ♀",
-        "Brackish Fish",
         "Discus",
         "Goldfish",
         "Larger Catfish"
@@ -132,25 +130,19 @@
       "imageURL": "https://thailandbettafish.com/cdn/shop/collections/Rare_Koi_Betta_Fish_1.png?v=1690009934",
       "compatible": [
         "Bettas (Female) ♀",
-        "Bettas (Male) ♂",
         "Cory Cats",
-        "Danios / Minnows",
-        "Freshwater Plants",
-        "Freshwater Snails",
-        "Gouramis",
         "Hatchets",
         "Loaches",
-        "Mollies / Platies / Swordtails",
+        "Plants",
         "Plecos (Suckerfish)",
-        "Rainbowfish",
-        "Tetras"
+        "Snails"
       ],
       "notRecommended": [
         "Goldfish",
+        "Gouramis",
         "Pond Fish"
       ],
       "notCompatible": [
-        "Brackish Fish",
         "Cichlids - American",
         "Cichlids - Lake Malawian/Victoria",
         "Cichlids - Lake Tanganyikan"
@@ -159,13 +151,19 @@
         "Angelfish (Female) ♀",
         "Angelfish (Male) ♂",
         "Barbs",
+        "Bettas (Female) ♀",
+        "Bettas (Male) ♂",
+        "Danios / Minnows",
         "Discus",
         "Freshwater Sharks",
-        "Freshwater Shrimp",
         "Guppies",
         "Killifish",
         "Larger Catfish",
-        "Rasboras"
+        "Mollies / Platies / Swordtails",
+        "Rainbowfish",
+        "Rasboras",
+        "Shrimp",
+        "Tetras"
       ]
     },
     {
@@ -173,40 +171,39 @@
       "latinName": "Betta splendens",
       "imageURL": "https://m.media-amazon.com/images/I/71uEGoSsfiL._UF1000,1000_QL80_.jpg",
       "compatible": [
-        "Bettas (Female) ♀",
-        "Bettas (Male) ♂",
         "Cory Cats",
-        "Danios / Minnows",
-        "Freshwater Plants",
-        "Freshwater Snails",
         "Hatchets",
         "Loaches",
-        "Plecos (Suckerfish)"
+        "Plants",
+        "Plecos (Suckerfish)",
+        "Snails"
       ],
       "notRecommended": [
         "Angelfish (Female) ♀",
         "Angelfish (Male) ♂",
         "Discus",
         "Goldfish",
+        "Gouramis",
         "Guppies"
       ],
       "notCompatible": [
         "Barbs",
-        "Brackish Fish",
+        "Bettas (Male) ♂",
         "Cichlids - American",
         "Cichlids - Lake Malawian/Victoria",
         "Cichlids - Lake Tanganyikan",
         "Pond Fish"
       ],
       "withCaution": [
+        "Bettas (Female) ♀",
+        "Danios / Minnows",
         "Freshwater Sharks",
-        "Freshwater Shrimp",
-        "Gouramis",
         "Killifish",
         "Larger Catfish",
         "Mollies / Platies / Swordtails",
         "Rainbowfish",
         "Rasboras",
+        "Shrimp",
         "Tetras"
       ]
     },
@@ -225,12 +222,12 @@
         "Cichlids - Lake Tanganyikan",
         "Cory Cats",
         "Danios / Minnows",
-        "Freshwater Plants",
         "Gouramis",
         "Hatchets",
         "Killifish",
         "Loaches",
         "Mollies / Platies / Swordtails",
+        "Plants",
         "Rainbowfish",
         "Rasboras",
         "Tetras"
@@ -238,18 +235,17 @@
       "notCompatible": [
         "Bettas (Female) ♀",
         "Bettas (Male) ♂",
-        "Freshwater Shrimp",
         "Guppies",
-        "Pond Fish"
+        "Pond Fish",
+        "Shrimp"
       ],
       "withCaution": [
         "Angelfish (Female) ♀",
         "Angelfish (Male) ♂",
-        "Brackish Fish",
         "Discus",
         "Freshwater Sharks",
-        "Freshwater Snails",
-        "Goldfish"
+        "Goldfish",
+        "Snails"
       ]
     },
     {
@@ -262,7 +258,7 @@
       "notRecommended": [
         "Cichlids - American",
         "Cichlids - Lake Tanganyikan",
-        "Freshwater Plants"
+        "Plants"
       ],
       "notCompatible": [
         "Angelfish (Female) ♀",
@@ -270,12 +266,10 @@
         "Barbs",
         "Bettas (Female) ♀",
         "Bettas (Male) ♂",
-        "Brackish Fish",
         "Cory Cats",
         "Danios / Minnows",
         "Discus",
         "Freshwater Sharks",
-        "Freshwater Shrimp",
         "Goldfish",
         "Gouramis",
         "Guppies",
@@ -286,13 +280,14 @@
         "Pond Fish",
         "Rainbowfish",
         "Rasboras",
+        "Shrimp",
         "Tetras"
       ],
       "withCaution": [
         "Cichlids - Lake Malawian/Victoria",
-        "Freshwater Snails",
         "Larger Catfish",
-        "Plecos (Suckerfish)"
+        "Plecos (Suckerfish)",
+        "Snails"
       ]
     },
     {
@@ -305,7 +300,7 @@
       "notRecommended": [
         "Cichlids - American",
         "Cichlids - Lake Malawian/Victoria",
-        "Freshwater Plants"
+        "Plants"
       ],
       "notCompatible": [
         "Angelfish (Female) ♀",
@@ -313,12 +308,10 @@
         "Barbs",
         "Bettas (Female) ♀",
         "Bettas (Male) ♂",
-        "Brackish Fish",
         "Cory Cats",
         "Danios / Minnows",
         "Discus",
         "Freshwater Sharks",
-        "Freshwater Shrimp",
         "Goldfish",
         "Gouramis",
         "Guppies",
@@ -329,12 +322,13 @@
         "Pond Fish",
         "Rainbowfish",
         "Rasboras",
+        "Shrimp",
         "Tetras"
       ],
       "withCaution": [
-        "Freshwater Snails",
         "Larger Catfish",
-        "Plecos (Suckerfish)"
+        "Plecos (Suckerfish)",
+        "Snails"
       ]
     },
     {
@@ -350,10 +344,7 @@
         "Cory Cats",
         "Danios / Minnows",
         "Discus",
-        "Freshwater Plants",
         "Freshwater Sharks",
-        "Freshwater Shrimp",
-        "Freshwater Snails",
         "Goldfish",
         "Gouramis",
         "Guppies",
@@ -361,9 +352,12 @@
         "Killifish",
         "Loaches",
         "Mollies / Platies / Swordtails",
+        "Plants",
         "Plecos (Suckerfish)",
         "Rainbowfish",
         "Rasboras",
+        "Shrimp",
+        "Snails",
         "Tetras"
       ],
       "notRecommended": [
@@ -371,7 +365,6 @@
         "Pond Fish"
       ],
       "notCompatible": [
-        "Brackish Fish",
         "Cichlids - Lake Malawian/Victoria",
         "Cichlids - Lake Tanganyikan"
       ],
@@ -385,24 +378,22 @@
       "imageURL": "https://aquaticarts.com/cdn/shop/products/Gold-White-Cloud-Mountain-Minnow-NEW-Small-7.jpg?v=1637805331&width=1080",
       "compatible": [
         "Barbs",
-        "Bettas (Female) ♀",
-        "Bettas (Male) ♂",
         "Cory Cats",
         "Danios / Minnows",
         "Discus",
-        "Freshwater Plants",
         "Freshwater Sharks",
-        "Freshwater Shrimp",
-        "Freshwater Snails",
         "Gouramis",
         "Guppies",
         "Hatchets",
         "Killifish",
         "Loaches",
         "Mollies / Platies / Swordtails",
+        "Plants",
         "Plecos (Suckerfish)",
         "Rainbowfish",
         "Rasboras",
+        "Shrimp",
+        "Snails",
         "Tetras"
       ],
       "notRecommended": [
@@ -416,7 +407,8 @@
       "withCaution": [
         "Angelfish (Female) ♀",
         "Angelfish (Male) ♂",
-        "Brackish Fish",
+        "Bettas (Female) ♀",
+        "Bettas (Male) ♂",
         "Goldfish",
         "Larger Catfish"
       ]
@@ -429,14 +421,14 @@
         "Cory Cats",
         "Danios / Minnows",
         "Discus",
-        "Freshwater Plants",
-        "Freshwater Snails",
         "Hatchets",
         "Killifish",
         "Loaches",
         "Mollies / Platies / Swordtails",
+        "Plants",
         "Rainbowfish",
         "Rasboras",
+        "Snails",
         "Tetras"
       ],
       "notRecommended": [
@@ -444,12 +436,11 @@
         "Guppies"
       ],
       "notCompatible": [
-        "Brackish Fish",
         "Cichlids - Lake Malawian/Victoria",
         "Cichlids - Lake Tanganyikan",
-        "Freshwater Shrimp",
         "Goldfish",
-        "Pond Fish"
+        "Pond Fish",
+        "Shrimp"
       ],
       "withCaution": [
         "Angelfish (Female) ♀",
@@ -464,67 +455,25 @@
       ]
     },
     {
-      "name": "Freshwater Plants",
-      "latinName": "Various",
-      "imageURL": "https://splashyfishstore.com/cdn/shop/articles/Low_Light_Freshwater_Plants_for_Aquarium.jpg?v=1751212578",
-      "compatible": [
-        "Angelfish (Female) ♀",
-        "Angelfish (Male) ♂",
-        "Barbs",
-        "Bettas (Female) ♀",
-        "Bettas (Male) ♂",
-        "Cory Cats",
-        "Danios / Minnows",
-        "Discus",
-        "Freshwater Plants",
-        "Freshwater Sharks",
-        "Freshwater Shrimp",
-        "Freshwater Snails",
-        "Gouramis",
-        "Guppies",
-        "Hatchets",
-        "Killifish",
-        "Loaches",
-        "Mollies / Platies / Swordtails",
-        "Rainbowfish",
-        "Rasboras",
-        "Tetras"
-      ],
-      "notRecommended": [
-        "Cichlids - American",
-        "Cichlids - Lake Malawian/Victoria",
-        "Cichlids - Lake Tanganyikan",
-        "Larger Catfish"
-      ],
-      "notCompatible": [],
-      "withCaution": [
-        "Brackish Fish",
-        "Goldfish",
-        "Plecos (Suckerfish)",
-        "Pond Fish"
-      ]
-    },
-    {
       "name": "Freshwater Sharks",
       "latinName": "Epalzeorhynchos",
       "imageURL": "https://cdn.shopify.com/s/files/1/0311/3149/files/Red-tailed_black_shark_Epalzeorhynchos_bicolor.jpg?v=1665077847",
       "compatible": [
-        "Angelfish (Female) ♀",
         "Barbs",
         "Cory Cats",
         "Danios / Minnows",
-        "Freshwater Plants",
         "Freshwater Sharks",
-        "Freshwater Snails",
         "Gouramis",
         "Guppies",
         "Hatchets",
         "Killifish",
         "Loaches",
         "Mollies / Platies / Swordtails",
+        "Plants",
         "Plecos (Suckerfish)",
         "Rainbowfish",
         "Rasboras",
+        "Snails",
         "Tetras"
       ],
       "notRecommended": [
@@ -535,96 +484,16 @@
         "Cichlids - Lake Tanganyikan"
       ],
       "withCaution": [
+        "Angelfish (Female) ♀",
         "Angelfish (Male) ♂",
         "Bettas (Female) ♀",
         "Bettas (Male) ♂",
-        "Brackish Fish",
         "Cichlids - American",
         "Discus",
         "Freshwater Sharks",
-        "Freshwater Shrimp",
         "Goldfish",
-        "Larger Catfish"
-      ]
-    },
-    {
-      "name": "Freshwater Shrimp",
-      "latinName": "Various",
-      "imageURL": "https://www.theshrimpfarm.com/blog/wp-content/uploads/2024/06/Amano-51.jpg",
-      "compatible": [
-        "Barbs",
-        "Cory Cats",
-        "Danios / Minnows",
-        "Freshwater Plants",
-        "Freshwater Shrimp",
-        "Freshwater Snails",
-        "Gouramis",
-        "Guppies",
-        "Hatchets",
-        "Killifish",
-        "Loaches",
-        "Mollies / Platies / Swordtails",
-        "Plecos (Suckerfish)",
-        "Rainbowfish",
-        "Rasboras",
-        "Tetras"
-      ],
-      "notRecommended": [
-        "Angelfish (Female) ♀",
-        "Angelfish (Male) ♂"
-      ],
-      "notCompatible": [
-        "Cichlids - American",
-        "Cichlids - Lake Malawian/Victoria",
-        "Cichlids - Lake Tanganyikan",
-        "Discus",
-        "Larger Catfish"
-      ],
-      "withCaution": [
-        "Bettas (Female) ♀",
-        "Bettas (Male) ♂",
-        "Freshwater Sharks",
-        "Goldfish",
-        "Pond Fish"
-      ]
-    },
-    {
-      "name": "Freshwater Snails",
-      "latinName": "Various",
-      "imageURL": "https://m.media-amazon.com/images/I/81+EEpYRHXS.jpg",
-      "compatible": [
-        "Angelfish (Female) ♀",
-        "Angelfish (Male) ♂",
-        "Barbs",
-        "Bettas (Female) ♀",
-        "Bettas (Male) ♂",
-        "Cory Cats",
-        "Danios / Minnows",
-        "Discus",
-        "Freshwater Plants",
-        "Freshwater Sharks",
-        "Freshwater Shrimp",
-        "Freshwater Snails",
-        "Goldfish",
-        "Gouramis",
-        "Guppies",
-        "Hatchets",
-        "Killifish",
         "Larger Catfish",
-        "Loaches",
-        "Mollies / Platies / Swordtails",
-        "Plecos (Suckerfish)",
-        "Pond Fish",
-        "Rainbowfish",
-        "Rasboras",
-        "Tetras"
-      ],
-      "notCompatible": [],
-      "withCaution": [
-        "Brackish Fish",
-        "Cichlids - American",
-        "Cichlids - Lake Malawian/Victoria",
-        "Cichlids - Lake Tanganyikan"
+        "Shrimp"
       ]
     },
     {
@@ -633,7 +502,6 @@
       "imageURL": "https://guidesly.com/static/394845ea6476ea6f42f999b343c601ec/5f471/Guidesly_Goldfish_737f6b7de8.jpg",
       "compatible": [
         "Cory Cats",
-        "Freshwater Snails",
         "Goldfish",
         "Gouramis",
         "Guppies",
@@ -645,6 +513,7 @@
         "Pond Fish",
         "Rainbowfish",
         "Rasboras",
+        "Snails",
         "Tetras"
       ],
       "notRecommended": [
@@ -652,7 +521,6 @@
         "Bettas (Male) ♂"
       ],
       "notCompatible": [
-        "Brackish Fish",
         "Cichlids - Lake Malawian/Victoria",
         "Cichlids - Lake Tanganyikan",
         "Discus"
@@ -663,10 +531,10 @@
         "Barbs",
         "Cichlids - American",
         "Danios / Minnows",
-        "Freshwater Plants",
         "Freshwater Sharks",
-        "Freshwater Shrimp",
-        "Loaches"
+        "Loaches",
+        "Plants",
+        "Shrimp"
       ]
     },
     {
@@ -674,16 +542,10 @@
       "latinName": "Osphronemidae, Trichogaster",
       "imageURL": "https://aquadiction.world/img/profile/dwarf-gourami.webp",
       "compatible": [
-        "Angelfish (Female) ♀",
-        "Angelfish (Male) ♂",
         "Barbs",
-        "Bettas (Female) ♀",
         "Cory Cats",
         "Danios / Minnows",
-        "Freshwater Plants",
         "Freshwater Sharks",
-        "Freshwater Shrimp",
-        "Freshwater Snails",
         "Goldfish",
         "Gouramis",
         "Guppies",
@@ -691,22 +553,27 @@
         "Killifish",
         "Loaches",
         "Mollies / Platies / Swordtails",
+        "Plants",
         "Plecos (Suckerfish)",
         "Rainbowfish",
         "Rasboras",
+        "Shrimp",
+        "Snails",
         "Tetras"
       ],
       "notRecommended": [
+        "Bettas (Female) ♀",
+        "Bettas (Male) ♂",
         "Cichlids - American",
         "Pond Fish"
       ],
       "notCompatible": [
-        "Brackish Fish",
         "Cichlids - Lake Malawian/Victoria",
         "Cichlids - Lake Tanganyikan"
       ],
       "withCaution": [
-        "Bettas (Male) ♂",
+        "Angelfish (Female) ♀",
+        "Angelfish (Male) ♂",
         "Discus",
         "Larger Catfish"
       ]
@@ -719,10 +586,7 @@
         "Barbs",
         "Cory Cats",
         "Danios / Minnows",
-        "Freshwater Plants",
         "Freshwater Sharks",
-        "Freshwater Shrimp",
-        "Freshwater Snails",
         "Goldfish",
         "Gouramis",
         "Guppies",
@@ -730,9 +594,12 @@
         "Killifish",
         "Loaches",
         "Mollies / Platies / Swordtails",
+        "Plants",
         "Plecos (Suckerfish)",
         "Rainbowfish",
         "Rasboras",
+        "Shrimp",
+        "Snails",
         "Tetras"
       ],
       "notRecommended": [
@@ -742,7 +609,6 @@
         "Pond Fish"
       ],
       "notCompatible": [
-        "Brackish Fish",
         "Cichlids - American",
         "Cichlids - Lake Malawian/Victoria",
         "Cichlids - Lake Tanganyikan"
@@ -766,10 +632,7 @@
         "Cory Cats",
         "Danios / Minnows",
         "Discus",
-        "Freshwater Plants",
         "Freshwater Sharks",
-        "Freshwater Shrimp",
-        "Freshwater Snails",
         "Goldfish",
         "Gouramis",
         "Guppies",
@@ -777,9 +640,12 @@
         "Killifish",
         "Loaches",
         "Mollies / Platies / Swordtails",
+        "Plants",
         "Plecos (Suckerfish)",
         "Rainbowfish",
         "Rasboras",
+        "Shrimp",
+        "Snails",
         "Tetras"
       ],
       "notRecommended": [
@@ -787,7 +653,6 @@
         "Pond Fish"
       ],
       "notCompatible": [
-        "Brackish Fish",
         "Cichlids - Lake Malawian/Victoria",
         "Cichlids - Lake Tanganyikan"
       ],
@@ -800,16 +665,11 @@
       "latinName": "Aplocheilidae, Nothobranchius",
       "imageURL": "https://aqualibs.com/images/news/2024/03/11/2-Killifish.webp",
       "compatible": [
-        "Angelfish (Female) ♀",
-        "Angelfish (Male) ♂",
         "Barbs",
         "Cory Cats",
         "Danios / Minnows",
         "Discus",
-        "Freshwater Plants",
         "Freshwater Sharks",
-        "Freshwater Shrimp",
-        "Freshwater Snails",
         "Goldfish",
         "Gouramis",
         "Guppies",
@@ -817,9 +677,12 @@
         "Killifish",
         "Loaches",
         "Mollies / Platies / Swordtails",
+        "Plants",
         "Plecos (Suckerfish)",
         "Rainbowfish",
         "Rasboras",
+        "Shrimp",
+        "Snails",
         "Tetras"
       ],
       "notRecommended": [
@@ -827,11 +690,12 @@
         "Pond Fish"
       ],
       "notCompatible": [
-        "Brackish Fish",
         "Cichlids - Lake Malawian/Victoria",
         "Cichlids - Lake Tanganyikan"
       ],
       "withCaution": [
+        "Angelfish (Female) ♀",
+        "Angelfish (Male) ♂",
         "Bettas (Female) ♀",
         "Bettas (Male) ♂",
         "Larger Catfish"
@@ -843,20 +707,20 @@
       "imageURL": "https://cdn.britannica.com/22/141422-050-75094F72/Red-tail-catfish.jpg",
       "compatible": [
         "Cichlids - American",
-        "Freshwater Snails",
         "Goldfish",
         "Larger Catfish",
-        "Pond Fish"
+        "Pond Fish",
+        "Snails"
       ],
       "notRecommended": [
-        "Freshwater Plants",
         "Guppies",
         "Mollies / Platies / Swordtails",
+        "Plants",
         "Rasboras",
         "Tetras"
       ],
       "notCompatible": [
-        "Freshwater Shrimp"
+        "Shrimp"
       ],
       "withCaution": [
         "Angelfish (Female) ♀",
@@ -864,7 +728,6 @@
         "Barbs",
         "Bettas (Female) ♀",
         "Bettas (Male) ♂",
-        "Brackish Fish",
         "Cichlids - Lake Malawian/Victoria",
         "Cichlids - Lake Tanganyikan",
         "Cory Cats",
@@ -892,19 +755,19 @@
         "Cory Cats",
         "Danios / Minnows",
         "Discus",
-        "Freshwater Plants",
         "Freshwater Sharks",
-        "Freshwater Shrimp",
-        "Freshwater Snails",
         "Gouramis",
         "Guppies",
         "Hatchets",
         "Killifish",
         "Loaches",
         "Mollies / Platies / Swordtails",
+        "Plants",
         "Plecos (Suckerfish)",
         "Rainbowfish",
         "Rasboras",
+        "Shrimp",
+        "Snails",
         "Tetras"
       ],
       "notRecommended": [
@@ -916,7 +779,6 @@
         "Cichlids - Lake Tanganyikan"
       ],
       "withCaution": [
-        "Brackish Fish",
         "Goldfish",
         "Larger Catfish"
       ]
@@ -927,15 +789,10 @@
       "imageURL": "https://cdn11.bigcommerce.com/s-nzocnvfw4r/images/stencil/1280x1280/products/383/646/Assorted-Mollies__70436.1731440282.jpg?c=1",
       "compatible": [
         "Barbs",
-        "Bettas (Female) ♀",
-        "Brackish Fish",
         "Cory Cats",
         "Danios / Minnows",
         "Discus",
-        "Freshwater Plants",
         "Freshwater Sharks",
-        "Freshwater Shrimp",
-        "Freshwater Snails",
         "Goldfish",
         "Gouramis",
         "Guppies",
@@ -943,9 +800,12 @@
         "Killifish",
         "Loaches",
         "Mollies / Platies / Swordtails",
+        "Plants",
         "Plecos (Suckerfish)",
         "Rainbowfish",
         "Rasboras",
+        "Shrimp",
+        "Snails",
         "Tetras"
       ],
       "notRecommended": [
@@ -960,7 +820,48 @@
       "withCaution": [
         "Angelfish (Female) ♀",
         "Angelfish (Male) ♂",
+        "Bettas (Female) ♀",
         "Bettas (Male) ♂"
+      ]
+    },
+    {
+      "name": "Plants",
+      "latinName": "Various",
+      "imageURL": "https://splashyfishstore.com/cdn/shop/articles/Low_Light_Freshwater_Plants_for_Aquarium.jpg?v=1751212578",
+      "compatible": [
+        "Angelfish (Female) ♀",
+        "Angelfish (Male) ♂",
+        "Barbs",
+        "Bettas (Female) ♀",
+        "Bettas (Male) ♂",
+        "Cory Cats",
+        "Danios / Minnows",
+        "Discus",
+        "Freshwater Sharks",
+        "Gouramis",
+        "Guppies",
+        "Hatchets",
+        "Killifish",
+        "Loaches",
+        "Mollies / Platies / Swordtails",
+        "Plants",
+        "Rainbowfish",
+        "Rasboras",
+        "Shrimp",
+        "Snails",
+        "Tetras"
+      ],
+      "notRecommended": [
+        "Cichlids - American",
+        "Cichlids - Lake Malawian/Victoria",
+        "Cichlids - Lake Tanganyikan",
+        "Larger Catfish"
+      ],
+      "notCompatible": [],
+      "withCaution": [
+        "Goldfish",
+        "Plecos (Suckerfish)",
+        "Pond Fish"
       ]
     },
     {
@@ -976,10 +877,7 @@
         "Cichlids - American",
         "Cory Cats",
         "Danios / Minnows",
-        "Freshwater Plants",
         "Freshwater Sharks",
-        "Freshwater Shrimp",
-        "Freshwater Snails",
         "Goldfish",
         "Gouramis",
         "Guppies",
@@ -987,15 +885,17 @@
         "Killifish",
         "Loaches",
         "Mollies / Platies / Swordtails",
+        "Plants",
         "Plecos (Suckerfish)",
         "Pond Fish",
         "Rainbowfish",
         "Rasboras",
+        "Shrimp",
+        "Snails",
         "Tetras"
       ],
       "notCompatible": [],
       "withCaution": [
-        "Brackish Fish",
         "Cichlids - Lake Malawian/Victoria",
         "Cichlids - Lake Tanganyikan",
         "Discus",
@@ -1007,11 +907,11 @@
       "latinName": "Cyprinidae",
       "imageURL": "https://www.kodamakoifarm.com/wp-content/uploads/2023/04/types-pond-fish-preview.jpg",
       "compatible": [
-        "Freshwater Snails",
         "Goldfish",
         "Larger Catfish",
         "Plecos (Suckerfish)",
-        "Pond Fish"
+        "Pond Fish",
+        "Snails"
       ],
       "notRecommended": [
         "Angelfish (Female) ♀",
@@ -1033,15 +933,14 @@
       ],
       "notCompatible": [
         "Bettas (Male) ♂",
-        "Brackish Fish",
         "Cichlids - American",
         "Cichlids - Lake Malawian/Victoria",
         "Cichlids - Lake Tanganyikan",
         "Discus"
       ],
       "withCaution": [
-        "Freshwater Plants",
-        "Freshwater Shrimp"
+        "Plants",
+        "Shrimp"
       ]
     },
     {
@@ -1052,14 +951,10 @@
         "Angelfish (Female) ♀",
         "Angelfish (Male) ♂",
         "Barbs",
-        "Bettas (Female) ♀",
         "Cory Cats",
         "Danios / Minnows",
         "Discus",
-        "Freshwater Plants",
         "Freshwater Sharks",
-        "Freshwater Shrimp",
-        "Freshwater Snails",
         "Goldfish",
         "Gouramis",
         "Guppies",
@@ -1067,9 +962,12 @@
         "Killifish",
         "Loaches",
         "Mollies / Platies / Swordtails",
+        "Plants",
         "Plecos (Suckerfish)",
         "Rainbowfish",
         "Rasboras",
+        "Shrimp",
+        "Snails",
         "Tetras"
       ],
       "notRecommended": [
@@ -1081,8 +979,8 @@
         "Cichlids - Lake Tanganyikan"
       ],
       "withCaution": [
+        "Bettas (Female) ♀",
         "Bettas (Male) ♂",
-        "Brackish Fish",
         "Larger Catfish"
       ]
     },
@@ -1095,10 +993,7 @@
         "Cory Cats",
         "Danios / Minnows",
         "Discus",
-        "Freshwater Plants",
         "Freshwater Sharks",
-        "Freshwater Shrimp",
-        "Freshwater Snails",
         "Goldfish",
         "Gouramis",
         "Guppies",
@@ -1106,9 +1001,12 @@
         "Killifish",
         "Loaches",
         "Mollies / Platies / Swordtails",
+        "Plants",
         "Plecos (Suckerfish)",
         "Rainbowfish",
         "Rasboras",
+        "Shrimp",
+        "Snails",
         "Tetras"
       ],
       "notRecommended": [
@@ -1117,7 +1015,6 @@
         "Pond Fish"
       ],
       "notCompatible": [
-        "Brackish Fish",
         "Cichlids - Lake Malawian/Victoria",
         "Cichlids - Lake Tanganyikan"
       ],
@@ -1129,19 +1026,94 @@
       ]
     },
     {
+      "name": "Shrimp",
+      "latinName": "Various",
+      "imageURL": "https://www.theshrimpfarm.com/blog/wp-content/uploads/2024/06/Amano-51.jpg",
+      "compatible": [
+        "Barbs",
+        "Cory Cats",
+        "Danios / Minnows",
+        "Gouramis",
+        "Guppies",
+        "Hatchets",
+        "Killifish",
+        "Loaches",
+        "Mollies / Platies / Swordtails",
+        "Plants",
+        "Plecos (Suckerfish)",
+        "Rainbowfish",
+        "Rasboras",
+        "Shrimp",
+        "Snails",
+        "Tetras"
+      ],
+      "notRecommended": [
+        "Angelfish (Female) ♀",
+        "Angelfish (Male) ♂"
+      ],
+      "notCompatible": [
+        "Cichlids - American",
+        "Cichlids - Lake Malawian/Victoria",
+        "Cichlids - Lake Tanganyikan",
+        "Discus",
+        "Larger Catfish"
+      ],
+      "withCaution": [
+        "Bettas (Female) ♀",
+        "Bettas (Male) ♂",
+        "Freshwater Sharks",
+        "Goldfish",
+        "Pond Fish"
+      ]
+    },
+    {
+      "name": "Snails",
+      "latinName": "Various",
+      "imageURL": "https://m.media-amazon.com/images/I/81+EEpYRHXS.jpg",
+      "compatible": [
+        "Angelfish (Female) ♀",
+        "Angelfish (Male) ♂",
+        "Barbs",
+        "Bettas (Female) ♀",
+        "Bettas (Male) ♂",
+        "Cory Cats",
+        "Danios / Minnows",
+        "Discus",
+        "Freshwater Sharks",
+        "Goldfish",
+        "Gouramis",
+        "Guppies",
+        "Hatchets",
+        "Killifish",
+        "Larger Catfish",
+        "Loaches",
+        "Mollies / Platies / Swordtails",
+        "Plants",
+        "Plecos (Suckerfish)",
+        "Pond Fish",
+        "Rainbowfish",
+        "Rasboras",
+        "Shrimp",
+        "Snails",
+        "Tetras"
+      ],
+      "notCompatible": [],
+      "withCaution": [
+        "Cichlids - American",
+        "Cichlids - Lake Malawian/Victoria",
+        "Cichlids - Lake Tanganyikan"
+      ]
+    },
+    {
       "name": "Tetras",
       "latinName": "Characidae, Paracheirodon",
       "imageURL": "https://cdn11.bigcommerce.com/s-lsus8itpbr/images/stencil/1920x1280/uploaded_images/at-fish-tetras-cardinal-tetra-poseidon-2-8-24.jpg?t=1707415206",
       "compatible": [
         "Barbs",
-        "Bettas (Female) ♀",
         "Cory Cats",
         "Danios / Minnows",
         "Discus",
-        "Freshwater Plants",
         "Freshwater Sharks",
-        "Freshwater Shrimp",
-        "Freshwater Snails",
         "Goldfish",
         "Gouramis",
         "Guppies",
@@ -1149,9 +1121,12 @@
         "Killifish",
         "Loaches",
         "Mollies / Platies / Swordtails",
+        "Plants",
         "Plecos (Suckerfish)",
         "Rainbowfish",
         "Rasboras",
+        "Shrimp",
+        "Snails",
         "Tetras"
       ],
       "notRecommended": [
@@ -1160,23 +1135,125 @@
         "Pond Fish"
       ],
       "notCompatible": [
-        "Brackish Fish",
         "Cichlids - Lake Malawian/Victoria",
         "Cichlids - Lake Tanganyikan"
       ],
       "withCaution": [
         "Angelfish (Female) ♀",
         "Angelfish (Male) ♂",
+        "Bettas (Female) ♀",
         "Bettas (Male) ♂"
       ]
     }
   ],
   "marine": [
     {
+      "name": "Angels",
+      "latinName": "Pomacanthidae, Pomacanthus",
+      "imageURL": "https://www.dresseldivers.com/wp-content/uploads/Types-of-saltwater-angelfish-QUEEN-3.jpg",
+      "compatible": [
+        "Angels",
+        "Anglers / Frogs",
+        "Anthias",
+        "Basslets",
+        "Batfish",
+        "Blennies",
+        "Boxfish",
+        "Butterflies",
+        "Chromis",
+        "Clownfish (Female) ♀",
+        "Clownfish (Male) ♂",
+        "Damsels",
+        "Dragonets",
+        "Eels",
+        "Foxface / Rabbits",
+        "Groupers",
+        "Grunts / Sweetlips",
+        "Hawkfish",
+        "Hogfish",
+        "Lions / Scorpions",
+        "Parrotfish",
+        "Puffers",
+        "Squirrelfish",
+        "Tangs / Surgeons",
+        "Wrasse - Fish Only",
+        "Wrasse - Reef Safe"
+      ],
+      "notCompatible": [
+        "Seahorse / Pipefish"
+      ],
+      "withCaution": [
+        "Angels - Dwarf",
+        "Cardinals",
+        "Corals",
+        "Dartfish",
+        "Filefish",
+        "Gobies",
+        "Jawfish",
+        "Pseudochromis",
+        "Sharks / Rays",
+        "Shrimp",
+        "Snails",
+        "Triggerfish"
+      ]
+    },
+    {
+      "name": "Angels - Dwarf",
+      "latinName": "Pomacanthidae, Centropyge",
+      "imageURL": "https://azure2.wgp-cdn.co.uk/app-practicalfishkeeping/features/4c7f95a247fa6.jpg?&width=1200&height=630&mode=crop&format=webp&webp.quality=40&scale=both",
+      "compatible": [
+        "Angels - Dwarf",
+        "Anthias",
+        "Basslets",
+        "Batfish",
+        "Blennies",
+        "Boxfish",
+        "Butterflies",
+        "Cardinals",
+        "Chromis",
+        "Clownfish (Female) ♀",
+        "Clownfish (Male) ♂",
+        "Damsels",
+        "Dartfish",
+        "Dragonets",
+        "Filefish",
+        "Foxface / Rabbits",
+        "Gobies",
+        "Grunts / Sweetlips",
+        "Hawkfish",
+        "Hogfish",
+        "Jawfish",
+        "Parrotfish",
+        "Pseudochromis",
+        "Puffers",
+        "Squirrelfish",
+        "Tangs / Surgeons",
+        "Wrasse - Reef Safe"
+      ],
+      "notCompatible": [
+        "Seahorse / Pipefish",
+        "Sharks / Rays"
+      ],
+      "withCaution": [
+        "Angels",
+        "Angels - Dwarf",
+        "Anglers / Frogs",
+        "Corals",
+        "Eels",
+        "Groupers",
+        "Lions / Scorpions",
+        "Shrimp",
+        "Snails",
+        "Triggerfish",
+        "Wrasse - Fish Only"
+      ]
+    },
+    {
       "name": "Anglers / Frogs",
       "latinName": "Antennariidae, Lophiiformes",
       "imageURL": "https://yourfishstore.com/cdn/shop/products/X1-Red-Angler-Frogfish-Lrg-4-6-Marine-Fish-Saltwater-Free-Shipping-marine-fish-packages.jpg?v=1740709075",
       "compatible": [
+        "Angels",
         "Anglers / Frogs",
         "Batfish",
         "Boxfish",
@@ -1184,16 +1261,15 @@
         "Filefish",
         "Foxface / Rabbits",
         "Grunts / Sweetlips",
-        "Large Angels",
         "Lions / Scorpions",
         "Squirrelfish",
         "Tangs / Surgeons"
       ],
       "notRecommended": [
         "Eels",
-        "Marine Shrimp",
-        "Marine Snails",
-        "Puffers"
+        "Puffers",
+        "Shrimp",
+        "Snails"
       ],
       "notCompatible": [
         "Basslets",
@@ -1212,13 +1288,13 @@
         "Triggerfish"
       ],
       "withCaution": [
+        "Angels - Dwarf",
         "Anthias",
         "Blennies",
-        "Dwarf Angels",
+        "Corals",
         "Groupers",
         "Hawkfish",
         "Hogfish",
-        "Live Corals",
         "Parrotfish",
         "Wrasse - Fish Only",
         "Wrasse - Reef Safe"
@@ -1227,8 +1303,10 @@
     {
       "name": "Anthias",
       "latinName": "Serranidae, Anthiinae",
-      "imageURL": "https://www.reef2reef.com/media/bartletts-antias.1066/full",
+      "imageURL": "https://www.biologiamarina.org/wp/wp-content/uploads/2012/08/antias-10-1000x713.jpg",
       "compatible": [
+        "Angels",
+        "Angels - Dwarf",
         "Anthias",
         "Basslets",
         "Blennies",
@@ -1238,10 +1316,10 @@
         "Chromis",
         "Clownfish (Female) ♀",
         "Clownfish (Male) ♂",
+        "Corals",
         "Damsels",
         "Dartfish",
         "Dragonets",
-        "Dwarf Angels",
         "Filefish",
         "Foxface / Rabbits",
         "Gobies",
@@ -1249,13 +1327,11 @@
         "Hawkfish",
         "Hogfish",
         "Jawfish",
-        "Large Angels",
-        "Live Corals",
-        "Marine Shrimp",
-        "Marine Snails",
         "Parrotfish",
         "Pseudochromis",
         "Puffers",
+        "Shrimp",
+        "Snails",
         "Squirrelfish",
         "Tangs / Surgeons",
         "Wrasse - Reef Safe"
@@ -1279,6 +1355,8 @@
       "latinName": "Grammatidae, Gramma, Lipogramma",
       "imageURL": "https://reefs.com/blog/wp-content/uploads/2006/10/Candy_Bass_1-64d8099e9cf06a7bbbfa957095876afe.jpg",
       "compatible": [
+        "Angels",
+        "Angels - Dwarf",
         "Anthias",
         "Basslets",
         "Boxfish",
@@ -1287,18 +1365,16 @@
         "Chromis",
         "Clownfish (Female) ♀",
         "Clownfish (Male) ♂",
+        "Corals",
         "Damsels",
-        "Dwarf Angels",
         "Filefish",
         "Foxface / Rabbits",
         "Gobies",
         "Grunts / Sweetlips",
         "Hawkfish",
         "Jawfish",
-        "Large Angels",
-        "Live Corals",
-        "Marine Shrimp",
-        "Marine Snails",
+        "Shrimp",
+        "Snails",
         "Squirrelfish",
         "Tangs / Surgeons",
         "Wrasse - Reef Safe"
@@ -1329,8 +1405,10 @@
     {
       "name": "Batfish",
       "latinName": "Ephippidae, Platax",
-      "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_w0boutw0boutw0bo.jpg?raw=true",
+      "imageURL": "https://www.thesmilingseahorse.com/uploads/1/0/1/8/10183628/dsc-2797_orig.jpg",
       "compatible": [
+        "Angels",
+        "Angels - Dwarf",
         "Anglers / Frogs",
         "Batfish",
         "Boxfish",
@@ -1338,15 +1416,12 @@
         "Cardinals",
         "Clownfish (Female) ♀",
         "Clownfish (Male) ♂",
-        "Dwarf Angels",
         "Filefish",
         "Foxface / Rabbits",
         "Gobies",
         "Grunts / Sweetlips",
         "Hawkfish",
         "Jawfish",
-        "Large Angels",
-        "Live Corals",
         "Parrotfish",
         "Puffers",
         "Squirrelfish",
@@ -1354,7 +1429,10 @@
       ],
       "notRecommended": [
         "Clownfish (Female) ♀",
-        "Clownfish (Male) ♂"
+        "Clownfish (Male) ♂",
+        "Corals",
+        "Pseudochromis",
+        "Shrimp"
       ],
       "notCompatible": [
         "Groupers",
@@ -1373,8 +1451,7 @@
         "Eels",
         "Hogfish",
         "Lions / Scorpions",
-        "Marine Shrimp",
-        "Marine Snails",
+        "Snails",
         "Tangs / Surgeons",
         "Wrasse - Fish Only"
       ]
@@ -1382,8 +1459,10 @@
     {
       "name": "Blennies",
       "latinName": "Blenniidae, Salarias",
-      "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_w0boutw0boutw0bo.jpg?raw=true",
+      "imageURL": "https://reefchasers.com/cdn/shop/collections/blenny-fish-721819.jpg?v=1682979037",
       "compatible": [
+        "Angels",
+        "Angels - Dwarf",
         "Anthias",
         "Blennies",
         "Boxfish",
@@ -1391,20 +1470,21 @@
         "Chromis",
         "Clownfish (Female) ♀",
         "Clownfish (Male) ♂",
+        "Corals",
         "Damsels",
         "Dartfish",
-        "Dwarf Angels",
         "Filefish",
         "Foxface / Rabbits",
         "Gobies",
         "Hawkfish",
-        "Large Angels",
-        "Live Corals",
-        "Marine Shrimp",
-        "Marine Snails",
         "Puffers",
+        "Shrimp",
+        "Snails",
         "Tangs / Surgeons",
         "Wrasse - Reef Safe"
+      ],
+      "notRecommended": [
+        "Triggerfish"
       ],
       "notCompatible": [
         "Eels",
@@ -1420,8 +1500,8 @@
         "Cardinals",
         "Dragonets",
         "Grunts / Sweetlips",
-        "Jawfish",
         "Hogfish",
+        "Jawfish",
         "Parrotfish",
         "Pseudochromis",
         "Squirrelfish",
@@ -1433,6 +1513,8 @@
       "latinName": "Ostraciidae, Ostracion",
       "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_w0boutw0boutw0bo.jpg?raw=true",
       "compatible": [
+        "Angels",
+        "Angels - Dwarf",
         "Anglers / Frogs",
         "Anthias",
         "Basslets",
@@ -1444,19 +1526,17 @@
         "Chromis",
         "Clownfish (Female) ♀",
         "Clownfish (Male) ♂",
+        "Corals",
         "Damsels",
         "Dartfish",
         "Dragonets",
-        "Dwarf Angels",
         "Filefish",
         "Foxface / Rabbits",
         "Gobies",
         "Grunts / Sweetlips",
         "Hogfish",
         "Jawfish",
-        "Large Angels",
         "Lions / Scorpions",
-        "Live Corals",
         "Parrotfish",
         "Pseudochromis",
         "Squirrelfish",
@@ -1472,9 +1552,9 @@
         "Eels",
         "Groupers",
         "Hawkfish",
-        "Marine Shrimp",
-        "Marine Snails",
         "Puffers",
+        "Shrimp",
+        "Snails",
         "Triggerfish"
       ]
     },
@@ -1483,6 +1563,8 @@
       "latinName": "Chaetodontidae, Chaetodon, Forcipiger, Prognathodes",
       "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_w0boutw0boutw0bo.jpg?raw=true",
       "compatible": [
+        "Angels",
+        "Angels - Dwarf",
         "Anglers / Frogs",
         "Anthias",
         "Basslets",
@@ -1497,7 +1579,6 @@
         "Damsels",
         "Dartfish",
         "Dragonets",
-        "Dwarf Angels",
         "Filefish",
         "Foxface / Rabbits",
         "Gobies",
@@ -1505,7 +1586,6 @@
         "Hawkfish",
         "Hogfish",
         "Jawfish",
-        "Large Angels",
         "Parrotfish",
         "Pseudochromis",
         "Puffers",
@@ -1518,11 +1598,11 @@
         "Sharks / Rays"
       ],
       "withCaution": [
+        "Corals",
         "Groupers",
         "Lions / Scorpions",
-        "Live Corals",
-        "Marine Shrimp",
-        "Marine Snails",
+        "Shrimp",
+        "Snails",
         "Squirrelfish",
         "Triggerfish",
         "Wrasse - Fish Only"
@@ -1533,6 +1613,7 @@
       "latinName": "Apogonidae, Pterapogon",
       "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_w0boutw0boutw0bo.jpg?raw=true",
       "compatible": [
+        "Angels - Dwarf",
         "Anthias",
         "Basslets",
         "Batfish",
@@ -1542,19 +1623,18 @@
         "Chromis",
         "Clownfish (Female) ♀",
         "Clownfish (Male) ♂",
+        "Corals",
         "Dartfish",
         "Dragonets",
-        "Dwarf Angels",
         "Filefish",
         "Foxface / Rabbits",
         "Gobies",
         "Grunts / Sweetlips",
         "Hawkfish",
         "Jawfish",
-        "Live Corals",
-        "Marine Shrimp",
-        "Marine Snails",
         "Puffers",
+        "Shrimp",
+        "Snails",
         "Tangs / Surgeons"
       ],
       "notCompatible": [
@@ -1567,7 +1647,7 @@
         "Triggerfish"
       ],
       "withCaution": [
-        "Large Angels",
+        "Angels",
         "Blennies",
         "Damsels",
         "Hogfish",
@@ -1582,6 +1662,8 @@
       "latinName": "Pomacentridae, Chromis",
       "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_w0boutw0boutw0bo.jpg?raw=true",
       "compatible": [
+        "Angels",
+        "Angels - Dwarf",
         "Anthias",
         "Basslets",
         "Blennies",
@@ -1591,21 +1673,19 @@
         "Chromis",
         "Clownfish (Female) ♀",
         "Clownfish (Male) ♂",
+        "Corals",
         "Dartfish",
         "Dragonets",
-        "Dwarf Angels",
         "Filefish",
         "Foxface / Rabbits",
         "Gobies",
         "Hawkfish",
         "Jawfish",
-        "Large Angels",
-        "Live Corals",
-        "Marine Shrimp",
-        "Marine Snails",
         "Parrotfish",
         "Pseudochromis",
         "Puffers",
+        "Shrimp",
+        "Snails",
         "Tangs / Surgeons",
         "Wrasse - Reef Safe"
       ],
@@ -1631,6 +1711,8 @@
       "latinName": "Pomacentridae, Amphiprion",
       "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_w0boutw0boutw0bo.jpg?raw=true",
       "compatible": [
+        "Angels",
+        "Angels - Dwarf",
         "Anthias",
         "Basslets",
         "Blennies",
@@ -1640,21 +1722,19 @@
         "Chromis",
         "Clownfish (Female) ♀",
         "Clownfish (Male) ♂",
+        "Corals",
         "Dartfish",
         "Dragonets",
-        "Dwarf Angels",
         "Filefish",
         "Foxface / Rabbits",
         "Gobies",
         "Hawkfish",
         "Jawfish",
-        "Large Angels",
-        "Live Corals",
-        "Marine Shrimp",
-        "Marine Snails",
         "Parrotfish",
         "Pseudochromis",
         "Puffers",
+        "Shrimp",
+        "Snails",
         "Tangs / Surgeons",
         "Wrasse - Reef Safe"
       ],
@@ -1684,6 +1764,8 @@
       "latinName": "Pomacentridae, Amphiprion",
       "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_w0boutw0boutw0bo.jpg?raw=true",
       "compatible": [
+        "Angels",
+        "Angels - Dwarf",
         "Anthias",
         "Basslets",
         "Blennies",
@@ -1693,21 +1775,19 @@
         "Chromis",
         "Clownfish (Female) ♀",
         "Clownfish (Male) ♂",
+        "Corals",
         "Dartfish",
         "Dragonets",
-        "Dwarf Angels",
         "Filefish",
         "Foxface / Rabbits",
         "Gobies",
         "Hawkfish",
         "Jawfish",
-        "Large Angels",
-        "Live Corals",
-        "Marine Shrimp",
-        "Marine Snails",
         "Parrotfish",
         "Pseudochromis",
         "Puffers",
+        "Shrimp",
+        "Snails",
         "Tangs / Surgeons",
         "Wrasse - Reef Safe"
       ],
@@ -1732,10 +1812,64 @@
       ]
     },
     {
+      "name": "Corals",
+      "latinName": "Various",
+      "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_w0boutw0boutw0bo.jpg?raw=true",
+      "compatible": [
+        "Anthias",
+        "Basslets",
+        "Blennies",
+        "Boxfish",
+        "Cardinals",
+        "Chromis",
+        "Clownfish (Female) ♀",
+        "Clownfish (Male) ♂",
+        "Corals",
+        "Damsels",
+        "Dartfish",
+        "Dragonets",
+        "Eels",
+        "Gobies",
+        "Groupers",
+        "Grunts / Sweetlips",
+        "Hawkfish",
+        "Hogfish",
+        "Jawfish",
+        "Lions / Scorpions",
+        "Pseudochromis",
+        "Seahorse / Pipefish",
+        "Shrimp",
+        "Snails",
+        "Squirrelfish",
+        "Tangs / Surgeons",
+        "Wrasse - Reef Safe"
+      ],
+      "notRecommended": [
+        "Batfish"
+      ],
+      "notCompatible": [
+        "Parrotfish"
+      ],
+      "withCaution": [
+        "Angels",
+        "Angels - Dwarf",
+        "Anglers / Frogs",
+        "Butterflies",
+        "Filefish",
+        "Foxface / Rabbits",
+        "Puffers",
+        "Sharks / Rays",
+        "Triggerfish",
+        "Wrasse - Fish Only"
+      ]
+    },
+    {
       "name": "Damsels",
       "latinName": "Pomacentridae, Dascyllus",
       "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_w0boutw0boutw0bo.jpg?raw=true",
       "compatible": [
+        "Angels",
+        "Angels - Dwarf",
         "Anthias",
         "Basslets",
         "Blennies",
@@ -1743,20 +1877,18 @@
         "Butterflies",
         "Clownfish (Female) ♀",
         "Clownfish (Male) ♂",
+        "Corals",
         "Damsels",
-        "Dwarf Angels",
         "Filefish",
         "Foxface / Rabbits",
         "Gobies",
         "Hawkfish",
         "Jawfish",
-        "Large Angels",
-        "Live Corals",
-        "Marine Shrimp",
-        "Marine Snails",
         "Parrotfish",
         "Pseudochromis",
         "Puffers",
+        "Shrimp",
+        "Snails",
         "Tangs / Surgeons",
         "Wrasse - Fish Only",
         "Wrasse - Reef Safe"
@@ -1789,6 +1921,7 @@
       "latinName": "Microdesmidae, Nemateleotris, Ptereleotris",
       "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_w0boutw0boutw0bo.jpg?raw=true",
       "compatible": [
+        "Angels - Dwarf",
         "Anthias",
         "Blennies",
         "Boxfish",
@@ -1797,16 +1930,15 @@
         "Chromis",
         "Clownfish (Female) ♀",
         "Clownfish (Male) ♂",
+        "Corals",
         "Dartfish",
         "Dragonets",
-        "Dwarf Angels",
         "Foxface / Rabbits",
         "Gobies",
         "Hawkfish",
         "Jawfish",
-        "Live Corals",
-        "Marine Shrimp",
-        "Marine Snails",
+        "Shrimp",
+        "Snails",
         "Tangs / Surgeons",
         "Wrasse - Reef Safe"
       ],
@@ -1819,7 +1951,7 @@
         "Triggerfish"
       ],
       "withCaution": [
-        "Large Angels",
+        "Angels",
         "Basslets",
         "Batfish",
         "Damsels",
@@ -1839,6 +1971,8 @@
       "latinName": "Callionymidae, Synchiropus, Callionymus",
       "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_w0boutw0boutw0bo.jpg?raw=true",
       "compatible": [
+        "Angels",
+        "Angels - Dwarf",
         "Anthias",
         "Boxfish",
         "Butterflies",
@@ -1846,20 +1980,18 @@
         "Chromis",
         "Clownfish (Female) ♀",
         "Clownfish (Male) ♂",
+        "Corals",
         "Damsels",
         "Dartfish",
         "Dragonets",
-        "Dwarf Angels",
         "Foxface / Rabbits",
         "Gobies",
         "Hawkfish",
         "Jawfish",
-        "Large Angels",
-        "Live Corals",
-        "Marine Shrimp",
-        "Marine Snails",
         "Puffers",
         "Seahorse / Pipefish",
+        "Shrimp",
+        "Snails",
         "Tangs / Surgeons",
         "Wrasse - Reef Safe"
       ],
@@ -1885,67 +2017,17 @@
       ]
     },
     {
-      "name": "Dwarf Angels",
-      "latinName": "Pomacanthidae, Centropyge",
-      "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_w0boutw0boutw0bo.jpg?raw=true",
-      "compatible": [
-        "Anthias",
-        "Basslets",
-        "Batfish",
-        "Blennies",
-        "Boxfish",
-        "Butterflies",
-        "Cardinals",
-        "Chromis",
-        "Clownfish (Female) ♀",
-        "Clownfish (Male) ♂",
-        "Damsels",
-        "Dartfish",
-        "Dragonets",
-        "Dwarf Angels",
-        "Filefish",
-        "Foxface / Rabbits",
-        "Gobies",
-        "Grunts / Sweetlips",
-        "Hawkfish",
-        "Hogfish",
-        "Jawfish",
-        "Large Angels",
-        "Parrotfish",
-        "Pseudochromis",
-        "Puffers",
-        "Squirrelfish",
-        "Tangs / Surgeons",
-        "Wrasse - Reef Safe"
-      ],
-      "notCompatible": [
-        "Seahorse / Pipefish",
-        "Sharks / Rays"
-      ],
-      "withCaution": [
-        "Anglers / Frogs",
-        "Eels",
-        "Groupers",
-        "Lions / Scorpions",
-        "Live Corals",
-        "Marine Shrimp",
-        "Marine Snails",
-        "Triggerfish",
-        "Wrasse - Fish Only"
-      ]
-    },
-    {
       "name": "Eels",
       "latinName": "Muraenidae, Muraena",
       "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_w0boutw0boutw0bo.jpg?raw=true",
       "compatible": [
+        "Angels",
+        "Corals",
         "Eels",
-        "Large Angels",
         "Grunts / Sweetlips",
         "Lions / Scorpions",
         "Puffers",
-        "Tangs / Surgeons",
-        "Live Corals"
+        "Tangs / Surgeons"
       ],
       "notRecommended": [
         "Anglers / Frogs"
@@ -1969,17 +2051,17 @@
         "Seahorse / Pipefish"
       ],
       "withCaution": [
+        "Angels - Dwarf",
         "Anthias",
         "Batfish",
         "Boxfish",
-        "Dwarf Angels",
         "Foxface / Rabbits",
         "Groupers",
         "Hogfish",
-        "Marine Shrimp",
-        "Marine Snails",
         "Parrotfish",
         "Sharks / Rays",
+        "Shrimp",
+        "Snails",
         "Squirrelfish",
         "Triggerfish",
         "Wrasse - Fish Only",
@@ -1991,6 +2073,7 @@
       "latinName": "Monacanthidae, Aluterus, Stephanolepis, Amanses",
       "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_w0boutw0boutw0bo.jpg?raw=true",
       "compatible": [
+        "Angels - Dwarf",
         "Anglers / Frogs",
         "Anthias",
         "Basslets",
@@ -2003,7 +2086,6 @@
         "Clownfish (Female) ♀",
         "Clownfish (Male) ♂",
         "Damsels",
-        "Dwarf Angels",
         "Filefish",
         "Foxface / Rabbits",
         "Gobies",
@@ -2020,20 +2102,20 @@
       "notCompatible": [
         "Eels",
         "Groupers",
-        "Marine Shrimp",
-        "Marine Snails",
         "Seahorse / Pipefish",
         "Sharks / Rays",
+        "Shrimp",
+        "Snails",
         "Triggerfish"
       ],
       "withCaution": [
-        "Large Angels",
+        "Angels",
+        "Corals",
         "Dartfish",
         "Dragonets",
         "Lions / Scorpions",
         "Pseudochromis",
-        "Wrasse - Fish Only",
-        "Live Corals"
+        "Wrasse - Fish Only"
       ]
     },
     {
@@ -2041,6 +2123,8 @@
       "latinName": "Siganidae, Siganus",
       "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_w0boutw0boutw0bo.jpg?raw=true",
       "compatible": [
+        "Angels",
+        "Angels - Dwarf",
         "Anglers / Frogs",
         "Anthias",
         "Basslets",
@@ -2055,7 +2139,6 @@
         "Damsels",
         "Dartfish",
         "Dragonets",
-        "Dwarf Angels",
         "Filefish",
         "Foxface / Rabbits",
         "Gobies",
@@ -2064,7 +2147,6 @@
         "Hawkfish",
         "Hogfish",
         "Jawfish",
-        "Large Angels",
         "Lions / Scorpions",
         "Parrotfish",
         "Pseudochromis",
@@ -2076,11 +2158,11 @@
         "Seahorse / Pipefish"
       ],
       "withCaution": [
+        "Corals",
         "Eels",
-        "Live Corals",
-        "Marine Shrimp",
-        "Marine Snails",
         "Sharks / Rays",
+        "Shrimp",
+        "Snails",
         "Tangs / Surgeons",
         "Triggerfish",
         "Wrasse - Fish Only"
@@ -2091,6 +2173,7 @@
       "latinName": "Gobiidae, Stonogobiops",
       "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_w0boutw0boutw0bo.jpg?raw=true",
       "compatible": [
+        "Angels - Dwarf",
         "Anthias",
         "Basslets",
         "Batfish",
@@ -2101,20 +2184,19 @@
         "Chromis",
         "Clownfish (Female) ♀",
         "Clownfish (Male) ♂",
+        "Corals",
         "Damsels",
         "Dartfish",
         "Dragonets",
-        "Dwarf Angels",
         "Filefish",
         "Foxface / Rabbits",
         "Gobies",
         "Hawkfish",
         "Jawfish",
-        "Live Corals",
-        "Marine Shrimp",
-        "Marine Snails",
         "Pseudochromis",
         "Puffers",
+        "Shrimp",
+        "Snails",
         "Tangs / Surgeons"
       ],
       "notCompatible": [
@@ -2125,7 +2207,7 @@
         "Sharks / Rays"
       ],
       "withCaution": [
-        "Large Angels",
+        "Angels",
         "Grunts / Sweetlips",
         "Hogfish",
         "Parrotfish",
@@ -2140,12 +2222,12 @@
       "latinName": "Serranidae, Epinephelus",
       "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_w0boutw0boutw0bo.jpg?raw=true",
       "compatible": [
-        "Groupers",
-        "Large Angels",
+        "Angels",
+        "Corals",
         "Foxface / Rabbits",
+        "Groupers",
         "Lions / Scorpions",
-        "Tangs / Surgeons",
-        "Live Corals"
+        "Tangs / Surgeons"
       ],
       "notCompatible": [
         "Anthias",
@@ -2168,18 +2250,18 @@
         "Squirrelfish"
       ],
       "withCaution": [
+        "Angels - Dwarf",
         "Anglers / Frogs",
         "Boxfish",
         "Butterflies",
-        "Dwarf Angels",
         "Eels",
         "Grunts / Sweetlips",
         "Hogfish",
-        "Marine Shrimp",
-        "Marine Snails",
         "Parrotfish",
         "Puffers",
         "Sharks / Rays",
+        "Shrimp",
+        "Snails",
         "Triggerfish",
         "Wrasse - Fish Only",
         "Wrasse - Reef Safe"
@@ -2190,6 +2272,8 @@
       "latinName": "Haemulidae, Plectorhinchus",
       "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_w0boutw0boutw0bo.jpg?raw=true",
       "compatible": [
+        "Angels",
+        "Angels - Dwarf",
         "Anglers / Frogs",
         "Anthias",
         "Basslets",
@@ -2200,14 +2284,12 @@
         "Cardinals",
         "Clownfish (Female) ♀",
         "Clownfish (Male) ♂",
-        "Dwarf Angels",
+        "Corals",
         "Eels",
         "Filefish",
         "Foxface / Rabbits",
         "Grunts / Sweetlips",
         "Hogfish",
-        "Large Angels",
-        "Live Corals",
         "Parrotfish",
         "Pseudochromis",
         "Puffers",
@@ -2231,9 +2313,9 @@
         "Hawkfish",
         "Jawfish",
         "Lions / Scorpions",
-        "Marine Shrimp",
-        "Marine Snails",
         "Sharks / Rays",
+        "Shrimp",
+        "Snails",
         "Triggerfish",
         "Wrasse - Fish Only",
         "Wrasse - Reef Safe"
@@ -2244,6 +2326,8 @@
       "latinName": "Cirrhitidae, Neocirrhites, Cyprinocirrhites",
       "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_w0boutw0boutw0bo.jpg?raw=true",
       "compatible": [
+        "Angels",
+        "Angels - Dwarf",
         "Anthias",
         "Basslets",
         "Batfish",
@@ -2253,18 +2337,16 @@
         "Chromis",
         "Clownfish (Female) ♀",
         "Clownfish (Male) ♂",
+        "Corals",
         "Damsels",
         "Dartfish",
         "Dragonets",
-        "Dwarf Angels",
         "Filefish",
         "Foxface / Rabbits",
         "Gobies",
         "Hawkfish",
         "Hogfish",
         "Jawfish",
-        "Large Angels",
-        "Live Corals",
         "Parrotfish",
         "Pseudochromis",
         "Puffers",
@@ -2283,8 +2365,8 @@
         "Anglers / Frogs",
         "Boxfish",
         "Grunts / Sweetlips",
-        "Marine Shrimp",
-        "Marine Snails",
+        "Shrimp",
+        "Snails",
         "Triggerfish"
       ]
     },
@@ -2293,21 +2375,21 @@
       "latinName": "Labridae, Bodianus",
       "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_w0boutw0boutw0bo.jpg?raw=true",
       "compatible": [
-        "Hogfish",
-        "Dwarf Angels",
-        "Large Angels",
+        "Angels",
+        "Angels - Dwarf",
         "Anthias",
         "Boxfish",
         "Butterflies",
+        "Corals",
         "Filefish",
         "Foxface / Rabbits",
         "Grunts / Sweetlips",
         "Hawkfish",
+        "Hogfish",
         "Parrotfish",
         "Puffers",
         "Tangs / Surgeons",
-        "Wrasse - Reef Safe",
-        "Live Corals"
+        "Wrasse - Reef Safe"
       ],
       "notCompatible": [
         "Seahorse / Pipefish"
@@ -2329,10 +2411,10 @@
         "Groupers",
         "Jawfish",
         "Lions / Scorpions",
-        "Marine Shrimp",
-        "Marine Snails",
         "Pseudochromis",
         "Sharks / Rays",
+        "Shrimp",
+        "Snails",
         "Squirrelfish",
         "Triggerfish",
         "Wrasse - Fish Only"
@@ -2343,6 +2425,7 @@
       "latinName": "Opistognathidae, Opistognathus",
       "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_w0boutw0boutw0bo.jpg?raw=true",
       "compatible": [
+        "Angels - Dwarf",
         "Anthias",
         "Basslets",
         "Batfish",
@@ -2352,20 +2435,19 @@
         "Chromis",
         "Clownfish (Female) ♀",
         "Clownfish (Male) ♂",
+        "Corals",
         "Damsels",
         "Dartfish",
         "Dragonets",
-        "Dwarf Angels",
         "Filefish",
         "Foxface / Rabbits",
         "Gobies",
         "Hawkfish",
         "Jawfish",
-        "Live Corals",
-        "Marine Shrimp",
-        "Marine Snails",
         "Pseudochromis",
         "Puffers",
+        "Shrimp",
+        "Snails",
         "Tangs / Surgeons"
       ],
       "notCompatible": [
@@ -2376,7 +2458,7 @@
         "Sharks / Rays"
       ],
       "withCaution": [
-        "Large Angels",
+        "Angels",
         "Blennies",
         "Grunts / Sweetlips",
         "Hogfish",
@@ -2385,56 +2467,6 @@
         "Squirrelfish",
         "Triggerfish",
         "Wrasse - Fish Only"
-      ]
-    },
-    {
-      "name": "Large Angels",
-      "latinName": "Pomacanthidae, Pomacanthus",
-      "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_w0boutw0boutw0bo.jpg?raw=true",
-      "compatible": [
-        "Anglers / Frogs",
-        "Anthias",
-        "Basslets",
-        "Batfish",
-        "Blennies",
-        "Boxfish",
-        "Butterflies",
-        "Chromis",
-        "Clownfish (Female) ♀",
-        "Clownfish (Male) ♂",
-        "Damsels",
-        "Dragonets",
-        "Dwarf Angels",
-        "Eels",
-        "Foxface / Rabbits",
-        "Groupers",
-        "Grunts / Sweetlips",
-        "Hawkfish",
-        "Hogfish",
-        "Large Angels",
-        "Lions / Scorpions",
-        "Parrotfish",
-        "Puffers",
-        "Squirrelfish",
-        "Tangs / Surgeons",
-        "Wrasse - Fish Only",
-        "Wrasse - Reef Safe"
-      ],
-      "notCompatible": [
-        "Seahorse / Pipefish"
-      ],
-      "withCaution": [
-        "Cardinals",
-        "Dartfish",
-        "Filefish",
-        "Gobies",
-        "Jawfish",
-        "Live Corals",
-        "Marine Shrimp",
-        "Marine Snails",
-        "Pseudochromis",
-        "Sharks / Rays",
-        "Triggerfish"
       ]
     },
     {
@@ -2442,14 +2474,14 @@
       "latinName": "Scorpaenidae, Pterois",
       "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_w0boutw0boutw0bo.jpg?raw=true",
       "compatible": [
+        "Angels",
         "Anglers / Frogs",
         "Boxfish",
+        "Corals",
         "Eels",
         "Foxface / Rabbits",
         "Groupers",
-        "Large Angels",
         "Lions / Scorpions",
-        "Live Corals",
         "Puffers",
         "Tangs / Surgeons"
       ],
@@ -2470,172 +2502,18 @@
         "Seahorse / Pipefish"
       ],
       "withCaution": [
+        "Angels - Dwarf",
         "Anthias",
         "Butterflies",
-        "Dwarf Angels",
         "Filefish",
         "Grunts / Sweetlips",
         "Hogfish",
-        "Marine Shrimp",
-        "Marine Snails",
         "Parrotfish",
         "Sharks / Rays",
+        "Shrimp",
+        "Snails",
         "Squirrelfish",
         "Triggerfish",
-        "Wrasse - Fish Only",
-        "Wrasse - Reef Safe"
-      ]
-    },
-    {
-      "name": "Live Corals",
-      "latinName": "Various",
-      "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_w0boutw0boutw0bo.jpg?raw=true",
-      "compatible": [
-        "Anthias",
-        "Basslets",
-        "Batfish",
-        "Blennies",
-        "Boxfish",
-        "Cardinals",
-        "Chromis",
-        "Clownfish (Female) ♀",
-        "Clownfish (Male) ♂",
-        "Damsels",
-        "Dartfish",
-        "Dragonets",
-        "Eels",
-        "Gobies",
-        "Groupers",
-        "Grunts / Sweetlips",
-        "Hawkfish",
-        "Hogfish",
-        "Jawfish",
-        "Lions / Scorpions",
-        "Live Corals",
-        "Marine Shrimp",
-        "Marine Snails",
-        "Pseudochromis",
-        "Seahorse / Pipefish",
-        "Squirrelfish",
-        "Tangs / Surgeons",
-        "Wrasse - Reef Safe"
-      ],
-      "notCompatible": [
-        "Parrotfish"
-      ],
-      "withCaution": [
-        "Anglers / Frogs",
-        "Butterflies",
-        "Dwarf Angels",
-        "Filefish",
-        "Foxface / Rabbits",
-        "Large Angels",
-        "Puffers",
-        "Sharks / Rays",
-        "Triggerfish",
-        "Wrasse - Fish Only"
-      ]
-    },
-    {
-      "name": "Marine Shrimp",
-      "latinName": "Various",
-      "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_w0boutw0boutw0bo.jpg?raw=true",
-      "compatible": [
-        "Anthias",
-        "Basslets",
-        "Blennies",
-        "Cardinals",
-        "Chromis",
-        "Clownfish (Female) ♀",
-        "Clownfish (Male) ♂",
-        "Damsels",
-        "Dartfish",
-        "Dragonets",
-        "Gobies",
-        "Jawfish",
-        "Live Corals",
-        "Marine Shrimp",
-        "Marine Snails",
-        "Pseudochromis",
-        "Tangs / Surgeons"
-      ],
-      "notRecommended": [
-        "Anglers / Frogs"
-      ],
-      "notCompatible": [
-        "Filefish",
-        "Parrotfish",
-        "Puffers",
-        "Sharks / Rays",
-        "Triggerfish"
-      ],
-      "withCaution": [
-        "Batfish",
-        "Boxfish",
-        "Butterflies",
-        "Dwarf Angels",
-        "Eels",
-        "Foxface / Rabbits",
-        "Groupers",
-        "Grunts / Sweetlips",
-        "Hawkfish",
-        "Hogfish",
-        "Large Angels",
-        "Lions / Scorpions",
-        "Seahorse / Pipefish",
-        "Squirrelfish",
-        "Wrasse - Fish Only",
-        "Wrasse - Reef Safe"
-      ]
-    },
-    {
-      "name": "Marine Snails",
-      "latinName": "Various",
-      "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_w0boutw0boutw0bo.jpg?raw=true",
-      "compatible": [
-        "Anthias",
-        "Basslets",
-        "Blennies",
-        "Cardinals",
-        "Chromis",
-        "Clownfish (Female) ♀",
-        "Clownfish (Male) ♂",
-        "Damsels",
-        "Dartfish",
-        "Dragonets",
-        "Gobies",
-        "Jawfish",
-        "Live Corals",
-        "Marine Shrimp",
-        "Marine Snails",
-        "Pseudochromis",
-        "Tangs / Surgeons"
-      ],
-      "notRecommended": [
-        "Anglers / Frogs"
-      ],
-      "notCompatible": [
-        "Filefish",
-        "Parrotfish",
-        "Puffers",
-        "Sharks / Rays",
-        "Triggerfish"
-      ],
-      "withCaution": [
-        "Batfish",
-        "Boxfish",
-        "Butterflies",
-        "Dwarf Angels",
-        "Eels",
-        "Foxface / Rabbits",
-        "Groupers",
-        "Grunts / Sweetlips",
-        "Hawkfish",
-        "Hogfish",
-        "Large Angels",
-        "Lions / Scorpions",
-        "Seahorse / Pipefish",
-        "Squirrelfish",
         "Wrasse - Fish Only",
         "Wrasse - Reef Safe"
       ]
@@ -2645,6 +2523,8 @@
       "latinName": "Scaridae, Sparisoma, Scarus",
       "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_w0boutw0boutw0bo.jpg?raw=true",
       "compatible": [
+        "Angels",
+        "Angels - Dwarf",
         "Anthias",
         "Batfish",
         "Boxfish",
@@ -2653,23 +2533,21 @@
         "Clownfish (Female) ♀",
         "Clownfish (Male) ♂",
         "Damsels",
-        "Dwarf Angels",
         "Filefish",
         "Foxface / Rabbits",
         "Grunts / Sweetlips",
         "Hawkfish",
         "Hogfish",
-        "Large Angels",
         "Parrotfish",
         "Puffers",
         "Squirrelfish",
         "Tangs / Surgeons"
       ],
       "notCompatible": [
-        "Live Corals",
-        "Marine Shrimp",
-        "Marine Snails",
-        "Seahorse / Pipefish"
+        "Corals",
+        "Seahorse / Pipefish",
+        "Shrimp",
+        "Snails"
       ],
       "withCaution": [
         "Anglers / Frogs",
@@ -2695,28 +2573,29 @@
       "latinName": "Pseudochromidae, Pseudochromis",
       "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_w0boutw0boutw0bo.jpg?raw=true",
       "compatible": [
+        "Angels - Dwarf",
         "Anthias",
         "Boxfish",
         "Butterflies",
         "Chromis",
         "Clownfish (Female) ♀",
         "Clownfish (Male) ♂",
+        "Corals",
         "Damsels",
-        "Dwarf Angels",
         "Foxface / Rabbits",
         "Gobies",
         "Grunts / Sweetlips",
         "Hawkfish",
         "Jawfish",
-        "Live Corals",
-        "Marine Shrimp",
-        "Marine Snails",
         "Pseudochromis",
+        "Shrimp",
+        "Snails",
         "Squirrelfish",
         "Tangs / Surgeons"
       ],
       "notRecommended": [
-        "Basslets"
+        "Basslets",
+        "Batfish"
       ],
       "notCompatible": [
         "Anglers / Frogs",
@@ -2728,7 +2607,7 @@
         "Triggerfish"
       ],
       "withCaution": [
-        "Large Angels",
+        "Angels",
         "Batfish",
         "Blennies",
         "Cardinals",
@@ -2738,8 +2617,8 @@
         "Hogfish",
         "Parrotfish",
         "Puffers",
-        "Wrasse - Reef Safe",
-        "Wrasse - Fish Only"
+        "Wrasse - Fish Only",
+        "Wrasse - Reef Safe"
       ]
     },
     {
@@ -2747,6 +2626,8 @@
       "latinName": "Tetraodontidae, Tetraodon, Carinotetraodon",
       "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_w0boutw0boutw0bo.jpg?raw=true",
       "compatible": [
+        "Angels",
+        "Angels - Dwarf",
         "Anthias",
         "Batfish",
         "Blennies",
@@ -2757,7 +2638,6 @@
         "Clownfish (Male) ♂",
         "Damsels",
         "Dragonets",
-        "Dwarf Angels",
         "Eels",
         "Filefish",
         "Foxface / Rabbits",
@@ -2766,7 +2646,6 @@
         "Hawkfish",
         "Hogfish",
         "Jawfish",
-        "Large Angels",
         "Lions / Scorpions",
         "Parrotfish",
         "Puffers",
@@ -2778,20 +2657,20 @@
         "Anglers / Frogs"
       ],
       "notCompatible": [
-        "Marine Shrimp",
-        "Marine Snails",
         "Seahorse / Pipefish",
-        "Sharks / Rays"
+        "Sharks / Rays",
+        "Shrimp",
+        "Snails"
       ],
       "withCaution": [
         "Basslets",
         "Boxfish",
+        "Corals",
         "Dartfish",
         "Groupers",
         "Pseudochromis",
         "Triggerfish",
-        "Wrasse - Fish Only",
-        "Live Corals"
+        "Wrasse - Fish Only"
       ]
     },
     {
@@ -2799,11 +2678,13 @@
       "latinName": "Syngnathinae, Hippocampus, Syngnathus, Corythoichthys",
       "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_w0boutw0boutw0bo.jpg?raw=true",
       "compatible": [
-        "Seahorse / Pipefish",
+        "Corals",
         "Dragonets",
-        "Live Corals"
+        "Seahorse / Pipefish"
       ],
       "notCompatible": [
+        "Angels",
+        "Angels - Dwarf",
         "Anglers / Frogs",
         "Anthias",
         "Basslets",
@@ -2816,7 +2697,6 @@
         "Clownfish (Female) ♀",
         "Clownfish (Male) ♂",
         "Damsels",
-        "Dwarf Angels",
         "Eels",
         "Filefish",
         "Foxface / Rabbits",
@@ -2824,7 +2704,6 @@
         "Grunts / Sweetlips",
         "Hawkfish",
         "Hogfish",
-        "Large Angels",
         "Lions / Scorpions",
         "Parrotfish",
         "Pseudochromis",
@@ -2840,8 +2719,8 @@
         "Dartfish",
         "Gobies",
         "Jawfish",
-        "Marine Shrimp",
-        "Marine Snails"
+        "Shrimp",
+        "Snails"
       ]
     },
     {
@@ -2852,6 +2731,7 @@
         "Sharks / Rays"
       ],
       "notCompatible": [
+        "Angels - Dwarf",
         "Anglers / Frogs",
         "Anthias",
         "Basslets",
@@ -2866,21 +2746,21 @@
         "Damsels",
         "Dartfish",
         "Dragonets",
-        "Dwarf Angels",
         "Filefish",
         "Gobies",
         "Hawkfish",
         "Jawfish",
-        "Marine Shrimp",
-        "Marine Snails",
         "Pseudochromis",
         "Puffers",
         "Seahorse / Pipefish",
+        "Shrimp",
+        "Snails",
         "Triggerfish",
         "Wrasse - Reef Safe"
       ],
       "withCaution": [
-        "Large Angels",
+        "Angels",
+        "Corals",
         "Eels",
         "Foxface / Rabbits",
         "Groupers",
@@ -2890,8 +2770,111 @@
         "Parrotfish",
         "Squirrelfish",
         "Tangs / Surgeons",
+        "Wrasse - Fish Only"
+      ]
+    },
+    {
+      "name": "Shrimp",
+      "latinName": "Various",
+      "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_w0boutw0boutw0bo.jpg?raw=true",
+      "compatible": [
+        "Anthias",
+        "Basslets",
+        "Blennies",
+        "Cardinals",
+        "Chromis",
+        "Clownfish (Female) ♀",
+        "Clownfish (Male) ♂",
+        "Corals",
+        "Damsels",
+        "Dartfish",
+        "Dragonets",
+        "Gobies",
+        "Jawfish",
+        "Pseudochromis",
+        "Shrimp",
+        "Snails",
+        "Tangs / Surgeons"
+      ],
+      "notRecommended": [
+        "Anglers / Frogs",
+        "Batfish"
+      ],
+      "notCompatible": [
+        "Filefish",
+        "Parrotfish",
+        "Puffers",
+        "Sharks / Rays",
+        "Triggerfish"
+      ],
+      "withCaution": [
+        "Angels",
+        "Angels - Dwarf",
+        "Boxfish",
+        "Butterflies",
+        "Eels",
+        "Foxface / Rabbits",
+        "Groupers",
+        "Grunts / Sweetlips",
+        "Hawkfish",
+        "Hogfish",
+        "Lions / Scorpions",
+        "Seahorse / Pipefish",
+        "Squirrelfish",
         "Wrasse - Fish Only",
-        "Live Corals"
+        "Wrasse - Reef Safe"
+      ]
+    },
+    {
+      "name": "Snails",
+      "latinName": "Various",
+      "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_w0boutw0boutw0bo.jpg?raw=true",
+      "compatible": [
+        "Anthias",
+        "Basslets",
+        "Blennies",
+        "Cardinals",
+        "Chromis",
+        "Clownfish (Female) ♀",
+        "Clownfish (Male) ♂",
+        "Corals",
+        "Damsels",
+        "Dartfish",
+        "Dragonets",
+        "Gobies",
+        "Jawfish",
+        "Pseudochromis",
+        "Shrimp",
+        "Snails",
+        "Tangs / Surgeons"
+      ],
+      "notRecommended": [
+        "Anglers / Frogs"
+      ],
+      "notCompatible": [
+        "Filefish",
+        "Parrotfish",
+        "Puffers",
+        "Sharks / Rays",
+        "Triggerfish"
+      ],
+      "withCaution": [
+        "Angels",
+        "Angels - Dwarf",
+        "Batfish",
+        "Boxfish",
+        "Butterflies",
+        "Eels",
+        "Foxface / Rabbits",
+        "Groupers",
+        "Grunts / Sweetlips",
+        "Hawkfish",
+        "Hogfish",
+        "Lions / Scorpions",
+        "Seahorse / Pipefish",
+        "Squirrelfish",
+        "Wrasse - Fish Only",
+        "Wrasse - Reef Safe"
       ]
     },
     {
@@ -2899,6 +2882,8 @@
       "latinName": "Holocentridae, Holocentrus, Sargocentron, Myripristis",
       "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_w0boutw0boutw0bo.jpg?raw=true",
       "compatible": [
+        "Angels",
+        "Angels - Dwarf",
         "Anglers / Frogs",
         "Anthias",
         "Basslets",
@@ -2906,13 +2891,11 @@
         "Boxfish",
         "Clownfish (Female) ♀",
         "Clownfish (Male) ♂",
-        "Dwarf Angels",
+        "Corals",
         "Filefish",
         "Foxface / Rabbits",
         "Grunts / Sweetlips",
         "Hawkfish",
-        "Large Angels",
-        "Live Corals",
         "Parrotfish",
         "Pseudochromis",
         "Puffers",
@@ -2941,9 +2924,9 @@
         "Hogfish",
         "Jawfish",
         "Lions / Scorpions",
-        "Marine Shrimp",
-        "Marine Snails",
         "Sharks / Rays",
+        "Shrimp",
+        "Snails",
         "Triggerfish",
         "Wrasse - Fish Only"
       ]
@@ -2953,6 +2936,8 @@
       "latinName": "Acanthuridae, Acanthurus, Ctenochaetus, Naso",
       "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_w0boutw0boutw0bo.jpg?raw=true",
       "compatible": [
+        "Angels",
+        "Angels - Dwarf",
         "Anglers / Frogs",
         "Anthias",
         "Basslets",
@@ -2963,10 +2948,10 @@
         "Chromis",
         "Clownfish (Female) ♀",
         "Clownfish (Male) ♂",
+        "Corals",
         "Damsels",
         "Dartfish",
         "Dragonets",
-        "Dwarf Angels",
         "Eels",
         "Filefish",
         "Gobies",
@@ -2975,14 +2960,12 @@
         "Hawkfish",
         "Hogfish",
         "Jawfish",
-        "Large Angels",
         "Lions / Scorpions",
-        "Live Corals",
-        "Marine Shrimp",
-        "Marine Snails",
         "Parrotfish",
         "Pseudochromis",
         "Puffers",
+        "Shrimp",
+        "Snails",
         "Squirrelfish",
         "Tangs / Surgeons",
         "Wrasse - Fish Only",
@@ -3005,6 +2988,9 @@
       "compatible": [
         "Triggerfish"
       ],
+      "notRecommended": [
+        "Blennies"
+      ],
       "notCompatible": [
         "Anglers / Frogs",
         "Basslets",
@@ -3013,13 +2999,15 @@
         "Dartfish",
         "Dragonets",
         "Filefish",
-        "Marine Shrimp",
-        "Marine Snails",
         "Pseudochromis",
         "Seahorse / Pipefish",
-        "Sharks / Rays"
+        "Sharks / Rays",
+        "Shrimp",
+        "Snails"
       ],
       "withCaution": [
+        "Angels",
+        "Angels - Dwarf",
         "Anthias",
         "Blennies",
         "Boxfish",
@@ -3027,8 +3015,8 @@
         "Chromis",
         "Clownfish (Female) ♀",
         "Clownfish (Male) ♂",
+        "Corals",
         "Damsels",
-        "Dwarf Angels",
         "Eels",
         "Foxface / Rabbits",
         "Gobies",
@@ -3037,9 +3025,7 @@
         "Hawkfish",
         "Hogfish",
         "Jawfish",
-        "Large Angels",
         "Lions / Scorpions",
-        "Live Corals",
         "Parrotfish",
         "Puffers",
         "Squirrelfish",
@@ -3053,11 +3039,11 @@
       "latinName": "Labridae, Coris",
       "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_w0boutw0boutw0bo.jpg?raw=true",
       "compatible": [
+        "Angels",
         "Boxfish",
         "Clownfish (Female) ♀",
         "Clownfish (Male) ♂",
         "Damsels",
-        "Large Angels",
         "Tangs / Surgeons",
         "Wrasse - Fish Only"
       ],
@@ -3069,6 +3055,7 @@
         "Seahorse / Pipefish"
       ],
       "withCaution": [
+        "Angels - Dwarf",
         "Anglers / Frogs",
         "Anthias",
         "Basslets",
@@ -3077,9 +3064,9 @@
         "Butterflies",
         "Cardinals",
         "Chromis",
+        "Corals",
         "Dartfish",
         "Dragonets",
-        "Dwarf Angels",
         "Eels",
         "Filefish",
         "Foxface / Rabbits",
@@ -3090,13 +3077,12 @@
         "Hogfish",
         "Jawfish",
         "Lions / Scorpions",
-        "Live Corals",
-        "Marine Shrimp",
-        "Marine Snails",
         "Parrotfish",
         "Pseudochromis",
         "Puffers",
         "Sharks / Rays",
+        "Shrimp",
+        "Snails",
         "Squirrelfish",
         "Triggerfish",
         "Wrasse - Reef Safe"
@@ -3107,6 +3093,8 @@
       "latinName": "Labridae, Cirrhilabrus, Pseudocheilinus, Paracheilinus",
       "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_w0boutw0boutw0bo.jpg?raw=true",
       "compatible": [
+        "Angels",
+        "Angels - Dwarf",
         "Anthias",
         "Basslets",
         "Batfish",
@@ -3117,18 +3105,16 @@
         "Chromis",
         "Clownfish (Female) ♀",
         "Clownfish (Male) ♂",
+        "Corals",
         "Damsels",
         "Dartfish",
         "Dragonets",
-        "Dwarf Angels",
         "Filefish",
         "Foxface / Rabbits",
         "Gobies",
         "Hawkfish",
         "Hogfish",
         "Jawfish",
-        "Large Angels",
-        "Live Corals",
         "Puffers",
         "Tangs / Surgeons",
         "Wrasse - Reef Safe"
@@ -3144,10 +3130,10 @@
         "Groupers",
         "Grunts / Sweetlips",
         "Lions / Scorpions",
-        "Marine Shrimp",
-        "Marine Snails",
         "Parrotfish",
         "Pseudochromis",
+        "Shrimp",
+        "Snails",
         "Triggerfish",
         "Wrasse - Fish Only"
       ]
