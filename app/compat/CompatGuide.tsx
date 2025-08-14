@@ -215,14 +215,14 @@ const FishCard = ({ fish, onEdit, onDelete }: FishCardProps) => {
     return (
         <div className="bg-gray-800 p-6 rounded-2xl shadow-xl border border-gray-700 flex flex-col transform hover:scale-105 transition-transform duration-300 ease-in-out">
             {fish.imageURL && (
-                <img 
-                    src={fish.imageURL} 
-                    alt={fish.name} 
+                <img
+                    src={fish.imageURL}
+                    alt={fish.name}
                     className="w-full h-48 object-cover rounded-lg mb-4"
-                    onError={(e: React.SyntheticEvent<HTMLImageElement, Event>) => { 
+                    onError={(e: React.SyntheticEvent<HTMLImageElement, Event>) => {
                         const target = e.target as HTMLImageElement;
-                        target.onerror = null; 
-                        target.src='https://placehold.co/600x400/1F2937/7C8A9E?text=Image+Not+Found'; 
+                        target.onerror = null;
+                        target.src='https://placehold.co/600x400/1F2937/7C8A9E?text=Image+Not+Found';
                     }}
                 />
             )}
@@ -305,7 +305,7 @@ const AddFishModal = ({ onSave, onClose, activeTab }: AddFishModalProps) => {
 const CompatibilityFormModal = ({ fishData, freshwaterFish, saltwaterFish, activeTab, onSave, onClose, onCopy }: CompatibilityFormModalProps) => {
     const allCurrentWaterTypeFishNames = (activeTab === 'freshwater' ? freshwaterFish : saltwaterFish).map(f => f.name);
     const allOtherFish = allCurrentWaterTypeFishNames.filter(name => name !== fishData.name);
-    
+
     const [name, setName] = useState(fishData?.name || '');
     const [latinName, setLatinName] = useState(fishData?.latinName || '');
     const [imageURL, setImageURL] = useState(fishData?.imageURL || '');
@@ -325,11 +325,11 @@ const CompatibilityFormModal = ({ fishData, freshwaterFish, saltwaterFish, activ
     const handleItemClick = (item: string, listName: string) => {
         setSelectedList(listName);
         if (listName === 'available') {
-            setSelectedItems(prev => 
+            setSelectedItems(prev =>
                 prev.includes(item) ? prev.filter(i => i !== item) : [...prev, item]
             );
         } else {
-            setSelectedItems(prev => 
+            setSelectedItems(prev =>
                 prev.length === 1 && prev[0] === item ? [] : [item]
             );
         }
@@ -354,15 +354,15 @@ const CompatibilityFormModal = ({ fishData, freshwaterFish, saltwaterFish, activ
             setModalInfo({ title: 'Incomplete Assignment', message: 'Please assign all available fish to a compatibility category before saving.', show: true });
             return;
         }
-        const updatedFish: Fish = { 
-            ...fishData, 
+        const updatedFish: Fish = {
+            ...fishData,
             name: name.trim(),
             latinName: latinName.trim(),
             imageURL: imageURL.trim(),
-            compatible: lists.compatible, 
+            compatible: lists.compatible,
             caution: lists.caution,
-            notRecommended: lists.notRecommended, 
-            notCompatible: lists.notCompatible 
+            notRecommended: lists.notRecommended,
+            notCompatible: lists.notCompatible
         };
         onSave(fishData, updatedFish);
         onClose();
@@ -374,7 +374,7 @@ const CompatibilityFormModal = ({ fishData, freshwaterFish, saltwaterFish, activ
                 <div className="flex justify-between items-center mb-6 border-b border-gray-600 pb-3">
                     <h3 className="text-3xl font-bold text-yellow-300">Edit Data for {fishData.name}</h3>
                     <div className="flex justify-end space-x-3">
-                        <button type="button" onClick={() => onCopy(fishData)} className="flex items-center space-x-2 px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition transform hover:scale-105 shadow-md"><CopyIcon /><span>Copy</span></button>
+                        <button type="button" onClick={() => onCopy(fishData)} className="flex items-center space-x-2 px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition transform hover:scale-105 shadow-md"><CopyIcon /><span>Duplicate</span></button>
                         <button type="button" onClick={onClose} className="px-6 py-2 bg-gray-600 text-white rounded-lg hover:bg-gray-700 transition transform hover:scale-105 shadow-md">Cancel</button>
                         <button type="submit" form="compatibility-form" className="px-6 py-2 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition transform hover:scale-105 shadow-md">Save Changes</button>
                     </div>
@@ -521,15 +521,15 @@ export default function App() {
 
     // --- DATA HANDLING ---
     const handleSaveNewFish = (name: string, latinName: string, imageURL: string, waterType: string) => {
-        const newFish: Fish = { 
-            id: createId(name), 
-            name, 
+        const newFish: Fish = {
+            id: createId(name),
+            name,
             latinName,
             imageURL,
-            compatible: [], 
+            compatible: [name], // Add self-compatibility here
             caution: [],
             notRecommended: [],
-            notCompatible: [] 
+            notCompatible: []
         };
 
         const updateList = (list: Fish[]) => [...list, newFish].sort((a, b) => a.name.localeCompare(b.name));
@@ -565,10 +565,15 @@ export default function App() {
                     const index = list.indexOf(oldName);
                     if (index > -1) {
                         list[index] = newName;
-                        list.sort();
                     }
                 });
             }
+             // Ensure self-compatibility
+            if (!updatedFishData.compatible.includes(newName)) {
+                updatedFishData.compatible.push(newName);
+            }
+            updatedFishData.compatible.sort();
+            
             fishMap.set(newName, { ...updatedFishData, name: newName });
     
             const getFishCategory = (fish: Fish, targetName: string): keyof Fish | 'available' => {
@@ -627,7 +632,7 @@ export default function App() {
     };
 
     const handleDeleteClick = (fishId: string, fishName: string) => { setFishToDelete({ id: fishId, name: fishName }); setShowDeleteModal(true); };
-    
+
     const confirmDelete = () => {
         if (!fishToDelete) return;
 
@@ -642,7 +647,7 @@ export default function App() {
             }));
             return list;
         };
-        
+
         if (activeTab === 'freshwater') {
             setFreshwaterFish(updateFishList);
         } else {
@@ -653,7 +658,7 @@ export default function App() {
         setShowDeleteModal(false);
         setFishToDelete(null);
     };
-    
+
     const handleResetData = () => {
         setLoading(true);
         try {
@@ -726,7 +731,7 @@ export default function App() {
             block: 'start',
         });
     };
-    
+
     const handleScrollToTop = () => {
         window.scrollTo({
             top: 0,
@@ -740,6 +745,7 @@ export default function App() {
             ...fishToCopy,
             id: createId(newName),
             name: newName,
+            compatible: [...fishToCopy.compatible, newName], // Ensure self-compatibility on duplication
         };
 
         const updateList = (list: Fish[]) => {
@@ -777,7 +783,7 @@ export default function App() {
         } else {
             setSaltwaterFish(updateList);
         }
-        
+
         setIsDirty(true);
         // Close the current modal and open the new one
         setShowCompatibilityModal(false);
@@ -797,7 +803,7 @@ export default function App() {
     const renderFishList = (fishList: Fish[]) => {
         if (error) return <div className="text-center text-red-400 text-lg py-10">{error}</div>;
         if (fishList.length === 0 && !loading) return <div className="text-center text-gray-400 text-lg py-10">No fish data available.</div>;
-        
+
         let lastLetter = '';
 
         return (
@@ -831,7 +837,7 @@ export default function App() {
                     <span className="text-white">Compatibility Guide</span>
                 </nav>
             </div>
-            
+
             <div className="p-6 lg:p-10 pr-12 lg:pr-16">
                 <AlphabetScroller letters={availableLetters} onLetterClick={handleLetterClick} onScrollToTop={handleScrollToTop} />
 
