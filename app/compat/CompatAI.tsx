@@ -205,7 +205,7 @@ export default function App() {
         }
       };
       
-      const apiKey = 'AIzaSyBbWtNwOXafaag66Lh6rJBpCTcLHAv_fzs'; 
+      const apiKey = process.env.GEMINI_API_KEY; 
       const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
 
       let response;
@@ -521,28 +521,28 @@ export default function App() {
         )}
 
         {showReport && (
-            <div onClick={() => setShowReport(false)} className="fixed inset-0 z-50 flex items-center justify-center bg-[#0f1623] bg-opacity-75 p-4 animate-fade-in">
-            <div onClick={(e) => e.stopPropagation()} className="relative w-full max-w-full max-h-[95vh] bg-[#497eb0] rounded-3xl shadow-2xl flex flex-col">
-                <div className="relative flex-shrink-0 px-6 py-4 text-center z-10 border-b border-[#D8f3ff]">
-                <h3 className="text-3xl md:text-4xl font-extrabold text-[#E19F20]">
-                    Compatibility Report
-                </h3>
-                <div className="mt-2 text-lg md:text-xl text-[#D8f3ff] flex flex-wrap justify-center items-center gap-x-4 gap-y-2">
-                    {selectedFish.map((f, index) => (
-                        <div key={index} className="flex flex-col items-center">
-                            <span className="font-semibold">{f.name}</span>
-                            {f.latinName && <span className="text-sm italic text-gray-400">{f.latinName}</span>}
-                        </div>
-                    ))}
-                </div>
-                <button
-                    onClick={() => setShowReport(false)}
-                    className="absolute top-2 right-2 sm:top-4 sm:right-4 text-[#D8f3ff] hover:text-[#E19F20] transition-colors duration-200 p-2"
-                >
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                    </svg>
-                </button>
+            <div onClick={() => setShowReport(false)} className="fixed inset-0 z-50 flex items-center justify-center bg-[#0f1623]/75 p-4 sm:p-8 md:py-12 animate-fade-in">
+            <div onClick={(e) => e.stopPropagation()} className="relative w-full max-w-full max-h-[90vh] bg-[#497eb0] rounded-3xl shadow-2xl flex flex-col">
+                <div className="relative flex-shrink-0 px-6 pt-4 pb-2 text-center z-10 border-b border-[#D8f3ff]">
+                    <h3 className="text-2xl md:text-3xl font-extrabold text-[#E19F20]">
+                        Compatibility Report
+                    </h3>
+                    <div className="mt-1 text-base md:text-lg text-[#D8f3ff]">
+                        {selectedFish.map((f, index) => (
+                            <React.Fragment key={index}>
+                                <span className="font-semibold">{f.name}</span>
+                                {index < selectedFish.length - 1 && ', '}
+                            </React.Fragment>
+                        ))}
+                    </div>
+                    <button
+                        onClick={() => setShowReport(false)}
+                        className="absolute top-2 right-2 sm:top-4 sm:right-4 text-[#D8f3ff] hover:text-[#E19F20] transition-colors duration-200 p-2"
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
                 </div>
 
                 <div className="overflow-y-auto p-6 sm:p-8">
