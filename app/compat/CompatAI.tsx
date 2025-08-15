@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import fishData from '../compat/fishcompat.json';
 
@@ -8,6 +8,42 @@ export function meta() {
     { name: "description", content: "Get an AI-powered compatibility report for your aquarium fish." },
   ];
 }
+
+const UpArrowIcon = () => (
+    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+        <path fillRule="evenodd" d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" clipRule="evenodd" />
+    </svg>
+);
+
+interface AlphabetScrollerProps {
+  letters: string[];
+  onLetterClick: (letter: string) => void;
+  onScrollToTop: () => void;
+}
+
+const AlphabetScroller = ({ letters, onLetterClick, onScrollToTop }: AlphabetScrollerProps) => {
+    return (
+        <div className="fixed right-0 top-1/2 transform -translate-y-1/2 z-40 flex flex-col items-center bg-gray-900/50 p-2 rounded-l-lg backdrop-blur-sm h-auto max-h-[80vh] justify-around">
+            <button
+                onClick={onScrollToTop}
+                className="text-white text-xs font-bold p-1 w-6 h-6 flex items-center justify-center bg-black/60 hover:bg-blue-600/75 rounded-full transition-colors duration-200 mb-1"
+                title="Scroll to Top"
+            >
+                <UpArrowIcon />
+            </button>
+            {letters.map(letter => (
+                <button
+                    key={letter}
+                    onClick={() => onLetterClick(letter)}
+                    className="text-white text-xs font-bold p-1 w-6 h-6 flex items-center justify-center bg-black/60 hover:bg-blue-600/75 rounded-full transition-colors duration-200"
+                >
+                    {letter}
+                </button>
+            ))}
+        </div>
+    );
+};
+
 
 // Main App component
 export default function App() {
@@ -19,6 +55,9 @@ export default function App() {
   const [error, setError] = useState<string | null>(null);
   const [showReport, setShowReport] = useState(false);
   const [localFishData, setLocalFishData] = useState<any>(null);
+  const letterRefs = useRef<{ [key: string]: HTMLDivElement | null }>({});
+  const abortControllerRef = useRef<AbortController | null>(null);
+
 
   // Load fish data from the local JSON file on component mount
   useEffect(() => {
@@ -89,7 +128,7 @@ export default function App() {
       }
     }
 
-    const harmonyEquation = harmonyTerms.join(' × ') + ` = ${(groupHarmony * 100).toFixed(1)}%`;
+    const harmonyEquation = harmonyTerms.join(' ﾃ') + ` = ${(groupHarmony * 100).toFixed(1)}%`;
     const conflictEquation = `min(${harmonyTerms.join(', ')}) = ${(conflictRisk * 100).toFixed(1)}%`;
 
     return {
@@ -107,6 +146,9 @@ export default function App() {
     setLoadingReport(true);
     setReport(null);
     setError(null);
+
+    abortControllerRef.current = new AbortController();
+    const signal = abortControllerRef.current.signal;
 
     const currentSelectedFish = [...selectedFish];
 
@@ -163,7 +205,7 @@ export default function App() {
         }
       };
       
-      const apiKey = process.env.GEMINI_API_KEY; 
+      const apiKey = 'AIzaSyBbWtNwOXafaag66Lh6rJBpCTcLHAv_fzs'; 
       const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
 
       let response;
@@ -177,7 +219,8 @@ export default function App() {
           response = await fetch(apiUrl, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(payload)
+            body: JSON.stringify(payload),
+            signal: signal
           });
 
           if (response.status === 429) {
@@ -196,6 +239,10 @@ export default function App() {
           result = await response.json();
           break; // Success, exit the loop
         } catch (e: any) {
+           if (e.name === 'AbortError') {
+              console.log('Fetch aborted by user.');
+              return; // Exit the function gracefully
+           }
            if (attempt >= MAX_RETRIES - 1) {
              setError(`Failed to fetch: ${e.message}. Please try again.`);
              setLoadingReport(false);
@@ -230,11 +277,20 @@ export default function App() {
       }
 
     } catch (e: any) {
-      setError(`An error occurred: ${e.message}`);
-      console.error(e);
+      if (e.name !== 'AbortError') {
+        setError(`An error occurred: ${e.message}`);
+        console.error(e);
+      }
     } finally {
       setLoadingReport(false);
     }
+  };
+
+  const handleCancelReport = () => {
+    if (abortControllerRef.current) {
+        abortControllerRef.current.abort();
+    }
+    setLoadingReport(false);
   };
 
   const handleFishClick = (fish: any) => {
@@ -253,6 +309,27 @@ export default function App() {
     setReport(null);
     setShowReport(false);
   };
+  
+    const handleLetterClick = (letter: string) => {
+        letterRefs.current[letter]?.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+        });
+    };
+
+    const handleScrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+        });
+    };
+
+    const availableLetters = useMemo(() => {
+        if (!localFishData) return [];
+        const currentList = localFishData[selectedCategory] || [];
+        const letters = new Set(currentList.map((fish: any) => fish.name.charAt(0).toUpperCase()));
+        return Array.from(letters).sort();
+    }, [selectedCategory, localFishData]);
 
   if (loadingData) {
     return (
@@ -276,6 +353,8 @@ export default function App() {
       </div>
     );
   }
+  
+    let lastLetter = '';
 
   return (
     <div className="min-h-screen bg-[#0f1623] text-[#D8f3ff] font-sans antialiased">
@@ -287,6 +366,7 @@ export default function App() {
             </nav>
         </div>
         <div className="p-4 sm:p-8 pb-24">
+            <AlphabetScroller letters={availableLetters} onLetterClick={handleLetterClick} onScrollToTop={handleScrollToTop} />
             <header className="text-center mb-6">
                 <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#D8f3ff] drop-shadow-md">AI Compatibility Calculator</h1>
                 <p className="mt-2 text-lg sm:text-xl text-[#D8f3ff]">Select fish to get a compatibility report.</p>
@@ -302,7 +382,7 @@ export default function App() {
                     : "bg-[#2c3e50] text-[#a7c0d1] hover:bg-[#497eb0] hover:text-white"
                 } ${loadingReport ? 'cursor-not-allowed opacity-50' : ''}`}
                 >
-                Freshwater 🐟
+                Freshwater 澄
                 </button>
                 <button
                 onClick={() => { setSelectedCategory("marine"); handleClearSelection(); }}
@@ -313,11 +393,11 @@ export default function App() {
                     : "bg-[#2c3e50] text-[#a7c0d1] hover:bg-[#497eb0] hover:text-white"
                 } ${loadingReport ? 'cursor-not-allowed opacity-50' : ''}`}
                 >
-                Saltwater 🐡
+                Saltwater 寸
                 </button>
             </div>
 
-            <main className="max-w-7xl mx-auto bg-[#497eb0] rounded-3xl p-4 sm:p-8 shadow-2xl">
+            <main className="max-w-full mx-auto bg-[#497eb0] rounded-3xl p-4 sm:p-8 shadow-2xl">
                 {report && !showReport && (
                 <div className="fixed top-4 right-4 z-50">
                     <button
@@ -341,9 +421,16 @@ export default function App() {
                 </div>
 
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 sm:gap-6 mb-8">
-                {localFishData[selectedCategory].map((fish: any) => (
+                {localFishData[selectedCategory].map((fish: any) => {
+                    const firstLetter = fish.name.charAt(0).toUpperCase();
+                    const isNewLetter = firstLetter !== lastLetter;
+                    if (isNewLetter) {
+                        lastLetter = firstLetter;
+                    }
+                    return(
                     <div
                     key={fish.name}
+                    ref={isNewLetter ? (el) => { letterRefs.current[firstLetter] = el; } : null}
                     onClick={() => !loadingReport && handleFishClick(fish)}
                     className={`flex flex-col rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-xl ${
                         selectedFish.some(f => f.name === fish.name)
@@ -365,7 +452,7 @@ export default function App() {
                         <p className="text-xs sm:text-sm text-[#D8f3ff] italic text-center">{fish.latinName}</p>
                     </div>
                     </div>
-                ))}
+                )})}
                 </div>
             </main>
         </div>
@@ -373,7 +460,7 @@ export default function App() {
         {/* Floating Action Bar */}
         {selectedFish.length > 0 && (
             <div className="fixed inset-x-0 bottom-0 z-50 p-4">
-                <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-center sm:justify-between items-center gap-4">
+                <div className="max-w-full mx-auto flex flex-col sm:flex-row justify-center sm:justify-between items-center gap-4">
                     {/* Action Buttons */}
                     <div className="flex items-center justify-center gap-4 w-full sm:w-auto order-2 sm:order-1">
                         <button
@@ -417,17 +504,37 @@ export default function App() {
                 </div>
             </div>
         )}
+        
+        {loadingReport && (
+            <div className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-[#0f1623]/80 backdrop-blur-sm">
+                <div className="text-center p-8">
+                    <div className="animate-spin inline-block w-12 h-12 border-4 border-[#E19F20] border-t-transparent rounded-full"></div>
+                    <p className="mt-4 text-lg text-[#E19F20]">Generating report, please wait...</p>
+                </div>
+                <button
+                    onClick={handleCancelReport}
+                    className="mt-4 px-6 py-3 bg-[#75344E]/60 backdrop-blur-sm text-[#D8f3ff] font-bold text-lg rounded-full shadow-lg hover:bg-[#75344E] transition-colors duration-300"
+                >
+                    Cancel
+                </button>
+            </div>
+        )}
 
         {showReport && (
-            <div className="fixed inset-0 z-50 flex items-center justify-center bg-[#0f1623] bg-opacity-75 p-4 animate-fade-in">
-            <div className="relative w-full max-w-7xl max-h-[95vh] bg-[#497eb0] rounded-3xl shadow-2xl flex flex-col">
+            <div onClick={() => setShowReport(false)} className="fixed inset-0 z-50 flex items-center justify-center bg-[#0f1623] bg-opacity-75 p-4 animate-fade-in">
+            <div onClick={(e) => e.stopPropagation()} className="relative w-full max-w-full max-h-[95vh] bg-[#497eb0] rounded-3xl shadow-2xl flex flex-col">
                 <div className="relative flex-shrink-0 px-6 py-4 text-center z-10 border-b border-[#D8f3ff]">
                 <h3 className="text-3xl md:text-4xl font-extrabold text-[#E19F20]">
                     Compatibility Report
                 </h3>
-                <p className="mt-2 text-lg md:text-xl text-[#D8f3ff] italic">
-                    {selectedFish.map(f => f.name).join(', ')}
-                </p>
+                <div className="mt-2 text-lg md:text-xl text-[#D8f3ff] flex flex-wrap justify-center items-center gap-x-4 gap-y-2">
+                    {selectedFish.map((f, index) => (
+                        <div key={index} className="flex flex-col items-center">
+                            <span className="font-semibold">{f.name}</span>
+                            {f.latinName && <span className="text-sm italic text-gray-400">{f.latinName}</span>}
+                        </div>
+                    ))}
+                </div>
                 <button
                     onClick={() => setShowReport(false)}
                     className="absolute top-2 right-2 sm:top-4 sm:right-4 text-[#D8f3ff] hover:text-[#E19F20] transition-colors duration-200 p-2"
@@ -443,13 +550,6 @@ export default function App() {
                     <div className="text-center p-4 mb-4 bg-[#75344E] text-[#D8f3ff] rounded-lg shadow-inner">
                     <p className="font-bold">Error:</p>
                     <p>{error}</p>
-                    </div>
-                )}
-
-                {loadingReport && (
-                    <div className="text-center p-8">
-                    <div className="animate-spin inline-block w-12 h-12 border-4 border-[#E19F20] border-t-transparent rounded-full"></div>
-                    <p className="mt-4 text-lg text-[#E19F20]">Fetching report, please wait...</p>
                     </div>
                 )}
 
@@ -506,10 +606,13 @@ export default function App() {
                                     <img
                                         src={compatibleFishData ? compatibleFishData.imageURL : "https://placehold.co/64x64/4B5563/F9FAFB?text=No+Image"}
                                         alt={fish.name}
-                                        className="w-16 h-16 rounded-full border-2 border-[#D8f3ff] object-cover"
+                                        className="w-20 h-20 rounded-full border-2 border-[#D8f3ff] object-cover mb-2"
                                         onError={(e: any) => { e.target.onerror = null; e.target.src = "https://placehold.co/64x64/4B5563/F9FAFB?text=No+Image"; }}
                                     />
-                                    <span className="mt-2 text-sm font-medium text-center text-[#D8f3ff]">{fish.name}</span>
+                                    <span className="font-semibold text-center text-[#D8f3ff]">{fish.name}</span>
+                                    {compatibleFishData && compatibleFishData.latinName && (
+                                        <span className="text-xs text-gray-400 italic text-center">{compatibleFishData.latinName}</span>
+                                    )}
                                     </div>
                                 );
                             })}

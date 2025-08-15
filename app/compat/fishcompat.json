@@ -17,6 +17,7 @@
       ],
       "notRecommended": [
         "Bettas (Male) ♂",
+        "Larger Catfish",
         "Pond Fish",
         "Shrimp"
       ],
@@ -27,7 +28,7 @@
       "withCaution": [
         "Barbs",
         "Bettas (Female) ♀",
-        "Cichlids - American",
+        "Cichlids - American, Large",
         "Danios / Minnows",
         "Discus",
         "Freshwater Sharks",
@@ -35,7 +36,6 @@
         "Gouramis",
         "Guppies",
         "Killifish",
-        "Larger Catfish",
         "Mollies / Platies / Swordtails",
         "Rasboras",
         "Tetras"
@@ -68,7 +68,7 @@
         "Angelfish (Male) ♂",
         "Barbs",
         "Bettas (Female) ♀",
-        "Cichlids - American",
+        "Cichlids - American, Large",
         "Danios / Minnows",
         "Discus",
         "Freshwater Sharks",
@@ -91,19 +91,15 @@
         "Cory Cats",
         "Danios / Minnows",
         "Freshwater Sharks",
-        "Hatchets",
-        "Killifish",
         "Loaches",
-        "Mollies / Platies / Swordtails",
         "Plants",
         "Plecos (Suckerfish)",
         "Rainbowfish",
         "Rasboras",
-        "Snails",
-        "Tetras"
+        "Snails"
       ],
       "notRecommended": [
-        "Cichlids - American",
+        "Cichlids - American, Large",
         "Guppies",
         "Pond Fish",
         "Shrimp"
@@ -120,7 +116,11 @@
         "Discus",
         "Goldfish",
         "Gouramis",
-        "Larger Catfish"
+        "Hatchets",
+        "Killifish",
+        "Larger Catfish",
+        "Mollies / Platies / Swordtails",
+        "Tetras"
       ]
     },
     {
@@ -141,7 +141,7 @@
         "Pond Fish"
       ],
       "notCompatible": [
-        "Cichlids - American",
+        "Cichlids - American, Large",
         "Cichlids - Lake Malawian/Victoria",
         "Cichlids - Lake Tanganyikan"
       ],
@@ -170,7 +170,6 @@
       "imageURL": "https://m.media-amazon.com/images/I/71uEGoSsfiL._UF1000,1000_QL80_.jpg",
       "compatible": [
         "Cory Cats",
-        "Hatchets",
         "Loaches",
         "Plants",
         "Plecos (Suckerfish)",
@@ -187,7 +186,7 @@
       "notCompatible": [
         "Barbs",
         "Bettas (Male) ♂",
-        "Cichlids - American",
+        "Cichlids - American, Large",
         "Cichlids - Lake Malawian/Victoria",
         "Cichlids - Lake Tanganyikan",
         "Pond Fish"
@@ -196,6 +195,7 @@
         "Bettas (Female) ♀",
         "Danios / Minnows",
         "Freshwater Sharks",
+        "Hatchets",
         "Killifish",
         "Larger Catfish",
         "Mollies / Platies / Swordtails",
@@ -206,11 +206,11 @@
       ]
     },
     {
-      "name": "Cichlids - American",
+      "name": "Cichlids - American, Large",
       "latinName": "New World - Cichlidae",
       "imageURL": "https://cdn11.bigcommerce.com/s-kkon4imfg5/images/stencil/1280x1280/products/6625/5076/apis5hxpw__42939.1607360200.jpg?c=2",
       "compatible": [
-        "Cichlids - American",
+        "Cichlids - American, Large",
         "Larger Catfish",
         "Plecos (Suckerfish)"
       ],
@@ -220,6 +220,7 @@
         "Cichlids - Lake Tanganyikan",
         "Cory Cats",
         "Danios / Minnows",
+        "Goldfish",
         "Gouramis",
         "Hatchets",
         "Killifish",
@@ -242,7 +243,6 @@
         "Angelfish (Male) ♂",
         "Discus",
         "Freshwater Sharks",
-        "Goldfish",
         "Snails"
       ]
     },
@@ -250,11 +250,9 @@
       "name": "Cichlids - Lake Malawian/Victoria",
       "latinName": "Mbuna, Haplochromis",
       "imageURL": "https://aquariumscience.org/wp-content/uploads/2021/09/240-Malawi-Cichlid-Aquarium.jpg",
-      "compatible": [
-        "Cichlids - Lake Malawian/Victoria"
-      ],
+      "compatible": [],
       "notRecommended": [
-        "Cichlids - American",
+        "Cichlids - American, Large",
         "Cichlids - Lake Tanganyikan",
         "Plants"
       ],
@@ -290,13 +288,13 @@
     },
     {
       "name": "Cichlids - Lake Tanganyikan",
-      "latinName": "Cyphotilapia, Xenotilapia",
+      "latinName": "Neolamprologus, Julidochromis",
       "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOqmr3Blt64vaGDbAVpCu2dDTOuT77sZRjfA&s",
       "compatible": [
         "Cichlids - Lake Tanganyikan"
       ],
       "notRecommended": [
-        "Cichlids - American",
+        "Cichlids - American, Large",
         "Cichlids - Lake Malawian/Victoria",
         "Plants"
       ],
@@ -341,9 +339,6 @@
         "Bettas (Male) ♂",
         "Cory Cats",
         "Danios / Minnows",
-        "Discus",
-        "Freshwater Sharks",
-        "Goldfish",
         "Gouramis",
         "Guppies",
         "Hatchets",
@@ -359,7 +354,8 @@
         "Tetras"
       ],
       "notRecommended": [
-        "Cichlids - American",
+        "Cichlids - American, Large",
+        "Goldfish",
         "Pond Fish"
       ],
       "notCompatible": [
@@ -367,6 +363,8 @@
         "Cichlids - Lake Tanganyikan"
       ],
       "withCaution": [
+        "Discus",
+        "Freshwater Sharks",
         "Larger Catfish"
       ]
     },
@@ -378,37 +376,37 @@
         "Barbs",
         "Cory Cats",
         "Danios / Minnows",
-        "Discus",
-        "Freshwater Sharks",
-        "Gouramis",
         "Guppies",
-        "Hatchets",
-        "Killifish",
         "Loaches",
         "Mollies / Platies / Swordtails",
         "Plants",
         "Plecos (Suckerfish)",
         "Rainbowfish",
         "Rasboras",
-        "Shrimp",
         "Snails",
         "Tetras"
       ],
       "notRecommended": [
-        "Cichlids - American",
+        "Cichlids - American, Large",
+        "Hatchets",
         "Pond Fish"
       ],
       "notCompatible": [
         "Cichlids - Lake Malawian/Victoria",
-        "Cichlids - Lake Tanganyikan"
+        "Cichlids - Lake Tanganyikan",
+        "Discus"
       ],
       "withCaution": [
         "Angelfish (Female) ♀",
         "Angelfish (Male) ♂",
         "Bettas (Female) ♀",
         "Bettas (Male) ♂",
+        "Freshwater Sharks",
         "Goldfish",
-        "Larger Catfish"
+        "Gouramis",
+        "Killifish",
+        "Larger Catfish",
+        "Shrimp"
       ]
     },
     {
@@ -416,27 +414,24 @@
       "latinName": "Cichlidae, Symphysodon",
       "imageURL": "https://www.blueplanetaquarium.com/wp-content/uploads/2024/07/iStock-181852070.jpg",
       "compatible": [
-        "Cory Cats",
-        "Danios / Minnows",
         "Discus",
         "Hatchets",
-        "Killifish",
-        "Loaches",
-        "Mollies / Platies / Swordtails",
         "Plants",
-        "Rainbowfish",
         "Rasboras",
-        "Snails",
-        "Tetras"
+        "Snails"
       ],
       "notRecommended": [
         "Bettas (Male) ♂",
-        "Guppies"
+        "Guppies",
+        "Killifish",
+        "Rainbowfish"
       ],
       "notCompatible": [
         "Cichlids - Lake Malawian/Victoria",
         "Cichlids - Lake Tanganyikan",
+        "Danios / Minnows",
         "Goldfish",
+        "Mollies / Platies / Swordtails",
         "Pond Fish",
         "Shrimp"
       ],
@@ -445,11 +440,14 @@
         "Angelfish (Male) ♂",
         "Barbs",
         "Bettas (Female) ♀",
-        "Cichlids - American",
+        "Cichlids - American, Large",
+        "Cory Cats",
         "Freshwater Sharks",
         "Gouramis",
         "Larger Catfish",
-        "Plecos (Suckerfish)"
+        "Loaches",
+        "Plecos (Suckerfish)",
+        "Tetras"
       ]
     },
     {
@@ -458,21 +456,13 @@
       "imageURL": "https://cdn.shopify.com/s/files/1/0311/3149/files/Red-tailed_black_shark_Epalzeorhynchos_bicolor.jpg?v=1665077847",
       "compatible": [
         "Barbs",
-        "Cory Cats",
-        "Danios / Minnows",
         "Freshwater Sharks",
-        "Gouramis",
-        "Guppies",
         "Hatchets",
         "Killifish",
-        "Loaches",
-        "Mollies / Platies / Swordtails",
         "Plants",
-        "Plecos (Suckerfish)",
         "Rainbowfish",
         "Rasboras",
-        "Snails",
-        "Tetras"
+        "Snails"
       ],
       "notRecommended": [
         "Pond Fish"
@@ -486,12 +476,20 @@
         "Angelfish (Male) ♂",
         "Bettas (Female) ♀",
         "Bettas (Male) ♂",
-        "Cichlids - American",
+        "Cichlids - American, Large",
+        "Cory Cats",
+        "Danios / Minnows",
         "Discus",
         "Freshwater Sharks",
         "Goldfish",
+        "Gouramis",
+        "Guppies",
         "Larger Catfish",
-        "Shrimp"
+        "Loaches",
+        "Mollies / Platies / Swordtails",
+        "Plecos (Suckerfish)",
+        "Shrimp",
+        "Tetras"
       ]
     },
     {
@@ -499,24 +497,17 @@
       "latinName": "Cyprinidae",
       "imageURL": "https://guidesly.com/static/394845ea6476ea6f42f999b343c601ec/5f471/Guidesly_Goldfish_737f6b7de8.jpg",
       "compatible": [
-        "Cory Cats",
         "Goldfish",
-        "Gouramis",
-        "Guppies",
-        "Hatchets",
-        "Killifish",
-        "Larger Catfish",
-        "Mollies / Platies / Swordtails",
         "Plecos (Suckerfish)",
         "Pond Fish",
-        "Rainbowfish",
-        "Rasboras",
-        "Snails",
-        "Tetras"
+        "Snails"
       ],
       "notRecommended": [
         "Bettas (Female) ♀",
-        "Bettas (Male) ♂"
+        "Bettas (Male) ♂",
+        "Cichlids - American, Large",
+        "Cory Cats",
+        "Larger Catfish"
       ],
       "notCompatible": [
         "Cichlids - Lake Malawian/Victoria",
@@ -527,12 +518,19 @@
         "Angelfish (Female) ♀",
         "Angelfish (Male) ♂",
         "Barbs",
-        "Cichlids - American",
         "Danios / Minnows",
         "Freshwater Sharks",
+        "Gouramis",
+        "Guppies",
+        "Hatchets",
+        "Killifish",
         "Loaches",
+        "Mollies / Platies / Swordtails",
         "Plants",
-        "Shrimp"
+        "Rainbowfish",
+        "Rasboras",
+        "Shrimp",
+        "Tetras"
       ]
     },
     {
@@ -541,28 +539,23 @@
       "imageURL": "https://aquadiction.world/img/profile/dwarf-gourami.webp",
       "compatible": [
         "Cory Cats",
-        "Danios / Minnows",
-        "Freshwater Sharks",
-        "Goldfish",
         "Gouramis",
-        "Guppies",
         "Hatchets",
         "Killifish",
         "Loaches",
         "Mollies / Platies / Swordtails",
         "Plants",
         "Plecos (Suckerfish)",
-        "Rainbowfish",
         "Rasboras",
-        "Shrimp",
         "Snails",
         "Tetras"
       ],
       "notRecommended": [
         "Bettas (Female) ♀",
         "Bettas (Male) ♂",
-        "Cichlids - American",
-        "Pond Fish"
+        "Cichlids - American, Large",
+        "Pond Fish",
+        "Shrimp"
       ],
       "notCompatible": [
         "Cichlids - Lake Malawian/Victoria",
@@ -572,8 +565,14 @@
         "Angelfish (Female) ♀",
         "Angelfish (Male) ♂",
         "Barbs",
+        "Danios / Minnows",
         "Discus",
-        "Larger Catfish"
+        "Freshwater Sharks",
+        "Goldfish",
+        "Gouramis",
+        "Guppies",
+        "Larger Catfish",
+        "Rainbowfish"
       ]
     },
     {
@@ -583,38 +582,38 @@
       "compatible": [
         "Cory Cats",
         "Danios / Minnows",
-        "Freshwater Sharks",
-        "Goldfish",
-        "Gouramis",
         "Guppies",
         "Hatchets",
-        "Killifish",
         "Loaches",
         "Mollies / Platies / Swordtails",
         "Plants",
         "Plecos (Suckerfish)",
-        "Rainbowfish",
         "Rasboras",
         "Shrimp",
-        "Snails",
-        "Tetras"
+        "Snails"
       ],
       "notRecommended": [
         "Barbs",
         "Bettas (Male) ♂",
         "Discus",
+        "Killifish",
         "Larger Catfish",
         "Pond Fish"
       ],
       "notCompatible": [
-        "Cichlids - American",
+        "Cichlids - American, Large",
         "Cichlids - Lake Malawian/Victoria",
         "Cichlids - Lake Tanganyikan"
       ],
       "withCaution": [
         "Angelfish (Female) ♀",
         "Angelfish (Male) ♂",
-        "Bettas (Female) ♀"
+        "Bettas (Female) ♀",
+        "Freshwater Sharks",
+        "Goldfish",
+        "Gouramis",
+        "Rainbowfish",
+        "Tetras"
       ]
     },
     {
@@ -624,14 +623,10 @@
       "compatible": [
         "Angelfish (Female) ♀",
         "Angelfish (Male) ♂",
-        "Barbs",
         "Bettas (Female) ♀",
-        "Bettas (Male) ♂",
         "Cory Cats",
-        "Danios / Minnows",
         "Discus",
         "Freshwater Sharks",
-        "Goldfish",
         "Gouramis",
         "Guppies",
         "Hatchets",
@@ -640,14 +635,14 @@
         "Mollies / Platies / Swordtails",
         "Plants",
         "Plecos (Suckerfish)",
-        "Rainbowfish",
         "Rasboras",
         "Shrimp",
         "Snails",
         "Tetras"
       ],
       "notRecommended": [
-        "Cichlids - American",
+        "Cichlids - American, Large",
+        "Danios / Minnows",
         "Pond Fish"
       ],
       "notCompatible": [
@@ -655,7 +650,11 @@
         "Cichlids - Lake Tanganyikan"
       ],
       "withCaution": [
-        "Larger Catfish"
+        "Barbs",
+        "Bettas (Male) ♂",
+        "Goldfish",
+        "Larger Catfish",
+        "Rainbowfish"
       ]
     },
     {
@@ -663,61 +662,27 @@
       "latinName": "Aplocheilidae, Nothobranchius",
       "imageURL": "https://aqualibs.com/images/news/2024/03/11/2-Killifish.webp",
       "compatible": [
-        "Barbs",
         "Cory Cats",
-        "Danios / Minnows",
-        "Discus",
         "Freshwater Sharks",
-        "Goldfish",
         "Gouramis",
-        "Guppies",
         "Hatchets",
         "Killifish",
         "Loaches",
         "Mollies / Platies / Swordtails",
         "Plants",
         "Plecos (Suckerfish)",
-        "Rainbowfish",
         "Rasboras",
-        "Shrimp",
-        "Snails",
-        "Tetras"
+        "Snails"
       ],
       "notRecommended": [
-        "Cichlids - American",
+        "Cichlids - American, Large",
+        "Discus",
+        "Guppies",
         "Pond Fish"
       ],
       "notCompatible": [
         "Cichlids - Lake Malawian/Victoria",
-        "Cichlids - Lake Tanganyikan"
-      ],
-      "withCaution": [
-        "Angelfish (Female) ♀",
-        "Angelfish (Male) ♂",
-        "Bettas (Female) ♀",
-        "Bettas (Male) ♂",
-        "Larger Catfish"
-      ]
-    },
-    {
-      "name": "Larger Catfish",
-      "latinName": "Ictaluridae, Pimelodidae",
-      "imageURL": "https://cdn.britannica.com/22/141422-050-75094F72/Red-tail-catfish.jpg",
-      "compatible": [
-        "Cichlids - American",
-        "Goldfish",
-        "Larger Catfish",
-        "Pond Fish",
-        "Snails"
-      ],
-      "notRecommended": [
-        "Guppies",
-        "Mollies / Platies / Swordtails",
-        "Plants",
-        "Rasboras",
-        "Tetras"
-      ],
-      "notCompatible": [
+        "Cichlids - Lake Tanganyikan",
         "Shrimp"
       ],
       "withCaution": [
@@ -726,16 +691,49 @@
         "Barbs",
         "Bettas (Female) ♀",
         "Bettas (Male) ♂",
-        "Cichlids - Lake Malawian/Victoria",
-        "Cichlids - Lake Tanganyikan",
+        "Danios / Minnows",
+        "Goldfish",
+        "Killifish",
+        "Larger Catfish",
+        "Rainbowfish",
+        "Tetras"
+      ]
+    },
+    {
+      "name": "Larger Catfish",
+      "latinName": "Ictaluridae, Pimelodidae",
+      "imageURL": "https://cdn.britannica.com/22/141422-050-75094F72/Red-tail-catfish.jpg",
+      "compatible": [
+        "Cichlids - American, Large",
+        "Larger Catfish",
+        "Snails"
+      ],
+      "notRecommended": [
+        "Angelfish (Male) ♂",
+        "Barbs",
+        "Bettas (Female) ♀",
+        "Bettas (Male) ♂",
         "Cory Cats",
         "Danios / Minnows",
         "Discus",
-        "Freshwater Sharks",
         "Gouramis",
         "Hatchets",
         "Killifish",
         "Loaches",
+        "Guppies",
+        "Mollies / Platies / Swordtails",
+        "Plants",
+        "Pond Fish",
+        "Rasboras",
+        "Tetras"
+      ],
+      "notCompatible": [
+        "Shrimp"
+      ],
+      "withCaution": [
+        "Cichlids - Lake Malawian/Victoria",
+        "Cichlids - Lake Tanganyikan",
+        "Freshwater Sharks",
         "Plecos (Suckerfish)",
         "Rainbowfish"
       ]
@@ -752,8 +750,6 @@
         "Bettas (Male) ♂",
         "Cory Cats",
         "Danios / Minnows",
-        "Discus",
-        "Freshwater Sharks",
         "Gouramis",
         "Guppies",
         "Hatchets",
@@ -764,21 +760,23 @@
         "Plecos (Suckerfish)",
         "Rainbowfish",
         "Rasboras",
-        "Shrimp",
-        "Snails",
         "Tetras"
       ],
       "notRecommended": [
-        "Cichlids - American",
-        "Pond Fish"
+        "Cichlids - American, Large",
+        "Pond Fish",
+        "Snails"
       ],
       "notCompatible": [
         "Cichlids - Lake Malawian/Victoria",
         "Cichlids - Lake Tanganyikan"
       ],
       "withCaution": [
+        "Discus",
+        "Freshwater Sharks",
         "Goldfish",
-        "Larger Catfish"
+        "Larger Catfish",
+        "Shrimp"
       ]
     },
     {
@@ -786,12 +784,8 @@
       "latinName": "Poeciliidae, Poecilia, Xiphophorus",
       "imageURL": "https://cdn11.bigcommerce.com/s-nzocnvfw4r/images/stencil/1280x1280/products/383/646/Assorted-Mollies__70436.1731440282.jpg?c=1",
       "compatible": [
-        "Barbs",
         "Cory Cats",
         "Danios / Minnows",
-        "Discus",
-        "Freshwater Sharks",
-        "Goldfish",
         "Gouramis",
         "Guppies",
         "Hatchets",
@@ -803,23 +797,27 @@
         "Rainbowfish",
         "Rasboras",
         "Shrimp",
-        "Snails",
-        "Tetras"
+        "Snails"
       ],
       "notRecommended": [
-        "Cichlids - American",
+        "Cichlids - American, Large",
         "Larger Catfish",
         "Pond Fish"
       ],
       "notCompatible": [
         "Cichlids - Lake Malawian/Victoria",
-        "Cichlids - Lake Tanganyikan"
+        "Cichlids - Lake Tanganyikan",
+        "Discus"
       ],
       "withCaution": [
         "Angelfish (Female) ♀",
         "Angelfish (Male) ♂",
+        "Barbs",
         "Bettas (Female) ♀",
-        "Bettas (Male) ♂"
+        "Bettas (Male) ♂",
+        "Freshwater Sharks",
+        "Goldfish",
+        "Tetras"
       ]
     },
     {
@@ -850,7 +848,7 @@
         "Tetras"
       ],
       "notRecommended": [
-        "Cichlids - American",
+        "Cichlids - American, Large",
         "Cichlids - Lake Malawian/Victoria",
         "Cichlids - Lake Tanganyikan",
         "Larger Catfish"
@@ -872,10 +870,9 @@
         "Barbs",
         "Bettas (Female) ♀",
         "Bettas (Male) ♂",
-        "Cichlids - American",
+        "Cichlids - American, Large",
         "Cory Cats",
         "Danios / Minnows",
-        "Freshwater Sharks",
         "Goldfish",
         "Gouramis",
         "Guppies",
@@ -897,6 +894,7 @@
         "Cichlids - Lake Malawian/Victoria",
         "Cichlids - Lake Tanganyikan",
         "Discus",
+        "Freshwater Sharks",
         "Larger Catfish"
       ]
     },
@@ -906,7 +904,6 @@
       "imageURL": "https://www.kodamakoifarm.com/wp-content/uploads/2023/04/types-pond-fish-preview.jpg",
       "compatible": [
         "Goldfish",
-        "Larger Catfish",
         "Plecos (Suckerfish)",
         "Pond Fish",
         "Snails"
@@ -923,6 +920,7 @@
         "Guppies",
         "Hatchets",
         "Killifish",
+        "Larger Catfish",
         "Loaches",
         "Mollies / Platies / Swordtails",
         "Rainbowfish",
@@ -931,7 +929,7 @@
       ],
       "notCompatible": [
         "Bettas (Male) ♂",
-        "Cichlids - American",
+        "Cichlids - American, Large",
         "Cichlids - Lake Malawian/Victoria",
         "Cichlids - Lake Tanganyikan",
         "Discus"
@@ -951,26 +949,20 @@
         "Barbs",
         "Cory Cats",
         "Danios / Minnows",
-        "Discus",
         "Freshwater Sharks",
-        "Goldfish",
-        "Gouramis",
-        "Guppies",
-        "Hatchets",
-        "Killifish",
         "Loaches",
         "Mollies / Platies / Swordtails",
         "Plants",
         "Plecos (Suckerfish)",
         "Rainbowfish",
         "Rasboras",
-        "Shrimp",
-        "Snails",
-        "Tetras"
+        "Snails"
       ],
       "notRecommended": [
-        "Cichlids - American",
-        "Pond Fish"
+        "Cichlids - American, Large",
+        "Discus",
+        "Pond Fish",
+        "Shrimp"
       ],
       "notCompatible": [
         "Cichlids - Lake Malawian/Victoria",
@@ -979,7 +971,13 @@
       "withCaution": [
         "Bettas (Female) ♀",
         "Bettas (Male) ♂",
-        "Larger Catfish"
+        "Goldfish",
+        "Gouramis",
+        "Guppies",
+        "Hatchets",
+        "Killifish",
+        "Larger Catfish",
+        "Tetras"
       ]
     },
     {
@@ -992,7 +990,6 @@
         "Danios / Minnows",
         "Discus",
         "Freshwater Sharks",
-        "Goldfish",
         "Gouramis",
         "Guppies",
         "Hatchets",
@@ -1008,7 +1005,7 @@
         "Tetras"
       ],
       "notRecommended": [
-        "Cichlids - American",
+        "Cichlids - American, Large",
         "Larger Catfish",
         "Pond Fish"
       ],
@@ -1020,7 +1017,8 @@
         "Angelfish (Female) ♀",
         "Angelfish (Male) ♂",
         "Bettas (Female) ♀",
-        "Bettas (Male) ♂"
+        "Bettas (Male) ♂",
+        "Goldfish"
       ]
     },
     {
@@ -1029,39 +1027,39 @@
       "imageURL": "https://www.theshrimpfarm.com/blog/wp-content/uploads/2024/06/Amano-51.jpg",
       "compatible": [
         "Cory Cats",
-        "Danios / Minnows",
-        "Gouramis",
         "Guppies",
         "Hatchets",
-        "Killifish",
-        "Loaches",
         "Mollies / Platies / Swordtails",
         "Plants",
         "Plecos (Suckerfish)",
-        "Rainbowfish",
         "Rasboras",
         "Shrimp",
-        "Snails",
-        "Tetras"
+        "Snails"
       ],
       "notRecommended": [
         "Angelfish (Female) ♀",
         "Angelfish (Male) ♂",
-        "Barbs"
+        "Barbs",
+        "Gouramis",
+        "Rainbowfish"
       ],
       "notCompatible": [
-        "Cichlids - American",
+        "Cichlids - American, Large",
         "Cichlids - Lake Malawian/Victoria",
         "Cichlids - Lake Tanganyikan",
         "Discus",
+        "Killifish",
         "Larger Catfish"
       ],
       "withCaution": [
         "Bettas (Female) ♀",
         "Bettas (Male) ♂",
+        "Danios / Minnows",
         "Freshwater Sharks",
         "Goldfish",
-        "Pond Fish"
+        "Loaches",
+        "Pond Fish",
+        "Tetras"
       ]
     },
     {
@@ -1084,7 +1082,6 @@
         "Hatchets",
         "Killifish",
         "Larger Catfish",
-        "Loaches",
         "Mollies / Platies / Swordtails",
         "Plants",
         "Plecos (Suckerfish)",
@@ -1095,9 +1092,12 @@
         "Snails",
         "Tetras"
       ],
+      "notRecommended": [
+        "Loaches"
+      ],
       "notCompatible": [],
       "withCaution": [
-        "Cichlids - American",
+        "Cichlids - American, Large",
         "Cichlids - Lake Malawian/Victoria",
         "Cichlids - Lake Tanganyikan"
       ]
@@ -1107,28 +1107,19 @@
       "latinName": "Characidae, Paracheirodon",
       "imageURL": "https://cdn11.bigcommerce.com/s-lsus8itpbr/images/stencil/1920x1280/uploaded_images/at-fish-tetras-cardinal-tetra-poseidon-2-8-24.jpg?t=1707415206",
       "compatible": [
-        "Barbs",
         "Cory Cats",
         "Danios / Minnows",
-        "Discus",
-        "Freshwater Sharks",
-        "Goldfish",
         "Gouramis",
-        "Guppies",
         "Hatchets",
-        "Killifish",
         "Loaches",
-        "Mollies / Platies / Swordtails",
         "Plants",
         "Plecos (Suckerfish)",
-        "Rainbowfish",
         "Rasboras",
-        "Shrimp",
         "Snails",
         "Tetras"
       ],
       "notRecommended": [
-        "Cichlids - American",
+        "Cichlids - American, Large",
         "Larger Catfish",
         "Pond Fish"
       ],
@@ -1139,8 +1130,17 @@
       "withCaution": [
         "Angelfish (Female) ♀",
         "Angelfish (Male) ♂",
+        "Barbs",
         "Bettas (Female) ♀",
-        "Bettas (Male) ♂"
+        "Bettas (Male) ♂",
+        "Discus",
+        "Freshwater Sharks",
+        "Goldfish",
+        "Guppies",
+        "Killifish",
+        "Mollies / Platies / Swordtails",
+        "Rainbowfish",
+        "Shrimp"
       ]
     }
   ],

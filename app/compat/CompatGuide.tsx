@@ -843,7 +843,7 @@ export default function App() {
 
                 <div className="max-w-full px-4">
                     <header className="text-center mb-6">
-                        <h1 className="text-4xl lg:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-green-400 mb-2">Aquarium Compatibility Guide</h1>
+                        <h1 className="text-4xl lg:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-green-400 mb-2">Fish Compatibility Guide</h1>
                         <p className="text-lg text-gray-400">Manage your fish compatibility data.</p>
                     </header>
 
