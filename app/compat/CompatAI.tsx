@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import fishData from '../compat/data/fishcompat.json';
+import fishData from '../compat/fishcompat.json';
 
 export function meta() {
   return [
