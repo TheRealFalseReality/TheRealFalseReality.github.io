@@ -131,7 +131,7 @@ export default function App() {
       }
     }
 
-    const harmonyEquation = harmonyTerms.join(' ﾃ') + ` = ${(groupHarmony * 100).toFixed(1)}%`;
+    const harmonyEquation = harmonyTerms.join(' *') + ` = ${(groupHarmony * 100).toFixed(1)}%`;
     const conflictEquation = `min(${harmonyTerms.join(', ')}) = ${(conflictRisk * 100).toFixed(1)}%`;
 
     return {
