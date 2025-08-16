@@ -16,29 +16,29 @@
         "Snails"
       ],
       "notRecommended": [
+        "Barbs",
+        "Bettas (Female) ♀",
         "Bettas (Male) ♂",
+        "Gouramis",
         "Larger Catfish",
         "Pond Fish",
-        "Shrimp"
+        "Shrimp",
+        "Tetras"
       ],
       "notCompatible": [
         "Cichlids - Lake Malawian/Victoria",
-        "Cichlids - Lake Tanganyikan"
+        "Cichlids - Lake Tanganyikan",
+        "Danios / Minnows",
+        "Guppies"
       ],
       "withCaution": [
-        "Barbs",
-        "Bettas (Female) ♀",
         "Cichlids - American, Large",
-        "Danios / Minnows",
         "Discus",
         "Freshwater Sharks",
         "Goldfish",
-        "Gouramis",
-        "Guppies",
         "Killifish",
         "Mollies / Platies / Swordtails",
-        "Rasboras",
-        "Tetras"
+        "Rasboras"
       ]
     },
     {
@@ -47,6 +47,7 @@
       "imageURL": "https://aquaticsunlimited.com/wp-content/uploads/2024/02/ANGELFISH-FW-BLUE-MARBLE-Pterophyllum-scalare.jpg",
       "compatible": [
         "Angelfish (Female) ♀",
+        "Angelfish (Male) ♂",
         "Cory Cats",
         "Hatchets",
         "Loaches",
@@ -56,30 +57,30 @@
         "Snails"
       ],
       "notRecommended": [
+        "Barbs",
+        "Bettas (Female) ♀",
         "Bettas (Male) ♂",
+        "Gouramis",
         "Pond Fish",
-        "Shrimp"
+        "Rasboras",
+        "Shrimp",
+        "Tetras"
       ],
       "notCompatible": [
         "Cichlids - Lake Malawian/Victoria",
-        "Cichlids - Lake Tanganyikan"
+        "Cichlids - Lake Tanganyikan",
+        "Danios / Minnows",
+        "Guppies"
       ],
       "withCaution": [
         "Angelfish (Male) ♂",
-        "Barbs",
-        "Bettas (Female) ♀",
         "Cichlids - American, Large",
-        "Danios / Minnows",
         "Discus",
         "Freshwater Sharks",
         "Goldfish",
-        "Gouramis",
-        "Guppies",
         "Killifish",
         "Larger Catfish",
-        "Mollies / Platies / Swordtails",
-        "Rasboras",
-        "Tetras"
+        "Mollies / Platies / Swordtails"
       ]
     },
     {
@@ -99,6 +100,8 @@
         "Snails"
       ],
       "notRecommended": [
+        "Angelfish (Female) ♀",
+        "Angelfish (Male) ♂",
         "Cichlids - American, Large",
         "Guppies",
         "Pond Fish",
@@ -110,8 +113,6 @@
         "Cichlids - Lake Tanganyikan"
       ],
       "withCaution": [
-        "Angelfish (Female) ♀",
-        "Angelfish (Male) ♂",
         "Bettas (Female) ♀",
         "Discus",
         "Goldfish",
@@ -136,6 +137,8 @@
         "Snails"
       ],
       "notRecommended": [
+        "Angelfish (Female) ♀",
+        "Angelfish (Male) ♂",
         "Goldfish",
         "Gouramis",
         "Pond Fish"
@@ -146,8 +149,6 @@
         "Cichlids - Lake Tanganyikan"
       ],
       "withCaution": [
-        "Angelfish (Female) ♀",
-        "Angelfish (Male) ♂",
         "Barbs",
         "Bettas (Female) ♀",
         "Bettas (Male) ♂",
@@ -392,13 +393,13 @@
         "Pond Fish"
       ],
       "notCompatible": [
+        "Angelfish (Female) ♀",
+        "Angelfish (Male) ♂",
         "Cichlids - Lake Malawian/Victoria",
         "Cichlids - Lake Tanganyikan",
         "Discus"
       ],
       "withCaution": [
-        "Angelfish (Female) ♀",
-        "Angelfish (Male) ♂",
         "Bettas (Female) ♀",
         "Bettas (Male) ♂",
         "Freshwater Sharks",
@@ -549,6 +550,8 @@
         "Tetras"
       ],
       "notRecommended": [
+        "Angelfish (Female) ♀",
+        "Angelfish (Male) ♂",
         "Bettas (Female) ♀",
         "Bettas (Male) ♂",
         "Cichlids - American, Large",
@@ -560,8 +563,6 @@
         "Cichlids - Lake Tanganyikan"
       ],
       "withCaution": [
-        "Angelfish (Female) ♀",
-        "Angelfish (Male) ♂",
         "Barbs",
         "Danios / Minnows",
         "Discus",
@@ -599,13 +600,13 @@
         "Pond Fish"
       ],
       "notCompatible": [
+        "Angelfish (Female) ♀",
+        "Angelfish (Male) ♂",
         "Cichlids - American, Large",
         "Cichlids - Lake Malawian/Victoria",
         "Cichlids - Lake Tanganyikan"
       ],
       "withCaution": [
-        "Angelfish (Female) ♀",
-        "Angelfish (Male) ♂",
         "Bettas (Female) ♀",
         "Freshwater Sharks",
         "Goldfish",
@@ -1002,6 +1003,7 @@
         "Tetras"
       ],
       "notRecommended": [
+        "Angelfish (Male) ♂",
         "Cichlids - American, Large",
         "Larger Catfish",
         "Pond Fish"
@@ -1012,7 +1014,6 @@
       ],
       "withCaution": [
         "Angelfish (Female) ♀",
-        "Angelfish (Male) ♂",
         "Bettas (Female) ♀",
         "Bettas (Male) ♂",
         "Goldfish"
@@ -1116,6 +1117,8 @@
         "Tetras"
       ],
       "notRecommended": [
+        "Angelfish (Female) ♀",
+        "Angelfish (Male) ♂",
         "Cichlids - American, Large",
         "Larger Catfish",
         "Pond Fish"
@@ -1125,8 +1128,6 @@
         "Cichlids - Lake Tanganyikan"
       ],
       "withCaution": [
-        "Angelfish (Female) ♀",
-        "Angelfish (Male) ♂",
         "Barbs",
         "Bettas (Female) ♀",
         "Bettas (Male) ♂",
