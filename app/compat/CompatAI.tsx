@@ -576,8 +576,8 @@ export default function App() {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                         <div className="bg-[#0f1623] p-6 rounded-2xl text-center">
                         <h4 className="text-2xl font-bold text-[#E19F20] mb-2">Conflict Risk</h4>
-                        <p className={`text-5xl md:text-6xl font-bold mb-4 ${getConflictColor(report.groupHarmonyScore)}`}>
-                            {(report.groupHarmonyScore * 100).toFixed(1)}%
+                        <p className={`text-5xl md:text-6xl font-bold mb-4 ${getConflictColor(report.conflictRiskScore)}`}>
+                            {(report.conflictRiskScore * 100).toFixed(1)}%
                         </p>
                         <p className="text-sm text-[#D8f3ff] mt-2">
                             This score represents the 'weakest link' or the single most problematic pairing in the group. A high score indicates a significant risk of conflict.
@@ -587,8 +587,8 @@ export default function App() {
                         </div>
                         <div className="bg-[#0f1623] p-6 rounded-2xl text-center">
                         <h4 className="text-2xl font-bold text-[#E19F20] mb-2">Group Harmony</h4>
-                        <p className={`text-5xl md:text-6xl font-bold mb-4 ${getHarmonyColor(report.conflictRiskScore)}`}>
-                            {(report.conflictRiskScore * 100).toFixed(1)}%
+                        <p className={`text-5xl md:text-6xl font-bold mb-4 ${getHarmonyColor(report.groupHarmonyScore)}`}>
+                            {(report.groupHarmonyScore * 100).toFixed(1)}%
                         </p>
                         <p className="text-sm text-[#D8f3ff] mt-2">
                             This score is calculated by multiplying the compatibility of all possible pairs. A low score indicates multiple potential issues.
