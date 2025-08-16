@@ -131,7 +131,7 @@ export default function App() {
       }
     }
 
-    const harmonyEquation = harmonyTerms.join(' *') + ` = ${(groupHarmony * 100).toFixed(1)}%`;
+    const harmonyEquation = harmonyTerms.join(' * ') + ` = ${(groupHarmony * 100).toFixed(1)}%`;
     const conflictEquation = `min(${harmonyTerms.join(', ')}) = ${(conflictRisk * 100).toFixed(1)}%`;
 
     return {
@@ -170,7 +170,7 @@ export default function App() {
 
         Please provide a JSON object with the following:
         1.  "groupHarmonyScoreExplanation": A brief, user-friendly explanation of the Group Harmony Score. Explain that it's calculated by multiplying the compatibility of all possible pairs, so a low score indicates multiple potential issues.
-        2.  "conflictRiskScoreExplanation": A brief, user-friendly explanation of the Conflict Risk Score. Explain that this score represents the "weakest link" or the single most problematic pairing in the group.
+        2.  "conflictRiskScoreExplanation": A brief, user-friendly explanation of the Conflict Risk Score. Explain that this score represents the "weakest link" or the single most problematic pairing in the group, so a high score indicates a significant risk of conflict.
         3.  "detailedSummary": A detailed summary of the potential interactions in this specific group of fish.
         4.  "tankSize": A recommended minimum tank size.
         5.  "decorations": Recommended decorations and setup.
