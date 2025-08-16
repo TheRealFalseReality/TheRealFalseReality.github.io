@@ -337,9 +337,31 @@ const CompatibilityFormModal = ({ fishData, freshwaterFish, saltwaterFish, activ
 
     const handleMove = (fromList: string | null, toList: string) => {
         if (selectedItems.length === 0 || !fromList || fromList === toList) return;
-        const newFromList = lists[fromList as keyof typeof lists].filter((item: string) => !selectedItems.includes(item));
-        const newToList = [...lists[toList as keyof typeof lists], ...selectedItems].sort();
-        setLists(prevLists => ({ ...prevLists, [fromList as string]: newFromList, [toList]: newToList }));
+        setLists(prevLists => {
+            // Create copies of the lists to modify
+            const newFromList = [...prevLists[fromList as keyof typeof prevLists]];
+            const newToList = [...prevLists[toList as keyof typeof prevLists]];
+
+            // Items to be moved
+            const itemsToMove = [...new Set(selectedItems)]; // Ensure unique items
+
+            // Remove items from the source list and add to the destination list
+            itemsToMove.forEach(item => {
+                const index = newFromList.indexOf(item);
+                if (index > -1) {
+                    newFromList.splice(index, 1);
+                }
+                if (!newToList.includes(item)) {
+                    newToList.push(item);
+                }
+            });
+
+            return {
+                ...prevLists,
+                [fromList as string]: newFromList.sort(),
+                [toList]: newToList.sort()
+            };
+        });
         setSelectedItems([]);
         setSelectedList(null);
     };

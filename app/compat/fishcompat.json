@@ -456,7 +456,6 @@
       "imageURL": "https://cdn.shopify.com/s/files/1/0311/3149/files/Red-tailed_black_shark_Epalzeorhynchos_bicolor.jpg?v=1665077847",
       "compatible": [
         "Barbs",
-        "Freshwater Sharks",
         "Hatchets",
         "Killifish",
         "Plants",
@@ -539,7 +538,6 @@
       "imageURL": "https://aquadiction.world/img/profile/dwarf-gourami.webp",
       "compatible": [
         "Cory Cats",
-        "Gouramis",
         "Hatchets",
         "Killifish",
         "Loaches",
@@ -666,7 +664,6 @@
         "Freshwater Sharks",
         "Gouramis",
         "Hatchets",
-        "Killifish",
         "Loaches",
         "Mollies / Platies / Swordtails",
         "Plants",
@@ -1202,7 +1199,6 @@
       "latinName": "Pomacanthidae, Centropyge",
       "imageURL": "https://azure2.wgp-cdn.co.uk/app-practicalfishkeeping/features/4c7f95a247fa6.jpg?&width=1200&height=630&mode=crop&format=webp&webp.quality=40&scale=both",
       "compatible": [
-        "Angels - Dwarf",
         "Anthias",
         "Basslets",
         "Blennies",
@@ -1255,7 +1251,6 @@
       "latinName": "Antennariidae, Lophiiformes",
       "imageURL": "https://yourfishstore.com/cdn/shop/products/X1-Red-Angler-Frogfish-Lrg-4-6-Marine-Fish-Saltwater-Free-Shipping-marine-fish-packages.jpg?v=1740709075",
       "compatible": [
-        "Anglers / Frogs",
         "Batfish",
         "Boxfish",
         "Butterflies",
@@ -1362,7 +1357,6 @@
       "compatible": [
         "Angels - Dwarf",
         "Anthias",
-        "Basslets",
         "Boxfish",
         "Butterflies",
         "Cardinals",
@@ -1414,7 +1408,6 @@
       "imageURL": "https://www.thesmilingseahorse.com/uploads/1/0/1/8/10183628/dsc-2797_orig.jpg",
       "compatible": [
         "Anglers / Frogs",
-        "Batfish",
         "Boxfish",
         "Butterflies",
         "Filefish",
@@ -1469,7 +1462,6 @@
         "Angels",
         "Angels - Dwarf",
         "Anthias",
-        "Blennies",
         "Boxfish",
         "Butterflies",
         "Chromis",
@@ -1498,7 +1490,6 @@
         "Basslets",
         "Batfish",
         "Blennies",
-        "Blennies",
         "Cardinals",
         "Clownfish (Female) ♀",
         "Clownfish (Male) ♂",
@@ -1525,7 +1516,6 @@
         "Basslets",
         "Batfish",
         "Blennies",
-        "Boxfish",
         "Butterflies",
         "Cardinals",
         "Chromis",
@@ -1735,7 +1725,6 @@
         "Butterflies",
         "Cardinals",
         "Chromis",
-        "Clownfish (Female) ♀",
         "Clownfish (Male) ♂",
         "Corals",
         "Filefish",
@@ -1888,7 +1877,6 @@
       "compatible": [
         "Angels - Dwarf",
         "Corals",
-        "Damsels",
         "Foxface / Rabbits",
         "Hawkfish",
         "Pseudochromis",
@@ -1947,7 +1935,6 @@
         "Cardinals",
         "Chromis",
         "Corals",
-        "Dartfish",
         "Dragonets",
         "Foxface / Rabbits",
         "Gobies",
@@ -2257,7 +2244,6 @@
       "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxeT4n979NZO6JJfqa3ffTP0REhlyq4n4-1A&s",
       "compatible": [
         "Angels",
-        "Groupers",
         "Lions / Scorpions"
       ],
       "notRecommended": [
@@ -2371,7 +2357,6 @@
         "Corals",
         "Damsels",
         "Foxface / Rabbits",
-        "Hawkfish",
         "Hogfish",
         "Pseudochromis",
         "Puffers",
@@ -2523,8 +2508,7 @@
         "Anglers / Frogs",
         "Batfish",
         "Eels",
-        "Groupers",
-        "Lions / Scorpions"
+        "Groupers"
       ],
       "notRecommended": [
         "Angels - Dwarf",
@@ -2628,7 +2612,6 @@
         "Corals",
         "Damsels",
         "Hawkfish",
-        "Pseudochromis",
         "Snails"
       ],
       "notRecommended": [
