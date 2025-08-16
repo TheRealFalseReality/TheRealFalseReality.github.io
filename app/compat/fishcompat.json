@@ -1162,15 +1162,15 @@
         "Puffers",
         "Squirrelfish",
         "Tangs / Surgeons",
-        "Wrasse - Fish Only",
-        "Wrasse - Reef Safe"
+        "Wrasse - Fish Only"
       ],
       "notRecommended": [
         "Butterflies",
         "Dragonets"
       ],
       "notCompatible": [
-        "Seahorse / Pipefish"
+        "Seahorse / Pipefish",
+        "Shrimp"
       ],
       "withCaution": [
         "Angels",
@@ -1192,9 +1192,9 @@
         "Jawfish",
         "Pseudochromis",
         "Sharks / Rays",
-        "Shrimp",
         "Snails",
-        "Triggerfish"
+        "Triggerfish",
+        "Wrasse - Reef Safe"
       ]
     },
     {
@@ -1219,14 +1219,16 @@
         "Hawkfish",
         "Hogfish",
         "Jawfish",
-        "Squirrelfish",
         "Tangs / Surgeons",
         "Wrasse - Reef Safe"
       ],
       "notRecommended": [
         "Batfish",
         "Groupers",
-        "Lions / Scorpions"
+        "Lions / Scorpions",
+        "Shrimp",
+        "Squirrelfish",
+        "Triggerfish"
       ],
       "notCompatible": [
         "Seahorse / Pipefish",
@@ -1244,9 +1246,7 @@
         "Parrotfish",
         "Pseudochromis",
         "Puffers",
-        "Shrimp",
         "Snails",
-        "Triggerfish",
         "Wrasse - Fish Only"
       ]
     },
@@ -1263,14 +1263,14 @@
         "Foxface / Rabbits",
         "Grunts / Sweetlips",
         "Lions / Scorpions",
-        "Squirrelfish",
-        "Tangs / Surgeons"
+        "Squirrelfish"
       ],
       "notRecommended": [
         "Eels",
         "Puffers",
         "Shrimp",
-        "Snails"
+        "Snails",
+        "Tangs / Surgeons"
       ],
       "notCompatible": [
         "Basslets",
@@ -1325,13 +1325,13 @@
         "Jawfish",
         "Shrimp",
         "Snails",
-        "Squirrelfish",
         "Tangs / Surgeons",
         "Wrasse - Reef Safe"
       ],
       "notRecommended": [
         "Batfish",
-        "Parrotfish"
+        "Parrotfish",
+        "Squirrelfish"
       ],
       "notCompatible": [
         "Groupers",
@@ -1373,7 +1373,6 @@
         "Grunts / Sweetlips",
         "Shrimp",
         "Snails",
-        "Squirrelfish",
         "Tangs / Surgeons",
         "Wrasse - Reef Safe"
       ],
@@ -1381,7 +1380,8 @@
         "Batfish",
         "Hogfish",
         "Parrotfish",
-        "Pseudochromis"
+        "Pseudochromis",
+        "Squirrelfish"
       ],
       "notCompatible": [
         "Anglers / Frogs",
@@ -1425,8 +1425,7 @@
         "Parrotfish",
         "Puffers",
         "Squirrelfish",
-        "Tangs / Surgeons",
-        "Wrasse - Reef Safe"
+        "Tangs / Surgeons"
       ],
       "notRecommended": [
         "Angels - Dwarf",
@@ -1458,7 +1457,8 @@
         "Hogfish",
         "Lions / Scorpions",
         "Snails",
-        "Wrasse - Fish Only"
+        "Wrasse - Fish Only",
+        "Wrasse - Reef Safe"
       ]
     },
     {
@@ -1544,6 +1544,9 @@
         "Squirrelfish",
         "Wrasse - Reef Safe"
       ],
+      "notRecommended": [
+        "Triggerfish"
+      ],
       "notCompatible": [
         "Seahorse / Pipefish",
         "Sharks / Rays"
@@ -1562,7 +1565,6 @@
         "Shrimp",
         "Snails",
         "Tangs / Surgeons",
-        "Triggerfish",
         "Wrasse - Fish Only"
       ]
     },
@@ -1647,7 +1649,8 @@
         "Batfish",
         "Hogfish",
         "Parrotfish",
-        "Shrimp"
+        "Shrimp",
+        "Squirrelfish"
       ],
       "notCompatible": [
         "Anglers / Frogs",
@@ -1665,7 +1668,6 @@
         "Damsels",
         "Pseudochromis",
         "Puffers",
-        "Squirrelfish",
         "Wrasse - Fish Only",
         "Wrasse - Reef Safe"
       ]
@@ -1701,6 +1703,7 @@
       "notRecommended": [
         "Batfish",
         "Parrotfish",
+        "Squirrelfish",
         "Triggerfish"
       ],
       "notCompatible": [
@@ -1718,7 +1721,6 @@
         "Hogfish",
         "Pseudochromis",
         "Puffers",
-        "Squirrelfish",
         "Wrasse - Fish Only"
       ]
     },
@@ -1750,6 +1752,7 @@
         "Hogfish",
         "Parrotfish",
         "Squirrelfish",
+        "Triggerfish",
         "Wrasse - Fish Only"
       ],
       "notCompatible": [
@@ -1771,8 +1774,7 @@
         "Hawkfish",
         "Jawfish",
         "Pseudochromis",
-        "Puffers",
-        "Triggerfish"
+        "Puffers"
       ]
     },
     {
@@ -1803,6 +1805,7 @@
         "Hogfish",
         "Parrotfish",
         "Squirrelfish",
+        "Triggerfish",
         "Wrasse - Fish Only"
       ],
       "notCompatible": [
@@ -1823,8 +1826,7 @@
         "Hawkfish",
         "Jawfish",
         "Pseudochromis",
-        "Puffers",
-        "Triggerfish"
+        "Puffers"
       ]
     },
     {
@@ -1846,7 +1848,6 @@
         "Hawkfish",
         "Jawfish",
         "Pseudochromis",
-        "Seahorse / Pipefish",
         "Shrimp",
         "Snails",
         "Tangs / Surgeons",
@@ -1860,7 +1861,8 @@
         "Grunts / Sweetlips",
         "Hogfish",
         "Lions / Scorpions",
-        "Squirrelfish"
+        "Squirrelfish",
+        "Wrasse - Fish Only"
       ],
       "notCompatible": [
         "Parrotfish"
@@ -1874,9 +1876,9 @@
         "Filefish",
         "Foxface / Rabbits",
         "Puffers",
+        "Seahorse / Pipefish",
         "Sharks / Rays",
-        "Triggerfish",
-        "Wrasse - Fish Only"
+        "Triggerfish"
       ]
     },
     {
@@ -1906,7 +1908,9 @@
         "Hogfish",
         "Jawfish",
         "Parrotfish",
-        "Shrimp"
+        "Shrimp",
+        "Squirrelfish",
+        "Triggerfish"
       ],
       "notCompatible": [
         "Anglers / Frogs",
@@ -1928,9 +1932,7 @@
         "Dartfish",
         "Dragonets",
         "Filefish",
-        "Grunts / Sweetlips",
-        "Squirrelfish",
-        "Triggerfish"
+        "Grunts / Sweetlips"
       ]
     },
     {
@@ -1958,7 +1960,8 @@
       "notRecommended": [
         "Hawkfish",
         "Hogfish",
-        "Parrotfish"
+        "Parrotfish",
+        "Squirrelfish"
       ],
       "notCompatible": [
         "Anglers / Frogs",
@@ -1982,7 +1985,6 @@
         "Pseudochromis",
         "Puffers",
         "Seahorse / Pipefish",
-        "Squirrelfish",
         "Wrasse - Fish Only"
       ]
     },
@@ -2069,7 +2071,8 @@
         "Hawkfish",
         "Jawfish",
         "Pseudochromis",
-        "Seahorse / Pipefish"
+        "Seahorse / Pipefish",
+        "Shrimp"
       ],
       "withCaution": [
         "Angels - Dwarf",
@@ -2083,7 +2086,6 @@
         "Parrotfish",
         "Puffers",
         "Sharks / Rays",
-        "Shrimp",
         "Snails",
         "Squirrelfish",
         "Triggerfish",
@@ -2112,7 +2114,6 @@
         "Foxface / Rabbits",
         "Gobies",
         "Jawfish",
-        "Squirrelfish",
         "Tangs / Surgeons",
         "Wrasse - Reef Safe"
       ],
@@ -2140,6 +2141,7 @@
         "Hawkfish",
         "Pseudochromis",
         "Puffers",
+        "Squirrelfish",
         "Wrasse - Fish Only"
       ]
     },
@@ -2222,7 +2224,8 @@
         "Batfish",
         "Damsels",
         "Parrotfish",
-        "Pseudochromis"
+        "Pseudochromis",
+        "Triggerfish"
       ],
       "notCompatible": [
         "Anglers / Frogs",
@@ -2245,7 +2248,6 @@
         "Puffers",
         "Seahorse / Pipefish",
         "Squirrelfish",
-        "Triggerfish",
         "Wrasse - Fish Only"
       ]
     },
@@ -2283,6 +2285,7 @@
         "Jawfish",
         "Pseudochromis",
         "Seahorse / Pipefish",
+        "Shrimp",
         "Squirrelfish"
       ],
       "withCaution": [
@@ -2295,7 +2298,6 @@
         "Parrotfish",
         "Puffers",
         "Sharks / Rays",
-        "Shrimp",
         "Snails",
         "Tangs / Surgeons",
         "Triggerfish",
@@ -2339,6 +2341,7 @@
         "Jawfish",
         "Pseudochromis",
         "Seahorse / Pipefish",
+        "Shrimp",
         "Wrasse - Reef Safe"
       ],
       "withCaution": [
@@ -2348,7 +2351,6 @@
         "Groupers",
         "Lions / Scorpions",
         "Sharks / Rays",
-        "Shrimp",
         "Snails",
         "Triggerfish",
         "Wrasse - Fish Only"
@@ -2373,15 +2375,14 @@
         "Hogfish",
         "Pseudochromis",
         "Puffers",
-        "Squirrelfish",
         "Tangs / Surgeons",
-        "Wrasse - Fish Only",
-        "Wrasse - Reef Safe"
+        "Wrasse - Fish Only"
       ],
       "notRecommended": [
         "Dartfish",
         "Dragonets",
-        "Parrotfish"
+        "Parrotfish",
+        "Squirrelfish"
       ],
       "notCompatible": [
         "Eels",
@@ -2389,7 +2390,8 @@
         "Grunts / Sweetlips",
         "Lions / Scorpions",
         "Seahorse / Pipefish",
-        "Sharks / Rays"
+        "Sharks / Rays",
+        "Shrimp"
       ],
       "withCaution": [
         "Anglers / Frogs",
@@ -2402,9 +2404,9 @@
         "Gobies",
         "Hawkfish",
         "Jawfish",
-        "Shrimp",
         "Snails",
-        "Triggerfish"
+        "Triggerfish",
+        "Wrasse - Reef Safe"
       ]
     },
     {
@@ -2439,7 +2441,8 @@
         "Pseudochromis"
       ],
       "notCompatible": [
-        "Seahorse / Pipefish"
+        "Seahorse / Pipefish",
+        "Shrimp"
       ],
       "withCaution": [
         "Anglers / Frogs",
@@ -2451,7 +2454,6 @@
         "Groupers",
         "Lions / Scorpions",
         "Sharks / Rays",
-        "Shrimp",
         "Snails",
         "Squirrelfish",
         "Triggerfish",
@@ -2484,7 +2486,9 @@
         "Batfish",
         "Damsels",
         "Hogfish",
-        "Parrotfish"
+        "Parrotfish",
+        "Squirrelfish",
+        "Triggerfish"
       ],
       "notCompatible": [
         "Anglers / Frogs",
@@ -2506,8 +2510,6 @@
         "Pseudochromis",
         "Puffers",
         "Seahorse / Pipefish",
-        "Squirrelfish",
-        "Triggerfish",
         "Wrasse - Fish Only",
         "Wrasse - Reef Safe"
       ]
@@ -2522,8 +2524,7 @@
         "Batfish",
         "Eels",
         "Groupers",
-        "Lions / Scorpions",
-        "Tangs / Surgeons"
+        "Lions / Scorpions"
       ],
       "notRecommended": [
         "Angels - Dwarf",
@@ -2531,6 +2532,7 @@
         "Corals",
         "Filefish",
         "Foxface / Rabbits",
+        "Tangs / Surgeons",
         "Wrasse - Reef Safe"
       ],
       "notCompatible": [
@@ -2547,7 +2549,8 @@
         "Hawkfish",
         "Jawfish",
         "Pseudochromis",
-        "Seahorse / Pipefish"
+        "Seahorse / Pipefish",
+        "Shrimp"
       ],
       "withCaution": [
         "Anthias",
@@ -2558,7 +2561,6 @@
         "Parrotfish",
         "Puffers",
         "Sharks / Rays",
-        "Shrimp",
         "Snails",
         "Squirrelfish",
         "Triggerfish",
@@ -2627,8 +2629,7 @@
         "Damsels",
         "Hawkfish",
         "Pseudochromis",
-        "Snails",
-        "Squirrelfish"
+        "Snails"
       ],
       "notRecommended": [
         "Basslets",
@@ -2637,7 +2638,8 @@
         "Gobies",
         "Hogfish",
         "Parrotfish",
-        "Shrimp"
+        "Shrimp",
+        "Squirrelfish"
       ],
       "notCompatible": [
         "Anglers / Frogs",
@@ -2685,8 +2687,7 @@
         "Parrotfish",
         "Puffers",
         "Squirrelfish",
-        "Tangs / Surgeons",
-        "Wrasse - Reef Safe"
+        "Tangs / Surgeons"
       ],
       "notRecommended": [
         "Anglers / Frogs",
@@ -2719,15 +2720,15 @@
         "Lions / Scorpions",
         "Pseudochromis",
         "Triggerfish",
-        "Wrasse - Fish Only"
+        "Wrasse - Fish Only",
+        "Wrasse - Reef Safe"
       ]
     },
     {
       "name": "Seahorse / Pipefish",
       "latinName": "Syngnathinae, Hippocampus, Syngnathus, Corythoichthys",
-      "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_w0boutw0boutw0bo.jpg?raw=true",
+      "imageURL": "https://images.squarespace-cdn.com/content/v1/5734f2a086db43e3f6fb1bbc/1551223084117-ZST8V2WNKNXGNTHHYNC7/Lars+Reichenbach+-+GuyLian+Seahorses+of+the+World+2018+-+1st+prize+category+photo.jpg",
       "compatible": [
-        "Corals",
         "Dragonets",
         "Seahorse / Pipefish"
       ],
@@ -2765,6 +2766,7 @@
         "Wrasse - Reef Safe"
       ],
       "withCaution": [
+        "Corals",
         "Dartfish",
         "Gobies",
         "Jawfish",
@@ -2774,8 +2776,8 @@
     },
     {
       "name": "Sharks / Rays",
-      "latinName": "Carcharhinidae, Dasyatidae",
-      "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_w0boutw0boutw0bo.jpg?raw=true",
+      "latinName": "Hemiscyllium, Torpedinidae",
+      "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTke_Zqoj1Lr0GGefos709T4xaGpbBOZ4wZGA&s",
       "compatible": [
         "Sharks / Rays"
       ],
@@ -2825,7 +2827,7 @@
     {
       "name": "Shrimp",
       "latinName": "Various",
-      "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_w0boutw0boutw0bo.jpg?raw=true",
+      "imageURL": "https://worldwidecorals.com/cdn/shop/articles/Blood-Shrimp-Reef-Aquarium-Cover.jpg?v=1716412148",
       "compatible": [
         "Anthias",
         "Basslets",
@@ -2843,6 +2845,7 @@
         "Tangs / Surgeons"
       ],
       "notRecommended": [
+        "Angels - Dwarf",
         "Anglers / Frogs",
         "Batfish",
         "Cardinals",
@@ -2850,34 +2853,33 @@
         "Pseudochromis"
       ],
       "notCompatible": [
-        "Filefish",
-        "Parrotfish",
-        "Puffers",
-        "Sharks / Rays",
-        "Triggerfish"
-      ],
-      "withCaution": [
         "Angels",
-        "Angels - Dwarf",
-        "Boxfish",
-        "Butterflies",
         "Eels",
-        "Foxface / Rabbits",
+        "Filefish",
         "Groupers",
         "Grunts / Sweetlips",
         "Hawkfish",
         "Hogfish",
         "Lions / Scorpions",
-        "Seahorse / Pipefish",
+        "Parrotfish",
+        "Puffers",
+        "Sharks / Rays",
         "Squirrelfish",
-        "Wrasse - Fish Only",
+        "Triggerfish",
+        "Wrasse - Fish Only"
+      ],
+      "withCaution": [
+        "Boxfish",
+        "Butterflies",
+        "Foxface / Rabbits",
+        "Seahorse / Pipefish",
         "Wrasse - Reef Safe"
       ]
     },
     {
       "name": "Snails",
       "latinName": "Various",
-      "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_w0boutw0boutw0bo.jpg?raw=true",
+      "imageURL": "https://www.liveaquaria.com/images/categories/product/lg-Trochus%20Snail-02.jpg",
       "compatible": [
         "Anthias",
         "Basslets",
@@ -2898,7 +2900,8 @@
         "Tangs / Surgeons"
       ],
       "notRecommended": [
-        "Anglers / Frogs"
+        "Anglers / Frogs",
+        "Wrasse - Fish Only"
       ],
       "notCompatible": [
         "Filefish",
@@ -2922,72 +2925,70 @@
         "Lions / Scorpions",
         "Seahorse / Pipefish",
         "Squirrelfish",
-        "Wrasse - Fish Only",
         "Wrasse - Reef Safe"
       ]
     },
     {
       "name": "Squirrelfish",
       "latinName": "Holocentridae, Holocentrus, Sargocentron, Myripristis",
-      "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_w0boutw0boutw0bo.jpg?raw=true",
+      "imageURL": "https://www.ryanphotographic.com/images/JPEGS/Holocentrus%20rufus,%20Longspine%20squirrelfish%20(Holocentridae),%20Glover's%20Reef,%20%20Belize-3310.jpg",
       "compatible": [
         "Angels",
-        "Angels - Dwarf",
         "Anglers / Frogs",
-        "Anthias",
-        "Basslets",
         "Batfish",
         "Boxfish",
         "Clownfish (Female) ♀",
         "Clownfish (Male) ♂",
-        "Filefish",
         "Foxface / Rabbits",
         "Grunts / Sweetlips",
-        "Hawkfish",
         "Parrotfish",
-        "Pseudochromis",
         "Puffers",
         "Squirrelfish",
         "Tangs / Surgeons"
       ],
       "notRecommended": [
+        "Angels - Dwarf",
+        "Anthias",
+        "Basslets",
         "Butterflies",
+        "Cardinals",
+        "Chromis",
         "Clownfish (Female) ♀",
         "Clownfish (Male) ♂",
-        "Corals"
+        "Corals",
+        "Damsels",
+        "Dartfish",
+        "Hawkfish",
+        "Jawfish",
+        "Pseudochromis",
+        "Wrasse - Fish Only"
       ],
       "notCompatible": [
         "Groupers",
         "Seahorse / Pipefish",
+        "Shrimp",
         "Wrasse - Reef Safe"
       ],
       "withCaution": [
         "Blennies",
-        "Cardinals",
-        "Chromis",
-        "Damsels",
-        "Dartfish",
         "Dragonets",
         "Eels",
+        "Filefish",
         "Gobies",
         "Hogfish",
-        "Jawfish",
         "Lions / Scorpions",
         "Sharks / Rays",
-        "Shrimp",
         "Snails",
-        "Triggerfish",
-        "Wrasse - Fish Only"
+        "Triggerfish"
       ]
     },
     {
       "name": "Tangs / Surgeons",
       "latinName": "Acanthuridae, Acanthurus, Ctenochaetus, Naso",
-      "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_w0boutw0boutw0bo.jpg?raw=true",
+      "imageURL": "https://www.coralmagazine.com/wp-content/uploads/2023/02/Paracanthurus-hepatus-adult.jpg",
       "compatible": [
         "Angels",
         "Angels - Dwarf",
-        "Anglers / Frogs",
         "Anthias",
         "Basslets",
         "Batfish",
@@ -3006,7 +3007,6 @@
         "Hawkfish",
         "Hogfish",
         "Jawfish",
-        "Lions / Scorpions",
         "Parrotfish",
         "Puffers",
         "Shrimp",
@@ -3017,7 +3017,9 @@
         "Wrasse - Reef Safe"
       ],
       "notRecommended": [
-        "Butterflies"
+        "Anglers / Frogs",
+        "Butterflies",
+        "Lions / Scorpions"
       ],
       "notCompatible": [
         "Seahorse / Pipefish"
@@ -3035,13 +3037,20 @@
     {
       "name": "Triggerfish",
       "latinName": "Balistidae, Balistoides, Rhinecanthus, Odonus",
-      "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_w0boutw0boutw0bo.jpg?raw=true",
+      "imageURL": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Picasso.triggerfish.arp.jpg",
       "compatible": [
         "Triggerfish"
       ],
       "notRecommended": [
+        "Angels - Dwarf",
         "Blennies",
-        "Chromis"
+        "Boxfish",
+        "Chromis",
+        "Clownfish (Female) ♀",
+        "Clownfish (Male) ♂",
+        "Damsels",
+        "Gobies",
+        "Jawfish"
       ],
       "notCompatible": [
         "Anglers / Frogs",
@@ -3059,24 +3068,15 @@
       ],
       "withCaution": [
         "Angels",
-        "Angels - Dwarf",
         "Anthias",
-        "Blennies",
-        "Boxfish",
         "Butterflies",
-        "Chromis",
-        "Clownfish (Female) ♀",
-        "Clownfish (Male) ♂",
         "Corals",
-        "Damsels",
         "Eels",
         "Foxface / Rabbits",
-        "Gobies",
         "Groupers",
         "Grunts / Sweetlips",
         "Hawkfish",
         "Hogfish",
-        "Jawfish",
         "Lions / Scorpions",
         "Parrotfish",
         "Puffers",
@@ -3088,23 +3088,24 @@
     },
     {
       "name": "Wrasse - Fish Only",
-      "latinName": "Labridae, Coris",
-      "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_w0boutw0boutw0bo.jpg?raw=true",
+      "latinName": "Choerodon, Labridae",
+      "imageURL": "https://www.seadwelling.com/cdn/shop/products/HarlequinTuskFWRHA590AU.jpg?v=1655413349",
       "compatible": [
         "Angels",
-        "Clownfish (Female) ♀",
-        "Clownfish (Male) ♂",
         "Damsels",
-        "Hawkfish",
         "Tangs / Surgeons",
         "Wrasse - Fish Only"
       ],
       "notRecommended": [
         "Clownfish (Female) ♀",
-        "Clownfish (Male) ♂"
+        "Clownfish (Male) ♂",
+        "Corals",
+        "Snails",
+        "Squirrelfish"
       ],
       "notCompatible": [
-        "Seahorse / Pipefish"
+        "Seahorse / Pipefish",
+        "Shrimp"
       ],
       "withCaution": [
         "Angels - Dwarf",
@@ -3117,7 +3118,6 @@
         "Butterflies",
         "Cardinals",
         "Chromis",
-        "Corals",
         "Dartfish",
         "Dragonets",
         "Eels",
@@ -3134,9 +3134,6 @@
         "Pseudochromis",
         "Puffers",
         "Sharks / Rays",
-        "Shrimp",
-        "Snails",
-        "Squirrelfish",
         "Triggerfish",
         "Wrasse - Reef Safe"
       ]
@@ -3144,17 +3141,14 @@
     {
       "name": "Wrasse - Reef Safe",
       "latinName": "Labridae, Cirrhilabrus, Pseudocheilinus, Paracheilinus",
-      "imageURL": "https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/Gemini_Generated_Image_w0boutw0boutw0bo.jpg?raw=true",
+      "imageURL": "https://www.calacademy.org/sites/default/files/styles/manual_crop_standard_960x540/public/assets/images/press/cirrhilabrus_finifenmaa_release_3.jpg?itok=joOJevHQ&c=dc2f507ca75d97c0e4c059d42f103074",
       "compatible": [
-        "Angels",
         "Angels - Dwarf",
         "Anthias",
         "Basslets",
-        "Batfish",
         "Blennies",
         "Boxfish",
         "Butterflies",
-        "Cardinals",
         "Chromis",
         "Clownfish (Female) ♀",
         "Clownfish (Male) ♂",
@@ -3164,9 +3158,6 @@
         "Filefish",
         "Foxface / Rabbits",
         "Gobies",
-        "Hawkfish",
-        "Jawfish",
-        "Puffers",
         "Tangs / Surgeons",
         "Wrasse - Reef Safe"
       ],
@@ -3183,12 +3174,16 @@
         "Squirrelfish"
       ],
       "withCaution": [
+        "Angels",
         "Anglers / Frogs",
+        "Batfish",
         "Cardinals",
         "Eels",
+        "Hawkfish",
         "Hogfish",
         "Jawfish",
         "Pseudochromis",
+        "Puffers",
         "Shrimp",
         "Snails",
         "Triggerfish",
