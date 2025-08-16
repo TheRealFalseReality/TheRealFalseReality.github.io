@@ -176,7 +176,7 @@ export default function App() {
     try {
       // Construct the prompt for the AI
       const prompt = `
-        You are an aquarium expert. A user has selected a group of fish. Your task is to generate a tailored care guide and compatibility summary. Do not mention the scores in your summary, just provide the requested information.
+        You are an aquarium expert. A user has selected a group of fish. Your task is to generate a tailored care guide and compatibility summary.
 
         Selected Fish: ${currentSelectedFish.map(f => f.name).join(', ')}
         Fish Type: ${selectedCategory}
@@ -184,8 +184,8 @@ export default function App() {
         Conflict Risk Score: ${(conflictRisk * 100).toFixed(1)}%
 
         Please provide a JSON object with the following:
-        1.  "groupHarmonyScoreExplanation": "A brief, user-friendly explanation of the Group Harmony Score. Explain that it's calculated by multiplying the compatibility of all possible pairs, so a low score indicates multiple potential issues.",
-        2.  "conflictRiskScoreExplanation": "A brief, user-friendly explanation of the Conflict Risk Score. Explain that this score represents the 'weakest link' or the single most problematic pairing in the group, so a high score indicates a significant risk of conflict.",
+        1. "harmonySummary": "Based on the Group Harmony Score of ${(groupHarmony * 100).toFixed(1)}%, write a brief summary of the overall compatibility of this group.",
+        2. "conflictSummary": "Based on the Conflict Risk Score of ${(conflictRisk * 100).toFixed(1)}%, write a brief summary of the potential for conflict in this group.",
         3.  "detailedSummary": A detailed summary of the potential interactions in this specific group of fish.
         4.  "tankSize": A recommended minimum tank size.
         5.  "decorations": Recommended decorations and setup.
@@ -203,8 +203,8 @@ export default function App() {
           responseSchema: {
             "type": "OBJECT",
             "properties": {
-              "groupHarmonyScoreExplanation": { "type": "STRING" },
-              "conflictRiskScoreExplanation": { "type": "STRING" },
+              "harmonySummary": { "type": "STRING" },
+              "conflictSummary": { "type": "STRING" },
               "detailedSummary": { "type": "STRING" },
               "tankSize": { "type": "STRING" },
               "decorations": { "type": "STRING" },
@@ -218,7 +218,7 @@ export default function App() {
                 }
               }
             },
-            "required": ["groupHarmonyScoreExplanation", "conflictRiskScoreExplanation", "detailedSummary", "tankSize", "decorations", "careGuide", "compatibleFish"]
+            "required": ["harmonySummary", "conflictSummary", "detailedSummary", "tankSize", "decorations", "careGuide", "compatibleFish"]
           }
         }
       };
@@ -579,14 +579,22 @@ export default function App() {
                         <p className={`text-5xl md:text-6xl font-bold mb-4 ${getConflictColor(report.groupHarmonyScore)}`}>
                             {(report.groupHarmonyScore * 100).toFixed(1)}%
                         </p>
-                        <p className="text-sm text-[#D8f3ff] mt-2">{report.conflictRiskScoreExplanation}</p>
+                        <p className="text-sm text-[#D8f3ff] mt-2">
+                            This score represents the 'weakest link' or the single most problematic pairing in the group. A high score indicates a significant risk of conflict.
+                            <br/><br/>
+                            <strong>Summary:</strong> {report.conflictSummary}
+                        </p>
                         </div>
                         <div className="bg-[#0f1623] p-6 rounded-2xl text-center">
                         <h4 className="text-2xl font-bold text-[#E19F20] mb-2">Group Harmony</h4>
                         <p className={`text-5xl md:text-6xl font-bold mb-4 ${getHarmonyColor(report.conflictRiskScore)}`}>
                             {(report.conflictRiskScore * 100).toFixed(1)}%
                         </p>
-                        <p className="text-sm text-[#D8f3ff] mt-2">{report.groupHarmonyScoreExplanation}</p>
+                        <p className="text-sm text-[#D8f3ff] mt-2">
+                            This score is calculated by multiplying the compatibility of all possible pairs. A low score indicates multiple potential issues.
+                            <br/><br/>
+                            <strong>Summary:</strong> {report.harmonySummary}
+                        </p>
                         </div>
                     </div>
                     
