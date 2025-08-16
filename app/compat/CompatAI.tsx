@@ -102,9 +102,9 @@ export default function App() {
    * @returns {object} An object containing the scores and the math breakdown.
    */
   const calculateScores = (fishList: any[]) => {
-    if (fishList.length < 2) {
+    if (fishList.length === 0) {
       return {
-        conflictRisk: 0.0, // No conflict with one fish
+        conflictRisk: 0.0,
         groupHarmony: 1.0,
         mathBreakdown: { pairs: [], harmonyEquation: "100%", conflictEquation: "0%" }
       };
@@ -116,7 +116,7 @@ export default function App() {
     const harmonyTerms: string[] = [];
 
     for (let i = 0; i < fishList.length; i++) {
-      for (let j = i + 1; j < fishList.length; j++) {
+      for (let j = i; j < fishList.length; j++) {
         const prob = getPairwiseProbability(fishList[i], fishList[j]);
         pairs.push({
           fishA: fishList[i].name,
