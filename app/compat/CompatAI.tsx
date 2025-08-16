@@ -142,6 +142,20 @@ export default function App() {
     };
   };
 
+  const getHarmonyColor = (score: number) => {
+    if (score >= 0.75) return 'text-green-400';
+    if (score >= 0.5) return 'text-yellow-400';
+    if (score >= 0.25) return 'text-orange-400';
+    return 'text-red-400';
+  };
+
+  const getConflictColor = (score: number) => {
+    if (score <= 0.25) return 'text-green-400';
+    if (score <= 0.5) return 'text-yellow-400';
+    if (score <= 0.75) return 'text-orange-400';
+    return 'text-red-400';
+  };
+
   // --- END: Compatibility Calculation Logic ---
 
   const getCompatibilityReport = async () => {
@@ -562,12 +576,16 @@ export default function App() {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                         <div className="bg-[#0f1623] p-6 rounded-2xl text-center">
                         <h4 className="text-2xl font-bold text-[#E19F20] mb-2">Group Harmony</h4>
-                        <p className="text-5xl md:text-6xl font-bold text-[#81B2E8] mb-4">{(report.groupHarmonyScore * 100).toFixed(1)}%</p>
+                        <p className={`text-5xl md:text-6xl font-bold mb-4 ${getHarmonyColor(report.groupHarmonyScore)}`}>
+                            {(report.groupHarmonyScore * 100).toFixed(1)}%
+                        </p>
                         <p className="text-sm text-[#D8f3ff] mt-2">{report.groupHarmonyScoreExplanation}</p>
                         </div>
                         <div className="bg-[#0f1623] p-6 rounded-2xl text-center">
                         <h4 className="text-2xl font-bold text-[#E19F20] mb-2">Conflict Risk</h4>
-                        <p className="text-5xl md:text-6xl font-bold text-[#75344E] mb-4">{(report.conflictRiskScore * 100).toFixed(1)}%</p>
+                        <p className={`text-5xl md:text-6xl font-bold mb-4 ${getConflictColor(report.conflictRiskScore)}`}>
+                            {(report.conflictRiskScore * 100).toFixed(1)}%
+                        </p>
                         <p className="text-sm text-[#D8f3ff] mt-2">{report.conflictRiskScoreExplanation}</p>
                         </div>
                     </div>
