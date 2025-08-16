@@ -375,7 +375,7 @@ export default function App() {
     let lastLetter = '';
 
   return (
-    <div className="min-h-screen bg-[#0f1623] text-[#D8f3ff] font-sans antialiased">
+    <div className="min-h-screen bg-[#0f1623] text-[#D8f3ff] font-sans antialiased animate-fade-in">
         <div className="sticky top-0 z-50 bg-[#0f1623]/80 backdrop-blur-sm shadow-md">
             <nav className="container mx-auto px-6 lg:px-10 py-3 text-sm text-gray-400">
                 <Link to="/" className="hover:text-white transition-colors">Home</Link>
@@ -540,7 +540,7 @@ export default function App() {
 
         {showReport && (
             <div onClick={() => setShowReport(false)} className="fixed inset-0 z-50 flex items-center justify-center bg-[#0f1623]/75 p-4 sm:p-8 md:py-12 animate-fade-in">
-            <div onClick={(e) => e.stopPropagation()} className="relative w-full max-w-full max-h-[90vh] bg-[#497eb0] rounded-3xl shadow-2xl flex flex-col">
+            <div onClick={(e) => e.stopPropagation()} className="relative w-full max-w-full max-h-[90vh] bg-[#497eb0] rounded-3xl shadow-2xl flex flex-col animate-fade-in-down">
                 <div className="relative flex-shrink-0 px-6 pt-4 pb-2 text-center z-10 border-b border-[#D8f3ff]">
                     <h3 className="text-2xl md:text-3xl font-extrabold text-[#E19F20]">
                         Compatibility Report

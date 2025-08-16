@@ -190,7 +190,7 @@ const AlphabetScroller = ({ letters, onLetterClick, onScrollToTop }: AlphabetScr
 
 const CustomModal = ({ title, message, onClose, onConfirm, showConfirm = false }: CustomModalProps) => {
     return (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-sm p-4">
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-sm p-4 animate-fade-in">
             <div className="bg-gray-800 text-white rounded-xl shadow-2xl p-6 max-w-sm w-full mx-auto animate-fade-in-down">
                 <h3 className="text-xl font-bold mb-4 border-b border-gray-600 pb-2 text-yellow-300">{title}</h3>
                 <p className="text-gray-300 mb-6">{message}</p>
@@ -265,7 +265,7 @@ const AddFishModal = ({ onSave, onClose, activeTab }: AddFishModalProps) => {
     return (
         <>
             <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-sm p-4 animate-fade-in">
-                <div className="bg-gray-800 text-white rounded-2xl shadow-2xl p-8 max-w-md w-full mx-auto">
+                <div className="bg-gray-800 text-white rounded-2xl shadow-2xl p-8 max-w-md w-full mx-auto animate-fade-in-down">
                     <div className="flex justify-between items-center mb-6 border-b border-gray-600 pb-3">
                         <h3 className="text-2xl font-bold text-yellow-300">Add a New Fish</h3>
                         <button onClick={onClose} className="p-2 rounded-full bg-gray-600 text-white hover:bg-gray-700 transition" title="Close"><CloseIcon /></button>
@@ -392,7 +392,7 @@ const CompatibilityFormModal = ({ fishData, freshwaterFish, saltwaterFish, activ
 
     return (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-sm p-6 lg:p-10 animate-fade-in">
-            <div className="bg-gray-800 text-white rounded-2xl shadow-2xl p-8 w-full mx-auto overflow-y-auto max-h-[90vh]">
+            <div className="bg-gray-800 text-white rounded-2xl shadow-2xl p-8 w-full mx-auto overflow-y-auto max-h-[90vh] animate-fade-in-down">
                 <div className="flex justify-between items-center mb-6 border-b border-gray-600 pb-3">
                     <h3 className="text-3xl font-bold text-yellow-300">Edit Data for {fishData.name}</h3>
                     <div className="flex justify-end space-x-3">
@@ -467,7 +467,7 @@ const JsonViewerModal = ({ jsonString, onClose, onDownload }: JsonViewerModalPro
 
     return (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75 p-4 animate-fade-in">
-            <div className="bg-gray-800 text-white rounded-2xl shadow-2xl p-6 max-w-4xl w-full mx-auto flex flex-col max-h-[85vh]">
+            <div className="bg-gray-800 text-white rounded-2xl shadow-2xl p-6 max-w-4xl w-full mx-auto flex flex-col max-h-[85vh] animate-fade-in-down">
                 <div className="flex justify-between items-center mb-4 border-b border-gray-600 pb-3">
                     <h3 className="text-2xl font-bold text-yellow-300">Generated JSON Data</h3>
                     <button onClick={onClose} className="p-2 rounded-full bg-gray-600 text-white hover:bg-gray-700 transition" title="Close"><CloseIcon /></button>
@@ -851,7 +851,7 @@ export default function App() {
     };
 
     return (
-        <div className="min-h-screen bg-gray-900 text-white font-sans">
+        <div className="min-h-screen bg-gray-900 text-white font-sans animate-fade-in">
             <div className="sticky top-0 z-50 bg-gray-900/80 backdrop-blur-sm shadow-md">
                 <nav className="container mx-auto px-6 lg:px-10 py-3 text-sm text-gray-400">
                     <Link to="/" className="hover:text-white transition-colors">Home</Link>

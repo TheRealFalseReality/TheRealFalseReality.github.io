@@ -17,8 +17,8 @@ const AdminLoginModal = ({ onClose, onLogin }: { onClose: () => void, onLogin: (
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75">
-      <div className="bg-gray-800 p-8 rounded-lg shadow-xl">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75 animate-fade-in">
+      <div className="bg-gray-800 p-8 rounded-lg shadow-xl animate-fade-in-up">
         <h2 className="text-2xl font-bold mb-4 text-white">Admin Login</h2>
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
@@ -43,8 +43,8 @@ const AdminLoginModal = ({ onClose, onLogin }: { onClose: () => void, onLogin: (
           </div>
           {error && <p className="text-red-500 text-sm mb-4">{error}</p>}
           <div className="flex justify-end space-x-4">
-            <button type="button" onClick={onClose} className="px-4 py-2 bg-gray-600 rounded">Cancel</button>
-            <button type="submit" className="px-4 py-2 bg-blue-600 rounded">Login</button>
+            <button type="button" onClick={onClose} className="px-4 py-2 bg-gray-600 rounded hover:bg-gray-500 transition-colors">Cancel</button>
+            <button type="submit" className="px-4 py-2 bg-blue-600 rounded hover:bg-blue-500 transition-colors">Login</button>
           </div>
         </form>
       </div>
@@ -63,23 +63,7 @@ export default function Welcome() {
 
   return (
     <div className="relative min-h-screen bg-gray-900 text-white flex flex-col items-center justify-center p-4">
-      <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
-        body { font-family: 'Inter', sans-serif; }
-        .animate-fade-in-up {
-          animation: fadeInUp 1s ease-out;
-        }
-        @keyframes fadeInUp {
-          from {
-            opacity: 0;
-            transform: translateY(20px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-      `}</style>
+      {/* The custom animation classes in app.css will now apply */}
       <div className="text-center animate-fade-in-up">
         <img src={Logo} alt="AquaPi AI Logo" className="h-24 mx-auto mb-4" />
         <h1 className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-green-400 mb-2">
@@ -106,7 +90,7 @@ export default function Welcome() {
       {showAdminLogin && <AdminLoginModal onClose={() => setShowAdminLogin(false)} onLogin={handleAdminLogin} />}
 
       <div className="absolute bottom-4 right-4 text-xs text-gray-500">
-        Version 25.8.17.13
+        Version 25.8.17.14
       </div>
     </div>
   );
