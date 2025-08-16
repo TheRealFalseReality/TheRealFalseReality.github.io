@@ -131,7 +131,7 @@ export default function App() {
       }
     }
 
-    const harmonyEquation = harmonyTerms.join(' *') + ` = ${(groupHarmony * 100).toFixed(1)}%`;
+    const harmonyEquation = harmonyTerms.join(' ﾃ') + ` = ${(groupHarmony * 100).toFixed(1)}%`;
     const conflictEquation = `min(${harmonyTerms.join(', ')}) = ${(conflictRisk * 100).toFixed(1)}%`;
 
     return {
@@ -614,25 +614,11 @@ export default function App() {
                                 </div>
                             ))}
                             </div>
-                            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-                            {report.compatibleFish.map((fish: any, index: number) => {
-                                const compatibleFishData = localFishData[selectedCategory].find((f: any) => f.name === fish.name);
-                                return (
-                                <div key={index} className="flex flex-col items-center p-3 bg-[#0f1623] rounded-lg shadow-md transition-transform duration-200 hover:scale-105">
-                                    <img
-                                    src={compatibleFishData ? compatibleFishData.imageURL : "https://placehold.co/64x64/4B5563/F9FAFB?text=No+Image"}
-                                    alt={fish.name}
-                                    className="w-20 h-20 rounded-full border-2 border-[#D8f3ff] object-cover mb-2"
-                                    onError={(e: any) => { e.target.onerror = null; e.target.src = "https://placehold.co/64x64/4B5563/F9FAFB?text=No+Image"; }}
-                                    />
-                                    <span className="font-semibold text-center text-[#D8f3ff]">{fish.name}</span>
-                                    {compatibleFishData && compatibleFishData.latinName && (
-                                    <span className="text-xs text-gray-400 italic text-center">{compatibleFishData.latinName}</span>
-                                    )}
-                                </div>
-                                );
-                            })}
-                            </div>
+                            <ul className="list-disc list-inside text-[#D8f3ff] columns-2 sm:columns-3 lg:columns-4">
+                            {report.compatibleFish.map((fish: any, index: number) => (
+                                <li key={index} className="mb-2">{fish.name}</li>
+                            ))}
+                            </ul>
                         </div>
                         )}
 
