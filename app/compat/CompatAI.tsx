@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import fishData from '../compat/fishcompat.json';
+import { google_search } from 'google_search';
 
 export function meta() {
   return [
@@ -55,6 +56,7 @@ export default function App() {
   const [error, setError] = useState<string | null>(null);
   const [showReport, setShowReport] = useState(false);
   const [localFishData, setLocalFishData] = useState<any>(null);
+  const [fishImageUrls, setFishImageUrls] = useState<Record<string, string[]>>({});
   const letterRefs = useRef<{ [key: string]: HTMLDivElement | null }>({});
   const abortControllerRef = useRef<AbortController | null>(null);
 
@@ -149,11 +151,26 @@ export default function App() {
     setLoadingReport(true);
     setReport(null);
     setError(null);
+    setFishImageUrls({});
 
     abortControllerRef.current = new AbortController();
     const signal = abortControllerRef.current.signal;
 
     const currentSelectedFish = [...selectedFish];
+
+    // Fetch images for selected fish
+    const imageUrls: Record<string, string[]> = {};
+    for (const fish of currentSelectedFish) {
+      try {
+        const searchResults = await google_search.search({ queries: [`${fish.name} fish`] });
+        if (searchResults && searchResults.results.length > 0) {
+          imageUrls[fish.name] = searchResults.results.slice(0, 3).map((result: any) => result.url);
+        }
+      } catch (e) {
+        console.error(`Failed to fetch images for ${fish.name}:`, e);
+      }
+    }
+    setFishImageUrls(imageUrls);
 
     // Calculate scores and math breakdown locally
     const { conflictRisk, groupHarmony, mathBreakdown } = calculateScores(currentSelectedFish);
@@ -575,6 +592,22 @@ export default function App() {
                         <div className="border-t-2 border-[#D8f3ff] pt-6">
                         <h4 className="text-2xl font-bold text-[#E19F20] mb-2">Detailed Summary</h4>
                         <p className="text-lg leading-relaxed text-[#D8f3ff]">{report.detailedSummary}</p>
+                        </div>
+
+                        <div className="border-t-2 border-[#D8f3ff] pt-6">
+                            <h4 className="text-2xl font-bold text-[#E19F20] mb-4">Fish Gallery</h4>
+                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                                {Object.entries(fishImageUrls).map(([fishName, urls]) => (
+                                    <div key={fishName}>
+                                        <h5 className="font-semibold text-lg text-center mb-2">{fishName}</h5>
+                                        <div className="grid grid-cols-3 gap-2">
+                                            {urls.map((url, index) => (
+                                                <img key={index} src={url} alt={`${fishName} ${index + 1}`} className="w-full h-24 object-cover rounded-lg" />
+                                            ))}
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
                         </div>
 
                         {report.tankSize && (
