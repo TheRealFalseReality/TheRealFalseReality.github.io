@@ -77,7 +77,7 @@ export default function App() {
    * Determines the compatibility probability between two fish.
    * @param {object} fishA - The first fish object.
    * @param {object} fishB - The second fish object.
-   * @returns {number} 1.0 for compatible, 0.5 for caution, 0 for not compatible.
+   * @returns {number} 1.0 for compatible, 0.75 for caution, 0.25 for not recommended, 0 for not compatible.
    */
   const getPairwiseProbability = (fishA: any, fishB: any) => {
     if (fishA.compatible.includes(fishB.name) && fishB.compatible.includes(fishA.name)) {
@@ -86,8 +86,11 @@ export default function App() {
     if (fishA.notCompatible.includes(fishB.name) || fishB.notCompatible.includes(fishA.name)) {
       return 0.0;
     }
+    if (fishA.notRecommended.includes(fishB.name) || fishB.notRecommended.includes(fishA.name)) {
+        return 0.25;
+    }
     if (fishA.withCaution.includes(fishB.name) || fishB.withCaution.includes(fishA.name)) {
-      return 0.5;
+      return 0.75;
     }
     // Default case if no specific rule is found
     return 0.5;
@@ -365,7 +368,7 @@ export default function App() {
                 <span className="text-white">AI Compatibility Calculator</span>
             </nav>
         </div>
-        <div className="p-4 sm:p-8 pb-24">
+        <div className="p-4 sm:p-8 pb-12">
             <AlphabetScroller letters={availableLetters} onLetterClick={handleLetterClick} onScrollToTop={handleScrollToTop} />
             <header className="text-center mb-6">
                 <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#D8f3ff] drop-shadow-md">AI Compatibility Calculator</h1>
@@ -407,7 +410,7 @@ export default function App() {
                     >
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542 7z" />
                     </svg>
                     Show Last Report
                     </button>
@@ -441,7 +444,7 @@ export default function App() {
                     <img
                         src={fish.imageURL}
                         alt={fish.name}
-                        className="w-full h-20 sm:h-24 md:h-32 object-cover rounded-t-xl"
+                        className="w-full h-40 sm:h-24 md:h-32 object-cover rounded-t-xl"
                         onError={(e: any) => {
                         e.target.onerror = null;
                         e.target.src = "https://placehold.co/400x200/4B5563/F9FAFB?text=No+Image";

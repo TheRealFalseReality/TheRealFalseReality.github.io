@@ -1352,11 +1352,12 @@
     },
     {
       "name": "Basslets",
-      "latinName": "Grammatidae, Gramma, Lipogramma",
+      "latinName": "Gramma, Lipogramma",
       "imageURL": "https://reefs.com/blog/wp-content/uploads/2006/10/Candy_Bass_1-64d8099e9cf06a7bbbfa957095876afe.jpg",
       "compatible": [
         "Angels - Dwarf",
         "Anthias",
+        "Basslets",
         "Boxfish",
         "Butterflies",
         "Cardinals",
@@ -1560,7 +1561,7 @@
     },
     {
       "name": "Butterflies",
-      "latinName": "Chaetodontidae, Chaetodon, Forcipiger, Prognathodes",
+      "latinName": "Chaetodon, Prognathodes",
       "imageURL": "https://www.thesprucepets.com/thmb/atWvF28csSzQmiAxkBikUXhW6mY=/1806x0/filters:no_upscale():strip_icc()/butterflyfish-588a0a803df78caebcc08582.jpg",
       "compatible": [
         "Anglers / Frogs",
@@ -1925,7 +1926,7 @@
     },
     {
       "name": "Dartfish",
-      "latinName": "Microdesmidae, Nemateleotris, Ptereleotris",
+      "latinName": "Microdesmidae, Ptereleotris",
       "imageURL": "https://www.coralmagazine.com/wp-content/uploads/2020/08/Ptereleotris-grammica-02.png",
       "compatible": [
         "Angels - Dwarf",
@@ -1935,6 +1936,7 @@
         "Cardinals",
         "Chromis",
         "Corals",
+        "Dartfish",
         "Dragonets",
         "Foxface / Rabbits",
         "Gobies",
@@ -1977,7 +1979,7 @@
     },
     {
       "name": "Dragonets",
-      "latinName": "Callionymidae, Synchiropus, Callionymus",
+      "latinName": "Callionymidae, Synchiropus",
       "imageURL": "https://oceanconservancy.org/wp-content/uploads/2023/09/Dragonet_Credit-David-Clode.webp",
       "compatible": [
         "Boxfish",
@@ -2082,7 +2084,7 @@
     },
     {
       "name": "Filefish",
-      "latinName": "Monacanthidae, Aluterus, Stephanolepis, Amanses",
+      "latinName": "Aluterus, Stephanolepis",
       "imageURL": "https://www.science.org/do/10.1126/article.71611/abs/sn-filefish.jpg",
       "compatible": [
         "Angels - Dwarf",
@@ -2709,7 +2711,7 @@
     },
     {
       "name": "Seahorse / Pipefish",
-      "latinName": "Syngnathinae, Hippocampus, Syngnathus, Corythoichthys",
+      "latinName": "Hippocampus, Corythoichthys",
       "imageURL": "https://images.squarespace-cdn.com/content/v1/5734f2a086db43e3f6fb1bbc/1551223084117-ZST8V2WNKNXGNTHHYNC7/Lars+Reichenbach+-+GuyLian+Seahorses+of+the+World+2018+-+1st+prize+category+photo.jpg",
       "compatible": [
         "Dragonets",
@@ -2913,7 +2915,7 @@
     },
     {
       "name": "Squirrelfish",
-      "latinName": "Holocentridae, Holocentrus, Sargocentron, Myripristis",
+      "latinName": "Holocentrus, Sargocentron",
       "imageURL": "https://www.ryanphotographic.com/images/JPEGS/Holocentrus%20rufus,%20Longspine%20squirrelfish%20(Holocentridae),%20Glover's%20Reef,%20%20Belize-3310.jpg",
       "compatible": [
         "Angels",
@@ -2967,7 +2969,7 @@
     },
     {
       "name": "Tangs / Surgeons",
-      "latinName": "Acanthuridae, Acanthurus, Ctenochaetus, Naso",
+      "latinName": "Acanthurus, Naso",
       "imageURL": "https://www.coralmagazine.com/wp-content/uploads/2023/02/Paracanthurus-hepatus-adult.jpg",
       "compatible": [
         "Angels",
@@ -3019,7 +3021,7 @@
     },
     {
       "name": "Triggerfish",
-      "latinName": "Balistidae, Balistoides, Rhinecanthus, Odonus",
+      "latinName": "Balistoides, Rhinecanthus",
       "imageURL": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Picasso.triggerfish.arp.jpg",
       "compatible": [
         "Triggerfish"
@@ -3123,7 +3125,7 @@
     },
     {
       "name": "Wrasse - Reef Safe",
-      "latinName": "Labridae, Cirrhilabrus, Pseudocheilinus, Paracheilinus",
+      "latinName": "Labridae, Cirrhilabrus",
       "imageURL": "https://www.calacademy.org/sites/default/files/styles/manual_crop_standard_960x540/public/assets/images/press/cirrhilabrus_finifenmaa_release_3.jpg?itok=joOJevHQ&c=dc2f507ca75d97c0e4c059d42f103074",
       "compatible": [
         "Angels - Dwarf",
