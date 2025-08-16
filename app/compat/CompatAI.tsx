@@ -180,12 +180,12 @@ export default function App() {
 
         Selected Fish: ${currentSelectedFish.map(f => f.name).join(', ')}
         Fish Type: ${selectedCategory}
-        Group Harmony Score: ${(groupHarmony * 100).toFixed(1)}%
-        Conflict Risk Score: ${(conflictRisk * 100).toFixed(1)}%
+        Group Harmony Score: ${(groupHarmony * 100).toFixed(0)}%
+        Conflict Risk Score: ${(conflictRisk * 100).toFixed(0)}%
 
         Please provide a JSON object with the following:
-        1. "harmonySummary": "Based on the Group Harmony Score of ${(groupHarmony * 100).toFixed(1)}%, write a brief summary of the overall compatibility of this group.",
-        2. "conflictSummary": "Based on the Conflict Risk Score of ${(conflictRisk * 100).toFixed(1)}%, write a brief summary of the potential for conflict in this group.",
+        1. "harmonySummary": "Based on the Group Harmony Score of ${(groupHarmony * 100).toFixed(0)}%, write a brief summary of the overall compatibility of this group.",
+        2. "conflictSummary": "Based on the Conflict Risk Score of ${(conflictRisk * 100).toFixed(0)}%, write a brief summary of the potential for conflict in this group.",
         3.  "detailedSummary": A detailed summary of the potential interactions in this specific group of fish.
         4.  "tankSize": A recommended minimum tank size.
         5.  "decorations": Recommended decorations and setup.
