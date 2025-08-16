@@ -104,13 +104,13 @@ export default function App() {
   const calculateScores = (fishList: any[]) => {
     if (fishList.length < 2) {
       return {
-        conflictRisk: 1.0,
+        conflictRisk: 0.0, // No conflict with one fish
         groupHarmony: 1.0,
-        mathBreakdown: { pairs: [], harmonyEquation: "100%", conflictEquation: "100%" }
+        mathBreakdown: { pairs: [], harmonyEquation: "100%", conflictEquation: "0%" }
       };
     }
 
-    let conflictRisk = 1.0;
+    let minProb = 1.0;
     let groupHarmony = 1.0;
     const pairs: any[] = [];
     const harmonyTerms: string[] = [];
@@ -123,16 +123,17 @@ export default function App() {
           fishB: fishList[j].name,
           prob: prob
         });
-        if (prob < conflictRisk) {
-          conflictRisk = prob;
+        if (prob < minProb) {
+          minProb = prob;
         }
         groupHarmony *= prob;
         harmonyTerms.push(`${(prob * 100)}%`);
       }
     }
 
+    const conflictRisk = 1.0 - minProb;
     const harmonyEquation = harmonyTerms.join(' * ') + ` = ${(groupHarmony * 100).toFixed(1)}%`;
-    const conflictEquation = `min(${harmonyTerms.join(', ')}) = ${(conflictRisk * 100).toFixed(1)}%`;
+    const conflictEquation = `100% - min(${harmonyTerms.join(', ')}) = ${(conflictRisk * 100).toFixed(1)}%`;
 
     return {
       conflictRisk,
@@ -169,8 +170,8 @@ export default function App() {
         Conflict Risk Score: ${(conflictRisk * 100).toFixed(1)}%
 
         Please provide a JSON object with the following:
-        1.  "groupHarmonyScoreExplanation": A brief, user-friendly explanation of the Group Harmony Score. Explain that it's calculated by multiplying the compatibility of all possible pairs, so a low score indicates multiple potential issues.
-        2.  "conflictRiskScoreExplanation": A brief, user-friendly explanation of the Conflict Risk Score. Explain that this score represents the "weakest link" or the single most problematic pairing in the group, so a high score indicates a significant risk of conflict.
+        1.  "groupHarmonyScoreExplanation": "A brief, user-friendly explanation of the Group Harmony Score. Explain that it's calculated by multiplying the compatibility of all possible pairs, so a low score indicates multiple potential issues.",
+        2.  "conflictRiskScoreExplanation": "A brief, user-friendly explanation of the Conflict Risk Score. Explain that this score represents the 'weakest link' or the single most problematic pairing in the group, so a high score indicates a significant risk of conflict.",
         3.  "detailedSummary": A detailed summary of the potential interactions in this specific group of fish.
         4.  "tankSize": A recommended minimum tank size.
         5.  "decorations": Recommended decorations and setup.
