@@ -601,24 +601,28 @@ export default function App() {
                         {report.compatibleFish && report.compatibleFish.length > 0 && (
                         <div className="border-t-2 border-[#D8f3ff] pt-6">
                             <h4 className="text-2xl font-bold text-[#E19F20] mb-4">Compatible Tank Mates</h4>
-                            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-                            {report.compatibleFish.map((fish: any, index: number) => {
-                                const compatibleFishData = localFishData[selectedCategory].find((f: any) => f.name === fish.name);
-                                return (
-                                    <div key={index} className="flex flex-col items-center p-3 bg-[#0f1623] rounded-lg shadow-md transition-transform duration-200 hover:scale-105">
+                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                            {selectedFish.map((fish: any) => (
+                                <div key={fish.name} className="bg-[#0f1623] p-4 rounded-lg">
+                                <div className="flex items-center mb-2">
                                     <img
-                                        src={compatibleFishData ? compatibleFishData.imageURL : "https://placehold.co/64x64/4B5563/F9FAFB?text=No+Image"}
-                                        alt={fish.name}
-                                        className="w-20 h-20 rounded-full border-2 border-[#D8f3ff] object-cover mb-2"
-                                        onError={(e: any) => { e.target.onerror = null; e.target.src = "https://placehold.co/64x64/4B5563/F9FAFB?text=No+Image"; }}
+                                    src={fish.imageURL}
+                                    alt={fish.name}
+                                    className="w-12 h-12 rounded-full object-cover mr-4"
+                                    onError={(e: any) => {
+                                        e.target.onerror = null;
+                                        e.target.src = "https://placehold.co/64x64/4B5563/F9FAFB?text=No+Image";
+                                    }}
                                     />
-                                    <span className="font-semibold text-center text-[#D8f3ff]">{fish.name}</span>
-                                    {compatibleFishData && compatibleFishData.latinName && (
-                                        <span className="text-xs text-gray-400 italic text-center">{compatibleFishData.latinName}</span>
-                                    )}
-                                    </div>
-                                );
-                            })}
+                                    <h5 className="font-semibold text-lg text-[#81B2E8]">{fish.name}</h5>
+                                </div>
+                                <ul className="list-disc list-inside text-[#D8f3ff]">
+                                    {report.compatibleFish.map((compatibleFish: any) => (
+                                    <li key={compatibleFish.name}>{compatibleFish.name}</li>
+                                    ))}
+                                </ul>
+                                </div>
+                            ))}
                             </div>
                         </div>
                         )}
