@@ -69,8 +69,8 @@ const ChatWindow = () => {
     const chatHistoryRef = useRef(null);
 
     // API Configuration
-    const API_KEY = ""; // Canvas will automatically provide the API key
-    const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${API_KEY}`;
+    const apiKey = process.env.GEMINI_API_KEY; 
+    const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
 
     // Persona prompt for the AI model
     const personaPrompt = `My Role: I am an AI assistant for the AquaPi aquarium monitoring and automation system.
@@ -124,7 +124,7 @@ Other Guidelines:
         const maxRetries = 5;
         for (let i = 0; i < maxRetries; i++) {
             try {
-                response = await fetch(API_URL, {
+                response = await fetch(apiUrl, {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify(finalPayload)
