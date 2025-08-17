@@ -415,7 +415,7 @@ export default function App() {
                 </button>
             </div>
 
-            <main className="max-w-full mx-auto bg-[#497eb0] rounded-3xl p-4 sm:p-8 shadow-2xl">
+            <main className="max-w-full mx-auto bg-[#497eb0] rounded-3xl p-4 sm:p-8 shadow-2xl overflow-hidden">
                 {report && !showReport && (
                 <div className="fixed top-4 right-4 z-50">
                     <button
@@ -439,7 +439,7 @@ export default function App() {
                 </div>
 
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 sm:gap-6 mb-8">
-                {localFishData[selectedCategory].map((fish: any) => {
+                {localFishData[selectedCategory].map((fish: any, index: number) => {
                     const firstLetter = fish.name.charAt(0).toUpperCase();
                     const isNewLetter = firstLetter !== lastLetter;
                     if (isNewLetter) {
@@ -450,11 +450,12 @@ export default function App() {
                     key={fish.name}
                     ref={isNewLetter ? (el) => { letterRefs.current[firstLetter] = el; } : null}
                     onClick={() => !loadingReport && handleFishClick(fish)}
-                    className={`flex flex-col rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-xl ${
+                    className={`flex flex-col rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-xl animate-scale-in ${
                         selectedFish.some(f => f.name === fish.name)
                         ? "bg-[#75344E] ring-4 ring-[#E19F20]"
                         : "bg-[#0f1623] hover:bg-[#497eb0]"
                     } ${loadingReport ? 'cursor-not-allowed opacity-60' : 'cursor-pointer'}`}
+                    style={{ animationDelay: `${index * 50}ms` }}
                     >
                     <img
                         src={fish.imageURL}
