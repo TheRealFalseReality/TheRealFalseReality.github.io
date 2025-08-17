@@ -14,6 +14,36 @@ const App = () => {
                 .animate-hop-1 { animation: hop 0.6s infinite; animation-delay: 0s; }
                 .animate-hop-2 { animation: hop 0.6s infinite; animation-delay: 0.1s; }
                 .animate-hop-3 { animation: hop 0.6s infinite; animation-delay: 0.2s; }
+
+                @property --angle {
+                  syntax: '<angle>';
+                  initial-value: 0deg;
+                  inherits: false;
+                }
+
+                @keyframes rotate {
+                  to {
+                    --angle: 360deg;
+                  }
+                }
+
+                .animated-border {
+                  position: relative;
+                  border-radius: 0.75rem; 
+                  overflow: hidden;
+                }
+
+                .animated-border::before {
+                  content: '';
+                  position: absolute;
+                  inset: -2px;
+                  z-index: -1;
+                  background: conic-gradient(
+                    from var(--angle),
+                    #a855f7, #60a5fa, #2dd4bf, #f472b6, #a855f7
+                  );
+                  animation: rotate 4s linear infinite;
+                }
             `}</style>
             <div className="font-sans bg-gray-900 text-white h-screen w-full">
                 <div className="absolute inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]"></div>
@@ -71,7 +101,7 @@ Other Guidelines:
 
     // Effect to display the initial welcome message
     useEffect(() => {
-        const initialMessage = "# Welcome to AquaPi AI!\n\nYour intelligent assistant for aquarium monitoring and automation. Ask me anything about AquaPi, get an instant analysis of your water parameters, or generate custom automation scripts.";
+        const initialMessage = "# Welcome to AquaPi AI!\n\nYour intelligent assistant for aquarium monitoring and automation. Ask me anything about AquaPi, analyze your water parameters, generate custom automation scripts, or even get an AI analysis of your aquarium photos.";
         setConversationHistory([{ role: "model", parts: [{ text: initialMessage }] }]);
     }, []);
 
