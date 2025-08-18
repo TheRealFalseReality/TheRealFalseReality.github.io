@@ -540,15 +540,15 @@ const PromptSuggestions = ({ setUiState, handleSuggestionClick, isLoading, isOpe
         { title: "AI Image Analysis", icon: '📷', action: () => { setUiState('imageAnalysis'); setIsOpen(false); }, style: "bg-gradient-to-r from-green-500/80 to-teal-500/80 hover:from-green-500 hover:to-teal-500" }
     ];
 
-    const renderButton = ({ title, icon, action, style, type }) => (
+    const renderButton = ({ title, icon, action, style }) => (
         <button
             key={title}
             onClick={action}
             disabled={isLoading}
-            className={`p-3 border border-gray-700/50 rounded-lg transition-all duration-200 flex items-center justify-center gap-3 text-white shadow-md ${style} ${type === 'question' && icon ? 'flex-row-reverse' : ''} disabled:opacity-50 disabled:cursor-not-allowed`}
+            className={`p-3 border border-gray-700/50 rounded-lg transition-all duration-200 flex items-center justify-center gap-3 text-white shadow-md ${style} disabled:opacity-50 disabled:cursor-not-allowed`}
         >
             {icon && <span className="text-lg">{icon}</span>}
-            <span className="text-sm font-semibold">{title}</span>
+            <span className="text-sm font-semibold text-center">{title}</span>
         </button>
     );
 
@@ -556,7 +556,7 @@ const PromptSuggestions = ({ setUiState, handleSuggestionClick, isLoading, isOpe
         <div className="mb-3">
             <button onClick={() => setIsOpen(!isOpen)} className="w-full flex justify-between items-center text-sm text-gray-400 hover:text-white mb-2 p-1">
                 <div className="flex items-center gap-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M15.5 14h-.79l-.28-.27A6.5 6.5 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M12 10h-2v2"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M15.5 14h-.79l-.28-.27A6.5 6.5 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M12 10h-2v2"/></svg>
                     <span className="font-semibold">Ask, Analyze, and Automate</span>
                 </div>
                 <div className={`transition-transform ${isOpen ? 'rotate-180' : ''}`}>
@@ -565,17 +565,18 @@ const PromptSuggestions = ({ setUiState, handleSuggestionClick, isLoading, isOpe
             </button>
             <div className={`transition-all duration-500 ease-in-out overflow-hidden ${isOpen ? 'max-h-96' : 'max-h-0'}`}>
                 <div className="flex flex-col gap-3 pt-2">
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3">
-                        {questions.map(q => renderButton({...q, type: 'question'}))}
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+                        {questions.map(q => renderButton(q))}
                     </div>
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
-                        {aiActions.map(a => renderButton({...a, type: 'aiAction'}))}
+                        {aiActions.map(a => renderButton(a))}
                     </div>
                 </div>
             </div>
         </div>
     );
 };
+
 
 // ModalFormWrapper Component
 const ModalFormWrapper = ({ children, title, onClose }) => (
