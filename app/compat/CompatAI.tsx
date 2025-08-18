@@ -96,7 +96,7 @@ export default function App() {
     return 0.5;
   };
 
-  /**
+/**
    * Calculates the Conflict Risk and Group Harmony scores for a list of fish.
    * @param {Array<object>} fishList - The list of selected fish.
    * @returns {object} An object containing the scores and the math breakdown.
@@ -115,25 +115,38 @@ export default function App() {
     const pairs: any[] = [];
     const harmonyTerms: string[] = [];
 
-    for (let i = 0; i < fishList.length; i++) {
-      for (let j = i; j < fishList.length; j++) {
-        const prob = getPairwiseProbability(fishList[i], fishList[j]);
-        pairs.push({
-          fishA: fishList[i].name,
-          fishB: fishList[j].name,
-          prob: prob
-        });
-        if (prob < minProb) {
-          minProb = prob;
+    if (fishList.length === 1) {
+      const fish = fishList[0];
+      const prob = getPairwiseProbability(fish, fish);
+      pairs.push({
+        fishA: fish.name,
+        fishB: fish.name,
+        prob: prob
+      });
+      minProb = prob;
+      groupHarmony = prob;
+      harmonyTerms.push(`${(prob * 100)}%`);
+    } else {
+      for (let i = 0; i < fishList.length; i++) {
+        for (let j = i + 1; j < fishList.length; j++) {
+          const prob = getPairwiseProbability(fishList[i], fishList[j]);
+          pairs.push({
+            fishA: fishList[i].name,
+            fishB: fishList[j].name,
+            prob: prob
+          });
+          if (prob < minProb) {
+            minProb = prob;
+          }
+          groupHarmony *= prob;
+          harmonyTerms.push(`${(prob * 100)}%`);
         }
-        groupHarmony *= prob;
-        harmonyTerms.push(`${(prob * 100)}%`);
       }
     }
 
     const conflictRisk = 1.0 - minProb;
     const harmonyEquation = harmonyTerms.join(' * ') + ` = ${(groupHarmony * 100).toFixed(1)}%`;
-    const conflictEquation = `100% - min(${harmonyTerms.join(', ')}) = ${(conflictRisk * 100).toFixed(1)}%`;
+    const conflictEquation = `100% - min(${harmonyTerms.join(', ') || '100%'}) = ${(conflictRisk * 100).toFixed(1)}%`;
 
     return {
       conflictRisk,
