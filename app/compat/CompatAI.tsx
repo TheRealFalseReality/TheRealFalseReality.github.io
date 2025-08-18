@@ -171,7 +171,7 @@ export default function App() {
 
   // --- END: Compatibility Calculation Logic ---
 
-  const getCompatibilityReport = async () => {
+const getCompatibilityReport = async () => {
     if (selectedFish.length === 0) return;
 
     setLoadingReport(true);
@@ -197,13 +197,15 @@ export default function App() {
         Conflict Risk Score: ${(conflictRisk * 100).toFixed(0)}%
 
         Please provide a JSON object with the following:
-        1. "harmonySummary": "Based on the Group Harmony Score of ${(groupHarmony * 100).toFixed(0)}%, write a brief summary of the overall compatibility of this group.",
-        2. "conflictSummary": "Based on the Conflict Risk Score of ${(conflictRisk * 100).toFixed(0)}%, write a brief summary of the potential for conflict in this group.",
-        3.  "detailedSummary": A detailed summary of the potential interactions in this specific group of fish.
-        4.  "tankSize": A recommended minimum tank size.
-        5.  "decorations": Recommended decorations and setup.
-        6.  "careGuide": A general care guide for this group.
-        7.  "compatibleFish": A list of other fish that are compatible with ALL selected fish.
+        1. "harmonyLabel": "Based on the Group Harmony Score of ${(groupHarmony * 100).toFixed(0)}%, provide a one-word label (e.g., Excellent, Good, Fair, Poor).",
+        2. "conflictLabel": "Based on the Conflict Risk Score of ${(conflictRisk * 100).toFixed(0)}%, provide a one-word label (e.g., Low, Medium, High, Very High).",
+        3. "harmonySummary": "Based on the Group Harmony Score of ${(groupHarmony * 100).toFixed(0)}%, write a brief summary of the overall compatibility of this group.",
+        4. "conflictSummary": "Based on the Conflict Risk Score of ${(conflictRisk * 100).toFixed(0)}%, write a brief summary of the potential for conflict in this group.",
+        5.  "detailedSummary": A detailed summary of the potential interactions in this specific group of fish.
+        6.  "tankSize": A recommended minimum tank size.
+        7.  "decorations": Recommended decorations and setup.
+        8.  "careGuide": A general care guide for this group.
+        9.  "compatibleFish": A list of other fish that are compatible with ALL selected fish.
         `;
 
       // Define the structured JSON response schema
@@ -216,6 +218,8 @@ export default function App() {
           responseSchema: {
             "type": "OBJECT",
             "properties": {
+              "harmonyLabel": { "type": "STRING" },
+              "conflictLabel": { "type": "STRING" },
               "harmonySummary": { "type": "STRING" },
               "conflictSummary": { "type": "STRING" },
               "detailedSummary": { "type": "STRING" },
@@ -231,13 +235,13 @@ export default function App() {
                 }
               }
             },
-            "required": ["harmonySummary", "conflictSummary", "detailedSummary", "tankSize", "decorations", "careGuide", "compatibleFish"]
+            "required": ["harmonyLabel", "conflictLabel", "harmonySummary", "conflictSummary", "detailedSummary", "tankSize", "decorations", "careGuide", "compatibleFish"]
           }
         }
       };
       
       const apiKey = process.env.GEMINI_API_KEY; 
-      const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
+      const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-preview-0514:generateContent?key=${apiKey}`;
 
       let response;
       let result;
@@ -590,6 +594,9 @@ export default function App() {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                         <div className="bg-[#0f1623] p-6 rounded-2xl text-center">
                         <h4 className="text-2xl font-bold text-[#E19F20] mb-2">Conflict Risk</h4>
+                        <div className={`text-3xl font-bold mb-2 ${getConflictColor(report.conflictRiskScore)}`}>
+                            {report.conflictLabel}
+                        </div>
                         <p className={`text-5xl md:text-6xl font-bold mb-4 ${getConflictColor(report.conflictRiskScore)}`}>
                             {Math.round(report.conflictRiskScore * 100)}%
                         </p>
@@ -601,6 +608,9 @@ export default function App() {
                         </div>
                         <div className="bg-[#0f1623] p-6 rounded-2xl text-center">
                         <h4 className="text-2xl font-bold text-[#E19F20] mb-2">Group Harmony</h4>
+                        <div className={`text-3xl font-bold mb-2 ${getHarmonyColor(report.groupHarmonyScore)}`}>
+                            {report.harmonyLabel}
+                        </div>
                         <p className={`text-5xl md:text-6xl font-bold mb-4 ${getHarmonyColor(report.groupHarmonyScore)}`}>
                             {Math.round(report.groupHarmonyScore * 100)}%
                         </p>
