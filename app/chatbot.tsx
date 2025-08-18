@@ -1,11 +1,26 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
+
+export function meta() {
+  return [
+    { title: "Chatbot | AquaPi AI" },
+    { name: "description", content: "Chat with AquaPi AI to get answers to your questions." },
+  ];
+}
 
 // Main App Component - The root of our application
 const App = () => {
     // The main container now features a modern gradient background.
     // The ChatWindow component is rendered directly, making it the entire app interface.
     return (
-        <>
+        <div className="h-screen bg-gray-900 text-white font-sans animate-fade-in flex flex-col">
+            <div className="sticky top-0 z-50 bg-gray-900/80 backdrop-blur-sm shadow-md flex-shrink-0">
+                <nav className="container mx-auto px-6 lg:px-10 py-3 text-sm text-gray-400">
+                    <Link to="/" className="hover:text-white transition-colors">Home</Link>
+                    <span className="mx-2">&gt;</span>
+                    <span className="text-white">Chatbot</span>
+                </nav>
+            </div>
             <style>{`
                 @keyframes hop {
                     0%, 100% { transform: translateY(0); }
@@ -29,7 +44,7 @@ const App = () => {
 
                 .animated-border {
                   position: relative;
-                  border-radius: 0.75rem; 
+                  border-radius: 0.75rem;
                   overflow: hidden;
                 }
 
@@ -45,12 +60,12 @@ const App = () => {
                   animation: rotate 4s linear infinite;
                 }
             `}</style>
-            <div className="font-sans bg-gray-900 text-white h-screen w-full">
+            <div className="font-sans bg-gray-900 text-white w-full relative flex-grow overflow-hidden">
                 <div className="absolute inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]"></div>
                 <div className="absolute top-0 left-0 -z-10 h-full w-full bg-gradient-to-br from-gray-900 via-blue-900/60 to-gray-900"></div>
                 <ChatWindow />
             </div>
-        </>
+        </div>
     );
 };
 
@@ -69,8 +84,8 @@ const ChatWindow = () => {
     const chatHistoryRef = useRef(null);
 
     // API Configuration
-    const apiKey = process.env.GEMINI_API_KEY; 
-    const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
+    const apiKey = process.env.GEMINI_API_KEY;
+    const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-preview-0514:generateContent?key=${apiKey}`;
 
     // Persona prompt for the AI model
     const personaPrompt = `My Role: I am an AI assistant for the AquaPi aquarium monitoring and automation system.
@@ -119,7 +134,7 @@ Other Guidelines:
         if (generationConfig) {
             finalPayload.generationConfig = generationConfig;
         }
-        
+
         let response;
         const maxRetries = 5;
         for (let i = 0; i < maxRetries; i++) {
@@ -154,7 +169,7 @@ Other Guidelines:
         }
         setIsLoading(false);
     };
-    
+
     // Handles regular chat submissions
     const handleChatSubmit = async (messageText) => {
         setIsSuggestionsOpen(false);
@@ -199,14 +214,14 @@ Other Guidelines:
         await callGeminiAPI(payload, (responseText) => {
              try {
                 const jsonData = JSON.parse(responseText);
-                setConversationHistory(prev => prev.map(msg => 
+                setConversationHistory(prev => prev.map(msg =>
                     msg === userMessage ? { ...msg, suggestion: jsonData } : msg
                 ));
                 setSuggestionOverlayData(jsonData);
             } catch (e) {
                 console.error("Failed to parse suggestion JSON:", e);
                 const fallbackData = { title: question, content: "Sorry, I couldn't generate a structured response. Here is the raw text:\n\n" + responseText, followUps: [] };
-                setConversationHistory(prev => prev.map(msg => 
+                setConversationHistory(prev => prev.map(msg =>
                     msg === userMessage ? { ...msg, suggestion: fallbackData } : msg
                 ));
                 setSuggestionOverlayData(fallbackData);
@@ -231,7 +246,7 @@ Other Guidelines:
           "parameters": [ { "name": "Temperature", "value": "${temp}°${tempUnit}", "idealRange": "...", "status": "Good" | "Needs Attention" | "Bad", "advice": "..." } /*, etc. */ ],
           "howAquaPiHelps": "..."
         }`;
-        
+
         const analysisGenerationConfig = {
             responseMimeType: "application/json",
             responseSchema: {
@@ -330,7 +345,7 @@ Other Guidelines:
 
         await callGeminiAPI(payload, (responseText) => {
             const imageData = { title: prompt, content: responseText, image: previewUrl };
-            setConversationHistory(prev => prev.map(msg => 
+            setConversationHistory(prev => prev.map(msg =>
                 msg === userMessage ? { ...msg, imageAnalysis: imageData } : msg
             ));
             setImageAnalysisData(imageData);
@@ -338,7 +353,7 @@ Other Guidelines:
     };
 
     return (
-        <div className="flex flex-col h-screen max-w-7xl mx-auto px-4">
+        <div className="flex flex-col h-full max-w-7xl mx-auto px-4">
             <ChatHeader />
             <ChatHistory history={conversationHistory} isLoading={isLoading} ref={chatHistoryRef} onShowAnalysis={setAnalysisData} onShowSuggestion={setSuggestionOverlayData} onShowAutomation={setAutomationData} onShowImageAnalysis={setImageAnalysisData} />
             <div className="mt-auto pt-4 pb-4">
@@ -412,7 +427,7 @@ const Message = ({ sender, text, analysis, suggestion, automation, imagePreview,
     ) : (
         <img src="https://github.com/TheRealFalseReality/aquapi/blob/main/assets/image/AquaPiLogo150px.png?raw=true" alt="AquaPi AI" className="w-5 h-5" style={{ filter: 'brightness(0) invert(1)' }} />
     );
-    
+
     const avatarBg = isUser ? 'bg-blue-500' : 'bg-teal-500';
     const headerText = isUser ? (
         <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">You</span>
@@ -499,8 +514,8 @@ const UserInput = ({ onSubmit, isLoading }) => {
                 className="w-full p-4 pr-14 text-white bg-gray-800/70 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all disabled:opacity-50"
                 placeholder={isLoading ? "Please wait..." : "Ask AquaPi anything..."}
             />
-            <button 
-                onClick={handleSubmit} 
+            <button
+                onClick={handleSubmit}
                 disabled={isLoading}
                 className="absolute right-3 top-1/2 -translate-y-1/2 p-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-md shadow-md hover:opacity-90 disabled:opacity-50 disabled:cursor-not-allowed transform transition-transform duration-150 active:scale-95 hover:scale-110"
             >
@@ -526,9 +541,9 @@ const PromptSuggestions = ({ setUiState, handleSuggestionClick, isLoading, isOpe
     ];
 
     const renderButton = ({ title, icon, action, style, type }) => (
-        <button 
-            key={title} 
-            onClick={action} 
+        <button
+            key={title}
+            onClick={action}
             disabled={isLoading}
             className={`p-3 border border-gray-700/50 rounded-lg transition-all duration-200 flex items-center justify-center gap-3 text-white shadow-md ${style} ${type === 'question' && icon ? 'flex-row-reverse' : ''} disabled:opacity-50 disabled:cursor-not-allowed`}
         >
@@ -541,10 +556,12 @@ const PromptSuggestions = ({ setUiState, handleSuggestionClick, isLoading, isOpe
         <div className="mb-3">
             <button onClick={() => setIsOpen(!isOpen)} className="w-full flex justify-between items-center text-sm text-gray-400 hover:text-white mb-2 p-1">
                 <div className="flex items-center gap-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2L14.39 8.36L21 9.61L16.36 14.24L17.61 21L12 17.61L6.39 21L7.64 14.24L3 9.61L9.61 8.36L12 2z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M15.5 14h-.79l-.28-.27A6.5 6.5 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M12 10h-2v2"/></svg>
                     <span className="font-semibold">Ask, Analyze, and Automate</span>
                 </div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={`transition-transform flex-shrink-0 ${isOpen ? 'rotate-180' : ''}`}><polyline points="6 9 12 15 18 9"></polyline></svg>
+                <div className={`transition-transform ${isOpen ? 'rotate-180' : ''}`}>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </div>
             </button>
             <div className={`transition-all duration-500 ease-in-out overflow-hidden ${isOpen ? 'max-h-96' : 'max-h-0'}`}>
                 <div className="flex flex-col gap-3 pt-2">
@@ -562,11 +579,11 @@ const PromptSuggestions = ({ setUiState, handleSuggestionClick, isLoading, isOpe
 
 // ModalFormWrapper Component
 const ModalFormWrapper = ({ children, title, onClose }) => (
-    <div 
+    <div
         className="fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center z-50"
         onClick={onClose} // Add click handler to the overlay
     >
-        <div 
+        <div
             className="w-full max-w-lg bg-gray-900/80 border border-gray-700 rounded-xl shadow-2xl p-6 m-4"
             onClick={e => e.stopPropagation()} // Prevent clicks inside the modal from closing it
         >
@@ -726,7 +743,7 @@ const SuggestionOverlay = ({ data, onClose, onFollowUp }) => {
                             <h3 className="text-lg font-semibold text-white mb-3">Suggested Follow-ups:</h3>
                             <div className="flex flex-col sm:flex-row gap-3">
                                 {data.followUps.map((followUp, index) => (
-                                    <button 
+                                    <button
                                         key={index}
                                         onClick={() => {
                                             onClose(); // Close current overlay
@@ -821,7 +838,7 @@ const ImageAnalysisForm = ({ onSubmit, setUiState }) => {
     return (
         <ModalFormWrapper title="AI Image Analysis" onClose={() => setUiState('chat')}>
             <div className="space-y-4">
-                <div 
+                <div
                     className="w-full h-48 bg-gray-800 border-2 border-dashed border-gray-600 rounded-lg flex items-center justify-center cursor-pointer"
                     onClick={() => fileInputRef.current.click()}
                 >
@@ -834,18 +851,18 @@ const ImageAnalysisForm = ({ onSubmit, setUiState }) => {
                         </div>
                     )}
                 </div>
-                <input 
-                    type="file" 
+                <input
+                    type="file"
                     ref={fileInputRef}
                     onChange={handleImageChange}
                     accept="image/png, image/jpeg"
                     className="hidden"
                 />
-                <textarea 
-                    value={prompt} 
-                    onChange={(e) => setPrompt(e.target.value)} 
-                    className="w-full p-2 bg-gray-800 border border-gray-600 rounded-lg resize-none" 
-                    rows="3" 
+                <textarea
+                    value={prompt}
+                    onChange={(e) => setPrompt(e.target.value)}
+                    className="w-full p-2 bg-gray-800 border border-gray-600 rounded-lg resize-none"
+                    rows="3"
                     placeholder="Ask a question about the image... (optional)"
                 />
                 <button onClick={handleSubmit} className="w-full p-3 font-semibold bg-gradient-to-r from-green-500 to-teal-500 text-white rounded-lg hover:opacity-90">Submit for Analysis</button>

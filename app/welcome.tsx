@@ -1,93 +1,54 @@
-import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
-import Logo from './logo-light.svg';
+import React from 'react';
+import { Link } from 'react-router-dom';
+import Logo from './AquaPiAI.png';
 
-const AdminLoginModal = ({ onClose, onLogin }: { onClose: () => void, onLogin: () => void }) => {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
-  const [error, setError] = useState('');
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (username === 'TheFalseReality' && password === 'Maskell10625') {
-      onLogin();
-    } else {
-      setError('Invalid username or password');
-    }
-  };
-
-  return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75 animate-fade-in">
-      <div className="bg-gray-800 p-8 rounded-lg shadow-xl animate-fade-in-up">
-        <h2 className="text-2xl font-bold mb-4 text-white">Admin Login</h2>
-        <form onSubmit={handleSubmit}>
-          <div className="mb-4">
-            <label className="block text-gray-400 mb-2" htmlFor="username">Username</label>
-            <input
-              type="text"
-              id="username"
-              value={username}
-              onChange={(e) => setUsername(e.target.value)}
-              className="w-full px-3 py-2 bg-gray-700 text-white rounded"
-            />
-          </div>
-          <div className="mb-4">
-            <label className="block text-gray-400 mb-2" htmlFor="password">Password</label>
-            <input
-              type="password"
-              id="password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              className="w-full px-3 py-2 bg-gray-700 text-white rounded"
-            />
-          </div>
-          {error && <p className="text-red-500 text-sm mb-4">{error}</p>}
-          <div className="flex justify-end space-x-4">
-            <button type="button" onClick={onClose} className="px-4 py-2 bg-gray-600 rounded hover:bg-gray-500 transition-colors">Cancel</button>
-            <button type="submit" className="px-4 py-2 bg-blue-600 rounded hover:bg-blue-500 transition-colors">Login</button>
-          </div>
-        </form>
-      </div>
-    </div>
-  );
-};
+// Card component for a clean, modular design
+const FeatureCard = ({ to, title, description, icon }: { to: string, title: string, description: string, icon: string }) => (
+    <Link
+        to={to}
+        className="relative group bg-white/60 border border-green-200/50 rounded-2xl p-6 text-center hover:bg-white/90 transition-all duration-300 transform hover:-translate-y-1 overflow-hidden backdrop-blur-sm"
+    >
+        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-green-400/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        <div className="relative z-10">
+            <div className="text-4xl mb-4">{icon}</div>
+            <h3 className="text-xl font-bold text-gray-800 mb-2">{title}</h3>
+            <p className="text-gray-600 text-sm">{description}</p>
+        </div>
+    </Link>
+);
 
 export default function Welcome() {
-  const [showAdminLogin, setShowAdminLogin] = useState(false);
-  const navigate = useNavigate();
-
-  const handleAdminLogin = () => {
-    setShowAdminLogin(false);
-    navigate('/compat');
-  };
-
   return (
-    <div className="relative min-h-screen bg-gray-900 text-white flex flex-col items-center justify-center p-4">
-      {/* The custom animation classes in app.css will now apply */}
+    <div className="relative min-h-screen bg-[#7F1727] text-gray-800 flex flex-col items-center justify-center p-4 overflow-hidden">
+      {/* Animated background */}
+      <div className="absolute inset-0 -z-10 h-full w-full bg-[#f0f9f8] bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]"></div>
+      <div className="absolute top-0 left-0 -z-10 h-1/2 w-full bg-gradient-to-b from-green-200/30 to-transparent"></div>
+
       <div className="text-center animate-fade-in-up">
-        <img src={Logo} alt="AquaPi AI Logo" className="h-24 mx-auto mb-4" />
-        <h1 className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-green-400 mb-2">
+        <img src={Logo} alt="AquaPi AI Logo" className="w-auto h-24 mx-auto mb-4" />
+        <h1 className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-blue-400 to-teal-300 mb-2">
           Welcome to AquaPi AI
         </h1>
-        <p className="text-lg text-gray-400 mb-8">
+        <p className="text-lg text-[#3F0A4A] mb-12">
           Your intelligent assistant for aquatic compatibility.
         </p>
-        <Link
-            to="/compat-ai"
-            className="inline-block bg-green-600 text-white font-semibold px-8 py-3 rounded-full shadow-lg hover:bg-green-700 transition transform hover:scale-105"
-        >
-            Launch Compatibility Calculator
-        </Link>
+        
+        {/* Feature Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <FeatureCard
+                to="/compat-ai"
+                title="AI Compatibility Calculator"
+                description="Select your fish and get a detailed, AI-powered compatibility report with care guides and tank recommendations."
+                icon="🐠"
+            />
+            <FeatureCard
+                to="/chatbot"
+                title="AI Chatbot"
+                description="Ask questions, get water parameter analysis, and generate automation scripts with our intelligent chatbot."
+                icon="🤖"
+            />
+        </div>
       </div>
-
-      <button
-        onClick={() => setShowAdminLogin(true)}
-        className="absolute bottom-4 left-4 bg-gray-700 text-white font-semibold px-4 py-2 text-sm rounded-full shadow-lg hover:bg-gray-600 transition transform hover:scale-105"
-      >
-        Admin: Compatibility Maker
-      </button>
-
-      {showAdminLogin && <AdminLoginModal onClose={() => setShowAdminLogin(false)} onLogin={handleAdminLogin} />}
 
       <div className="absolute bottom-4 right-4 text-xs text-gray-500">
         Version 25.8.17.17
