@@ -582,7 +582,7 @@ export default function App() {
                             {Math.round(report.groupHarmonyScore * 100)}%
                         </p>
                         <p className="text-sm text-[#D8f3ff] mt-2">
-                            This score represents the 'weakest link' or the single most problematic pairing in the group. A high score indicates a significant risk of conflict.
+                            This score represents the 'weakest link' or the single most problematic pairing in the group. A low score indicates a significant risk of conflict.
                             <br/><br/>
                             <strong>Summary:</strong> {report.harmonySummary}
                         </p>
