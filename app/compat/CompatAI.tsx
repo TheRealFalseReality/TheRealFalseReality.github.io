@@ -97,21 +97,19 @@ export default function App() {
   };
 
   /**
-   * Calculates the Conflict Risk and Group Harmony scores for a list of fish.
+   * Calculates the Group Harmony scores for a list of fish.
    * @param {Array<object>} fishList - The list of selected fish.
    * @returns {object} An object containing the scores and the math breakdown.
    */
   const calculateScores = (fishList: any[]) => {
     if (fishList.length === 0) {
       return {
-        conflictRisk: 0.0,
         groupHarmony: 1.0,
-        mathBreakdown: { pairs: [], harmonyEquation: "100%", conflictEquation: "0%" }
+        mathBreakdown: { pairs: [], harmonyEquation: "100%" }
       };
     }
 
     let minProb = 1.0;
-    let groupHarmony = 1.0;
     const pairs: any[] = [];
     const harmonyTerms: string[] = [];
 
@@ -124,7 +122,6 @@ export default function App() {
         prob: prob
       });
       minProb = prob;
-      groupHarmony = prob;
       harmonyTerms.push(`${(prob * 100)}%`);
     } else {
       for (let i = 0; i < fishList.length; i++) {
@@ -138,20 +135,17 @@ export default function App() {
           if (prob < minProb) {
             minProb = prob;
           }
-          groupHarmony *= prob;
           harmonyTerms.push(`${(prob * 100)}%`);
         }
       }
     }
 
-    const conflictRisk = 1.0 - minProb;
-    const harmonyEquation = harmonyTerms.join(' * ') + ` = ${(groupHarmony * 100).toFixed(1)}%`;
-    const conflictEquation = `100% - min(${harmonyTerms.join(', ') || '100%'}) = ${(conflictRisk * 100).toFixed(1)}%`;
+    const groupHarmony = minProb;
+    const harmonyEquation = `min(${harmonyTerms.join(', ') || '100%'}) = ${(groupHarmony * 100).toFixed(1)}%`;
 
     return {
-      conflictRisk,
       groupHarmony,
-      mathBreakdown: { pairs, harmonyEquation, conflictEquation }
+      mathBreakdown: { pairs, harmonyEquation }
     };
   };
 
@@ -159,13 +153,6 @@ export default function App() {
     if (score >= 0.75) return 'text-green-400';
     if (score >= 0.5) return 'text-yellow-400';
     if (score >= 0.25) return 'text-orange-400';
-    return 'text-red-400';
-  };
-
-  const getConflictColor = (score: number) => {
-    if (score <= 0.25) return 'text-green-400';
-    if (score <= 0.5) return 'text-yellow-400';
-    if (score <= 0.75) return 'text-orange-400';
     return 'text-red-400';
   };
 
@@ -184,7 +171,7 @@ export default function App() {
     const currentSelectedFish = [...selectedFish];
 
     // Calculate scores and math breakdown locally
-    const { conflictRisk, groupHarmony, mathBreakdown } = calculateScores(currentSelectedFish);
+    const { groupHarmony, mathBreakdown } = calculateScores(currentSelectedFish);
 
     try {
       // Construct the prompt for the AI
@@ -194,18 +181,15 @@ export default function App() {
         Selected Fish: ${currentSelectedFish.map(f => f.name).join(', ')}
         Fish Type: ${selectedCategory}
         Group Harmony Score: ${(groupHarmony * 100).toFixed(0)}%
-        Conflict Risk Score: ${(conflictRisk * 100).toFixed(0)}%
 
         Please provide a JSON object with the following:
         1. "harmonyLabel": "Based on the Group Harmony Score of ${(groupHarmony * 100).toFixed(0)}%, provide a one-word label (e.g., Excellent, Good, Fair, Poor).",
-        2. "conflictLabel": "Based on the Conflict Risk Score of ${(conflictRisk * 100).toFixed(0)}%, provide a one-word label (e.g., Low, Medium, High, Very High).",
-        3. "harmonySummary": "Based on the Group Harmony Score of ${(groupHarmony * 100).toFixed(0)}%, write a brief summary of the overall compatibility of this group.",
-        4. "conflictSummary": "Based on the Conflict Risk Score of ${(conflictRisk * 100).toFixed(0)}%, write a brief summary of the potential for conflict in this group.",
-        5.  "detailedSummary": A detailed summary of the potential interactions in this specific group of fish.
-        6.  "tankSize": A recommended minimum tank size.
-        7.  "decorations": Recommended decorations and setup.
-        8.  "careGuide": A general care guide for this group.
-        9.  "compatibleFish": A list of other fish that are compatible with ALL selected fish.
+        2. "harmonySummary": "Based on the Group Harmony Score of ${(groupHarmony * 100).toFixed(0)}%, write a brief summary of the overall compatibility of this group.",
+        3.  "detailedSummary": A detailed summary of the potential interactions in this specific group of fish.
+        4.  "tankSize": A recommended minimum tank size.
+        5.  "decorations": Recommended decorations and setup.
+        6.  "careGuide": A general care guide for this group.
+        7.  "compatibleFish": A list of other fish that are compatible with ALL selected fish.
         `;
 
       // Define the structured JSON response schema
@@ -219,9 +203,7 @@ export default function App() {
             "type": "OBJECT",
             "properties": {
               "harmonyLabel": { "type": "STRING" },
-              "conflictLabel": { "type": "STRING" },
               "harmonySummary": { "type": "STRING" },
-              "conflictSummary": { "type": "STRING" },
               "detailedSummary": { "type": "STRING" },
               "tankSize": { "type": "STRING" },
               "decorations": { "type": "STRING" },
@@ -235,7 +217,7 @@ export default function App() {
                 }
               }
             },
-            "required": ["harmonyLabel", "conflictLabel", "harmonySummary", "conflictSummary", "detailedSummary", "tankSize", "decorations", "careGuide", "compatibleFish"]
+            "required": ["harmonyLabel", "harmonySummary", "detailedSummary", "tankSize", "decorations", "careGuide", "compatibleFish"]
           }
         }
       };
@@ -298,7 +280,6 @@ export default function App() {
           const finalReport = {
             ...parsedJson,
             groupHarmonyScore: groupHarmony,
-            conflictRiskScore: conflictRisk,
             math: mathBreakdown
           };
 
@@ -591,21 +572,7 @@ export default function App() {
 
                 {report && (
                     <>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                        <div className="bg-[#0f1623] p-6 rounded-2xl text-center">
-                        <h4 className="text-2xl font-bold text-[#E19F20] mb-2">Conflict Risk</h4>
-                        <div className={`text-3xl font-bold mb-2 ${getConflictColor(report.conflictRiskScore)}`}>
-                            {report.conflictLabel}
-                        </div>
-                        <p className={`text-5xl md:text-6xl font-bold mb-4 ${getConflictColor(report.conflictRiskScore)}`}>
-                            {Math.round(report.conflictRiskScore * 100)}%
-                        </p>
-                        <p className="text-sm text-[#D8f3ff] mt-2">
-                            This score represents the 'weakest link' or the single most problematic pairing in the group. A high score indicates a significant risk of conflict.
-                            <br/><br/>
-                            <strong>Summary:</strong> {report.conflictSummary}
-                        </p>
-                        </div>
+                    <div className="grid grid-cols-1 md:grid-cols-1 gap-6 mb-6">
                         <div className="bg-[#0f1623] p-6 rounded-2xl text-center">
                         <h4 className="text-2xl font-bold text-[#E19F20] mb-2">Group Harmony</h4>
                         <div className={`text-3xl font-bold mb-2 ${getHarmonyColor(report.groupHarmonyScore)}`}>
@@ -615,7 +582,7 @@ export default function App() {
                             {Math.round(report.groupHarmonyScore * 100)}%
                         </p>
                         <p className="text-sm text-[#D8f3ff] mt-2">
-                            This score is calculated by multiplying the compatibility of all possible pairs. A low score indicates multiple potential issues.
+                            This score represents the 'weakest link' or the single most problematic pairing in the group. A high score indicates a significant risk of conflict.
                             <br/><br/>
                             <strong>Summary:</strong> {report.harmonySummary}
                         </p>
@@ -689,10 +656,6 @@ export default function App() {
                             <div>
                                 <h5 className="font-semibold text-lg text-[#81B2E8]">Group Harmony Score:</h5>
                                 <p className="text-[#D8f3ff] font-mono text-sm break-words">{report.math.harmonyEquation}</p>
-                            </div>
-                            <div>
-                                <h5 className="font-semibold text-lg text-[#81B2E8]">Conflict Risk Score:</h5>
-                                <p className="text-[#D8f3ff] font-mono text-sm break-words">{report.math.conflictEquation}</p>
                             </div>
                             </div>
                         </div>
