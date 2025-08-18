@@ -29,7 +29,7 @@ export default function Welcome() {
         <h1 className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-blue-400 to-teal-300 mb-2">
           Welcome to AquaPi AI
         </h1>
-        <p className="text-lg text-[#3F0A4A] mb-12">
+        <p className="text-lg text-[#177F6F] mb-12">
           Your intelligent assistant for aquatic compatibility.
         </p>
         
@@ -50,8 +50,8 @@ export default function Welcome() {
         </div>
       </div>
 
-      <div className="absolute bottom-4 right-4 text-xs text-gray-500">
-        Version 25.8.17.17
+      <div className="absolute bottom-4 right-4 text-xs text-[#177F6F]">
+        Version 25.8.18
       </div>
     </div>
   );
