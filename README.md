@@ -24,4 +24,4 @@ Have a question about your tank? Just ask our chatbot!
 * **Comprehensive Solution:** From compatibility checks to personalized advice, AquaPi AI is your all-in-one solution for a healthier aquarium.
 
 ## 🌊 Dive In!
-Stop guessing and start thriving! Try AquaPi AI now and let it be your guide to a healthier aquarium.
+Stop guessing and start thriving! Try [**AquaPi AI**](https://therealfalsereality.github.io/) now and let it be your guide to a healthier aquarium.
