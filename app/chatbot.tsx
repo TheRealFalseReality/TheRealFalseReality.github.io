@@ -116,7 +116,7 @@ Other Guidelines:
 
     // Effect to display the initial welcome message
     useEffect(() => {
-        const initialMessage = "# Welcome to AquaPi AI!\n\nYour intelligent assistant for aquarium monitoring and automation. Ask me anything about AquaPi, analyze your water parameters, generate custom automation scripts, or even get an AI analysis of your aquarium photos.";
+        const initialMessage = "# Welcome to AquaPi AI!\n\nI'm your intelligent assistant for AquaPi. Ask me anything about your aquarium and fish, analyze water parameters, generate custom automation scripts, or get an AI analysis of your aquarium photos.";
         setConversationHistory([{ role: "model", parts: [{ text: initialMessage }] }]);
     }, []);
 
