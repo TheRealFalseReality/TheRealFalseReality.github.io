@@ -476,7 +476,7 @@ export default function App() {
                     />
                     <div className="p-2 flex-grow flex flex-col justify-center">
                         <p className="text-base sm:text-lg font-semibold text-center text-[#D8f3ff]">{fish.name}</p>
-                        <p className="text-xs sm:text-sm text-[#D8f3ff] italic text-center">{fish.latinName}</p>
+                        <p className="text-xs sm:text-sm text-[#D8f3ff] italic text-center">{fish.commonNames.join(', ')}</p>
                     </div>
                     </div>
                 )})}

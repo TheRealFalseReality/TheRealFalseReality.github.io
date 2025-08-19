@@ -14,7 +14,7 @@ export function meta() {
 interface Fish {
   id: string;
   name: string;
-  latinName?: string;
+  commonNames: string[];
   imageURL?: string;
   compatible: string[];
   caution: string[];
@@ -24,7 +24,7 @@ interface Fish {
 
 interface RawFish {
   name: string;
-  latinName?: string;
+  commonNames?: string[];
   imageURL?: string;
   compatible?: string[];
   withCaution?: string[];
@@ -99,7 +99,7 @@ const UpArrowIcon = () => (
 );
 const CopyIcon = () => (
     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-        <path d="M7 9a2 2 0 012-2h6a2 2 0 012 2v6a2 2 0 01-2 2H9a2 2 0 01-2-2V9z" />
+        <path d="M7 9a2 2 0 012-2h6a2 2 0 012 2v6a2 2 0 01-2-2H9a2 2 0 01-2-2V9z" />
         <path d="M4 3a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H4z" />
     </svg>
 );
@@ -126,7 +126,7 @@ interface FishCardProps {
   onDelete: (id: string, name: string) => void;
 }
 interface AddFishModalProps {
-  onSave: (name: string, latinName: string, imageURL: string, waterType: string) => void;
+  onSave: (name: string, commonNames: string, imageURL: string, waterType: string) => void;
   onClose: () => void;
   activeTab: string;
 }
@@ -229,7 +229,7 @@ const FishCard = ({ fish, onEdit, onDelete }: FishCardProps) => {
             <div className="flex justify-between items-start mb-4">
                 <div>
                     <h4 className="text-2xl font-bold text-yellow-400 mb-1">{fish.name}</h4>
-                    {fish.latinName && <p className="text-sm italic text-gray-400 mr-2">{fish.latinName}</p>}
+                    {fish.commonNames && <p className="text-sm italic text-gray-400 mr-2">{fish.commonNames.join(', ')}</p>}
                 </div>
                 <div className="flex space-x-2">
                     <button onClick={() => onEdit(fish)} className="p-2 rounded-full bg-yellow-600 text-white hover:bg-yellow-700 transition duration-300 ease-in-out transform hover:scale-110 shadow-md" title="Edit Fish"><EditIcon /></button>
@@ -248,7 +248,7 @@ const FishCard = ({ fish, onEdit, onDelete }: FishCardProps) => {
 
 const AddFishModal = ({ onSave, onClose, activeTab }: AddFishModalProps) => {
     const [name, setName] = useState('');
-    const [latinName, setLatinName] = useState('');
+    const [commonNames, setCommonNames] = useState('');
     const [imageURL, setImageURL] = useState('');
     const [waterType, setWaterType] = useState(activeTab);
     const [modalInfo, setModalInfo] = useState({ title: '', message: '', show: false });
@@ -259,7 +259,7 @@ const AddFishModal = ({ onSave, onClose, activeTab }: AddFishModalProps) => {
             setModalInfo({ title: 'Input Required', message: 'Please fill out the fish name.', show: true });
             return;
         }
-        onSave(name.trim(), latinName.trim(), imageURL.trim(), waterType);
+        onSave(name.trim(), commonNames.trim(), imageURL.trim(), waterType);
     };
 
     return (
@@ -283,8 +283,8 @@ const AddFishModal = ({ onSave, onClose, activeTab }: AddFishModalProps) => {
                             <input id="fish-name" type="text" value={name} onChange={(e) => setName(e.target.value)} className="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none transition" placeholder="e.g., Neon Tetra" required />
                         </div>
                         <div>
-                            <label htmlFor="latin-name" className="block text-sm font-medium text-gray-300 mb-2">Latin Name (Optional)</label>
-                            <input id="latin-name" type="text" value={latinName} onChange={(e) => setLatinName(e.target.value)} className="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none transition" placeholder="e.g., Paracheirodon innesi" />
+                            <label htmlFor="common-names" className="block text-sm font-medium text-gray-300 mb-2">Common Names (comma-separated)</label>
+                            <input id="common-names" type="text" value={commonNames} onChange={(e) => setCommonNames(e.target.value)} className="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none transition" placeholder="e.g., Millionsfish, Rainbow fish" />
                         </div>
                          <div>
                             <label htmlFor="image-url" className="block text-sm font-medium text-gray-300 mb-2">Image URL (Optional)</label>
@@ -307,7 +307,7 @@ const CompatibilityFormModal = ({ fishData, freshwaterFish, saltwaterFish, activ
     const allOtherFish = allCurrentWaterTypeFishNames.filter(name => name !== fishData.name);
 
     const [name, setName] = useState(fishData?.name || '');
-    const [latinName, setLatinName] = useState(fishData?.latinName || '');
+    const [commonNames, setCommonNames] = useState(fishData?.commonNames?.join(', ') || '');
     const [imageURL, setImageURL] = useState(fishData?.imageURL || '');
     const [lists, setLists] = useState(() => {
         const initialCompatible = new Set(fishData?.compatible || []);
@@ -379,7 +379,7 @@ const CompatibilityFormModal = ({ fishData, freshwaterFish, saltwaterFish, activ
         const updatedFish: Fish = {
             ...fishData,
             name: name.trim(),
-            latinName: latinName.trim(),
+            commonNames: commonNames.split(',').map(name => name.trim()),
             imageURL: imageURL.trim(),
             compatible: lists.compatible,
             caution: lists.caution,
@@ -408,8 +408,8 @@ const CompatibilityFormModal = ({ fishData, freshwaterFish, saltwaterFish, activ
                             <input id="edit-fish-name" type="text" value={name} onChange={(e) => setName(e.target.value)} className="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none transition" required />
                         </div>
                         <div>
-                            <label htmlFor="edit-latin-name" className="block text-sm font-medium text-gray-300 mb-2">Latin Name</label>
-                            <input id="edit-latin-name" type="text" value={latinName} onChange={(e) => setLatinName(e.target.value)} className="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none transition" placeholder="Leave blank to remove" />
+                            <label htmlFor="edit-common-names" className="block text-sm font-medium text-gray-300 mb-2">Common Names (comma-separated)</label>
+                            <input id="edit-common-names" type="text" value={commonNames} onChange={(e) => setCommonNames(e.target.value)} className="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none transition" placeholder="e.g., Millionsfish, Rainbow fish" />
                         </div>
                     </div>
                     <div>
@@ -511,7 +511,7 @@ export default function App() {
     const letterRefs = useRef<{[key: string]: HTMLDivElement | null}>({});
     const [isDirty, setIsDirty] = useState(false);
 
-    const processFishArray = (fishArray: RawFish[]): Fish[] => fishArray.map(fish => ({ id: createId(fish.name), name: fish.name, latinName: fish.latinName, imageURL: fish.imageURL, compatible: fish.compatible || [], caution: fish.withCaution || [], notRecommended: fish.notRecommended || [], notCompatible: fish.notCompatible || [] }));
+    const processFishArray = (fishArray: RawFish[]): Fish[] => fishArray.map(fish => ({ id: createId(fish.name), name: fish.name, commonNames: fish.commonNames || [], imageURL: fish.imageURL, compatible: fish.compatible || [], caution: fish.withCaution || [], notRecommended: fish.notRecommended || [], notCompatible: fish.notCompatible || [] }));
 
     useEffect(() => {
         // Load data from the imported JSON file
@@ -542,11 +542,11 @@ export default function App() {
     }, [isDirty]);
 
     // --- DATA HANDLING ---
-    const handleSaveNewFish = (name: string, latinName: string, imageURL: string, waterType: string) => {
+    const handleSaveNewFish = (name: string, commonNames: string, imageURL: string, waterType: string) => {
         const newFish: Fish = {
             id: createId(name),
             name,
-            latinName,
+            commonNames: commonNames.split(',').map(name => name.trim()),
             imageURL,
             compatible: [name], // Add self-compatibility here
             caution: [],
@@ -723,7 +723,7 @@ export default function App() {
             return fishArray.map(fish => {
                 const { id, caution, ...rest } = fish;
                 const newFish: any = { ...rest, withCaution: caution };
-                if (!newFish.latinName) delete newFish.latinName;
+                if (!newFish.commonNames) delete newFish.commonNames;
                 if (!newFish.imageURL) delete newFish.imageURL;
                 if (!newFish.notRecommended || newFish.notRecommended.length === 0) delete newFish.notRecommended;
                 return newFish;
