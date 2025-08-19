@@ -528,7 +528,7 @@ const UserInput = ({ onSubmit, isLoading }) => {
 // PromptSuggestions Component
 const PromptSuggestions = ({ setUiState, handleSuggestionClick, isLoading, isOpen, setIsOpen }) => {
     const questions = [
-        { title: "What is AquaPi?", icon: '?', action: () => handleSuggestionClick("What is AquaPi?"), style: "bg-gray-800/50 hover:bg-gray-700/70" },
+        { title: "What is AquaPi?", action: () => handleSuggestionClick("What is AquaPi?"), style: "bg-gray-800/50 hover:bg-gray-700/70" },
         { title: "Compare to Apex Neptune", icon: null, action: () => handleSuggestionClick("Compare AquaPi to Apex Neptune"), style: "bg-gray-800/50 hover:bg-gray-700/70" },
         { title: "What parameters can AquaPi monitor?", icon: null, action: () => handleSuggestionClick("What parameters can AquaPi monitor?"), style: "bg-gray-800/50 hover:bg-gray-700/70" },
         { title: "Can I use my own sensors?", icon: null, action: () => handleSuggestionClick("Can I use my own sensors?"), style: "bg-gray-800/50 hover:bg-gray-700/70" },

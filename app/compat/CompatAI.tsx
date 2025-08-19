@@ -74,6 +74,16 @@ export default function App() {
   // --- START: Compatibility Calculation Logic ---
 
   /**
+   * Applies a random weight to a base score.
+   * @param {number} score - The base score (0-1).
+   * @returns {number} The weighted score.
+   */
+  const getWeightedScore = (score: number) => {
+    const randomFactor = Math.random() * 0.1 - 0.05; // -0.05 to 0.05
+    return Math.max(0, Math.min(1, score + randomFactor));
+  };
+
+  /**
    * Determines the compatibility probability between two fish.
    * @param {object} fishA - The first fish object.
    * @param {object} fishB - The second fish object.
@@ -81,19 +91,19 @@ export default function App() {
    */
   const getPairwiseProbability = (fishA: any, fishB: any) => {
     if (fishA.compatible.includes(fishB.name) && fishB.compatible.includes(fishA.name)) {
-      return 1.0;
+      return getWeightedScore(1.0);
     }
     if (fishA.notCompatible.includes(fishB.name) || fishB.notCompatible.includes(fishA.name)) {
-      return 0.0;
+      return getWeightedScore(0.0);
     }
     if (fishA.notRecommended.includes(fishB.name) || fishB.notRecommended.includes(fishA.name)) {
-        return 0.25;
+        return getWeightedScore(0.25);
     }
     if (fishA.withCaution.includes(fishB.name) || fishB.withCaution.includes(fishA.name)) {
-      return 0.75;
+      return getWeightedScore(0.75);
     }
     // Default case if no specific rule is found
-    return 0.5;
+    return getWeightedScore(0.5);
   };
 
   /**
@@ -122,7 +132,7 @@ export default function App() {
         prob: prob
       });
       minProb = prob;
-      harmonyTerms.push(`${(prob * 100)}%`);
+      harmonyTerms.push(`${(prob * 100).toFixed(1)}%`);
     } else {
       for (let i = 0; i < fishList.length; i++) {
         for (let j = i + 1; j < fishList.length; j++) {
@@ -135,7 +145,7 @@ export default function App() {
           if (prob < minProb) {
             minProb = prob;
           }
-          harmonyTerms.push(`${(prob * 100)}%`);
+          harmonyTerms.push(`${(prob * 100).toFixed(1)}%`);
         }
       }
     }
@@ -651,7 +661,7 @@ export default function App() {
                                 <h5 className="font-semibold text-lg text-[#81B2E8]">Pairwise Compatibility:</h5>
                                 <ul className="list-disc list-inside text-[#D8f3ff]">
                                 {report.math.pairs.map((p: any, i: number) => (
-                                    <li key={i}>{p.fishA} & {p.fishB}: <span className="font-mono">{(p.prob * 100)}%</span></li>
+                                    <li key={i}>{p.fishA} & {p.fishB}: <span className="font-mono">{(p.prob * 100).toFixed(1)}%</span></li>
                                 ))}
                                 </ul>
                             </div>
