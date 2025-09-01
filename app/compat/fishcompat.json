@@ -2,7 +2,10 @@
   "freshwater": [
     {
       "name": "Angelfish (Female) ♀",
-      "commonNames": ["Freshwater Angelfish", "Pterophyllum scalare"],
+      "commonNames": [
+        "Freshwater Angelfish",
+        "Pterophyllum scalare"
+      ],
       "imageURL": "https://assets.petco.com/petco/image/upload/f_auto,q_auto/freshwater-angelfish-caresheet-hero-image",
       "compatible": [
         "Angelfish (Female) ♀",
@@ -43,7 +46,10 @@
     },
     {
       "name": "Angelfish (Male) ♂",
-      "commonNames": ["Freshwater Angelfish", "Pterophyllum scalare"],
+      "commonNames": [
+        "Freshwater Angelfish",
+        "Pterophyllum scalare"
+      ],
       "imageURL": "https://aquaticsunlimited.com/wp-content/uploads/2024/02/ANGELFISH-FW-BLUE-MARBLE-Pterophyllum-scalare.jpg",
       "compatible": [
         "Angelfish (Female) ♀",
@@ -84,7 +90,10 @@
     },
     {
       "name": "Barbs",
-      "commonNames": ["Tiger Barb", "Rosy Barb"],
+      "commonNames": [
+        "Tiger Barb",
+        "Rosy Barb"
+      ],
       "imageURL": "https://cdn.shopify.com/s/files/1/0311/3149/files/tiger_barb_in_planted_aquarium.jpg?v=1629404268",
       "compatible": [
         "Barbs",
@@ -125,9 +134,12 @@
     },
     {
       "name": "Bettas (Female) ♀",
-      "commonNames": ["Siamese fighting fish"],
+      "commonNames": [
+        "Siamese fighting fish"
+      ],
       "imageURL": "https://thailandbettafish.com/cdn/shop/collections/Rare_Koi_Betta_Fish_1.png?v=1690009934",
       "compatible": [
+        "Bettas (Female) ♀",
         "Cory Cats",
         "Hatchets",
         "Loaches",
@@ -138,6 +150,7 @@
       "notRecommended": [
         "Angelfish (Female) ♀",
         "Angelfish (Male) ♂",
+        "Bettas (Male) ♂",
         "Goldfish",
         "Gouramis",
         "Pond Fish"
@@ -150,7 +163,6 @@
       "withCaution": [
         "Barbs",
         "Bettas (Female) ♀",
-        "Bettas (Male) ♂",
         "Danios / Minnows",
         "Discus",
         "Freshwater Sharks",
@@ -166,7 +178,9 @@
     },
     {
       "name": "Bettas (Male) ♂",
-      "commonNames": ["Siamese fighting fish"],
+      "commonNames": [
+        "Siamese fighting fish"
+      ],
       "imageURL": "https://m.media-amazon.com/images/I/71uEGoSsfiL._UF1000,1000_QL80_.jpg",
       "compatible": [
         "Cory Cats",
@@ -178,6 +192,7 @@
       "notRecommended": [
         "Angelfish (Female) ♀",
         "Angelfish (Male) ♂",
+        "Bettas (Female) ♀",
         "Discus",
         "Goldfish",
         "Gouramis",
@@ -192,7 +207,6 @@
         "Pond Fish"
       ],
       "withCaution": [
-        "Bettas (Female) ♀",
         "Danios / Minnows",
         "Freshwater Sharks",
         "Hatchets",
@@ -207,7 +221,10 @@
     },
     {
       "name": "Cichlids - American, Large",
-      "commonNames": ["Oscar", "Jack Dempsey"],
+      "commonNames": [
+        "Oscar",
+        "Jack Dempsey"
+      ],
       "imageURL": "https://cdn11.bigcommerce.com/s-kkon4imfg5/images/stencil/1280x1280/products/6625/5076/apis5hxpw__42939.1607360200.jpg?c=2",
       "compatible": [
         "Cichlids - American, Large",
@@ -248,7 +265,10 @@
     },
     {
       "name": "Cichlids - Lake Malawian/Victoria",
-      "commonNames": ["African Cichlid", "Mbuna"],
+      "commonNames": [
+        "African Cichlid",
+        "Mbuna"
+      ],
       "imageURL": "https://aquariumscience.org/wp-content/uploads/2021/09/240-Malawi-Cichlid-Aquarium.jpg",
       "compatible": [],
       "notRecommended": [
@@ -288,7 +308,10 @@
     },
     {
       "name": "Cichlids - Lake Tanganyikan",
-      "commonNames": ["Frontosa", "Leleupi"],
+      "commonNames": [
+        "Frontosa",
+        "Leleupi"
+      ],
       "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOqmr3Blt64vaGDbAVpCu2dDTOuT77sZRjfA&s",
       "compatible": [
         "Cichlids - Lake Tanganyikan"
@@ -329,7 +352,10 @@
     },
     {
       "name": "Cory Cats",
-      "commonNames": ["Corydoras Catfish", "Armored catfish"],
+      "commonNames": [
+        "Corydoras Catfish",
+        "Armored catfish"
+      ],
       "imageURL": "https://cdn.shopify.com/s/files/1/0311/3149/files/corydoras_sterbai.jpg?v=1605035087",
       "compatible": [
         "Angelfish (Female) ♀",
@@ -370,7 +396,10 @@
     },
     {
       "name": "Danios / Minnows",
-      "commonNames": ["Zebra Danio", "White Cloud Mountain Minnow"],
+      "commonNames": [
+        "Zebra Danio",
+        "White Cloud Mountain Minnow"
+      ],
       "imageURL": "https://aquaticarts.com/cdn/shop/products/Gold-White-Cloud-Mountain-Minnow-NEW-Small-7.jpg?v=1637805331&width=1080",
       "compatible": [
         "Barbs",
@@ -411,7 +440,10 @@
     },
     {
       "name": "Discus",
-      "commonNames": ["Pompadour fish", "Symphysodon"],
+      "commonNames": [
+        "Pompadour fish",
+        "Symphysodon"
+      ],
       "imageURL": "https://www.blueplanetaquarium.com/wp-content/uploads/2024/07/iStock-181852070.jpg",
       "compatible": [
         "Discus",
@@ -452,7 +484,10 @@
     },
     {
       "name": "Freshwater Sharks",
-      "commonNames": ["Red-Tailed Shark", "Rainbow Shark"],
+      "commonNames": [
+        "Red-Tailed Shark",
+        "Rainbow Shark"
+      ],
       "imageURL": "https://cdn.shopify.com/s/files/1/0311/3149/files/Red-tailed_black_shark_Epalzeorhynchos_bicolor.jpg?v=1665077847",
       "compatible": [
         "Barbs",
@@ -493,7 +528,10 @@
     },
     {
       "name": "Goldfish",
-      "commonNames": ["Comet Goldfish", "Shubunkin"],
+      "commonNames": [
+        "Comet Goldfish",
+        "Shubunkin"
+      ],
       "imageURL": "https://guidesly.com/static/394845ea6476ea6f42f999b343c601ec/5f471/Guidesly_Goldfish_737f6b7de8.jpg",
       "compatible": [
         "Goldfish",
@@ -534,7 +572,10 @@
     },
     {
       "name": "Gouramis",
-      "commonNames": ["Dwarf Gourami", "Pearl Gourami"],
+      "commonNames": [
+        "Dwarf Gourami",
+        "Pearl Gourami"
+      ],
       "imageURL": "https://aquadiction.world/img/profile/dwarf-gourami.webp",
       "compatible": [
         "Cory Cats",
@@ -575,7 +616,10 @@
     },
     {
       "name": "Guppies",
-      "commonNames": ["Millionsfish", "Rainbow fish"],
+      "commonNames": [
+        "Millionsfish",
+        "Rainbow fish"
+      ],
       "imageURL": "https://aquaticarts.com/cdn/shop/products/Premium-Assorted-Guppy_-Collage-V2-SMALL.jpg?v=1659703899",
       "compatible": [
         "Cory Cats",
@@ -616,7 +660,10 @@
     },
     {
       "name": "Hatchets",
-      "commonNames": ["Freshwater Hatchetfish", "Silver Hatchetfish"],
+      "commonNames": [
+        "Freshwater Hatchetfish",
+        "Silver Hatchetfish"
+      ],
       "imageURL": "https://cdn.shopify.com/s/files/1/0311/3149/files/Thoracocharax_stellatus_-_Spotfin_Hatchetfish.jpg?v=1655225731",
       "compatible": [
         "Angelfish (Female) ♀",
@@ -657,7 +704,10 @@
     },
     {
       "name": "Killifish",
-      "commonNames": ["Annual Killifish", "Gardneri Killi"],
+      "commonNames": [
+        "Annual Killifish",
+        "Gardneri Killi"
+      ],
       "imageURL": "https://aqualibs.com/images/news/2024/03/11/2-Killifish.webp",
       "compatible": [
         "Cory Cats",
@@ -698,7 +748,10 @@
     },
     {
       "name": "Larger Catfish",
-      "commonNames": ["Redtail Catfish", "Pictus Catfish"],
+      "commonNames": [
+        "Redtail Catfish",
+        "Pictus Catfish"
+      ],
       "imageURL": "https://cdn.britannica.com/22/141422-050-75094F72/Red-tail-catfish.jpg",
       "compatible": [
         "Cichlids - American, Large",
@@ -737,7 +790,10 @@
     },
     {
       "name": "Loaches",
-      "commonNames": ["Clown Loach", "Kuhli Loach"],
+      "commonNames": [
+        "Clown Loach",
+        "Kuhli Loach"
+      ],
       "imageURL": "https://www.thesprucepets.com/thmb/soLID44NcoIUw_Un3aIvUHuhNyM=/2121x0/filters:no_upscale():strip_icc()/GettyImages-1143074116-dc4533ee798349e5a58048b6d62e0aa4.jpg",
       "compatible": [
         "Angelfish (Female) ♀",
@@ -778,7 +834,11 @@
     },
     {
       "name": "Mollies / Platies / Swordtails",
-      "commonNames": ["Molly", "Platy", "Swordtail"],
+      "commonNames": [
+        "Molly",
+        "Platy",
+        "Swordtail"
+      ],
       "imageURL": "https://cdn11.bigcommerce.com/s-nzocnvfw4r/images/stencil/1280x1280/products/383/646/Assorted-Mollies__70436.1731440282.jpg?c=1",
       "compatible": [
         "Cory Cats",
@@ -819,7 +879,10 @@
     },
     {
       "name": "Plants",
-      "commonNames": ["Java Fern", "Anubias"],
+      "commonNames": [
+        "Java Fern",
+        "Anubias"
+      ],
       "imageURL": "https://splashyfishstore.com/cdn/shop/articles/Low_Light_Freshwater_Plants_for_Aquarium.jpg?v=1751212578",
       "compatible": [
         "Angelfish (Female) ♀",
@@ -859,7 +922,10 @@
     },
     {
       "name": "Plecos (Suckerfish)",
-      "commonNames": ["Plecostomus", "Bristlenose Pleco"],
+      "commonNames": [
+        "Plecostomus",
+        "Bristlenose Pleco"
+      ],
       "imageURL": "https://diapteron.co.uk/wp-content/uploads/2024/06/The-Common-Pleco-Your-Go-To-Guide-for-Aquarium-Success-1140x641.webp",
       "compatible": [
         "Angelfish (Female) ♀",
@@ -897,7 +963,10 @@
     },
     {
       "name": "Pond Fish",
-      "commonNames": ["Koi", "Goldfish"],
+      "commonNames": [
+        "Koi",
+        "Goldfish"
+      ],
       "imageURL": "https://www.kodamakoifarm.com/wp-content/uploads/2023/04/types-pond-fish-preview.jpg",
       "compatible": [
         "Goldfish",
@@ -938,7 +1007,10 @@
     },
     {
       "name": "Rainbowfish",
-      "commonNames": ["Boeseman's Rainbowfish", "Turquoise Rainbowfish"],
+      "commonNames": [
+        "Boeseman's Rainbowfish",
+        "Turquoise Rainbowfish"
+      ],
       "imageURL": "https://cvafish.com/cdn/shop/files/coachella-valley-aquatics-rainbow-fish-praecox-rainbowfish-dwarf-rainbow-38783160254620_600x.jpg?v=1718742672",
       "compatible": [
         "Angelfish (Female) ♀",
@@ -979,7 +1051,10 @@
     },
     {
       "name": "Rasboras",
-      "commonNames": ["Harlequin Rasbora", "Chili Rasbora"],
+      "commonNames": [
+        "Harlequin Rasbora",
+        "Chili Rasbora"
+      ],
       "imageURL": "https://intanaquariumfeeds.com/cdn/shop/articles/chilirasbora_600x_660daa23-3a7b-407d-b661-35b506a18723.webp?v=1715753155",
       "compatible": [
         "Barbs",
@@ -1020,7 +1095,10 @@
     },
     {
       "name": "Shrimp",
-      "commonNames": ["Cherry Shrimp", "Amano Shrimp"],
+      "commonNames": [
+        "Cherry Shrimp",
+        "Amano Shrimp"
+      ],
       "imageURL": "https://www.theshrimpfarm.com/blog/wp-content/uploads/2024/06/Amano-51.jpg",
       "compatible": [
         "Cory Cats",
@@ -1061,7 +1139,10 @@
     },
     {
       "name": "Snails",
-      "commonNames": ["Nerite Snail", "Mystery Snail"],
+      "commonNames": [
+        "Nerite Snail",
+        "Mystery Snail"
+      ],
       "imageURL": "https://m.media-amazon.com/images/I/81+EEpYRHXS.jpg",
       "compatible": [
         "Angelfish (Female) ♀",
@@ -1101,7 +1182,10 @@
     },
     {
       "name": "Tetras",
-      "commonNames": ["Neon Tetra", "Cardinal Tetra"],
+      "commonNames": [
+        "Neon Tetra",
+        "Cardinal Tetra"
+      ],
       "imageURL": "https://cdn11.bigcommerce.com/s-lsus8itpbr/images/stencil/1920x1280/uploaded_images/at-fish-tetras-cardinal-tetra-poseidon-2-8-24.jpg?t=1707415206",
       "compatible": [
         "Cory Cats",
@@ -1144,7 +1228,10 @@
   "marine": [
     {
       "name": "Angels",
-      "commonNames": ["Queen Angelfish", "Emperor Angelfish"],
+      "commonNames": [
+        "Queen Angelfish",
+        "Emperor Angelfish"
+      ],
       "imageURL": "https://www.dresseldivers.com/wp-content/uploads/Types-of-saltwater-angelfish-QUEEN-3.jpg",
       "compatible": [
         "Blennies",
@@ -1196,7 +1283,10 @@
     },
     {
       "name": "Angels - Dwarf",
-      "commonNames": ["Flame Angelfish", "Coral Beauty"],
+      "commonNames": [
+        "Flame Angelfish",
+        "Coral Beauty"
+      ],
       "imageURL": "https://azure2.wgp-cdn.co.uk/app-practicalfishkeeping/features/4c7f95a247fa6.jpg?&width=1200&height=630&mode=crop&format=webp&webp.quality=40&scale=both",
       "compatible": [
         "Anthias",
@@ -1248,7 +1338,10 @@
     },
     {
       "name": "Anglers / Frogs",
-      "commonNames": ["Frogfish", "Anglerfish"],
+      "commonNames": [
+        "Frogfish",
+        "Anglerfish"
+      ],
       "imageURL": "https://yourfishstore.com/cdn/shop/products/X1-Red-Angler-Frogfish-Lrg-4-6-Marine-Fish-Saltwater-Free-Shipping-marine-fish-packages.jpg?v=1740709075",
       "compatible": [
         "Batfish",
@@ -1300,7 +1393,10 @@
     },
     {
       "name": "Anthias",
-      "commonNames": ["Lyretail Anthias", "Squarfin Anthias"],
+      "commonNames": [
+        "Lyretail Anthias",
+        "Squarfin Anthias"
+      ],
       "imageURL": "https://www.biologiamarina.org/wp/wp-content/uploads/2012/08/antias-10-1000x713.jpg",
       "compatible": [
         "Angels - Dwarf",
@@ -1352,7 +1448,10 @@
     },
     {
       "name": "Basslets",
-      "commonNames": ["Royal Gramma", "Blackcap Basslet"],
+      "commonNames": [
+        "Royal Gramma",
+        "Blackcap Basslet"
+      ],
       "imageURL": "https://reefs.com/blog/wp-content/uploads/2006/10/Candy_Bass_1-64d8099e9cf06a7bbbfa957095876afe.jpg",
       "compatible": [
         "Angels - Dwarf",
@@ -1405,7 +1504,10 @@
     },
     {
       "name": "Batfish",
-      "commonNames": ["Longfin Batfish", "Pinnatus Batfish"],
+      "commonNames": [
+        "Longfin Batfish",
+        "Pinnatus Batfish"
+      ],
       "imageURL": "https://www.thesmilingseahorse.com/uploads/1/0/1/8/10183628/dsc-2797_orig.jpg",
       "compatible": [
         "Anglers / Frogs",
@@ -1457,7 +1559,10 @@
     },
     {
       "name": "Blennies",
-      "commonNames": ["Lawnmower Blenny", "Bicolor Blenny"],
+      "commonNames": [
+        "Lawnmower Blenny",
+        "Bicolor Blenny"
+      ],
       "imageURL": "https://reefchasers.com/cdn/shop/collections/blenny-fish-721819.jpg?v=1682979037",
       "compatible": [
         "Angels",
@@ -1509,7 +1614,10 @@
     },
     {
       "name": "Boxfish",
-      "commonNames": ["Longhorn Cowfish", "Yellow Boxfish"],
+      "commonNames": [
+        "Longhorn Cowfish",
+        "Yellow Boxfish"
+      ],
       "imageURL": "https://seaunseen.com/wp-content/uploads/2014/10/MG_7915.jpg",
       "compatible": [
         "Angels - Dwarf",
@@ -1561,7 +1669,10 @@
     },
     {
       "name": "Butterflies",
-      "commonNames": ["Copperband Butterflyfish", "Heniochus Butterflyfish"],
+      "commonNames": [
+        "Copperband Butterflyfish",
+        "Heniochus Butterflyfish"
+      ],
       "imageURL": "https://www.thesprucepets.com/thmb/atWvF28csSzQmiAxkBikUXhW6mY=/1806x0/filters:no_upscale():strip_icc()/butterflyfish-588a0a803df78caebcc08582.jpg",
       "compatible": [
         "Anglers / Frogs",
@@ -1613,7 +1724,10 @@
     },
     {
       "name": "Cardinals",
-      "commonNames": ["Banggai Cardinalfish", "Pajama Cardinalfish"],
+      "commonNames": [
+        "Banggai Cardinalfish",
+        "Pajama Cardinalfish"
+      ],
       "imageURL": "https://shop.thebiotagroup.com/cdn/shop/files/Kaudern_s_1200x.jpg?v=1702911876",
       "compatible": [
         "Angels - Dwarf",
@@ -1665,7 +1779,10 @@
     },
     {
       "name": "Chromis",
-      "commonNames": ["Green Chromis", "Blue Chromis"],
+      "commonNames": [
+        "Green Chromis",
+        "Blue Chromis"
+      ],
       "imageURL": "https://www.risingtideconservation.org/wp-content/uploads/2017/05/green-chromis.jpg",
       "compatible": [
         "Angels - Dwarf",
@@ -1717,7 +1834,10 @@
     },
     {
       "name": "Clownfish (Female) ♀",
-      "commonNames": ["Ocellaris Clownfish", "Percula Clownfish"],
+      "commonNames": [
+        "Ocellaris Clownfish",
+        "Percula Clownfish"
+      ],
       "imageURL": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Amphiprion_ocellaris_%28Clown_anemonefish%29_by_Nick_Hobgood.jpg",
       "compatible": [
         "Angels - Dwarf",
@@ -1769,7 +1889,10 @@
     },
     {
       "name": "Clownfish (Male) ♂",
-      "commonNames": ["Ocellaris Clownfish", "Percula Clownfish"],
+      "commonNames": [
+        "Ocellaris Clownfish",
+        "Percula Clownfish"
+      ],
       "imageURL": "https://media.istockphoto.com/id/1334812871/photo/clown-anemonefish-amphiprion-ocellaris.jpg?s=612x612&w=0&k=20&c=9jl_d9FrCrFZz4dPWI-s2pLDpIlqrEnoWqaE465T0gU=",
       "compatible": [
         "Angels - Dwarf",
@@ -1821,7 +1944,11 @@
     },
     {
       "name": "Corals",
-      "commonNames": ["Soft Corals", "LPS Corals", "SPS Corals"],
+      "commonNames": [
+        "Soft Corals",
+        "LPS Corals",
+        "SPS Corals"
+      ],
       "imageURL": "https://www.bluereefaquarium.co.uk/portsmouth/wp-content/uploads/2019/04/coral-1024x768.jpg",
       "compatible": [
         "Anthias",
@@ -1873,7 +2000,10 @@
     },
     {
       "name": "Damsels",
-      "commonNames": ["Blue Damsel", "Yellowtail Damsel"],
+      "commonNames": [
+        "Blue Damsel",
+        "Yellowtail Damsel"
+      ],
       "imageURL": "https://www.coralmagazine.com/wp-content/uploads/2018/10/Damsel_15_cropped_extended_1000w.jpg",
       "compatible": [
         "Angels - Dwarf",
@@ -1926,7 +2056,10 @@
     },
     {
       "name": "Dartfish",
-      "commonNames": ["Firefish", "Scissortail Goby"],
+      "commonNames": [
+        "Firefish",
+        "Scissortail Goby"
+      ],
       "imageURL": "https://www.coralmagazine.com/wp-content/uploads/2020/08/Ptereleotris-grammica-02.png",
       "compatible": [
         "Angels - Dwarf",
@@ -1979,7 +2112,10 @@
     },
     {
       "name": "Dragonets",
-      "commonNames": ["Mandarinfish", "Spotted Mandarin"],
+      "commonNames": [
+        "Mandarinfish",
+        "Spotted Mandarin"
+      ],
       "imageURL": "https://oceanconservancy.org/wp-content/uploads/2023/09/Dragonet_Credit-David-Clode.webp",
       "compatible": [
         "Boxfish",
@@ -2031,7 +2167,10 @@
     },
     {
       "name": "Eels",
-      "commonNames": ["Snowflake Moray", "Zebra Moray"],
+      "commonNames": [
+        "Snowflake Moray",
+        "Zebra Moray"
+      ],
       "imageURL": "https://www.pbs.org/wnet/nature/files/2021/09/david-clode-yBraeHiDXi8-unsplash-scaled-e1630589780218.jpg",
       "compatible": [
         "Angels",
@@ -2084,7 +2223,10 @@
     },
     {
       "name": "Filefish",
-      "commonNames": ["Aiptasia-Eating Filefish", "Matted Filefish"],
+      "commonNames": [
+        "Aiptasia-Eating Filefish",
+        "Matted Filefish"
+      ],
       "imageURL": "https://www.science.org/do/10.1126/article.71611/abs/sn-filefish.jpg",
       "compatible": [
         "Angels - Dwarf",
@@ -2136,7 +2278,10 @@
     },
     {
       "name": "Foxface / Rabbits",
-      "commonNames": ["Foxface Rabbitfish", "Magnificent Rabbitfish"],
+      "commonNames": [
+        "Foxface Rabbitfish",
+        "Magnificent Rabbitfish"
+      ],
       "imageURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Siganus_vulpinus_2.jpg/1200px-Siganus_vulpinus_2.jpg",
       "compatible": [
         "Angels",
@@ -2189,7 +2334,10 @@
     },
     {
       "name": "Gobies",
-      "commonNames": ["Yellow Watchman Goby", "Clown Goby"],
+      "commonNames": [
+        "Yellow Watchman Goby",
+        "Clown Goby"
+      ],
       "imageURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Cryptocentrus_cinctus.JPG/1200px-Cryptocentrus_cinctus.JPG",
       "compatible": [
         "Angels - Dwarf",
@@ -2242,7 +2390,10 @@
     },
     {
       "name": "Groupers",
-      "commonNames": ["Panther Grouper", "Miniatus Grouper"],
+      "commonNames": [
+        "Panther Grouper",
+        "Miniatus Grouper"
+      ],
       "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxeT4n979NZO6JJfqa3ffTP0REhlyq4n4-1A&s",
       "compatible": [
         "Angels",
@@ -2294,7 +2445,10 @@
     },
     {
       "name": "Grunts / Sweetlips",
-      "commonNames": ["Porkfish", "Harlequin Sweetlips"],
+      "commonNames": [
+        "Porkfish",
+        "Harlequin Sweetlips"
+      ],
       "imageURL": "https://cdn.divessi.com/cached/Wildlife_Sweetlips_Grunts_Shutterstock-aquapix.jpg/600.jpg",
       "compatible": [
         "Angels",
@@ -2346,7 +2500,10 @@
     },
     {
       "name": "Hawkfish",
-      "commonNames": ["Longnose Hawkfish", "Flame Hawkfish"],
+      "commonNames": [
+        "Longnose Hawkfish",
+        "Flame Hawkfish"
+      ],
       "imageURL": "https://cdn11.bigcommerce.com/s-lsus8itpbr/images/stencil/1920x1280/uploaded_images/-appsheet-images-all-images-qm-fish-hawks-neocirrhites-armatus-1-edit.jpg?t=1589832243",
       "compatible": [
         "Angels",
@@ -2398,7 +2555,10 @@
     },
     {
       "name": "Hogfish",
-      "commonNames": ["Spanish Hogfish", "Cuban Hogfish"],
+      "commonNames": [
+        "Spanish Hogfish",
+        "Cuban Hogfish"
+      ],
       "imageURL": "https://oceanconservancy.org/wp-content/uploads/2017/04/OceanImageBank_FabriceDudenhofer_04.webp",
       "compatible": [
         "Angels",
@@ -2450,7 +2610,10 @@
     },
     {
       "name": "Jawfish",
-      "commonNames": ["Yellowhead Jawfish", "Blue Spot Jawfish"],
+      "commonNames": [
+        "Yellowhead Jawfish",
+        "Blue Spot Jawfish"
+      ],
       "imageURL": "https://www.ikelite.com/cdn/shop/articles/lindsey-dougherty-jawfish-header.jpg?v=1552757200&width=2048",
       "compatible": [
         "Angels - Dwarf",
@@ -2503,7 +2666,10 @@
     },
     {
       "name": "Lions / Scorpions",
-      "commonNames": ["Lionfish", "Scorpionfish"],
+      "commonNames": [
+        "Lionfish",
+        "Scorpionfish"
+      ],
       "imageURL": "https://cdn.britannica.com/80/115380-050-8B6D713D/lion-fish.jpg",
       "compatible": [
         "Angels",
@@ -2555,7 +2721,10 @@
     },
     {
       "name": "Parrotfish",
-      "commonNames": ["Bicolor Parrotfish", "Queen Parrotfish"],
+      "commonNames": [
+        "Bicolor Parrotfish",
+        "Queen Parrotfish"
+      ],
       "imageURL": "https://www.scuba.com/blog/wp-content/uploads/2011/11/parrotfish-AdobeStock_386630558.jpg",
       "compatible": [
         "Angels",
@@ -2607,7 +2776,10 @@
     },
     {
       "name": "Pseudochromis",
-      "commonNames": ["Orchid Dottyback", "Magenta Dottyback"],
+      "commonNames": [
+        "Orchid Dottyback",
+        "Magenta Dottyback"
+      ],
       "imageURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Pseudochromis_aldabraensis.JPG/1200px-Pseudochromis_aldabraensis.JPG",
       "compatible": [
         "Boxfish",
@@ -2659,7 +2831,10 @@
     },
     {
       "name": "Puffers",
-      "commonNames": ["Dogface Puffer", "Porcupine Puffer"],
+      "commonNames": [
+        "Dogface Puffer",
+        "Porcupine Puffer"
+      ],
       "imageURL": "https://idsb.tmgrup.com.tr/ly/uploads/images/2022/12/11/245916.jpg",
       "compatible": [
         "Angels",
@@ -2711,7 +2886,10 @@
     },
     {
       "name": "Seahorse / Pipefish",
-      "commonNames": ["Lined Seahorse", "Banded Pipefish"],
+      "commonNames": [
+        "Lined Seahorse",
+        "Banded Pipefish"
+      ],
       "imageURL": "https://images.squarespace-cdn.com/content/v1/5734f2a086db43e3f6fb1bbc/1551223084117-ZST8V2WNKNXGNTHHYNC7/Lars+Reichenbach+-+GuyLian+Seahorses+of+the+World+2018+-+1st+prize+category+photo.jpg",
       "compatible": [
         "Dragonets",
@@ -2761,7 +2939,10 @@
     },
     {
       "name": "Sharks / Rays",
-      "commonNames": ["Banded Cat Shark", "Blue Spotted Stingray"],
+      "commonNames": [
+        "Banded Cat Shark",
+        "Blue Spotted Stingray"
+      ],
       "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTke_Zqoj1Lr0GGefos709T4xaGpbBOZ4wZGA&s",
       "compatible": [
         "Sharks / Rays"
@@ -2811,7 +2992,10 @@
     },
     {
       "name": "Shrimp",
-      "commonNames": ["Cleaner Shrimp", "Peppermint Shrimp"],
+      "commonNames": [
+        "Cleaner Shrimp",
+        "Peppermint Shrimp"
+      ],
       "imageURL": "https://worldwidecorals.com/cdn/shop/articles/Blood-Shrimp-Reef-Aquarium-Cover.jpg?v=1716412148",
       "compatible": [
         "Anthias",
@@ -2863,7 +3047,10 @@
     },
     {
       "name": "Snails",
-      "commonNames": ["Astrea Snail", "Nassarius Snail"],
+      "commonNames": [
+        "Astrea Snail",
+        "Nassarius Snail"
+      ],
       "imageURL": "https://www.liveaquaria.com/images/categories/product/lg-Trochus%20Snail-02.jpg",
       "compatible": [
         "Anthias",
@@ -2915,7 +3102,10 @@
     },
     {
       "name": "Squirrelfish",
-      "commonNames": ["Longspine Squirrelfish", "Redcoat Squirrelfish"],
+      "commonNames": [
+        "Longspine Squirrelfish",
+        "Redcoat Squirrelfish"
+      ],
       "imageURL": "https://www.ryanphotographic.com/images/JPEGS/Holocentrus%20rufus,%20Longspine%20squirrelfish%20(Holocentridae),%20Glover's%20Reef,%20%20Belize-3310.jpg",
       "compatible": [
         "Angels",
@@ -2969,7 +3159,10 @@
     },
     {
       "name": "Tangs / Surgeons",
-      "commonNames": ["Yellow Tang", "Blue Tang"],
+      "commonNames": [
+        "Yellow Tang",
+        "Blue Tang"
+      ],
       "imageURL": "https://www.coralmagazine.com/wp-content/uploads/2023/02/Paracanthurus-hepatus-adult.jpg",
       "compatible": [
         "Angels",
@@ -3021,7 +3214,10 @@
     },
     {
       "name": "Triggerfish",
-      "commonNames": ["Clown Triggerfish", "Picasso Triggerfish"],
+      "commonNames": [
+        "Clown Triggerfish",
+        "Picasso Triggerfish"
+      ],
       "imageURL": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Picasso.triggerfish.arp.jpg",
       "compatible": [
         "Triggerfish"
@@ -3073,7 +3269,10 @@
     },
     {
       "name": "Wrasse - Fish Only",
-      "commonNames": ["Harlequin Tusk", "Red Coris Wrasse"],
+      "commonNames": [
+        "Harlequin Tusk",
+        "Red Coris Wrasse"
+      ],
       "imageURL": "https://www.seadwelling.com/cdn/shop/products/HarlequinTuskFWRHA590AU.jpg?v=1655413349",
       "compatible": [
         "Angels",
@@ -3125,7 +3324,10 @@
     },
     {
       "name": "Wrasse - Reef Safe",
-      "commonNames": ["Six Line Wrasse", "Fairy Wrasse"],
+      "commonNames": [
+        "Six Line Wrasse",
+        "Fairy Wrasse"
+      ],
       "imageURL": "https://www.calacademy.org/sites/default/files/styles/manual_crop_standard_960x540/public/assets/images/press/cirrhilabrus_finifenmaa_release_3.jpg?itok=joOJevHQ&c=dc2f507ca75d97c0e4c059d42f103074",
       "compatible": [
         "Angels - Dwarf",
