@@ -54,6 +54,12 @@ const FeedbackModal = ({ onClose }: { onClose: () => void }) => {
                 <p className="text-gray-600 mb-4">
                     Click the button below to send us your feedback, bug reports, or questions.
                 </p>
+                <p className="text-gray-600 mb-4">
+                    Alternatively, you can{' '}
+                    <a href="https://github.com/TheRealFalseReality/TheRealFalseReality.github.io/issues" target="_blank" rel="noopener noreferrer" className="font-bold text-green-700 hover:underline">
+                        create an issue on GitHub
+                    </a>.
+                </p>
                 <div className="bg-gray-100 p-2 rounded-lg mb-6 border border-gray-200">
                      <p className="text-sm text-gray-500 mb-1">Our email address is:</p>
                     <span className="text-lg font-semibold text-green-700 break-all">
@@ -112,20 +118,28 @@ export default function Welcome() {
             </div>
 
              {/* Feedback button with new background */}
-            <div className="mt-12">
+            <div className="mt-12 flex justify-center items-center space-x-4">
                 <button
                     onClick={() => setIsFeedbackModalOpen(true)}
                     className="bg-white/60 text-[#7F175B] hover:text-[#105c50] font-semibold py-2 px-5 border border-[#177F6F]/50 rounded-full hover:bg-green-100/80 transition duration-300"
                 >
                     Have feedback or questions? Contact us.
                 </button>
+                <a
+                    href="https://github.com/TheRealFalseReality/TheRealFalseReality.github.io"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-white/60 text-[#7F175B] hover:text-[#105c50] font-semibold py-2 px-5 border border-[#177F6F]/50 rounded-full hover:bg-green-100/80 transition duration-300"
+                >
+                    View on Github
+                </a>
             </div>
         </div>
       </main>
       
       {/* Footer with version number, positioned safely */}
       <footer className="w-full flex-shrink-0 pt-2 sm:pt-4 flex justify-end">
-          <span className="bg-white/60 text-xs text-[#177F3B] px-2 py-1 rounded-full">Version 25.8.19</span>
+          <span className="bg-white/60 text-xs text-[#177F3B] px-2 py-1 rounded-full">Version 25.8.20</span>
       </footer>
       
       {isFeedbackModalOpen && <FeedbackModal onClose={() => setIsFeedbackModalOpen(false)} />}
