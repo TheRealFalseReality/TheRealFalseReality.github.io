@@ -1,0 +1,8 @@
+{
+  "appId": "com.capitalcityaquatics.fishai",
+  "appName": "Fish.AI",
+  "webDir": "build/client",
+  "server": {
+    "androidScheme": "https"
+  }
+}
