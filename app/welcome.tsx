@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Logo from './AquaPiAI.png';
+import AdSense from './components/AdSense'; // Import the new component
 
 // Card component for a clean, modular design
 const FeatureCard = ({ to, title, description, icon }: { to: string, title: string, description: string, icon: string }) => (
@@ -116,8 +117,8 @@ export default function Welcome() {
                     icon="🤖"
                 />
             </div>
-
-             {/* Feedback button with new background */}
+            
+             {/* Feedback button  */}
             <div className="mt-12 flex justify-center items-center space-x-4">
                 <button
                     onClick={() => setIsFeedbackModalOpen(true)}
@@ -139,7 +140,7 @@ export default function Welcome() {
       
       {/* Footer with version number, positioned safely */}
       <footer className="w-full flex-shrink-0 pt-2 sm:pt-4 flex justify-end">
-          <span className="bg-white/60 text-xs text-[#177F3B] px-2 py-1 rounded-full">Version 25.8.21</span>
+          <span className="bg-white/60 text-xs text-[#177F3B] px-2 py-1 rounded-full">Version 25.8.22</span>
       </footer>
       
       {isFeedbackModalOpen && <FeedbackModal onClose={() => setIsFeedbackModalOpen(false)} />}
