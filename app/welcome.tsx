@@ -93,10 +93,13 @@ export default function Welcome() {
       <main className="flex-grow flex flex-col items-center justify-center">
         {/* Reduced vertical padding for mobile (py-4), keeps py-8 for larger screens */}
         <div className="text-center animate-fade-in-up py-4 sm:py-8">
-            <img src={Logo} alt="AquaPi AI Logo" className="w-auto h-24 mx-auto mb-4" />
             <h1 className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-blue-400 to-teal-300 mb-2">
-              Welcome to AquaPi AI
+              Welcome to Fish.AI
             </h1>
+            <p className="text-md text-[#BFB8B8] mb-4">
+              powered by:
+            </p>
+            <img src={Logo} alt="AquaPi AI Logo" className="w-auto h-36 mx-auto mb-4" /> {/* Changed h-24 to h-36 */}
             <p className="text-lg text-[#BFB8B8] mb-12">
               Your intelligent assistant for aquatic compatibility.
             </p>
@@ -139,7 +142,7 @@ export default function Welcome() {
       
       {/* Footer with version number, positioned safely */}
       <footer className="w-full flex-shrink-0 pt-2 sm:pt-4 flex justify-end">
-          <span className="bg-white/60 text-xs text-[#177F3B] px-2 py-1 rounded-full">Version 25.8.26</span>
+          <span className="bg-white/60 text-xs text-[#177F3B] px-2 py-1 rounded-full">Version 25.8.24</span>
       </footer>
       
       {isFeedbackModalOpen && <FeedbackModal onClose={() => setIsFeedbackModalOpen(false)} />}
