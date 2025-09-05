@@ -44,7 +44,6 @@ const AlphabetScroller = ({ letters, onLetterClick, onScrollToTop }: AlphabetScr
     );
 };
 
-
 // Main App component
 export default function App() {
   const [selectedCategory, setSelectedCategory] = useState("freshwater");
