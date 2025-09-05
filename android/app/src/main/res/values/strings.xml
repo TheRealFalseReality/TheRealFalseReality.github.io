@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Fish.AI</string>
+    <string name="title_activity_main">Fish.AI</string>
+    <string name="package_name">com.capitalcityaquatics.fishai</string>
+    <string name="custom_url_scheme">com.capitalcityaquatics.fishai</string>
+</resources>
