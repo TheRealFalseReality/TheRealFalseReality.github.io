@@ -139,7 +139,7 @@ export default function Welcome() {
       
       {/* Footer with version number, positioned safely */}
       <footer className="w-full flex-shrink-0 pt-2 sm:pt-4 flex justify-end">
-          <span className="bg-white/60 text-xs text-[#177F3B] px-2 py-1 rounded-full">Version 25.8.22</span>
+          <span className="bg-white/60 text-xs text-[#177F3B] px-2 py-1 rounded-full">Version 25.8.23</span>
       </footer>
       
       {isFeedbackModalOpen && <FeedbackModal onClose={() => setIsFeedbackModalOpen(false)} />}
