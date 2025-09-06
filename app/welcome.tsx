@@ -1,9 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Logo from './AquaPiAI.png';
-import AdComponent from './AdComponent'; // 1. Import the component
+import AdComponent from './AdComponent';
 
-// Card component for a clean, modular design
 const FeatureCard = ({ to, title, description, icon }: { to: string, title: string, description: string, icon: string }) => (
     <Link
         to={to}
