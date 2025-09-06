@@ -5,13 +5,22 @@
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+:root {
+  --main-bg: #d8f3ff;
+  --sidebar-bg: #eef7fb;
+  --card-bg: #ffffff;
+  --text-dark: #344a53;
+  --text-light: #7fb3c8;
+  --accent-primary: #7fb3c8;
+  --accent-secondary: #c4b1c5;
+  --accent-highlight: #fde8fe;
+  --border-color: #c4dbe5;
+}
+
 html,
 body {
-  @apply bg-white dark:bg-gray-950;
-
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
-  }
+  background-color: var(--main-bg);
+  color: var(--text-dark);
 }
 
 /* --- General Animations --- */
@@ -58,4 +67,13 @@ body {
 .animate-scale-in {
   opacity: 0; /* Start hidden */
   animation: scale-in-fade-in 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Sidebar & Overlay Transitions */
+.sidebar-transition {
+  transition: transform 300ms ease-in-out;
+}
+
+.overlay-transition {
+  transition: opacity 300ms ease-in-out;
 }

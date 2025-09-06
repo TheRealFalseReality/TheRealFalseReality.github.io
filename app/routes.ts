@@ -5,4 +5,5 @@ export default [
   route("compat", "compat/CompatGuide.tsx"),
   route("compat-ai", "compat/CompatAI.tsx"),
   route("chatbot", "chatbot.tsx"),
+  route("about", "routes/about.tsx"),
 ] satisfies RouteConfig;
