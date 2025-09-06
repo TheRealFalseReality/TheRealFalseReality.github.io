@@ -298,7 +298,6 @@ Other Guidelines:
 
     return (
         <div className="flex flex-col h-full max-w-7xl mx-auto px-4">
-            <ChatHeader />
             <ChatHistory history={conversationHistory} isLoading={isLoading} ref={chatHistoryRef} onShowAnalysis={setAnalysisData} onShowSuggestion={setSuggestionOverlayData} onShowAutomation={setAutomationData} onShowImageAnalysis={setImageAnalysisData} />
             <div className="mt-auto pt-4 pb-4">
                 {uiState === 'chat' && !analysisData && <PromptSuggestions setUiState={setUiState} handleSuggestionClick={handleSuggestionClick} isLoading={isLoading} isOpen={isSuggestionsOpen} setIsOpen={setIsSuggestionsOpen} />}
@@ -331,12 +330,6 @@ const parseMarkdown = (text) => {
     html = html.replace(/<p class="my-2"><pre/g, '<pre').replace(/<\/pre><\/p>/g, '</pre>');
     return { __html: html };
 };
-
-const ChatHeader = () => (
-    <header className="py-4 flex items-center justify-center">
-        <img src={Logo} alt="AquaPi AI Logo" className="w-auto h-16" />
-    </header>
-);
 
 const ChatHistory = React.forwardRef(({ history, isLoading, onShowAnalysis, onShowSuggestion, onShowAutomation, onShowImageAnalysis }, ref) => (
     <div ref={ref} className="flex-1 space-y-8 overflow-y-auto pr-2">
