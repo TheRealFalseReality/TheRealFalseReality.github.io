@@ -5,6 +5,7 @@
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+/* --- Light Theme (Default) --- */
 :root {
   --main-bg: #d8f3ff;
   --sidebar-bg: #eef7fb;
@@ -17,57 +18,29 @@
   --border-color: #c4dbe5;
 }
 
+/* --- Dark Theme --- */
+[data-theme='dark'] {
+  --main-bg: #2d3748; /* A dark slate gray */
+  --sidebar-bg: #1a202c; /* A very dark blue-gray */
+  --card-bg: #4a5568;
+  --text-dark: #e2e8f0; /* Light gray for primary text */
+  --text-light: #a0aec0; /* Lighter gray for secondary text */
+  --accent-primary: #7fb3c8; /* Your light blue accent remains */
+  --accent-secondary: #c4b1c5; /* Your pinkish accent remains */
+  --accent-highlight: #4a5568;
+  --border-color: #4a5568;
+}
+
 html,
 body {
   background-color: var(--main-bg);
   color: var(--text-dark);
+  transition: background-color 0.3s, color 0.3s;
 }
 
-/* --- General Animations --- */
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-@keyframes fadeInDown {
-  from { opacity: 0; transform: translateY(-20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-.animate-fade-in {
-  animation: fadeIn 0.5s ease-out;
-}
-
-.animate-fade-in-down {
-  animation: fadeInDown 0.5s ease-out;
-}
-
-.animate-fade-in-up {
-    animation: fadeInUp 1s ease-out;
-}
-
-
-/* --- Fish Card Animation --- */
-@keyframes scale-in-fade-in {
-  from {
-    opacity: 0;
-    transform: scale(0.95) translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1) translateY(0);
-  }
-}
-
-.animate-scale-in {
-  opacity: 0; /* Start hidden */
-  animation: scale-in-fade-in 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
-}
+/* --- General Animations & Transitions --- */
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+.animate-fade-in { animation: fadeIn 0.5s ease-out; }
 
 /* Sidebar & Overlay Transitions */
 .sidebar-transition {
@@ -76,4 +49,51 @@ body {
 
 .overlay-transition {
   transition: opacity 300ms ease-in-out;
+}
+
+/* --- Theme Toggle Switch --- */
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+}
+.theme-switch {
+  display: inline-block;
+  height: 24px;
+  position: relative;
+  width: 48px;
+}
+.theme-switch input {
+  display:none;
+}
+.slider {
+  background-color: var(--accent-primary);
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+}
+.slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 16px;
+  left: 4px;
+  position: absolute;
+  transition: .4s;
+  width: 16px;
+}
+input:checked + .slider {
+  background-color: var(--accent-secondary);
+}
+input:checked + .slider:before {
+  transform: translateX(24px);
+}
+.slider.round {
+  border-radius: 34px;
+}
+.slider.round:before {
+  border-radius: 50%;
 }

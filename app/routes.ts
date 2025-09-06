@@ -6,4 +6,5 @@ export default [
   route("compat-ai", "compat/CompatAI.tsx"),
   route("chatbot", "chatbot.tsx"),
   route("about", "routes/about.tsx"),
+  route("tank-volume", "TankVolumeCalculator.tsx"),
 ] satisfies RouteConfig;
