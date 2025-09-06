@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Logo from './AquaPiAI.png';
+import AdComponent from './AdComponent'; // 1. Import the component
 
 // Card component for a clean, modular design
 const FeatureCard = ({ to, title, description, icon }: { to: string, title: string, description: string, icon: string }) => (
@@ -49,7 +50,10 @@ export default function Welcome() {
                     description="Ask questions, get water parameter analysis, and generate automation scripts with our intelligent chatbot."
                     icon="🤖"
                 />
-            </div>
+            </div>              
+          <div className="mt-12 w-full max-w-4xl mx-auto">
+              <AdComponent />
+          </div>
         </div>
       </main>
     </div>
