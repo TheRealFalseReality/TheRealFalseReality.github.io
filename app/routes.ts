@@ -7,4 +7,5 @@ export default [
   route("chatbot", "chatbot.tsx"),
   route("about", "routes/about.tsx"),
   route("tank-volume", "TankVolumeCalculator.tsx"),
+  route("calculators", "Calculators.tsx"),
 ] satisfies RouteConfig;

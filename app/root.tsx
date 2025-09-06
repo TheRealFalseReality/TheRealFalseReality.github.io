@@ -20,6 +20,7 @@ const CalculatorIcon = () => <svg className="w-6 h-6" fill="none" stroke="curren
 const ChatbotIcon = () => <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" /></svg>;
 const AboutIcon = () => <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>;
 const VolumeIcon = () => <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M18.364 5.636l-3.536 3.536m0 0a5 5 0 10-7.07 7.072 5 5 0 007.07-7.072z" /></svg>;
+const BeakerIcon = () => <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.363-.844a2 2 0 01-1.524-1.99L14 4a2 2 0 00-2-2h-4a2 2 0 00-2 2v6.047a2 2 0 01-1.524 1.99l-2.363.844a2 2 0 00-1.022.547l-1.393 1.393a2 2 0 00-.547 1.022l-.844 2.363a2 2 0 00.547 2.53l1.393 1.393a2 2 0 001.022.547l2.363.844a2 2 0 011.524 1.99V20a2 2 0 002 2h4a2 2 0 002-2v-2.047a2 2 0 011.524-1.99l2.363-.844a2 2 0 001.022-.547l1.393-1.393a2 2 0 00.547-1.022l.844-2.363a2 2 0 00-.547-2.53l-1.393-1.393z" /></svg>;
 const CollapseLeftIcon = () => <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M11 19l-7-7 7-7m8 14l-7-7 7-7" /></svg>;
 const CollapseRightIcon = () => <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 5l7 7-7 7M5 5l7 7-7 7" /></svg>;
 const SunIcon = () => <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" /></svg>;
@@ -54,6 +55,10 @@ const SidebarContent = ({ isCollapsed, onLinkClick, theme, toggleTheme }: { isCo
         <NavLink to="/tank-volume" className={({ isActive }) => `${navLinkClasses} ${isActive ? activeNavLinkClasses : ''}`} onClick={onLinkClick}>
           <VolumeIcon />
           {!isCollapsed && <span className="ml-3">Tank Volume</span>}
+        </NavLink>
+        <NavLink to="/calculators" className={({ isActive }) => `${navLinkClasses} ${isActive ? activeNavLinkClasses : ''}`} onClick={onLinkClick}>
+          <BeakerIcon />
+          {!isCollapsed && <span className="ml-3">Calculators</span>}
         </NavLink>
         <NavLink to="/chatbot" className={({ isActive }) => `${navLinkClasses} ${isActive ? activeNavLinkClasses : ''}`} onClick={onLinkClick}>
           <ChatbotIcon />
@@ -115,7 +120,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Meta />
         <Links />
         <link rel="icon" href={faviconPath} />
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5701077439648731"
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-570107743964831"
           crossOrigin="anonymous">
         </script>
       </head>
