@@ -82,9 +82,20 @@ export function Layout({ children }: { children: React.ReactNode }) {
   const faviconPath = `${import.meta.env.BASE_URL}favicon.ico`;
   const [isMobileSidebarOpen, setIsMobileSidebarOpen] = useState(false);
   const [isDesktopSidebarCollapsed, setIsDesktopSidebarCollapsed] = useState(false);
-  const [theme, setTheme] = useState(() => localStorage.getItem('theme') || 'light');
+  
+  // Initialize state with a default value, NOT localStorage
+  const [theme, setTheme] = useState('light');
 
+  // This effect runs only on the client, after the initial render
   useEffect(() => {
+    // Get the saved theme from localStorage or default to 'light'
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    setTheme(savedTheme);
+  }, []); // The empty dependency array ensures this runs only once on mount
+
+  // This effect runs whenever the theme state changes
+  useEffect(() => {
+    // Apply the theme to the document and save it to localStorage
     document.documentElement.setAttribute('data-theme', theme);
     localStorage.setItem('theme', theme);
   }, [theme]);
