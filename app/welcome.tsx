@@ -50,9 +50,9 @@ export default function Welcome() {
                     icon="🤖"
                 />
             </div>              
-          <div className="mt-12 w-full max-w-4xl mx-auto">
+          {/* <div className="mt-12 w-full max-w-4xl mx-auto">
               <AdComponent />
-          </div>
+          </div> */}
         </div>
       </main>
     </div>

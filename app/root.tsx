@@ -121,7 +121,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
         <link rel="icon" href={faviconPath} />
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5701077439648731"
-          crossOrigin="anonymous">
+          crossorigin="anonymous"> 
         </script>
       </head>
       <body>
